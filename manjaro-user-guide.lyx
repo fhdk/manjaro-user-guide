@@ -106,7 +106,7 @@ User Guide
 \end_layout
 
 \begin_layout Author
-Manjaro Linux 0.8.10
+Manjaro Linux 0.8.11
 \end_layout
 
 \begin_layout Standard
@@ -229,11 +229,11 @@ The source code for this documentation can be downloaded from:
 
 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
-http://git.manjaro.org/documentation/manjaro-user-guide/
+https://github.com/manjaro/manjaro-user-guide/
 \end_layout
 
 \end_inset
@@ -305,7 +305,7 @@ Guillaume
 \begin_inset space ~
 \end_inset
 
-Benoit Server Manager, Developer, Packager, Moderation
+Benoit Server Manager, Developer, Packager, Community Moderation
 \end_layout
 
 \begin_layout Description
@@ -317,7 +317,7 @@ A.
 \begin_inset space ~
 \end_inset
 
-Arnt Developer, Moderation
+Arnt Developer, Community Moderation
 \end_layout
 
 \begin_layout Description
@@ -334,7 +334,7 @@ Demiray
 \end_inset
 
 Muhterem Manjaro KDE Edition Maintainer, Turkish IRC and web support, Manjaro
- artwork
+ Artwork
 \end_layout
 
 \begin_layout Description
@@ -353,25 +353,8 @@ Ramon
 Buldó Developer
 \end_layout
 
-\begin_layout Description
-Joshua
-\begin_inset space ~
-\end_inset
-
-Strot Developer, Graphics Developer
-\end_layout
-
 \begin_layout Subsection*
 Maintainers
-\end_layout
-
-\begin_layout Description
-Dan
-\begin_inset space ~
-\end_inset
-
-S.
- Openbox Editions Maintainer 
 \end_layout
 
 \begin_layout Description
@@ -395,7 +378,7 @@ Wiscombe
 \begin_inset space ~
 \end_inset
 
-(anex) MATE Community Edition Maintainer
+(anex) MATE Community Edition Maintainer, Manjaro Artwork
 \end_layout
 
 \begin_layout Subsection*
@@ -414,6 +397,18 @@ de
 Kroon Community, IRC Support
 \end_layout
 
+\begin_layout Description
+shariebeth Community Global Moderator
+\end_layout
+
+\begin_layout Description
+dicktater Community Global Moderator
+\end_layout
+
+\begin_layout Description
+Jonathan Community Global Moderator
+\end_layout
+
 \begin_layout Subsection*
 Documentation
 \end_layout
@@ -423,11 +418,7 @@ Jonathon
 \begin_inset space ~
 \end_inset
 
-Fernyhough Editor of the User Guide 0.8.9-0.8.10
-\end_layout
-
-\begin_layout Description
-Handy Global Moderator, Wiki Contributor, Community Support
+Fernyhough Editor of the User Guide 0.8.9-0.8.11, Community Moderation
 \end_layout
 
 \begin_layout Description
@@ -444,6 +435,27 @@ Carl
 \end_inset
 
 Duff Community, Documentation and Wiki Management, Scripting and Configuration
+\end_layout
+
+\begin_layout Description
+Handy Global Moderator, Wiki Contributor, Community Support
+\end_layout
+
+\begin_layout Description
+Joshua
+\begin_inset space ~
+\end_inset
+
+Strot Developer, Graphics Developer
+\end_layout
+
+\begin_layout Description
+Dan
+\begin_inset space ~
+\end_inset
+
+S.
+ Openbox Editions Maintainer 
 \end_layout
 
 \begin_layout Section*
@@ -1440,7 +1452,7 @@ jonathon@box:~/download$ ls
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-0.8.10-sha1sum.txt  manjaro-xfce-0.8.10-x86_64.iso
+manjaro-0.8.11-sha1sum.txt  manjaro-xfce-0.8.11-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1453,7 +1465,7 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-jonathon@box:~/download$ sha1sum -c manjaro-0.8.10-sha1sum.txt
+jonathon@box:~/download$ sha1sum -c manjaro-0.8.11-sha1sum.txt
 \end_layout
 
 \begin_layout Standard
@@ -1470,63 +1482,63 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-kde-0.8.10-i686.iso: No such file or directory
+sha1sum: manjaro-kde-0.8.11-i686.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-kde-0.8.10-i686.iso: FAILED open or read
+manjaro-kde-0.8.11-i686.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-kde-0.8.10-x86_64.iso: No such file or directory
+sha1sum: manjaro-kde-0.8.11-x86_64.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-kde-0.8.10-x86_64.iso: FAILED open or read
+manjaro-kde-0.8.11-x86_64.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-net-0.8.10-i686.iso: No such file or directory
+sha1sum: manjaro-net-0.8.11-i686.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-net-0.8.10-i686.iso: FAILED open or read
+manjaro-net-0.8.11-i686.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-net-0.8.10-x86_64.iso: No such file or directory
+sha1sum: manjaro-net-0.8.11-x86_64.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-net-0.8.10-x86_64.iso: FAILED open or read
+manjaro-net-0.8.11-x86_64.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-openbox-0.8.10-i686.iso: No such file or directory
+sha1sum: manjaro-openbox-0.8.11-i686.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-openbox-0.8.10-i686.iso: FAILED open or read
+manjaro-openbox-0.8.11-i686.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-openbox-0.8.10-x86_64.iso: No such file or directory
+sha1sum: manjaro-openbox-0.8.11-x86_64.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-openbox-0.8.10-x86_64.iso: FAILED open or read
+manjaro-openbox-0.8.11-x86_64.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-xfce-0.8.10-i686.iso: No such file or directory
+sha1sum: manjaro-xfce-0.8.11-i686.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-xfce-0.8.10-i686.iso: FAILED open or read
+manjaro-xfce-0.8.11-i686.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-xfce-0.8.10-x86_64.iso: OK
+sha1sum: manjaro-xfce-0.8.11-x86_64.iso: OK
 \end_layout
 
 \begin_layout LyX-Code
@@ -1605,11 +1617,15 @@ Then you can generate an SHA-1 hash code for the disc image using:
 \begin_layout LyX-Code
 jonathon@box:~/download$
 \family typewriter
- sha1sum manjaro-xfce-0.8.10-x86_64.iso
+ sha1sum manjaro-xfce-
+\family default
+0.8.11
+\family typewriter
+-x86_64.iso
 \end_layout
 
 \begin_layout Standard
-This command generates a hash code for the 64-bit Manjaro Xfce 0.8.10 disc
+This command generates a hash code for the 64-bit Manjaro Xfce 0.8.11 disc
  image which can then be manually compared to the code contained in the
  checksum file.
 \end_layout
@@ -1887,7 +1903,7 @@ KDE
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-0.8.10-i686.iso
+manjaro-kde-0.8.11-i686.iso
 \end_layout
 
 \end_inset
@@ -1925,7 +1941,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-0.8.10-x86_64.iso
+manjaro-kde-0.8.11-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1963,7 +1979,7 @@ Openbox
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-openbox-0.8.10-i686.iso
+manjaro-openbox-0.8.11-i686.iso
 \end_layout
 
 \end_inset
@@ -2001,7 +2017,7 @@ CD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-openbox-0.8.10-x86_64.iso
+manjaro-openbox-0.8.11-x86_64.iso
 \end_layout
 
 \end_inset
@@ -2039,7 +2055,7 @@ Xfce
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-0.8.10-i686.iso
+manjaro-xfce-0.8.11-i686.iso
 \end_layout
 
 \end_inset
@@ -2077,7 +2093,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-0.8.10-x86_64.iso
+manjaro-xfce-0.8.11-x86_64.iso
 \end_layout
 
 \end_inset
@@ -2115,7 +2131,7 @@ NET
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-net-0.8.10-i686.iso
+manjaro-net-0.8.11-i686.iso
 \end_layout
 
 \end_inset
@@ -2153,7 +2169,7 @@ CD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-net-0.8.10-x86_64.iso
+manjaro-net-0.8.11-x86_64.iso
 \end_layout
 
 \end_inset
@@ -4922,7 +4938,7 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-With Manjaro 0.8.10, Thus does an excellent job setting up your system.
+With Manjaro 0.8.11, Thus does an excellent job setting up your system.
  Once you have loaded the Live environment the installation steps are exactly
  the same as for a non-UEFI installation.
  The main difference is in the partition layout: this is important if you
