@@ -284,31 +284,6 @@ Core Team
 \end_layout
 
 \begin_layout Description
-Philip
-\begin_inset space ~
-\end_inset
-
-Müller Project Leader, Project Management and Coordination, Mirrors Manager,
- Packager, Developer, Web Developer
-\end_layout
-
-\begin_layout Description
-Roland
-\begin_inset space ~
-\end_inset
-
-Singer Founder, Designer, Developer, Web Developer, Packager
-\end_layout
-
-\begin_layout Description
-Guillaume
-\begin_inset space ~
-\end_inset
-
-Benoit Server Manager, Developer, Packager, Community Moderation
-\end_layout
-
-\begin_layout Description
 Alexandre
 \begin_inset space ~
 \end_inset
@@ -317,7 +292,55 @@ A.
 \begin_inset space ~
 \end_inset
 
-Arnt Developer, Community Moderation
+Arnt Developer
+\end_layout
+
+\begin_layout Description
+Guillaume
+\begin_inset space ~
+\end_inset
+
+Benoit Server Manager, Developer, Packager
+\end_layout
+
+\begin_layout Description
+Ramon
+\begin_inset space ~
+\end_inset
+
+Buldó Developer, Packager
+\end_layout
+
+\begin_layout Description
+Alexandru
+\begin_inset space ~
+\end_inset
+
+Ianu Systems Integrator, Packager
+\end_layout
+
+\begin_layout Description
+Łukasz
+\begin_inset space ~
+\end_inset
+
+Matysiak Developer
+\end_layout
+
+\begin_layout Description
+Rob
+\begin_inset space ~
+\end_inset
+
+McCathie Systems Integrator, Packager
+\end_layout
+
+\begin_layout Description
+Wlad
+\begin_inset space ~
+\end_inset
+
+Meixner Web Developer, Web Consultant
 \end_layout
 
 \begin_layout Description
@@ -338,35 +361,24 @@ Muhterem Manjaro KDE Edition Maintainer, Turkish IRC and web support, Manjaro
 \end_layout
 
 \begin_layout Description
-Wlad
+Philip
 \begin_inset space ~
 \end_inset
 
-Meixner Web Developer, Web Consultant
+Müller Project Leader, Project Management and Coordination, Mirrors Manager,
+ Packager, Developer, Web Developer
 \end_layout
 
 \begin_layout Description
-Ramon
+Roland
 \begin_inset space ~
 \end_inset
 
-Buldó Developer
+Singer Founder, Designer, Developer, Web Developer, Packager
 \end_layout
 
 \begin_layout Subsection*
-Maintainers
-\end_layout
-
-\begin_layout Description
-Rob
-\begin_inset space ~
-\end_inset
-
-McCathie Package Maintainer, Netbook Edition Maintainer
-\end_layout
-
-\begin_layout Description
-Cumali Cinnamon and Gnome Community Editions Maintainer
+Artwork
 \end_layout
 
 \begin_layout Description
@@ -378,11 +390,27 @@ Wiscombe
 \begin_inset space ~
 \end_inset
 
-(anex) MATE Community Edition Maintainer, Manjaro Artwork
+(anex) Manjaro Artwork, MATE Community Edition Maintainer
+\end_layout
+
+\begin_layout Subsection
+OpenRC Team
+\end_layout
+
+\begin_layout Description
+Artoo Packaging, Porting, Infrastructure
+\end_layout
+
+\begin_layout Description
+Aaditya
+\begin_inset space ~
+\end_inset
+
+Bagga Documentation, Testing, ISOs
 \end_layout
 
 \begin_layout Subsection*
-Forum, Community and Support
+Community and Support
 \end_layout
 
 \begin_layout Description
@@ -398,15 +426,23 @@ Kroon Community, IRC Support
 \end_layout
 
 \begin_layout Description
-shariebeth Community Global Moderator
-\end_layout
-
-\begin_layout Description
 dicktater Community Global Moderator
 \end_layout
 
 \begin_layout Description
+Esclapion LXQt Community Edition Maintainer, Community
+\end_layout
+
+\begin_layout Description
+excalibur1234 Community
+\end_layout
+
+\begin_layout Description
 Jonathan Community Global Moderator
+\end_layout
+
+\begin_layout Description
+shariebeth Community Global Moderator
 \end_layout
 
 \begin_layout Subsection*
@@ -438,6 +474,19 @@ Duff Community, Documentation and Wiki Management, Scripting and Configuration
 \end_layout
 
 \begin_layout Description
+Cumali Cinnamon and Gnome Community Editions Maintainer
+\end_layout
+
+\begin_layout Description
+Dan
+\begin_inset space ~
+\end_inset
+
+S.
+ Openbox Editions Maintainer
+\end_layout
+
+\begin_layout Description
 Handy Global Moderator, Wiki Contributor, Community Support
 \end_layout
 
@@ -447,15 +496,6 @@ Joshua
 \end_inset
 
 Strot Developer, Graphics Developer
-\end_layout
-
-\begin_layout Description
-Dan
-\begin_inset space ~
-\end_inset
-
-S.
- Openbox Editions Maintainer 
 \end_layout
 
 \begin_layout Section*
