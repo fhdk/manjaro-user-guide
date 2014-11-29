@@ -1309,35 +1309,27 @@ contains checksum hashes for all the available disc image files and will
 \end_layout
 
 \begin_layout LyX-Code
-fd99f9328103007b3a04d4a1a826e81769288ae4 manjaro-kde-0.8.8-i686.iso
+831df1a4e06893de7663a159f5f22ddcfc386cc4  manjaro-kde-0.8.10-i686.iso
 \end_layout
 
 \begin_layout LyX-Code
-2b997a76ef23d1ef0a3a819a2ed8bef1f2e9a1b5 manjaro-kde-0.8.8-x86_64.iso
+89240f1527d8ef8c8f8a57527fb64632a1160a16  manjaro-kde-0.8.10-x86_64.iso
 \end_layout
 
 \begin_layout LyX-Code
-18b7df6f12c2b9d2b35b7716e89d71b91b873805 manjaro-net-0.8.8-i686.iso
+6f0f26bd2a909343846c1acc8dddc3e128b6dbc4  manjaro-net-0.8.10-i686.iso
 \end_layout
 
 \begin_layout LyX-Code
-80fc756226625d7b23ef909135fca32714d795d2 manjaro-net-0.8.8-x86_64.iso
+602758c12061221566a823fa6886537f293be545  manjaro-net-0.8.10-x86_64.iso
 \end_layout
 
 \begin_layout LyX-Code
-b2fc1a5107e70f4cea2981ed941df5fc249a11ea manjaro-openbox-0.8.8-i686.iso
+4dac7697b8c1f4ccc508d8e2ba52ad898d18aba7  manjaro-xfce-0.8.10-i686.iso
 \end_layout
 
 \begin_layout LyX-Code
-b91b8a8d3133342f4cfdb1ba09c28ec20c8492e1 manjaro-openbox-0.8.8-x86_64.iso
-\end_layout
-
-\begin_layout LyX-Code
-590750cc76d11efb47a153f1fcfcd4b6689f055e manjaro-xfce-0.8.8-i686.iso
-\end_layout
-
-\begin_layout LyX-Code
-1b8fcf0d24972f3881c2a331fd202cb0842866aa manjaro-xfce-0.8.8-x86_64.iso
+d3220e2c74f9082e0e8b366b9ffd240bfceebde0  manjaro-xfce-0.8.10-x86_64.iso
 \end_layout
 
 \begin_layout Section
@@ -1527,22 +1519,6 @@ sha1sum: manjaro-net-0.8.11-x86_64.iso: No such file or directory
 
 \begin_layout LyX-Code
 manjaro-net-0.8.11-x86_64.iso: FAILED open or read
-\end_layout
-
-\begin_layout LyX-Code
-sha1sum: manjaro-openbox-0.8.11-i686.iso: No such file or directory
-\end_layout
-
-\begin_layout LyX-Code
-manjaro-openbox-0.8.11-i686.iso: FAILED open or read
-\end_layout
-
-\begin_layout LyX-Code
-sha1sum: manjaro-openbox-0.8.11-x86_64.iso: No such file or directory
-\end_layout
-
-\begin_layout LyX-Code
-manjaro-openbox-0.8.11-x86_64.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
@@ -1853,7 +1829,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="4">
+<lyxtabular version="3" rows="7" columns="4">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -1928,7 +1904,7 @@ manjaro-kde-0.8.11-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.3GB
+1.5GB
 \end_layout
 
 \end_inset
@@ -1966,83 +1942,7 @@ manjaro-kde-0.8.11-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.4GB
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Openbox
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-manjaro-openbox-0.8.11-i686.iso
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-653MB
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-CD
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-manjaro-openbox-0.8.11-x86_64.iso
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-695MB
+1.6GB
 \end_layout
 
 \end_inset
@@ -2080,7 +1980,7 @@ manjaro-xfce-0.8.11-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.1GB
+1.3GB
 \end_layout
 
 \end_inset
@@ -2118,7 +2018,7 @@ manjaro-xfce-0.8.11-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.3GB
+1.4GB
 \end_layout
 
 \end_inset
@@ -2138,7 +2038,7 @@ manjaro-xfce-0.8.11-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-NET
+Net
 \end_layout
 
 \end_inset
@@ -2156,7 +2056,7 @@ manjaro-net-0.8.11-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-440MB
+540MB
 \end_layout
 
 \end_inset
@@ -2194,7 +2094,7 @@ manjaro-net-0.8.11-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-590MB
+670MB
 \end_layout
 
 \end_inset
