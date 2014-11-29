@@ -5632,20 +5632,20 @@ in a terminal after booting into Manjaro and it will detect Windows and
 
 \begin_layout Chapter
 Advanced installation methods
+\end_layout
+
+\begin_layout Section
+The text-based installer
 \begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
-Advanced installation methods
+text-based installer
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-The text-based installer
 \end_layout
 
 \begin_layout Standard
