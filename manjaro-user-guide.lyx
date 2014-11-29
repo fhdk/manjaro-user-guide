@@ -5677,8 +5677,7 @@ n process, for example if they want to set up RAID or alter system configuration
 \begin_layout Standard
 
 \series bold
-The text-based installer is only recommended for advanced users, and currently
- not for users who require EFI-compatibility.
+The text-based installer is only recommended for advanced users.
 \end_layout
 
 \begin_layout Standard
