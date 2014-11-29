@@ -5671,7 +5671,7 @@ The Manjaro Live environment provides two installation tools: along with
 n process, for example if they want to set up RAID or alter system configuration
  options.
  It's also useful for very old machines and is the only installation method
- available for NET editions.
+ available for the Net edition.
 \end_layout
 
 \begin_layout Standard
@@ -6512,7 +6512,7 @@ Add/Remove Software
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -6534,7 +6534,7 @@ The
 Package Manager
 \series default
  allows you to search for, install, and remove software applications.
- In this example I have searched for the Firefox web browser, and am about
+ In this example I have searched for the Chromium web browser, and am about
  to install it.
  Once I'm happy with my selections I can click on the tick to continue.
 \begin_inset Newline newline
@@ -6548,7 +6548,7 @@ Pamac
 \series bold
 Octopi
 \series default
- (installed with the Openbox edition).
+ (installed with the KDE edition).
 \end_layout
 
 \end_inset
@@ -7706,47 +7706,6 @@ Apply
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/maintaining-your-system/pamac-updater.png
-	lyxscale 50
-	width 95col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Alternatively, you can load Pamac's full interface.
- As it's always a good idea to install updates before installing new software
- you will be presented with the available updates.
- To install the updates, just click 
-\series bold
-OK
-\series default
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -7800,7 +7759,7 @@ Octopi's update notifier is available from the system tray.
  An update check is performed automatically; all you have to do is click
  
 \series bold
-Run in terminal
+Yes
 \series default
  and any updates will proceed automatically!
 \end_layout
@@ -8088,12 +8047,8 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Pamac will show a confirmation that it installed the new software.
- You can 
-\series bold
-Close 
-\series default
-Pamac now if you want.
+The new software will show as installed within Pamac..
+ You can close Pamac now if you want.
 \end_layout
 
 \end_inset
@@ -8114,7 +8069,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/new-software-installed.png
+	filename images/maintaining-your-system/pamac-new-software-installed.png
 	lyxscale 50
 	width 95col%
 
@@ -8185,6 +8140,51 @@ Octopi allows easy access to the available software.
 Install
 \series default
 , then click the tick in the top-left corner to confirm.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/maintaining-your-system/octopi-install-optional-deps.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Some software will have other packages it can optionally use if they are
+ installed.
+ These 
+\begin_inset Quotes eld
+\end_inset
+
+optional dependencies
+\begin_inset Quotes erd
+\end_inset
+
+ can be selected here or ignored - you can always install them later if
+ you want to!
 \end_layout
 
 \end_inset
