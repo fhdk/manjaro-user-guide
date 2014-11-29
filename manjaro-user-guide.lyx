@@ -845,7 +845,7 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-There are four editions of Manjaro available for download.
+There are three editions of Manjaro available for download.
 \begin_inset Flex Marginnote
 status collapsed
 
@@ -866,7 +866,7 @@ http://manjaro.org/get-manjaro/
 
 \end_inset
 
- Three editions of Manjaro come complete with a pre-installed desktop environmen
+ Two editions of Manjaro come complete with a pre-installed desktop environmen
 t and a selection of popular software applications.
  Any of these would be a great choice for anyone who wants to try out Manjaro
  on a Live-CD 
@@ -1105,7 +1105,7 @@ Downloading a disc image
 Every release of Manjaro is available for download, whether the current
  stable release, upcoming test builds, or previous versions for historical
  interest.
- When you visit the download page you will find a link to each of the four
+ When you visit the download page you will find a link to each of the three
  main editions in both 32- and 64-bit versions, as well as a checksum file
  for each.
  A checksum can be used to check the integrity of the disc image file you
