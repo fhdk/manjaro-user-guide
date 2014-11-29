@@ -966,7 +966,7 @@ status open
 \begin_inset Graphics
 	filename images/welcome.png
 	lyxscale 33
-	width 50text%
+	width 95text%
 
 \end_inset
 
@@ -4000,7 +4000,7 @@ status collapsed
 \begin_inset Graphics
 	filename images/beginner-installer/boot-from-hdd.png
 	lyxscale 50
-	width 95col%
+	width 92col%
 
 \end_inset
 
@@ -4047,7 +4047,7 @@ status collapsed
 \begin_inset Graphics
 	filename images/beginner-installer/login.png
 	lyxscale 50
-	width 95col%
+	width 92col%
 
 \end_inset
 
@@ -4063,8 +4063,8 @@ Once Manjaro has booted enter your username and password and enjoy your
 \begin_inset Newline newline
 \end_inset
 
-If you like it, you might consider joining the Manjaro community on its
- forums or IRC channel.
+If you like Manjaro, you might consider joining the Manjaro community on
+ its forums or IRC channel.
  We look forward to meeting you!
 \end_layout
 
@@ -5106,7 +5106,7 @@ Volume
 \begin_inset space ~
 \end_inset
 
-label: MJRO_089
+label: MJRO_0811
 \end_layout
 
 \begin_layout Description
