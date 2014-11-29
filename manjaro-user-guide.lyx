@@ -37,8 +37,9 @@ fixltx2e
 \paperfontsize default
 \spacing single
 \use_hyperref true
-\pdf_title "Manjaro Linux 0.8.9 User Guide"
-\pdf_author "The Manjaro Development Team"
+\pdf_title "Manjaro Linux 0.8.11 User Guide"
+\pdf_author "Jonathon Fernyhough for The Manjaro Development Team"
+\pdf_subject "Manjaro Linux 0.8.11"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
 \pdf_bookmarksopen false
@@ -845,12 +846,13 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-There are three editions of Manjaro available for download.
+There are three official editions of Manjaro available for download, as
+ well as a number of unofficial 'community' editions.
 \begin_inset Flex Marginnote
 status collapsed
 
 \begin_layout Plain Layout
-To download Manjaro go to this web address: 
+To download Manjaro go to this web address:
 \begin_inset Flex URL
 status collapsed
 
@@ -866,10 +868,10 @@ http://manjaro.org/get-manjaro/
 
 \end_inset
 
- Two editions of Manjaro come complete with a pre-installed desktop environmen
-t and a selection of popular software applications.
- Any of these would be a great choice for anyone who wants to try out Manjaro
- on a Live-CD 
+ Two of the three official editions come complete with a pre-installed desktop
+ environment and a selection of popular software applications, and either
+ of these would be a great choice for anyone who wants to try out Manjaro
+ on a Live-CD
 \begin_inset Flex Marginnote
 status collapsed
 
@@ -921,7 +923,7 @@ Net This edition of Manjaro provides only a base installation, stripped
  of all but the most basic pre-installed software.
  Starting from the command line, this is suitable for more experienced users
  who may want to build their own Manjaro system from the ground up.
- A disc image for a NET edition will always begin with 
+ A disc image for a Net edition will always begin with 
 \series bold
 manjaro-net
 \series default
@@ -7254,7 +7256,7 @@ Manjaro comes with excellent printing support.
 \end_layout
 
 \begin_layout Standard
-If you installed a minimal or net edition you may have to install printing
+If you installed a minimal or Net edition you may have to install printing
  support first:
 \end_layout
 
