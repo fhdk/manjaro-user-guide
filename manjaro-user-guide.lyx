@@ -675,7 +675,7 @@ Pre-installed graphical applications to easily install software and update
 \end_layout
 
 \begin_layout Itemize
-Pre-installed codecs to play multimedia files, and
+Pre-installed codecs to play multimedia files,
 \end_layout
 
 \begin_layout Itemize
@@ -722,7 +722,7 @@ rolling release
 \end_layout
 
 \begin_layout Itemize
-Access to the Arch User Repositories, and
+Access to the Arch User Repositories
 \end_layout
 
 \begin_layout Itemize
@@ -751,7 +751,7 @@ Automatic installation of the necessary software (e.g.
 
 \begin_layout Itemize
 Dedicated software repositories that deliver fully tested and stable software
- packages, and
+ packages
 \end_layout
 
 \begin_layout Itemize
@@ -900,23 +900,6 @@ manjaro-xfce
 \end_layout
 
 \begin_layout Description
-Openbox Openbox is a small, light desktop environment, and this version
- is designed to use as few resources as possible while still providing a
- full desktop experience.
- If you like a minimal environment, or need to squeeze every last drop of
- performance from your system, this version is well worth a look.
- Openbox edition disc image files start with 
-\series bold
-manjaro
-\series default
--
-\series bold
-openbox
-\series default
-.
-\end_layout
-
-\begin_layout Description
 KDE This version includes the K Desktop Environment.
  It offers a highly integrated environment with plenty of functionality
  and options.
@@ -967,7 +950,7 @@ x86_64.iso
 \begin_inset Float table
 wide true
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -976,7 +959,7 @@ status collapsed
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -992,17 +975,10 @@ status collapsed
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/editions/openbox.png
-	lyxscale 33
-	width 50text%
-
-\end_inset
-
 
 \end_layout
 
@@ -1010,7 +986,7 @@ status collapsed
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1019,11 +995,11 @@ Xfce edition
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Openbox edition
+
 \end_layout
 
 \end_inset
@@ -1100,7 +1076,7 @@ Manjaro community editions
 \end_layout
 
 \begin_layout Standard
-In addition to the four main Manjaro editions, there are a number of editions
+In addition to the three main Manjaro editions, there are a number of editions
  that have certain software or desktop environments preinstalled.
  This user manual assumes you are using the Xfce version, and all screenshots
  will be from this.
@@ -1117,8 +1093,8 @@ The edition names should give a clear indication of the desktop environment
 \end_layout
 
 \begin_layout Standard
-There are currently four main community editions: Cinnamon, GNOME, MATE,
- and Netbook.
+There are several main community editions: Cinnamon, GNOME, MATE, Netbook,
+ Openbox, Openbox OpenRC, and PekWM.
 \end_layout
 
 \begin_layout Section
@@ -1326,7 +1302,7 @@ To verify the integrity of the disc image you have to download the appropriate
  image file.
  For example, the file 
 \series bold
-manjaro-0.8.10-sha1sum.txt 
+manjaro-0.8.11-sha1sum.txt 
 \series default
 contains checksum hashes for all the available disc image files and will
  have content similar to this:
@@ -1436,7 +1412,7 @@ If the code generated from the disc image matches that contained in the
 \begin_layout Standard
 From this point on we'll assume you are using the file 
 \series bold
-manjaro-0.8.10-sha1sum.txt
+manjaro-0.8.11-sha1sum.txt
 \series default
 .
 \begin_inset Flex Marginnote
@@ -1593,7 +1569,7 @@ Manual verification
 To manually check the integrity of your downloaded file, first open the
  downloaded 
 \series bold
-manjaro-0.8.10-sha1sum.txt
+manjaro-0.8.11-sha1sum.txt
 \series default
  checksum file using a text editor such as Gedit.
  Once the checksum file has been opened, and the codes are visible, open
@@ -1790,7 +1766,7 @@ To speed up the process it's probably a good idea to deselect the hashes
 
  To verify the checksum is correct, open the 
 \series bold
-manjaro-0.8.10-sha1sum.txt
+manjaro-0.8.11-sha1sum.txt
 \series default
  in a text editor such as Notepad, copy the checksum for the disc image
  file you have downloaded, and paste it into the verification box.
@@ -3510,7 +3486,7 @@ status open
 \begin_layout Plain Layout
 
 http://wiki.manjaro.org/index.php?title=Graphical_Installation_Guide_for_Beginners_
-0.8.10
+0.8.11
 \end_layout
 
 \end_inset
@@ -4277,7 +4253,7 @@ status open
 \begin_layout Plain Layout
 
 http://wiki.manjaro.org/index.php?title=Graphical_Installation_Guide_for_Experience
-d_Users_0.8.10
+d_Users_0.8.11
 \end_layout
 
 \end_inset
