@@ -6167,6 +6167,37 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
+	filename images/welcome-to-manjaro/add-to-favourites.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Add to Favourites
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float marginfigure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
 	filename images/welcome-to-manjaro/remove-from-favourites.png
 	lyxscale 50
 	width 100col%
@@ -6186,37 +6217,6 @@ Remove from Favourites
 \end_layout
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float marginfigure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/welcome-to-manjaro/add-to-favourites.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Add to Favourites
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -6474,7 +6474,7 @@ Mail Reader
  (in a similar way to all mail readers) but once that is set up you should
  be good to go! As with the web browser, there are a range of choices for
  mail reader.
- For example, if you prefer Thunderbird you can install it!
+ For example, if you prefer Claws or Sylpheed you can install it!
 \end_layout
 
 \end_inset
@@ -6512,7 +6512,7 @@ Add/Remove Software
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
