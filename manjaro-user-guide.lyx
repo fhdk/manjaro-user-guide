@@ -4484,8 +4484,8 @@ The first partition will contain the system and boot files (
 \series default
 ).
  As such, we must allocate enough space for all system programs.
- 20GB is generally sufficient, but with the 40GB disc in this machine we've
- reduced this to 15GB.
+ 20GB is generally sufficient, but if you have a smaller disc you can reduce
+ this.
  We have selected EXT4 as the file system and made sure to set the mountpoint
  to 
 \series bold
@@ -4537,7 +4537,7 @@ status collapsed
 
 \begin_layout Plain Layout
 We've added a second partition to hold our user documents.
- It's set to be 25GB in size, with the EXT4 file system, and the mountpoint
+ It's set to be 295GB in size, with the EXT4 file system, and the mountpoint
  is set to 
 \series bold
 /home
@@ -4584,7 +4584,7 @@ Finally, we've added a swap partition.
  This will act as extra (very, very slow) RAM if we run out.
  It's not really suitable as anything other than a last resort but can sometimes
  make the difference between losing work and quitting cleanly.
- This is set to take the remainder of the free space, about 2GB.
+ This is set to take the remainder of the free space, about 4GB.
 \end_layout
 
 \end_inset
