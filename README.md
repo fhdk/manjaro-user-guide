@@ -8,7 +8,7 @@ The style in use is [tufte-book](http://wiki.lyx.org/Layouts/Tufte-book). This p
 
 To enable the tufte-book layout within LyX on Manjaro you will need to install the following packages:
 
-    sudo pacman -S lyx texlive-pictures texlive-latexextra ttf-comfortaa
+    sudo pacman -S lyx texlive-pictures texlive-latexextra ttf-comfortaa ghostscript
 
 Installing LyX should pick up the base dependencies; tufte-book requires the extra libraries. Remember to reconfigure LyX after installing the new libraries!
 
