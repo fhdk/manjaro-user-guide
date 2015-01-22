@@ -17,3 +17,11 @@ Installing LyX should pick up the base dependencies; tufte-book requires the ext
 Current cover art is created in Inkscape. LyX will neatly insert/append PDF files - to make things easy cover art should therefore be exported as a PDF document.
 
 ![Manjaro User Guide cover](https://raw.githubusercontent.com/manjaro/manjaro-user-guide/master/cover.png)
+
+## Generation
+
+To generate our final pdf file use followed cmds:
+
+    lyx --export pdf5 manjaro-user-guide.lyx
+    gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -sOutputFile=manjaro-user-guide-printer.pdf manjaro-user-guide.pdf
+
