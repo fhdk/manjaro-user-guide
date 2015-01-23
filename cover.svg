@@ -35,11 +35,11 @@
     <linearGradient
        id="linearGradient3156">
       <stop
-         style="stop-color:#00801f;stop-opacity:1;"
+         style="stop-color:#006d80;stop-opacity:1;"
          offset="0"
          id="stop3158" />
       <stop
-         style="stop-color:#2bffc7;stop-opacity:1;"
+         style="stop-color:#2bff40;stop-opacity:1;"
          offset="1"
          id="stop3160" />
     </linearGradient>
@@ -141,7 +141,7 @@
        x2="1058.45"
        y1="873.87067"
        x1="99.062317"
-       gradientTransform="matrix(1.3564544,0,0,1.3564544,-182.18083,-248.15786)"
+       gradientTransform="matrix(1.3835492,0,0.24835609,1.3835492,-344.33213,-246.30955)"
        gradientUnits="userSpaceOnUse"
        id="linearGradient4649"
        xlink:href="#linearGradient3156-7"
@@ -216,11 +216,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="15.106725"
-     inkscape:cy="455.94427"
+     inkscape:zoom="0.35"
+     inkscape:cx="96.447622"
+     inkscape:cy="275.39008"
      inkscape:document-units="px"
-     inkscape:current-layer="g4816"
+     inkscape:current-layer="layer3"
      showgrid="false" />
   <metadata
      id="metadata3108">
@@ -238,7 +238,8 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-62.362183)">
+     transform="translate(0,-62.362183)"
+     style="display:inline">
     <path
        style="fill:url(#linearGradient3938);fill-opacity:1;stroke:none"
        d="m -1.9796983,61.750144 575.8875983,0 L -1.9796983,986.03586 z"
@@ -268,12 +269,11 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="M"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <path
        inkscape:connector-curvature="0"
        id="path3969"
-       d="M 441.90658,-340.68563 25.1528,25.74443 l 278.03365,215.37688 89.57808,-78.76134 0.27936,0.21651 2.63473,-2.31657 L 713.65598,406.57884 1038.1969,121.22672 441.90028,-340.6904 z M 1079.7145,153.38798 56.03304,1053.4583 348.47544,1279.9969 1372.1569,379.92645 1079.7145,153.38798 z M 398.42915,224.38482 -263.22745,806.1454 14.52062,1021.3009 676.17718,439.54045 398.42915,224.38482 z M -12.21143,58.59686 -581.77502,559.38473 -303.74131,774.7616 265.82225,273.97372 -12.21143,58.59686 z"
+       d="M 275.28015,-340.68553 -82.707721,33.063866 240.31339,252.74284 l 76.94679,-80.33458 0.32458,0.22084 2.26322,-2.36284 L 689.2759,421.50534 968.05372,130.45339 275.27285,-340.6904 z M 1016.2891,163.25706 136.95564,1081.306 476.71694,1312.3697 1356.0504,394.32058 1016.2891,163.25706 z M 334.39421,235.67204 -233.96303,829.05313 88.726261,1048.5063 657.08348,455.12535 334.39421,235.67204 z M -114.80327,66.572515 -604.05343,577.36349 -281.03226,797.04245 208.21786,286.25147 -114.80327,66.572515 z"
        style="fill:url(#linearGradient4649);fill-opacity:1;stroke:none;display:inline" />
   </g>
   <g
@@ -314,7 +314,7 @@
            y="957.19183"
            x="421.06216"
            id="tspan4168-7"
-           sodipodi:role="line">user guide 0.8.11</tspan></text>
+           sodipodi:role="line">user guide 0.8.12</tspan></text>
     </g>
   </g>
   <g
