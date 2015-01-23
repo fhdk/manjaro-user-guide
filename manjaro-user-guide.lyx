@@ -37,9 +37,9 @@ fixltx2e
 \paperfontsize default
 \spacing single
 \use_hyperref true
-\pdf_title "Manjaro Linux 0.8.11 User Guide"
+\pdf_title "Manjaro Linux 0.8.12 User Guide"
 \pdf_author "Jonathon Fernyhough for The Manjaro Development Team"
-\pdf_subject "Manjaro Linux 0.8.11"
+\pdf_subject "Manjaro Linux 0.8.12"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
 \pdf_bookmarksopen false
