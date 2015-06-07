@@ -6777,41 +6777,6 @@ The Manjaro discussion forum is a great place to find out more about the
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/getting-help/forum-languages.png
-	lyxscale 50
-	width 95col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-If English isn't your preferred language you can try one of the other forums.
- There's an up-to-date list on the Manjaro homepage.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -6837,46 +6802,11 @@ IRC
 \family typewriter
 \size larger
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
 http://manjaro.org/irc-channel/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/getting-help/irc-connect.png
-	lyxscale 50
-	width 95col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-To talk on the IRC channel you will have to connect first.
- To make sure you're human you'll have to fill in a CAPTCHA form.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -6905,51 +6835,8 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Once connected you'll be able to talk in real-time with people who can help.
- They are a really friendly bunch!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/getting-help/irc-languages.png
-	lyxscale 50
-	width 95col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-If English isn't your preferred language, don't worry.
- There are four IRC channels dedicated to English, German, French, and Russian
- language discussion.
+To talk on the IRC channel you will have to connect first.
+ Hexchat comes installed in the Xfce edition.
 \end_layout
 
 \end_inset
