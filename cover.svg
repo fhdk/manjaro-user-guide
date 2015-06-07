@@ -14,13 +14,24 @@
    height="990"
    id="svg3103"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="cover.svg"
    inkscape:export-filename="/home/jonathon/documents/Manjaro/manjaro-user-guide/cover.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
      id="defs3105">
+    <linearGradient
+       id="linearGradient4185">
+      <stop
+         id="stop4187"
+         offset="0"
+         style="stop-color:#800078;stop-opacity:1" />
+      <stop
+         id="stop4189"
+         offset="1"
+         style="stop-color:#e7ff2b;stop-opacity:1" />
+    </linearGradient>
     <linearGradient
        id="linearGradient3956">
       <stop
@@ -45,7 +56,7 @@
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3156"
+       xlink:href="#linearGradient4185"
        id="linearGradient3162"
        x1="757.14288"
        y1="221.42856"
@@ -55,7 +66,7 @@
        gradientTransform="translate(0.0203017,62.321573)" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3156"
+       xlink:href="#linearGradient4185"
        id="linearGradient3938"
        x1="59.500004"
        y1="42.142868"
@@ -65,7 +76,7 @@
        gradientTransform="translate(-1.9796983,60.321573)" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3156"
+       xlink:href="#linearGradient4185"
        id="linearGradient3954"
        x1="357.14285"
        y1="776.42859"
@@ -216,11 +227,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="96.447622"
-     inkscape:cy="275.39008"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="139.77623"
+     inkscape:cy="495.09322"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="g4816"
      showgrid="false" />
   <metadata
      id="metadata3108">
@@ -241,7 +252,7 @@
      transform="translate(0,-62.362183)"
      style="display:inline">
     <path
-       style="fill:url(#linearGradient3938);fill-opacity:1;stroke:none"
+       style="fill:url(#linearGradient3938);fill-opacity:1.0;stroke:none"
        d="m -1.9796983,61.750144 575.8875983,0 L -1.9796983,986.03586 z"
        id="path3148"
        inkscape:connector-curvature="0"
@@ -253,7 +264,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <path
-       style="fill:url(#linearGradient3954);fill-opacity:1;stroke:none"
+       style="fill:url(#linearGradient3954);fill-opacity:1.0;stroke:none"
        d="m 445.73454,625.75014 -91.60186,432.52536 411.68859,-1.5152 1.51523,-231.84699 z"
        id="path3154"
        inkscape:connector-curvature="0"
@@ -308,11 +319,11 @@
          sodipodi:linespacing="125%"
          id="text4166-3"
          y="957.19183"
-         x="421.06216"
-         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;filter:url(#filter4514-6);font-family:Comfortaa;-inkscape-font-specification:Comfortaa"
+         x="417.06216"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;filter:url(#filter4514-6)"
          xml:space="preserve"><tspan
            y="957.19183"
-           x="421.06216"
+           x="417.06216"
            id="tspan4168-7"
            sodipodi:role="line">user guide 0.8.13</tspan></text>
     </g>

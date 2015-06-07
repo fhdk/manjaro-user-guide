@@ -403,7 +403,8 @@ Linares
 \begin_inset space ~
 \end_inset
 
-(mcder3) Manjaro Artwork: Plasma5 Designer, Theme designer, Installer visual design
+(mcder3) Manjaro Artwork: Plasma5 Designer, Theme designer, Installer visual
+ design
 \end_layout
 
 \begin_layout Subsection
@@ -1918,7 +1919,7 @@ manjaro-kde-0.8.13-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.5GB
+1.7GB
 \end_layout
 
 \end_inset
@@ -1956,7 +1957,7 @@ manjaro-kde-0.8.13-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.6GB
+1.9GB
 \end_layout
 
 \end_inset
@@ -1994,7 +1995,7 @@ manjaro-xfce-0.8.13-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.3GB
+1.2GB
 \end_layout
 
 \end_inset
@@ -2830,8 +2831,92 @@ Once it has finished, reboot your system, making sure to select the USB
  flash drive as the boot device.
 \end_layout
 
+\begin_layout Subsection
+Using the CLI
+\end_layout
+
+\begin_layout Standard
+If you don't want to install extra software, and you are comfortable using
+ the command line, there's an even easier way of writing a disc image to
+ a USB device.
+\end_layout
+
+\begin_layout Enumerate
+Connect the USB flash drive to your PC, open a terminal and 
+\family typewriter
+cd
+\family default
+ to where you downloaded the disc image.
+\end_layout
+
+\begin_layout Enumerate
+Check the device identifier with: 
+\family typewriter
+sudo fdisk -l
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Write the image with: 
+\family typewriter
+
+\begin_inset Newline newline
+\end_inset
+
+sudo dd if=manjaro-0.8.13-x86_64.iso of=/dev/(Device identifier from above)
+ bs=4M
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family default
+My USB drive is at /dev/sdc so I would use: 
+\family typewriter
+
+\begin_inset Newline newline
+\end_inset
+
+sudo dd if=manjaro-0.8.13-x86_64.iso of=/dev/sdc bs=4M
+\end_layout
+
+\begin_layout Enumerate
+Once completed reboot your system and boot from the USB drive in the normal
+ way.
+\end_layout
+
 \begin_layout Section
 Writing to a USB flash drive in Microsoft Windows
+\end_layout
+
+\begin_layout Standard
+For Windows users using USB media, Rufus
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://rufus.akeo.ie/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ is highly recommended.
+ Rufus should use the following settings:
 \end_layout
 
 \begin_layout Standard
@@ -2842,7 +2927,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/win32-imagewriter.png
+	filename images/imagewriter-windows-rufus.png
 	width 100col%
 
 \end_inset
@@ -2854,17 +2939,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Windows ImageWriter
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://sourceforge.net/projects/win32diskimager/
+Rufus with recommended settings
 \end_layout
 
 \end_inset
@@ -2877,99 +2952,61 @@ http://sourceforge.net/projects/win32diskimager/
 
 \end_layout
 
+\begin_layout Description
+Device: "choose your USB" (Attention: choose correctly, the device selected
+ here will be formatted!)
+\end_layout
+
+\begin_layout Description
+Partition
+\begin_inset space ~
 \end_inset
 
-We recommend you use 
-\series bold
-ImageWriter For Windows
-\series default
-, which is a free application designed to write disc images to USB flash
- drives as well as Compact Flash (CF) and Secure Digital (SD) cards.
- Once Imagewriter has been downloaded and installed, ensure that your USB
- flash drive is plugged in before starting it.
+scheme: MBR partition scheme for BIOS or UEFI
+\end_layout
+
+\begin_layout Description
+File
+\begin_inset space ~
+\end_inset
+
+system: FAT32 (Default)
+\end_layout
+
+\begin_layout Description
+Cluster
+\begin_inset space ~
+\end_inset
+
+size: 4096 bytes (Default)
+\end_layout
+
+\begin_layout Description
+Volume
+\begin_inset space ~
+\end_inset
+
+label: MJRO0813
+\end_layout
+
+\begin_layout Description
+Format
+\begin_inset space ~
+\end_inset
+
+Options: Quick format.
+ Create a bootable disk using: ISO Image (Click on the DVD icon to select
+ your downloaded disc image).
+ Create extended label and icon files.
 \end_layout
 
 \begin_layout Standard
-If you find that ImageWriter is unable to start, you might have to download
- Microsoft's .NET 2.0 Runtime Framework.
- This is needed by some software programs though it is normally already
- installed on your Windows PC.
-\end_layout
-
-\begin_layout Standard
-In addition, if an error message is displayed upon starting the process
- on Windows Vista and later, you might need to open ImageWriter by first
- right-clicking on the icon, and then selecting the 
+Click 
 \series bold
-Run as Administrator
+Start
 \series default
- option.
-\begin_inset Flex Marginnote
-status open
-
-\begin_layout Plain Layout
-Make sure that Windows Explorer is closed before attempting to write the
- disc image, otherwise it may block access to the USB flash drive.
- If this happens the following error message will be displayed:
-\series bold
- system.componentModel.Win32Exception: Access is denied.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-For more detailed information about the software it's worth reading the
- website, though the process is very straightforward:
-\end_layout
-
-\begin_layout Enumerate
-Click the select button (folder icon).
-\end_layout
-
-\begin_layout Enumerate
-Navigate to and select the Manjaro disc image.
-\end_layout
-
-\begin_layout Enumerate
-Select your USB flash drive from the 
-\series bold
-Device 
-\series default
-menu.
-\end_layout
-
-\begin_layout Enumerate
-Click the 
-\series bold
-Write
-\series default
- button.
-\end_layout
-
-\begin_layout Enumerate
-Once it has finished, reboot your system, making sure to select the USB
- flash drive as the boot device.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Marginnote
-status collapsed
-
-\begin_layout Plain Layout
-Re-partitioning your USB stick as a RAW data type will result in all data
- present being destroyed, and will render it unusable for other purposes
- until reformatted back to its original partition type
-\end_layout
-
-\end_inset
-
-If for some reason the writing process is unsuccessful the ImageWriter authors
- recommend that you use a partitioning tool to reformat the USB flash drive
- as a RAW partition type, then try again.
- Unfortunately this process is outside the scope of this guide.
+, and you are done! (though it takes between around two and five minutes
+ to complete).
 \end_layout
 
 \begin_layout Part
@@ -3378,7 +3415,9 @@ This guide is intended for those with limited technical knowledge and experience
 \begin_layout Standard
 Where possible, make sure you are connected to the internet before booting
  from your installation media into the Live environment.
- If you have a hard-wired connection via an Ethernet cable, then Manjaro
+ This allows the installer to update itself to the very latest available
+ version.
+ If you have a hard-wired connection via an Ethernet cable then Manjaro
  will automatically connect to the internet without you having to do anything.
  Otherwise, once you have booted into Manjaro's desktop, you will need to
  select and then connect to your wireless network.
@@ -4500,7 +4539,7 @@ The first partition will contain the system and boot files (
  As such, we must allocate enough space for all system programs.
  20GB is generally sufficient, but if you have a smaller disc you can reduce
  this.
- We have selected EXT4 as the file system and made sure to set the mountpoint
+ We have selected XFS as the file system and made sure to set the mountpoint
  to 
 \series bold
 /
@@ -4551,7 +4590,7 @@ status collapsed
 
 \begin_layout Plain Layout
 We've added a second partition to hold our user documents.
- It's set to be 295GB in size, with the EXT4 file system, and the mountpoint
+ It's set to be 60GB in size, with the XFS file system, and the mountpoint
  is set to 
 \series bold
 /home
@@ -5031,7 +5070,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -5096,7 +5135,7 @@ Partition
 \begin_inset space ~
 \end_inset
 
-scheme: GPT partition scheme for UEFI computer
+scheme: GPT partition scheme for UEFI
 \end_layout
 
 \begin_layout Description
@@ -5112,7 +5151,7 @@ Cluster
 \begin_inset space ~
 \end_inset
 
-size: 8192 bytes (Default)
+size: 4096 bytes (Default)
 \end_layout
 
 \begin_layout Description
@@ -5120,7 +5159,7 @@ Volume
 \begin_inset space ~
 \end_inset
 
-label: MJRO_0812
+label: MJRO0813
 \end_layout
 
 \begin_layout Description
