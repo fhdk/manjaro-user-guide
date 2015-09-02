@@ -37,9 +37,9 @@ fixltx2e
 \paperfontsize default
 \spacing single
 \use_hyperref true
-\pdf_title "Manjaro Linux 0.8.13 User Guide"
+\pdf_title "Manjaro Linux 15.09 User Guide"
 \pdf_author "Jonathon Fernyhough for The Manjaro Development Team"
-\pdf_subject "Manjaro Linux 0.8.13"
+\pdf_subject "Manjaro Linux 15.09"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
 \pdf_bookmarksopen false
@@ -107,7 +107,7 @@ User Guide
 \end_layout
 
 \begin_layout Author
-Manjaro Linux 0.8.13
+Manjaro Linux 15.09
 \end_layout
 
 \begin_layout Standard
@@ -468,7 +468,7 @@ Jonathon
 \begin_inset space ~
 \end_inset
 
-Fernyhough Editor of the User Guide 0.8.9-0.8.13, Community Moderation
+Fernyhough Editor of the User Guide 0.8.9-15.09, Community Moderation
 \end_layout
 
 \begin_layout Description
@@ -1317,7 +1317,7 @@ To verify the integrity of the disc image you have to download the appropriate
  image file.
  For example, the file 
 \series bold
-manjaro-0.8.13-sha1sum.txt 
+manjaro-15.09-sha1sum.txt 
 \series default
 contains checksum hashes for all the available disc image files and will
  have content similar to this:
@@ -1419,7 +1419,7 @@ If the code generated from the disc image matches that contained in the
 \begin_layout Standard
 From this point on we'll assume you are using the file 
 \series bold
-manjaro-0.8.13-sha1sum.txt
+manjaro-15.09-sha1sum.txt
 \series default
 .
 \begin_inset Flex Marginnote
@@ -1475,7 +1475,7 @@ jonathon@box:~/download$ ls
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-0.8.13-sha1sum.txt  manjaro-xfce-0.8.13-x86_64.iso
+manjaro-15.09-sha1sum.txt  manjaro-xfce-15.09-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1488,7 +1488,7 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-jonathon@box:~/download$ sha1sum -c manjaro-0.8.13-sha1sum.txt
+jonathon@box:~/download$ sha1sum -c manjaro-15.09-sha1sum.txt
 \end_layout
 
 \begin_layout Standard
@@ -1505,47 +1505,47 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-kde-0.8.13-i686.iso: No such file or directory
+sha1sum: manjaro-kde-15.09-i686.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-kde-0.8.13-i686.iso: FAILED open or read
+manjaro-kde-15.09-i686.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-kde-0.8.13-x86_64.iso: No such file or directory
+sha1sum: manjaro-kde-15.09-x86_64.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-kde-0.8.13-x86_64.iso: FAILED open or read
+manjaro-kde-15.09-x86_64.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-net-0.8.13-i686.iso: No such file or directory
+sha1sum: manjaro-net-15.09-i686.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-net-0.8.13-i686.iso: FAILED open or read
+manjaro-net-15.09-i686.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-net-0.8.13-x86_64.iso: No such file or directory
+sha1sum: manjaro-net-15.09-x86_64.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-net-0.8.13-x86_64.iso: FAILED open or read
+manjaro-net-15.09-x86_64.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-xfce-0.8.13-i686.iso: No such file or directory
+sha1sum: manjaro-xfce-15.09-i686.iso: No such file or directory
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-xfce-0.8.13-i686.iso: FAILED open or read
+manjaro-xfce-15.09-i686.iso: FAILED open or read
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-xfce-0.8.13-x86_64.iso: OK
+sha1sum: manjaro-xfce-15.09-x86_64.iso: OK
 \end_layout
 
 \begin_layout LyX-Code
@@ -1560,7 +1560,7 @@ Manual verification
 To manually check the integrity of your downloaded file, first open the
  downloaded 
 \series bold
-manjaro-0.8.13-sha1sum.txt
+manjaro-15.09-sha1sum.txt
 \series default
  checksum file using a text editor such as Gedit.
  Once the checksum file has been opened, and the codes are visible, open
@@ -1626,13 +1626,13 @@ jonathon@box:~/download$
 \family typewriter
  sha1sum manjaro-xfce-
 \family default
-0.8.13
+15.09
 \family typewriter
 -x86_64.iso
 \end_layout
 
 \begin_layout Standard
-This command generates a hash code for the 64-bit Manjaro Xfce 0.8.13 disc
+This command generates a hash code for the 64-bit Manjaro Xfce 15.09 disc
  image which can then be manually compared to the code contained in the
  checksum file.
 \end_layout
@@ -1757,7 +1757,7 @@ To speed up the process it's probably a good idea to deselect the hashes
 
  To verify the checksum is correct, open the 
 \series bold
-manjaro-0.8.13-sha1sum.txt
+manjaro-15.09-sha1sum.txt
 \series default
  in a text editor such as Notepad, copy the checksum for the disc image
  file you have downloaded, and paste it into the verification box.
@@ -1910,7 +1910,7 @@ KDE
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-0.8.13-i686.iso
+manjaro-kde-15.09-i686.iso
 \end_layout
 
 \end_inset
@@ -1948,7 +1948,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-0.8.13-x86_64.iso
+manjaro-kde-15.09-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1986,7 +1986,7 @@ Xfce
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-0.8.13-i686.iso
+manjaro-xfce-15.09-i686.iso
 \end_layout
 
 \end_inset
@@ -2024,7 +2024,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-0.8.13-x86_64.iso
+manjaro-xfce-15.09-x86_64.iso
 \end_layout
 
 \end_inset
@@ -2062,7 +2062,7 @@ Net
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-net-0.8.13-i686.iso
+manjaro-net-15.09-i686.iso
 \end_layout
 
 \end_inset
@@ -2100,7 +2100,7 @@ CD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-net-0.8.13-x86_64.iso
+manjaro-net-15.09-x86_64.iso
 \end_layout
 
 \end_inset
@@ -2865,7 +2865,7 @@ Write the image with:
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-0.8.13-x86_64.iso of=/dev/(Device identifier from above)
+sudo dd if=manjaro-15.09-x86_64.iso of=/dev/(Device identifier from above)
  bs=4M
 \begin_inset Newline newline
 \end_inset
@@ -2882,7 +2882,7 @@ My USB drive is at /dev/sdc so I would use:
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-0.8.13-x86_64.iso of=/dev/sdc bs=4M
+sudo dd if=manjaro-15.09-x86_64.iso of=/dev/sdc bs=4M
 \end_layout
 
 \begin_layout Enumerate
@@ -2986,7 +2986,7 @@ Volume
 \begin_inset space ~
 \end_inset
 
-label: MJRO0813
+label: MJRO1509
 \end_layout
 
 \begin_layout Description
@@ -3439,7 +3439,7 @@ status open
 \begin_layout Plain Layout
 
 http://wiki.manjaro.org/index.php?title=Graphical_Installation_Guide_for_Beginners_
-0.8.13
+15.09
 \end_layout
 
 \end_inset
@@ -4206,7 +4206,7 @@ status open
 \begin_layout Plain Layout
 
 http://wiki.manjaro.org/index.php?title=Graphical_Installation_Guide_for_Experience
-d_Users_0.8.13
+d_Users_15.09
 \end_layout
 
 \end_inset
@@ -4907,7 +4907,7 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-With Manjaro 0.8.13, Thus does an excellent job setting up your system.
+With Manjaro 15.09, Thus does an excellent job setting up your system.
  Once you have loaded the Live environment the installation steps are exactly
  the same as for a non-UEFI installation.
  The main difference is in the partition layout: this is important if you
@@ -5159,7 +5159,7 @@ Volume
 \begin_inset space ~
 \end_inset
 
-label: MJRO0813
+label: MJRO1509
 \end_layout
 
 \begin_layout Description
@@ -9021,7 +9021,7 @@ Ensures no packages are left out of line with the current repository state.
 \end_layout
 
 \begin_layout Standard
-To make things easier, Manjaro 0.8.13 includes a command alias
+To make things easier, Manjaro 15.09 includes a command alias
 \begin_inset Foot
 status open
 
