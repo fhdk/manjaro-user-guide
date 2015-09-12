@@ -37,9 +37,9 @@ fixltx2e
 \paperfontsize default
 \spacing single
 \use_hyperref true
-\pdf_title "Manjaro Linux 0.8.13 User Guide"
+\pdf_title "Manjaro Linux 15.09 User Guide"
 \pdf_author "Jonathon Fernyhough for The Manjaro Development Team"
-\pdf_subject "Manjaro Linux 0.8.13"
+\pdf_subject "Manjaro Linux 15.09"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
 \pdf_bookmarksopen false
@@ -2981,7 +2981,7 @@ Volume
 \begin_inset space ~
 \end_inset
 
-label: MJRO0813
+label: MJRO1509
 \end_layout
 
 \begin_layout Description
@@ -5154,7 +5154,7 @@ Volume
 \begin_inset space ~
 \end_inset
 
-label: MJRO0813
+label: MJRO1509
 \end_layout
 
 \begin_layout Description
