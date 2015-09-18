@@ -11,9 +11,6 @@
 \makeatother
 \end_preamble
 \use_default_options true
-\begin_modules
-fixltx2e
-\end_modules
 \maintain_unincluded_children false
 \language british
 \language_package default
@@ -30,7 +27,7 @@ fixltx2e
 \font_sf_scale 100
 \font_tt_scale 100
 \graphics default
-\default_output_format pdf5
+\default_output_format default
 \output_sync 0
 \bibtex_command default
 \index_command default
@@ -53,14 +50,14 @@ fixltx2e
 \use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
-\use_package cancel 0
+\use_package cancel 1
 \use_package esint 1
 \use_package mathdots 1
-\use_package mathtools 0
+\use_package mathtools 1
 \use_package mhchem 1
-\use_package stackrel 0
-\use_package stmaryrd 0
-\use_package undertilde 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
 \biblio_style plain
@@ -142,13 +139,13 @@ thispagestyle{empty}
 
 \begin_layout Full Width
 \align left
-Copyright 
+Copyright
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-
+ 
 \backslash
 copyright
 \backslash
@@ -201,7 +198,7 @@ https://creativecommons.org/licenses/by-sa/4.0/legalcode
 \begin_layout Full Width
 \align left
 Unless required by applicable law or agreed to in writing, software distributed
- under the Licence is distributed on an 
+ under the Licence is distributed on an
 \begin_inset Quotes eld
 \end_inset
 
@@ -577,13 +574,12 @@ pre-configured
 
  Arch operating system.
  Here are some of the key differences between the Manjaro and Arch operating
- systems: 
+ systems:
 \end_layout
 
 \begin_layout Itemize
 Manjaro is developed independently from Arch, and by a completely different
  team.
- 
 \end_layout
 
 \begin_layout Itemize
@@ -642,13 +638,13 @@ About Manjaro
 \series bold
 Manjaro
 \series default
- is a user-friendly 
+ is a user-friendly
 \series bold
-GNU/Linux
+ GNU/Linux
 \series default
- distribution based on the independently developed 
+ distribution based on the independently developed
 \series bold
-Arch Linux
+ Arch Linux
 \series default
 .
  Within the Linux community, Arch itself is renowned for being an exceptionally
@@ -667,7 +663,7 @@ Developed by a worldwide team, Manjaro aims to provide all of the benefits
  Available in both 32- and 64-bit versions, Manjaro is suitable for newcomers
  as well as experienced Linux users.
  For newcomers, a user-friendly installer is provided, and the system itself
- is designed to work fully 
+ is designed to work fully
 \begin_inset Quotes eld
 \end_inset
 
@@ -741,7 +737,6 @@ Access to the Arch User Repositories
 \begin_layout Itemize
 The versatility to be shaped and moulded in every respect to suit personal
  taste and preference.
- 
 \end_layout
 
 \begin_layout Standard
@@ -797,10 +792,6 @@ Welcome to Manjaro!
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -906,9 +897,9 @@ When you purchase retail software it generally comes on a disc, whether
 Xfce The Xfce desktop environment is designed to be lightweight while retaining
  a familiar desktop interface.
  If you're not sure which edition to choose, this one is a good bet.
- Xfce edition disc image files start with 
+ Xfce edition disc image files start with
 \series bold
-manjaro-xfce
+ manjaro-xfce
 \series default
 .
 \end_layout
@@ -919,9 +910,9 @@ KDE This version includes the K Desktop Environment.
  and options.
  It is also highly customisable and offers a slightly different feel than
  the other editions.
- KDE edition disc image files start with 
+ KDE edition disc image files start with
 \series bold
-manjaro
+ manjaro
 \series default
 -
 \series bold
@@ -935,9 +926,9 @@ Net This edition of Manjaro provides only a base installation, stripped
  of all but the most basic pre-installed software.
  Starting from the command line, this is suitable for more experienced users
  who may want to build their own Manjaro system from the ground up.
- A disc image for a Net edition will always begin with 
+ A disc image for a Net edition will always begin with
 \series bold
-manjaro-net
+ manjaro-net
 \series default
 .
 \end_layout
@@ -948,9 +939,9 @@ Each edition of Manjaro is available as 32- and 64-bit versions.
 \series bold
  i686.iso
 \series default
- and images for 64-bit systems will end in 
+ and images for 64-bit systems will end in
 \series bold
-x86_64.iso
+ x86_64.iso
 \series default
 .
  A 64-bit operating system won't run on a 32-bit system, and although a
@@ -1133,11 +1124,7 @@ Stable
 
 releases of Manjaro are intended to be used by the general public, so this
  will be the appropriate choice for the majority of users.
- The current Manjaro release can always be downloaded from the
-\series bold
- 
-\series default
-
+ The current Manjaro release can always be downloaded from the 
 \begin_inset CommandInset href
 LatexCommand href
 name "Get Manjaro"
@@ -1145,11 +1132,7 @@ target "http://manjaro.org/get-manjaro/"
 
 \end_inset
 
-
-\series bold
- 
-\series default
-page.
+ page.
 \begin_inset Foot
 status open
 
@@ -1169,7 +1152,7 @@ http://manjaro.github.io/download/
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -1212,14 +1195,14 @@ Test
 
 builds of Manjaro are intended to be used by developers and testers to identify
  any bugs or issues during the development process.
- 
+
 \series bold
-These are not suitable for use as a main operating system by the general
+ These are not suitable for use as a main operating system by the general
  public.
 
 \series default
  However, should you wish to try out a test build (preferably in a virtual
- machine), each current release can be downloaded from the from the
+ machine), each current release can be downloaded from the from the 
 \begin_inset CommandInset href
 LatexCommand href
 name " Test Build section of the Sourceforge website"
@@ -1314,47 +1297,28 @@ To verify the integrity of the disc image you have to download the appropriate
  checksum file.
  This will be available at the same place where you downloaded the disc
  image file.
- For example, the file 
+ For example, the file
 \series bold
-manjaro-15.09-sha1sum.txt 
+ manjaro-xfce-15.09-x86_64-sha256sum.txt
 \series default
-contains checksum hashes for all the available disc image files and will
+ contains checksum hashes for all the available disc image files and will
  have content similar to this:
 \end_layout
 
 \begin_layout LyX-Code
-831df1a4e06893de7663a159f5f22ddcfc386cc4  manjaro-kde-0.8.10-i686.iso
-\end_layout
-
-\begin_layout LyX-Code
-89240f1527d8ef8c8f8a57527fb64632a1160a16  manjaro-kde-0.8.10-x86_64.iso
-\end_layout
-
-\begin_layout LyX-Code
-6f0f26bd2a909343846c1acc8dddc3e128b6dbc4  manjaro-net-0.8.10-i686.iso
-\end_layout
-
-\begin_layout LyX-Code
-602758c12061221566a823fa6886537f293be545  manjaro-net-0.8.10-x86_64.iso
-\end_layout
-
-\begin_layout LyX-Code
-4dac7697b8c1f4ccc508d8e2ba52ad898d18aba7  manjaro-xfce-0.8.10-i686.iso
-\end_layout
-
-\begin_layout LyX-Code
-d3220e2c74f9082e0e8b366b9ffd240bfceebde0  manjaro-xfce-0.8.10-x86_64.iso
+ce7471ddb5496abdbe484a9615ff0b6b42cedc47258aa5ad37fa5c252e28371d  manjaro-xfce-1
+5.09-rc3-x86_64.iso
 \end_layout
 
 \begin_layout Section
-MD5 and SHA-1
+MD5 and SHA-256
 \end_layout
 
 \begin_layout Standard
-You may have seen there are two checksum files.
- One ends -sha1sum.txt, the other ends -md5sum.txt.
+You may have seen there are three checksum files.
+ One ends -sha256sum.txt, one in -sha1sum.txt, and the other ends -md5sum.txt.
  MD5 and SHA are two types of hashing algorithms; the 'sha' part of the
- checksum file name stands for 
+ checksum file name stands for
 \series bold
 Secure Hash Algorithm
 \series default
@@ -1362,17 +1326,16 @@ Secure Hash Algorithm
  These algorithms are used to generate a hash code unique to the disc image
  file.
  The checksum file itself is just a text document that contains hash codes
- that should match the code generated by the MD5 or SHA-1 algorithm.
+ that should match the code generated by the MD5 or SHA algorithms.
  Copies of the file can be checked to make sure they are exactly the same
  - if the file is changed in any way, either intentionally or by corruption,
  the code generated will be different.
 \end_layout
 
 \begin_layout Standard
-Whilst MD5 is commonly used, SHA-1 is newer and more secure and is beginning
+Whilst MD5 is commonly used, SHA-256 is newer and more secure and is beginning
  to replace MD5.
  For the purpose of checking the integrity of the downloaded file MD5 is
- 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1380,16 +1343,16 @@ good enough
 \begin_inset Quotes erd
 \end_inset
 
- but SHA-1 is a better solution.
+ but SHA-256 is a better solution.
  The checking process is the same for both algorithms.
- We recommend you use SHA-1.
+ We recommend you use SHA-256.
  For more about hashing algorithms Wikipedia has lots of information.
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1416,24 +1379,11 @@ If the code generated from the disc image matches that contained in the
 \end_layout
 
 \begin_layout Standard
-From this point on we'll assume you are using the file 
+From this point on we'll assume you are using the file
 \series bold
-manjaro-15.09-sha1sum.txt
+ manjaro-xfce-15.09-x86_64-sha256sum.txt
 \series default
 .
-\begin_inset Flex Marginnote
-status collapsed
-
-\begin_layout Plain Layout
-Test builds have a slightly different arrangement.
- Instead of a single file with all checksums, each disc image file has its
- own associated checksum file.
- If you're running the test build I'm sure you can work it out!
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -1445,20 +1395,19 @@ Automatic verification
 \end_layout
 
 \begin_layout Standard
-The program 
+The program
 \family typewriter
-sha1sum 
+sha256sum
 \family default
 can automatically compare the checksum of the disc image you downloaded
  against the value in the text file.
- The process is very straightforward, but the end result might look a little
- worrying!
+ The process should be very straightforward!
 \end_layout
 
 \begin_layout Standard
 For this example, I first open a terminal and change to the directory where
  I downloaded the disc image file and checksum file.
- I use the command 
+ I use the command
 \family typewriter
 ls
 \family default
@@ -1474,12 +1423,12 @@ jonathon@box:~/download$ ls
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-15.09-sha1sum.txt  manjaro-xfce-15.09-x86_64.iso
+manjaro-xfce-15.09-x86_64-sha256sum.txt  manjaro-xfce-15.09-x86_64.iso
 \end_layout
 
 \begin_layout Standard
 As you can see I have downloaded the 64-bit Xfce edition.
- Next, I run the 
+ Next, I run the
 \family typewriter
 sha1sum
 \family default
@@ -1487,68 +1436,25 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-jonathon@box:~/download$ sha1sum -c manjaro-15.09-sha1sum.txt
+jonathon@box:~/download$ sha256sum -c manjaro-xfce-15.09-x86_64-sha256sum.txt
 \end_layout
 
 \begin_layout Standard
-The next set of lines show the result of the checks.
- While the first few lines look worrying this is to be expected - the program
- can't check disc image files that aren't there! The second to last line
- is the important one.
- It shows that 
+The line shows the result of the checks.
+ In this case, it shows that
 \family typewriter
-sha1sum
+sha256sum
 \family default
  has successfully verified the disc image I downloaded against the checksum
  value in the file.
 \end_layout
 
 \begin_layout LyX-Code
-sha1sum: manjaro-kde-15.09-i686.iso: No such file or directory
+sha256sum: manjaro-xfce-15.09-x86_64.iso: OK
 \end_layout
 
-\begin_layout LyX-Code
-manjaro-kde-15.09-i686.iso: FAILED open or read
-\end_layout
-
-\begin_layout LyX-Code
-sha1sum: manjaro-kde-15.09-x86_64.iso: No such file or directory
-\end_layout
-
-\begin_layout LyX-Code
-manjaro-kde-15.09-x86_64.iso: FAILED open or read
-\end_layout
-
-\begin_layout LyX-Code
-sha1sum: manjaro-net-15.09-i686.iso: No such file or directory
-\end_layout
-
-\begin_layout LyX-Code
-manjaro-net-15.09-i686.iso: FAILED open or read
-\end_layout
-
-\begin_layout LyX-Code
-sha1sum: manjaro-net-15.09-x86_64.iso: No such file or directory
-\end_layout
-
-\begin_layout LyX-Code
-manjaro-net-15.09-x86_64.iso: FAILED open or read
-\end_layout
-
-\begin_layout LyX-Code
-sha1sum: manjaro-xfce-15.09-i686.iso: No such file or directory
-\end_layout
-
-\begin_layout LyX-Code
-manjaro-xfce-15.09-i686.iso: FAILED open or read
-\end_layout
-
-\begin_layout LyX-Code
-sha1sum: manjaro-xfce-15.09-x86_64.iso: OK
-\end_layout
-
-\begin_layout LyX-Code
-sha1sum: WARNING: 7 listed files could not be read
+\begin_layout Standard
+If it failed, I'd need to download the image again...
 \end_layout
 
 \begin_layout Subsection
@@ -1557,9 +1463,9 @@ Manual verification
 
 \begin_layout Standard
 To manually check the integrity of your downloaded file, first open the
- downloaded 
+ downloaded
 \series bold
-manjaro-15.09-sha1sum.txt
+ manjaro-xfce-15.09-x86_64-sha256sum.txt
 \series default
  checksum file using a text editor such as Gedit.
  Once the checksum file has been opened, and the codes are visible, open
@@ -1595,19 +1501,15 @@ Verifying the checksum displayed in gedit against the output of sha1sum
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-For example, if your disc image file is located in a directory named 
+For example, if your disc image file is located in a directory named
 \family typewriter
-download
+ download
 \family default
 , you would first change to that directory:
 \end_layout
@@ -1623,7 +1525,7 @@ Then you can generate an SHA-1 hash code for the disc image using:
 \begin_layout LyX-Code
 jonathon@box:~/download$
 \family typewriter
- sha1sum manjaro-xfce-15.09-x86_64.iso
+ sha256sum manjaro-xfce-15.09-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1640,17 +1542,17 @@ Checking in Microsoft Windows
 Unlike Linux, Microsoft Windows does not have any suitable built-in tools
  so you will need to download and install a checksum utility application.
  A web search will turn up several examples of free software, or you can
- look on the 
+ look on the
 \series bold
-Download.com
+ Download.com
 \series default
  website.
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1664,9 +1566,9 @@ http://download.cnet.com/
 
 \end_inset
 
- Another free checksum utility which has positive reviews is 
+ Another free checksum utility which has positive reviews is
 \series bold
-Raymond's MD5 & SHA Checksum Utility
+ Raymond's MD5 & SHA Checksum Utility
 \series default
 .
 \begin_inset Foot
@@ -1730,13 +1632,13 @@ Verifying the checksum in Microsoft Windows using Raymond's MD5 & SHA Checksum
 \begin_layout Standard
 Once you have downloaded the checksum utility, the checking process is very
  straightforward.
- Simply 
+ Simply
 \series bold
-Browse
+ Browse
 \series default
- to the downloaded disc image, select it, and click 
+ to the downloaded disc image, select it, and click
 \series bold
-Open
+ Open
 \series default
 .
  The program will then calculate the checksums for the disc image file.
@@ -1750,15 +1652,15 @@ To speed up the process it's probably a good idea to deselect the hashes
 
 \end_inset
 
- To verify the checksum is correct, open the 
+ To verify the checksum is correct, open the
 \series bold
-manjaro-15.09-sha1sum.txt
+ manjaro-15.09-sha1sum.txt
 \series default
  in a text editor such as Notepad, copy the checksum for the disc image
  file you have downloaded, and paste it into the verification box.
- Then click 
+ Then click
 \series bold
-Verify
+ Verify
 \series default
 .
  If there are no problems with the disc image file the program will inform
@@ -1990,7 +1892,7 @@ manjaro-xfce-15.09-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.2GB
+1.3GB
 \end_layout
 
 \end_inset
@@ -2028,7 +1930,7 @@ manjaro-xfce-15.09-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.4GB
+1.5GB
 \end_layout
 
 \end_inset
@@ -2138,10 +2040,6 @@ Manjaro Edition disc image file sizes
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -2156,7 +2054,6 @@ Many people routinely use a DVD rather than a CD even for the smallest disc
 
 \begin_layout Standard
 However, with the increasing capacity and decreasing cost of USB flash media
- 
 \begin_inset Flex Marginnote
 status open
 
@@ -2192,17 +2089,17 @@ Burning to a CD/DVD
 If not already installed, several different software burning applications
  should be available for installation from your distribution's Software
  Center / Software Manager / Package Manager / repositories.
- Popular burners include 
+ Popular burners include
 \series bold
-XFBurn
+ XFBurn
 \series default
-, 
+,
 \series bold
-K3b
+ K3b
 \series default
-, and 
+, and
 \series bold
-Brasero
+ Brasero
 \series default
 .
 \begin_inset Flex Marginnote
@@ -2228,7 +2125,6 @@ Burning using Brasero
 
 \begin_layout Enumerate
 Insert a blank CD/DVD.
- 
 \begin_inset Flex Marginnote
 status open
 
@@ -2246,35 +2142,35 @@ It's a good idea to use rewriteable disc (e.g.
 \end_layout
 
 \begin_layout Enumerate
-Start the 
+Start the
 \series bold
-Brasero
+ Brasero
 \series default
  software burner.
 \end_layout
 
 \begin_layout Enumerate
-Click the 
+Click the
 \series bold
-Burn Image - Burn an existing CD/DVD image to disc
+ Burn Image - Burn an existing CD/DVD image to disc
 \series default
- button to open the 
+ button to open the
 \series bold
-Image Burning Setup
+ Image Burning Setup
 \series default
  window.
 \end_layout
 
 \begin_layout Enumerate
-Click the button beneath the title 
+Click the button beneath the title
 \series bold
-Select a disc image to write
+ Select a disc image to write
 \series default
  to open up your file manager.
  Locate and double-click the downloaded disc image file to load it.
- Upon automatically returning to the 
+ Upon automatically returning to the
 \series bold
-Image Burning Setup
+ Image Burning Setup
 \series default
  window, note that the disc image file is now listed as the disc image to
  write.
@@ -2282,23 +2178,23 @@ Image Burning Setup
 
 \begin_layout Enumerate
 The blank CD/DVD you inserted should be automatically listed underneath
- the title 
+ the title
 \series bold
-Select a disc to write to
+ Select a disc to write to
 \series default
 .
  If not, click the button to select it manually.
 \end_layout
 
 \begin_layout Enumerate
-Click the 
+Click the
 \series bold
-properties
+ properties
 \series default
  button to open the properties window, and then click the button beneath
- the title 
+ the title
 \series bold
-Burning Speed
+ Burning Speed
 \series default
 .
  We strongly recommend you select the slowest speed available.
@@ -2326,9 +2222,9 @@ It's also a good idea to avoid using any applications which make intensive
 \end_layout
 
 \begin_layout Enumerate
-Click the 
+Click the
 \series bold
-Burn
+ Burn
 \series default
  button to start the burning process.
  If necessary, follow any on-screen instructions provided.
@@ -2343,7 +2239,6 @@ Newer versions of Microsoft Windows (Windows 7 and later) include a disc
  image burner.
  If you do not have a newer version of Microsoft Windows you will need to
  download one of the many free disc burning software utilities.
- 
 \end_layout
 
 \begin_layout Subsection
@@ -2351,13 +2246,13 @@ Burning using Windows Disc Image Burner
 \end_layout
 
 \begin_layout Standard
-Selecting the disc image file and clicking on 
+Selecting the disc image file and clicking on
 \series bold
-Burn disc image
+ Burn disc image
 \series default
-, or simply double-clicking on the file itself, will start the 
+, or simply double-clicking on the file itself, will start the
 \series bold
-Windows Disc Image Burner
+ Windows Disc Image Burner
 \series default
  program.
  This makes the process of burning to a disc very straightforward:
@@ -2368,16 +2263,16 @@ Insert a blank CD/DVD into your disc drive.
 \end_layout
 
 \begin_layout Enumerate
-Start 
+Start
 \series bold
-Windows Disc Image Burner
+ Windows Disc Image Burner
 \series default
 .
 \begin_inset Flex Marginnote
 status collapsed
 
 \begin_layout Plain Layout
-For more information about this program see: 
+For more information about this program see:
 \begin_inset Flex URL
 status collapsed
 
@@ -2397,9 +2292,9 @@ http://windows.microsoft.com/en-gb/windows7/burn-a-cd-or-dvd-from-an-iso-file
 \end_layout
 
 \begin_layout Enumerate
-Click 
+Click
 \series bold
-Burn
+ Burn
 \series default
 .
 \end_layout
@@ -2444,7 +2339,7 @@ Burning using a third-party application
 
 \begin_layout Standard
 For versions of Microsoft Windows earlier than Windows 7 (e.g.
- Windows XP) you will need to download and install third-party disc burning
+ Windows XP) you may need to download and install third-party disc burning
  software.
  There are many free examples available that will be found by a web search,
  but here are some of the most popular:
@@ -2668,55 +2563,8 @@ The burning process for each of these applications is similar, with small
  differences in user interface.
  The websites listed above will provide information about features and screensho
 ts of the applications themselves.
- For a little more information about each of these applications, an overview
- of each is available in the 
-\series bold
-CD/DVD Burning Article
-\series default
- on the TechSupportAlert website.
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://www.techsupportalert.com/best-free-cd-dvd-burning-software.htm
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- Alternative burning software may also be found on the Download.com website,
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://download.cnet.com/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- although you will have to filter the search results to view only free applicati
-ons.
- It will also be worthwhile to take the time to read any reviews provided
- for your choice(s).
+ Of course, it might also be worthwhile to take the time to read around
+ and choose one for yourself!
 \end_layout
 
 \begin_layout Section
@@ -2737,9 +2585,9 @@ USB flash drive
 To take advantage of the faster access times and much quieter nature of
  a USB flash drive, there are a number of methods of writing the disc image
  file.
- One of the easiest is to use 
+ One of the easiest is to use
 \series bold
-ImageWriter
+ ImageWriter
 \series default
 .
 \begin_inset Float marginfigure
@@ -2762,7 +2610,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-ImageWriter 
+ImageWriter
 \begin_inset Newline newline
 \end_inset
 
@@ -2777,7 +2625,7 @@ https://en.opensuse.org/SDB:Live_USB_stick
 
 \end_inset
 
- 
+
 \end_layout
 
 \end_inset
@@ -2814,9 +2662,9 @@ Ensure that your USB flash drive has been selected from the drop-down menu.
 \end_layout
 
 \begin_layout Enumerate
-Click on the 
+Click on the
 \series bold
-Write
+ Write
 \series default
  button.
 \end_layout
@@ -2837,30 +2685,29 @@ If you don't want to install extra software, and you are comfortable using
 \end_layout
 
 \begin_layout Enumerate
-Connect the USB flash drive to your PC, open a terminal and 
+Connect the USB flash drive to your PC, open a terminal and
 \family typewriter
-cd
+ cd
 \family default
  to where you downloaded the disc image.
 \end_layout
 
 \begin_layout Enumerate
-Check the device identifier with: 
+Check the device identifier with:
 \family typewriter
-sudo fdisk -l
+ sudo fdisk -l
 \family default
 .
- 
 \end_layout
 
 \begin_layout Enumerate
-Write the image with: 
+Write the image with:
 \family typewriter
 
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-15.09-x86_64.iso of=/dev/(Device identifier from above)
+sudo dd if=manjaro-xfce-15.09-x86_64.iso of=/dev/(Device identifier from above)
  bs=4M
 \begin_inset Newline newline
 \end_inset
@@ -2871,13 +2718,13 @@ sudo dd if=manjaro-15.09-x86_64.iso of=/dev/(Device identifier from above)
 
 
 \family default
-My USB drive is at /dev/sdc so I would use: 
+My USB drive is at /dev/sdc so I would use:
 \family typewriter
 
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-15.09-x86_64.iso of=/dev/sdc bs=4M
+sudo dd if=manjaro-xfce-15.09-x86_64.iso of=/dev/sdc bs=4M
 \end_layout
 
 \begin_layout Enumerate
@@ -2996,9 +2843,9 @@ Options: Quick format.
 \end_layout
 
 \begin_layout Standard
-Click 
+Click
 \series bold
-Start
+ Start
 \series default
 , and you are done! (though it takes between around two and five minutes
  to complete).
@@ -3083,7 +2930,6 @@ When you boot from your installation media (CD/DVD or USB flash drive) you
  should be presented with the Manjaro boot screen.
  This screen provides several options to help get the best experience from
  the Live environment.
- 
 \begin_inset Float marginfigure
 wide false
 sideways false
@@ -3125,7 +2971,7 @@ Setting your language and keyboard layout
 \end_layout
 
 \begin_layout Standard
-First, set your preferred language by pressing the 
+First, set your preferred language by pressing the
 \series bold
 <F2>
 \series default
@@ -3171,7 +3017,6 @@ Once selected, press <
 Enter
 \series default
 > to confirm and to be taken back to the boot menu.
- 
 \end_layout
 
 \begin_layout Standard
@@ -3183,9 +3028,9 @@ Selecting the language will also set a keyboard layout appropriate to that
 \series bold
 F2
 \series default
-> again, but this time select 
+> again, but this time select
 \series bold
-Keyboard
+ Keyboard
 \series default
 .
  Pick the language that matches your keyboard layout, and press <
@@ -3200,13 +3045,13 @@ Choosing the drivers
 \end_layout
 
 \begin_layout Standard
-There are two main sets of drivers that can be used by Manjaro: 
+There are two main sets of drivers that can be used by Manjaro:
 \series bold
-Free
+ Free
 \series default
- and 
+ and
 \series bold
-non-Free
+ non-Free
 \series default
 .
  The differences are not minor, and your choice can depend on your computer
@@ -3215,14 +3060,14 @@ non-Free
 status open
 
 \begin_layout Plain Layout
-If in doubt, choose 
+If in doubt, choose
 \series bold
-Free 
+ Free
 \series default
-drivers.
- If you want to play games, choose 
+ drivers.
+ If you want to play games, choose
 \series bold
-non-Free
+ non-Free
 \series default
  drivers.
 \end_layout
@@ -3252,20 +3097,20 @@ Non-Free
 rs.
  This is generally the best choice for newer hardware with AMD or Nvidia
  dedicated graphics.
- At the time of writing, 
+ At the time of writing,
 \series bold
-non-Free
+ non-Free
 \series default
  drivers are the best choice for Nvidia graphics and AMD graphics newer
  than the 8000-series.
- For older AMD and Nvidia hardware the 
+ For older AMD and Nvidia hardware the
 \series bold
-Free
+ Free
 \series default
  drivers work very well.
- For AMD graphics older than the HD5000-series 
+ For AMD graphics older than the HD5000-series
 \series bold
-Free
+ Free
 \series default
  drivers are the best choice.
 \begin_inset Float marginfigure
@@ -3298,13 +3143,13 @@ Start Manjaro Linux
 \end_layout
 
 \begin_layout Standard
-To start Manjaro with 
+To start Manjaro with
 \series bold
-Free
+ Free
 \series default
- drivers, choose 
+ drivers, choose
 \series bold
-Start Manjaro Linux
+ Start Manjaro Linux
 \series default
  from the boot menu.
 \end_layout
@@ -3314,9 +3159,9 @@ To start Manjaro with
 \series bold
  non-Free
 \series default
- drivers, choose 
+ drivers, choose
 \series bold
-Start (non-free drivers)
+ Start (non-free drivers)
 \series default
  from the boot menu.
 \end_layout
@@ -3427,7 +3272,7 @@ User
 \begin_inset space ~
 \end_inset
 
-guide: 
+guide:
 \begin_inset Flex URL
 status open
 
@@ -3479,9 +3324,9 @@ If you selected your preferred language before booting then it should already
 \end_layout
 
 \begin_layout Plain Layout
-Once selected, click 
+Once selected, click
 \series bold
-Forward
+ Forward
 \series default
  to proceed to the next step.
 \end_layout
@@ -3526,12 +3371,11 @@ The locations available to choose will depend upon the language you selected
 \end_layout
 
 \begin_layout Plain Layout
-Once selected, click 
+Once selected, click
 \series bold
-Forward
+ Forward
 \series default
  to proceed to the next step.
- 
 \end_layout
 
 \end_inset
@@ -3583,9 +3427,9 @@ Your computer will automatically be checked to make sure that Manjaro can
 \end_inset
 
 Once satisfied that your system meets the minimum requirements necessary,
- click 
+ click
 \series bold
-Forward
+ Forward
 \series default
  to proceed to the next step.
 \end_layout
@@ -3651,19 +3495,19 @@ status collapsed
 
 \begin_layout Plain Layout
 To set your timezone, either click on the map or pick from the menus.
- 
+
 \series bold
-Zone 
+ Zone
 \series default
-is the continent you live on.
- 
+ is the continent you live on.
+
 \series bold
-Region 
+ Region
 \series default
-is the city closest to where you live.
- We recommend keeping 
+ is the city closest to where you live.
+ We recommend keeping
 \series bold
-Network Time Protocol
+ Network Time Protocol
 \series default
  synchronisation enabled so your clock will never be wrong! This relies
  on an active internet connection, however.
@@ -3718,25 +3562,24 @@ Just because you live in a certain location that doesn't mean you have to
 \end_layout
 
 \begin_layout Plain Layout
-To choose your desired layout simply click first on a 
+To choose your desired layout simply click first on a
 \series bold
-Layout
+ Layout
 \series default
-, then on a 
+, then on a
 \series bold
-Variant
+ Variant
 \series default
 .
  Variants shown will depend on the layout chosen.
 \end_layout
 
 \begin_layout Plain Layout
-Once satisfied that these details are correct, click 
+Once satisfied that these details are correct, click
 \series bold
-Forward
+ Forward
 \series default
  to proceed to the next step.
- 
 \end_layout
 
 \end_inset
@@ -3775,21 +3618,21 @@ status collapsed
 
 \begin_layout Plain Layout
 To proceed with the 'automatic' (and very easy) installation method make
- sure that the 
+ sure that the
 \series bold
-Erase disc and install Manjaro (automatic)
+ Erase disc and install Manjaro (automatic)
 \series default
  option has been selected.
- 
+
 \series bold
-Be aware that this will wipe the disc you choose in the next step and erase
+ Be aware that this will wipe the disc you choose in the next step and erase
  all its data.
 \end_layout
 
 \begin_layout Plain Layout
-Once complete, click 
+Once complete, click
 \series bold
-Forward
+ Forward
 \series default
  to proceed to the next step.
 \end_layout
@@ -3806,12 +3649,12 @@ Forward
 
 \begin_layout Standard
 \begin_inset Flex Marginnote
-status open
+status collapsed
 
 \begin_layout Plain Layout
-It is generally recommended that you 
+It is generally recommended that you
 \series bold
-Set your Home in a different partition/volume
+ Set your Home in a different partition/volume
 \series default
 .
  This keeps your documents separate from the operating system files.
@@ -3837,7 +3680,7 @@ Choose your disk
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3859,9 +3702,9 @@ If you have more than one hard drive on your computer, then you will need
 \end_layout
 
 \begin_layout Plain Layout
-Once selected, click 
+Once selected, click
 \series bold
-Install Now!
+ Install Now!
 \series default
  to proceed to the next step.
 \end_layout
@@ -3884,7 +3727,7 @@ Add your user account
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3914,9 +3757,9 @@ You will also need to enter your intended password twice.
 \end_layout
 
 \begin_layout Plain Layout
-All done! Once satisfied that these details are correct, click 
+All done! Once satisfied that these details are correct, click
 \series bold
-Forward
+ Forward
 \series default
  to view the installation process.
 \end_layout
@@ -3966,7 +3809,6 @@ status collapsed
 The automatic installation process is well underway.
  While you wait for it to complete, useful information about Manjaro and
  its community will be displayed.
- 
 \end_layout
 
 \end_inset
@@ -4006,13 +3848,13 @@ status collapsed
 \begin_layout Plain Layout
 Once the installation has finished you will be asked if you want to restart
  your system.
- Select 
+ Select
 \series bold
-Yes
+ Yes
 \series default
- to reboot immediately, or 
+ to reboot immediately, or
 \series bold
-No
+ No
 \series default
  to close the installer and continue using the Manjaro Live environment.
 \end_layout
@@ -4060,11 +3902,11 @@ status collapsed
 
 \begin_layout Plain Layout
 When you reboot, if you accidentally boot from the Live CD or USB drive
- you used to install Manjaro, you can choose 
+ you used to install Manjaro, you can choose
 \series bold
-Boot from Hard Disk
+ Boot from Hard Disk
 \series default
- and press 
+ and press
 \series bold
 <Enter>
 \series default
@@ -4194,7 +4036,7 @@ User
 \begin_inset space ~
 \end_inset
 
-guide: 
+guide:
 \begin_inset Flex URL
 status open
 
@@ -4215,7 +4057,7 @@ ing and partitioning scenarios:
 \end_layout
 
 \begin_layout Description
-Partitioning: 
+Partitioning:
 \begin_inset Flex URL
 status collapsed
 
@@ -4235,7 +4077,7 @@ Partitioning
 \begin_inset space ~
 \end_inset
 
-scenarios: 
+scenarios:
 \begin_inset Flex URL
 status open
 
@@ -4281,13 +4123,13 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-When you reach the sixth step of the installation process, select 
+When you reach the sixth step of the installation process, select
 \series bold
-Manage your partitions and where to install Manjaro (advanced)
+ Manage your partitions and where to install Manjaro (advanced)
 \series default
- and then click 
+ and then click
 \series bold
-Forward
+ Forward
 \series default
  to proceed.
 \end_layout
@@ -4330,9 +4172,9 @@ status collapsed
 If you have more than one hard drive on your computer select the one you
  want to partition.
  This example already has a partition layout, but we're going to start fresh
- by clicking 
+ by clicking
 \series bold
-New partition table
+ New partition table
 \series default
 .
 \end_layout
@@ -4382,11 +4224,11 @@ status collapsed
 The partition table type you chose will normally depend on your system.
  Non-EFI systems are normally best with MBR, whereas EFI systems should
  use GPT.
- Once you're happy, click 
+ Once you're happy, click
 \series bold
-OK 
+ OK
 \series default
-to create the partition table.
+ to create the partition table.
 \end_layout
 
 \end_inset
@@ -4480,7 +4322,7 @@ In this scenario we will cover the most common partition layout.
 \begin_inset Newline newline
 \end_inset
 
-With the free space highlighted, we'll click 
+With the free space highlighted, we'll click
 \series bold
 +Add
 \series default
@@ -4526,16 +4368,16 @@ The first partition will contain the system and boot files (
 \series bold
 /
 \series default
- and 
+ and
 \series bold
-/boot
+ /boot
 \series default
 ).
  As such, we must allocate enough space for all system programs.
  20GB is generally sufficient, but if you have a smaller disc you can reduce
  this.
  We have selected XFS as the file system and made sure to set the mountpoint
- to 
+ to
 \series bold
 /
 \series default
@@ -4586,9 +4428,9 @@ status collapsed
 \begin_layout Plain Layout
 We've added a second partition to hold our user documents.
  It's set to be 60GB in size, with the XFS file system, and the mountpoint
- is set to 
+ is set to
 \series bold
-/home
+ /home
 \series default
  (Home).
 \end_layout
@@ -4684,9 +4526,9 @@ The partition layout is ready, but before continuing it's worth checking
 \begin_inset Newline newline
 \end_inset
 
-Once you are happy, click 
+Once you are happy, click
 \series bold
-Install now!
+ Install now!
 \series default
  to proceed.
 \end_layout
@@ -4728,14 +4570,14 @@ status collapsed
 \begin_layout Plain Layout
 As a final check, the installer will ask you to verify that you want to
  write the partition layout to disc.
- If you want to go back and make a change, click 
+ If you want to go back and make a change, click
 \series bold
-Cancel
+ Cancel
 \series default
 .
- Otherwise to continue to install Manjaro, click 
+ Otherwise to continue to install Manjaro, click
 \series bold
-OK
+ OK
 \series default
 .
  The rest of the process is the same as for the Automatic installer, so
@@ -4816,11 +4658,7 @@ Booting in UEFI mode
 
 \series bold
 The most important step is to ensure that your machine does not have Secure
- Boot
-\series default
- 
-\series bold
-enabled
+ Boot enabled
 \series default
 .
  Only a very limited number of operating systems will boot with this enabled.
@@ -4913,9 +4751,9 @@ With Manjaro 15.09, Thus does an excellent job setting up your system.
 In automatic mode, Thus creates a conservative partition layout that will
  work on all systems.
  However, the key extra partition for compatibility with UEFI systems is
- a fat32-formatted partition mounted at 
+ a fat32-formatted partition mounted at
 \family typewriter
-/boot/efi
+ /boot/efi
 \family default
  - make sure to include this if you partition manually!
 \end_layout
@@ -5048,9 +4886,8 @@ Download the installation media
 \begin_layout Standard
 First, make sure you have downloaded a 64-bit version of Manjaro.
  It doesn't matter which edition you choose, but the filename must end with
- 
 \series bold
-x86_64.iso
+ x86_64.iso
 \series default
 .
 \end_layout
@@ -5111,10 +4948,6 @@ Rufus with recommended settings
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -5169,7 +5002,7 @@ Options: Quick format.
 \end_layout
 
 \begin_layout Standard
-Click 
+Click
 \series bold
 Start
 \series default
@@ -5182,13 +5015,13 @@ Boot the Live environment
 \end_layout
 
 \begin_layout Standard
-Before booting, check your BIOS settings: UEFI must be 
+Before booting, check your BIOS settings: UEFI must be
 \series bold
 on
 \series default
- and Secure Boot 
+ and Secure Boot
 \series bold
-off
+ off
 \series default
 .
  Manjaro currently doesn't support Secure Boot.
@@ -5241,9 +5074,9 @@ Linux
 \end_layout
 
 \begin_layout Standard
-If you're not sure which to use, refer back to the earlier section 
+If you're not sure which to use, refer back to the earlier section
 \series bold
-Booting the Live environment
+ Booting the Live environment
 \series default
 .
 \end_layout
@@ -5280,9 +5113,9 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Start 
+Start
 \series bold
-GParted
+ GParted
 \series default
  from the applications menu.
  The 'root' password is '
@@ -5323,9 +5156,9 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Right click on the largest NTFS partition and select 
+Right click on the largest NTFS partition and select
 \series bold
-Resize/Move
+ Resize/Move
 \end_layout
 
 \end_inset
@@ -5362,9 +5195,9 @@ status collapsed
 Make space at the end of the partition for Manjaro.
  Ideally this should be at least 50GB, but you can't shrink the partition
  smaller than its used space (minimum size).
- When you're happy with the new size, click 
+ When you're happy with the new size, click
 \series bold
-Resize/Move
+ Resize/Move
 \series default
 .
 \end_layout
@@ -5380,18 +5213,18 @@ Resize/Move
 \end_layout
 
 \begin_layout Standard
-Once you are happy with the new partition layout, on the menu go to 
+Once you are happy with the new partition layout, on the menu go to
 \series bold
-Edit
+ Edit
 \series default
-, 
+,
 \series bold
-Apply all operations
+ Apply all operations
 \series default
 .
- There will be a confirmation message; to continue you must click 
+ There will be a confirmation message; to continue you must click
 \series bold
-Apply
+ Apply
 \series default
 .
 \end_layout
@@ -5399,9 +5232,9 @@ Apply
 \begin_layout Standard
 The resizing process will take some time.
  Perhaps another chance to get a cup of tea! Once it has completed, close
- GParted and then run 
+ GParted and then run
 \series bold
-Install Manjaro Linux
+ Install Manjaro Linux
 \series default
 .
 \end_layout
@@ -5438,13 +5271,13 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-When you reach the sixth step of the installation process, select 
+When you reach the sixth step of the installation process, select
 \series bold
-Manage your partitions and where to install Manjaro (advanced)
+ Manage your partitions and where to install Manjaro (advanced)
 \series default
- and then click 
+ and then click
 \series bold
-Forward
+ Forward
 \series default
  to proceed.
 \end_layout
@@ -5522,19 +5355,19 @@ Firstly, you can create another, new, EFI partition just for Manjaro.
 \begin_inset Newline newline
 \end_inset
 
-A partition of 100MB should be enough, but the mountpoint 
+A partition of 100MB should be enough, but the mountpoint
 \series bold
-must 
+ must
 \series default
-be 
+ be
 \family typewriter
 \series bold
-/boot/efi
+ /boot/efi
 \family default
 \series default
- and the partition type 
+ and the partition type
 \series bold
-fat32
+ fat32
 \series default
 .
 \end_layout
@@ -5575,15 +5408,15 @@ Otherwise, you can reuse the EFI partition created by Windows.
 \begin_inset Newline newline
 \end_inset
 
-Select the mountpoint 
+Select the mountpoint
 \family typewriter
 \series bold
-/boot/efi
+ /boot/efi
 \family default
 \series default
- but make sure you 
+ but make sure you
 \series bold
-do not
+ do not
 \series default
  format the partition - or you won't be able to boot Windows!
 \end_layout
@@ -5620,16 +5453,16 @@ status collapsed
 
 \begin_layout Plain Layout
 Create the rest of partitions as normal.
- You need at least a root partition (mountpoint 
+ You need at least a root partition (mountpoint
 \family typewriter
 \series bold
-/
+ /
 \family default
 \series default
 ).
- Click 
+ Click
 \series bold
-Install now!
+ Install now!
 \series default
 , confirm the changes, and proceed with the rest of the installation process!
 \end_layout
@@ -6104,9 +5937,9 @@ The Manjaro Xfce Desktop with Welcome Screen.
 
 \begin_layout Standard
 If you don't want the welcome screen to load each time you log in, just
- untick the box 
+ untick the box
 \series bold
-Show this dialog on startup
+ Show this dialog on startup
 \series default
 .
  Don't worry: you can always find it again in the applications menu.
@@ -6121,7 +5954,7 @@ The applications menu is the easiest way of starting the software programs
 status collapsed
 
 \begin_layout Plain Layout
-You can also press the 
+You can also press the
 \begin_inset Quotes eld
 \end_inset
 
@@ -6129,7 +5962,7 @@ Windows
 \begin_inset Quotes erd
 \end_inset
 
- or 
+ or
 \begin_inset Quotes eld
 \end_inset
 
@@ -6183,7 +6016,6 @@ Software applications that are installed will be displayed in the applications
 
 \begin_layout Standard
 You can see that the five main software applications have an item in the
- 
 \begin_inset Quotes eld
 \end_inset
 
@@ -6264,10 +6096,6 @@ Remove from Favourites
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -6336,7 +6164,7 @@ ls
 \end_inset
 
 Learning how to use the terminal is not needed for running Manjaro.
- It's highly recommended, however; check out sites like 
+ It's highly recommended, however; check out sites like
 \begin_inset Flex URL
 status collapsed
 
@@ -6577,7 +6405,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The 
+The
 \series bold
 Package Manager
 \series default
@@ -6588,11 +6416,11 @@ Package Manager
 \begin_inset Newline newline
 \end_inset
 
-There are two main software managers in Manjaro: 
+There are two main software managers in Manjaro:
 \series bold
 Pamac
 \series default
- (installed with the Xfce edition) and 
+ (installed with the Xfce edition) and
 \series bold
 Octopi
 \series default
@@ -6834,7 +6662,6 @@ Join #manjaro on irc.freenode.net, whether via a web or desktop client, and
  you'll find a very nice bunch of people ready to chat! To talk on the IRC
  channel you will have to connect first.
  Hexchat comes installed in the Xfce edition.
- 
 \end_layout
 
 \end_inset
@@ -7122,7 +6949,7 @@ The
  you set during installation.
  System-wide languages, keyboard layouts, users, and hardware drivers are
  all taken care of from here.
- It is available under 
+ It is available under
 \series bold
 Settings
 \series default
@@ -7293,9 +7120,9 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-To check on the available printers, find and open 
+To check on the available printers, find and open
 \series bold
-Print Settings
+ Print Settings
 \series default
  in the applications menu.
 \end_layout
@@ -7367,9 +7194,9 @@ status collapsed
 
 \begin_layout Plain Layout
 Otherwise, you can add the printer manually.
- Click 
+ Click
 \series bold
-Add
+ Add
 \series default
  to begin the process.
 \end_layout
@@ -7406,9 +7233,9 @@ status collapsed
 
 \begin_layout Plain Layout
 You will need to enter your password to allow the printer detection process.
- Once you've typed in your password, click 
+ Once you've typed in your password, click
 \series bold
-OK
+ OK
 \series default
 .
 \end_layout
@@ -7445,9 +7272,9 @@ status collapsed
 
 \begin_layout Plain Layout
 All detected printers will show in the devices list.
- Select your printer, then click 
+ Select your printer, then click
 \series bold
-Forward
+ Forward
 \series default
 .
 \begin_inset Newline newline
@@ -7526,9 +7353,9 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Your printer should now show in 
+Your printer should now show in
 \series bold
-Printer Settings
+ Printer Settings
 \series default
 , where you can view the print queue and change the printer settings.
  Happy printing!
@@ -7626,9 +7453,8 @@ status collapsed
 Pamac's Update Manager is available from the system tray.
  In this screenshot it has a red icon, indicating there are software updates.
  An update check is performed automatically; all you have to do is click
- 
 \series bold
-Apply
+ Apply
 \series default
  and any updates will proceed automatically!
 \end_layout
@@ -7695,9 +7521,8 @@ status collapsed
 Octopi's update notifier is available from the system tray.
  In this screenshot it has a red icon, indicating there are software updates.
  An update check is performed automatically; all you have to do is click
- 
 \series bold
-Yes
+ Yes
 \series default
  and any updates will proceed automatically!
 \end_layout
@@ -7738,9 +7563,9 @@ Alternatively, you can load Octopi's full interface.
  how many.
  To show what is available, click on the red icon.
  To install the updates, click on the arrow next to the red icon and then
- click on 
+ click on
 \series bold
-Install
+ Install
 \series default
 .
 \end_layout
@@ -7794,6 +7619,18 @@ setcounter{figure}{0}
 
 \begin_layout Standard
 There's a huge amount of software freely available in the Manjaro repositories.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Be careful before enabling the AUR.
+ It is a community-maintained repository of software so presents potential
+ risks and problems.
+ Make sure you are familiar with the build process.
+\end_layout
+
+\end_inset
+
  If you are connected to the internet you can download and install as many
  of this as you want at no cost! No advertising is embedded, no data gathering
  performed - you get just the software application, unlike with some other
@@ -7829,9 +7666,8 @@ Pamac allows easy access to the available software.
  All software applications in the repositories are free; no need to worry
  about purchase or licensing costs.
  Once you've found the package you want to install, right-click and select
- 
 \series bold
-Install
+ Install
 \series default
 , then click the tick in the top-left corner to confirm.
 \end_layout
@@ -7869,11 +7705,11 @@ status collapsed
 \begin_layout Plain Layout
 The packages to be installed are listed so you can check this is what you
  want to do.
- When you are happy with the selection, click 
+ When you are happy with the selection, click
 \series bold
-OK 
+ OK
 \series default
-and the software will be downloaded and installed.
+ and the software will be downloaded and installed.
 \end_layout
 
 \end_inset
@@ -7912,9 +7748,9 @@ To stop other users removing important software from the system you will
  If you don't know this you can't go any further.
  There are methods to reset this password if needed; visit the forum or
  IRC channel to find out more.
- Enter your administrative password and click 
+ Enter your administrative password and click
 \series bold
-OK
+ OK
 \series default
 .
 \end_layout
@@ -8073,9 +7909,8 @@ Octopi allows easy access to the available software.
  Do note that the search process is slightly different to Pamac as you can
  select whether to search by package name or package description.
  Once you've found the package you want to install, right-click and select
- 
 \series bold
-Install
+ Install
 \series default
 , then click the tick in the top-left corner to confirm.
 \end_layout
@@ -8113,7 +7948,7 @@ status collapsed
 \begin_layout Plain Layout
 Some software will have other packages it can optionally use if they are
  installed.
- These 
+ These
 \begin_inset Quotes eld
 \end_inset
 
@@ -8158,11 +7993,11 @@ status collapsed
 \begin_layout Plain Layout
 The packages to be installed are listed so you can check this is what you
  want to do.
- When you are happy with the selection, click 
+ When you are happy with the selection, click
 \series bold
-Yes 
+ Yes
 \series default
-and the software will be downloaded and installed.
+ and the software will be downloaded and installed.
 \end_layout
 
 \end_inset
@@ -8282,11 +8117,11 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-Pacman is the Arch Linux 
+Pacman is the Arch Linux
 \series bold
 pac
 \series default
-kage 
+kage
 \series bold
 man
 \series default
@@ -8380,10 +8215,6 @@ sudo pacman -Syyu
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -8456,7 +8287,7 @@ sudo pacman -R leafpad
 It's also possible to remove a package and any dependencies it required
  when it was installed.
  Assuming those other packages are not being used by another piece of software,
- they will become 
+ they will become
 \series bold
 orphan
 \series default
@@ -8510,18 +8341,18 @@ It's a good idea to become familiar with the pacman commands.
  It can be a very useful tool in case the other software managers refuse
  to complete an installation, for example if an installation process is
  interrupted.
- The pacman man 
+ The pacman man
 \begin_inset Flex Marginnote
 status collapsed
 
 \begin_layout Plain Layout
 
 \series bold
-man 
-\series default
-is short for 
-\series bold
 man
+\series default
+ is short for
+\series bold
+ man
 \series default
 ual
 \end_layout
@@ -8538,7 +8369,7 @@ man pacman
 \end_layout
 
 \begin_layout Standard
-To exit, press 
+To exit, press
 \family typewriter
 \series bold
 q
@@ -8563,9 +8394,9 @@ mirror
 
 \begin_layout Standard
 Manjaro Linux packages are hosted on a number of servers across the world;
- these servers 
+ these servers
 \series bold
-mirror
+ mirror
 \series default
  the official Manjaro software repository.
  When you first install Manjaro it will try to work out which server is
@@ -8925,7 +8756,7 @@ grep pacman
 \end_layout
 
 \begin_layout Standard
-searches for the text 
+searches for the text
 \begin_inset Quotes eld
 \end_inset
 
@@ -8936,7 +8767,6 @@ pacman
 .
  The pipe, |, takes the output from the first and feeds it to the second.
  To check whether another program is running you can just change the text
- 
 \begin_inset Quotes eld
 \end_inset
 
@@ -9043,7 +8873,7 @@ More information
 \end_layout
 
 \begin_layout Standard
-Remember - there is plenty of information on the wiki 
+Remember - there is plenty of information on the wiki
 \begin_inset Flex URL
 status collapsed
 
@@ -9054,7 +8884,7 @@ http://wiki.manjaro.org/
 
 \end_inset
 
- and discussion forum 
+ and discussion forum
 \begin_inset Flex URL
 status collapsed
 
