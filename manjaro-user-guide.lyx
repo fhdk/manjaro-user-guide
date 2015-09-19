@@ -11,6 +11,9 @@
 \makeatother
 \end_preamble
 \use_default_options true
+\begin_modules
+fixltx2e
+\end_modules
 \maintain_unincluded_children false
 \language british
 \language_package default
@@ -198,7 +201,7 @@ https://creativecommons.org/licenses/by-sa/4.0/legalcode
 \begin_layout Full Width
 \align left
 Unless required by applicable law or agreed to in writing, software distributed
- under the Licence is distributed on an
+ under the Licence is distributed on an 
 \begin_inset Quotes eld
 \end_inset
 
@@ -465,7 +468,7 @@ Jonathon
 \begin_inset space ~
 \end_inset
 
-Fernyhough Editor of the User Guide 0.8.9-0.8.13, 15.09, Community Moderation
+Fernyhough Editor of the User Guide 0.8.9-0.8.13, 15.09, Community Management
 \end_layout
 
 \begin_layout Description
@@ -1654,7 +1657,7 @@ To speed up the process it's probably a good idea to deselect the hashes
 
  To verify the checksum is correct, open the
 \series bold
- manjaro-15.09-sha1sum.txt
+ manjaro-xfce-15.09-x86_64-sha256sum.txt
 \series default
  in a text editor such as Notepad, copy the checksum for the disc image
  file you have downloaded, and paste it into the verification box.
