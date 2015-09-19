@@ -8,7 +8,7 @@ The style in use is [tufte-book](http://wiki.lyx.org/Layouts/Tufte-book). This p
 
 To enable the tufte-book layout within LyX on Manjaro you will need to install the following packages:
 
-    sudo pacman -S lyx texlive-pictures texlive-latexextra ttf-comfortaa ghostscript
+    sudo pacman -S lyx texlive-latexextra texlive-pictures ttf-comfortaa ghostscript
 
 Installing LyX should pick up the base dependencies; tufte-book requires the extra libraries. Remember to reconfigure LyX after installing the new libraries!
 
@@ -20,8 +20,13 @@ Current cover art is created in Inkscape. LyX will neatly insert/append PDF file
 
 ## Generation
 
-To generate our final pdf file use followed cmds:
+To generate the PDF from a command line rather than exporting from within LyX you can use the following:
 
-    lyx --export pdf5 manjaro-user-guide.lyx
+    lyx --export pdflatex manjaro-user-guide.lyx
+    pdflatex manjaro-user-guide
+    texindy --language english manjaro-user-guide.idx
+    pdflatex manjaro-user-guide
+    pdflatex manjaro-user-guide
     gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -sOutputFile=manjaro-user-guide-printer.pdf manjaro-user-guide.pdf
 
+Yes, ```pdflatex``` does require multiple runs.
