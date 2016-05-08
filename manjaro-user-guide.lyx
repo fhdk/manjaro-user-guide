@@ -39,7 +39,7 @@ fixltx2e
 \use_hyperref true
 \pdf_title "Manjaro Linux User Guide"
 \pdf_author "Jonathon Fernyhough for The Manjaro Development Team"
-\pdf_subject "Manjaro Linux "
+\pdf_subject "Manjaro Linux"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
 \pdf_bookmarksopen false
@@ -107,7 +107,7 @@ User Guide
 \end_layout
 
 \begin_layout Author
-Manjaro Linux 
+Manjaro Linux
 \end_layout
 
 \begin_layout Standard
@@ -1532,7 +1532,7 @@ jonathon@box:~/download$
 \end_layout
 
 \begin_layout Standard
-This command generates a hash code for the 64-bit Manjaro Xfce  disc
+This command generates a hash code for the 64-bit Manjaro Xfce disc
  image which can then be manually compared to the code contained in the
  checksum file.
 \end_layout
@@ -3282,7 +3282,7 @@ status open
 \begin_layout Plain Layout
 
 http://wiki.manjaro.org/index.php?title=Graphical_Installation_Guide_for_Beginners_
-
+0.8.8
 \end_layout
 
 \end_inset
@@ -4046,7 +4046,7 @@ status open
 \begin_layout Plain Layout
 
 http://wiki.manjaro.org/index.php?title=Graphical_Installation_Guide_for_Experience
-d_Users_
+d_Users_0.8.8
 \end_layout
 
 \end_inset
@@ -4743,7 +4743,7 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-With Manjaro , Thus does an excellent job setting up your system.
+With Manjaro, Thus does an excellent job setting up your system.
  Once you have loaded the Live environment the installation steps are exactly
  the same as for a non-UEFI installation.
  The main difference is in the partition layout: this is important if you
