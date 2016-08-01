@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass tufte-book
 \begin_preamble
 \publisher{The Manjaro Development Team}
@@ -19,16 +21,16 @@ fixltx2e
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman palatino
-\font_sans helvet
-\font_typewriter default
-\font_math auto
+\font_roman "palatino" "default"
+\font_sans "helvet" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -135,6 +137,10 @@ vfill
 thispagestyle{empty}
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -963,7 +969,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -1323,7 +1329,7 @@ You may have seen there are three checksum files.
  MD5 and SHA are two types of hashing algorithms; the 'sha' part of the
  checksum file name stands for
 \series bold
-Secure Hash Algorithm
+ Secure Hash Algorithm
 \series default
 .
  These algorithms are used to generate a hash code unique to the disc image
@@ -1532,9 +1538,9 @@ jonathon@box:~/download$
 \end_layout
 
 \begin_layout Standard
-This command generates a hash code for the 64-bit Manjaro Xfce disc
- image which can then be manually compared to the code contained in the
- checksum file.
+This command generates a hash code for the 64-bit Manjaro Xfce disc image
+ which can then be manually compared to the code contained in the checksum
+ file.
 \end_layout
 
 \begin_layout Section
@@ -1745,7 +1751,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -2068,7 +2074,7 @@ If your system will boot from a USB device, and you have one of sufficient
 
 \end_inset
 
-this presents an even more attractive method than the traditional burning
+ this presents an even more attractive method than the traditional burning
  process; it is far faster and more flexible than using optical media.
  Both CD/DVD burning and USB flash media installation methods are covered
  in this guide.
@@ -2357,7 +2363,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="3">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -2710,8 +2716,8 @@ Write the image with:
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-15.09-rc3-x86_64.iso of=/dev/(Device identifier from above)
- bs=4M
+sudo dd if=manjaro-xfce-15.09-rc3-x86_64.iso of=/dev/(Device identifier from
+ above) bs=4M
 \begin_inset Newline newline
 \end_inset
 
@@ -5007,7 +5013,7 @@ Options: Quick format.
 \begin_layout Standard
 Click
 \series bold
-Start
+ Start
 \series default
 , and you are done! (though it takes between around two and five minutes
  to complete).
@@ -5020,7 +5026,7 @@ Boot the Live environment
 \begin_layout Standard
 Before booting, check your BIOS settings: UEFI must be
 \series bold
-on
+ on
 \series default
  and Secure Boot
 \series bold
@@ -8122,7 +8128,7 @@ setcounter{figure}{0}
 \begin_layout Standard
 Pacman is the Arch Linux
 \series bold
-pac
+ pac
 \series default
 kage
 \series bold
@@ -8292,7 +8298,7 @@ It's also possible to remove a package and any dependencies it required
  Assuming those other packages are not being used by another piece of software,
  they will become
 \series bold
-orphan
+ orphan
 \series default
  packages.
  These serve no function other than taking up space! To remove a software
@@ -8375,7 +8381,7 @@ man pacman
 To exit, press
 \family typewriter
 \series bold
-q
+ q
 \family default
 \series default
 .
@@ -8876,7 +8882,7 @@ More information
 \end_layout
 
 \begin_layout Standard
-Remember - there is plenty of information on the wiki
+Remember - there is plenty of information on the wiki 
 \begin_inset Flex URL
 status collapsed
 
@@ -8887,7 +8893,7 @@ http://wiki.manjaro.org/
 
 \end_inset
 
- and discussion forum
+ and discussion forum 
 \begin_inset Flex URL
 status collapsed
 
@@ -8944,6 +8950,10 @@ vfill
 thispagestyle{empty}
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
