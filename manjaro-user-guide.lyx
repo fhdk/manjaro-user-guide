@@ -3462,11 +3462,6 @@ Select the partitioning method
 \end_layout
 
 \begin_layout Standard
-!!! NEED TO WORK OUT REFERENCES ALL INDICATING PART NUMBER INSTEAD OF CHAPTER
- AND SECTION NUMBER !!!
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -3498,12 +3493,16 @@ status open
  so your system is exactly the way you want it to be.
  This chapter will focus on the first option, while the others will be covered
  later in chapter 
+\series bold
+
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand nameref
 reference "advancedInstall"
 
 \end_inset
 
+
+\series default
 .
 \end_layout
 
@@ -3547,12 +3546,16 @@ Erase disk
 , the bottom of the window will change to display your current hard drive
  setup and the one proposed by the installer, which will be applied at the
  very end, when accepting the summary shown at section 
+\series bold
+
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand nameref
 reference "summary"
 
 \end_inset
 
+
+\series default
 .
  You can also choose to encrypt your Manjaro partition.
  That way, anyone trying to access to the data it contains will have to
