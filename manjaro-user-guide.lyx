@@ -3188,11 +3188,11 @@ Once you select Start, Manjaro will boot up.
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome.png
+	filename images/calamares-erase-disk/welcome_live.png
 	lyxscale 50
 	width 100text%
 
@@ -3224,7 +3224,600 @@ The welcome screen gives some links to common tasks, documentation (like
 \end_layout
 
 \begin_layout Chapter
-Using the graphical automatic installer
+Using the Calamares installer - Automatic installation
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Automatic installation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Choose your language
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/cal_welcome.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+This screen is th fist one you will see when starting the installer.
+ You can select your language from the 
+\series bold
+Language
+\series default
+ menu.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Choose your location
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/cal_location.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+You can select your time zone by either clicking on the map close to your
+ location or by browsing the 
+\series bold
+Region
+\series default
+ and 
+\series bold
+Zone
+\series default
+ menus.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/cal_locale_2.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+When clicking on the 
+\series bold
+Change...
+
+\series default
+ button, a menu will pop up, allowing you to choose the system locale.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Choose your keyboard layout
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/cal_keyboard.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Next, you will be able to choose your keyboard layout.
+ Choose your language in the list to the left and then the desired subcategory
+ in the list to the right.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/cal_keyboard_menu.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+You can also choose your keyboard model from the 
+\series bold
+Keyboard Model
+\series default
+ menu.
+ The list is very extensive, so yours will likely be listed there!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Select the partitioning method
+\end_layout
+
+\begin_layout Standard
+!!! NEED TO WORK OUT REFERENCES ALL INDICATING PART NUMBER INSTEAD OF CHAPTER
+ AND SECTION NUMBER !!!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/cal_partitions.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+!!! CHANGE SCREENSHOT TO SHOW ALL OPTIONS !!! It will then be time to decide
+ which method to use to partition your hard drive.
+ The current state of your drive is displayed at the bottom of the window.
+ Several partitionning options are available.
+ The first one will erase all data on your drive and automatically create
+ a partition scheme that will suit Manjaro.
+ The second will install Manjaro alongside your existing operating system
+ by shrinking its partition to make room for Manjaro.
+ The third will install on an existing partition, erasing all data stored
+ on it.
+ The last one allows you to create, modify and delete partitions yourself
+ so your system is exactly the way you want it to be.
+ This chapter will focus on the first option, while the others will be covered
+ later in chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "advancedInstall"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/cal_partitions_erase_disk.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+!!! CHANGE SCREENSHOT TO SHOW ALL OPTIONS !!! When selecting the option
+ 
+\series bold
+Erase disk
+\series default
+, the bottom of the window will change to display your current hard drive
+ setup and the one proposed by the installer, which will be applied at the
+ very end, when accepting the summary shown at section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "summary"
+
+\end_inset
+
+.
+ You can also choose to encrypt your Manjaro partition.
+ That way, anyone trying to access to the data it contains will have to
+ enter a password of your choosing.
+ The 
+\series bold
+Boot loader location
+\series default
+ menu allows you to choose whether or not to install a boot loader, and
+ if so where to install it.
+ A boot loader is a program which enables you to choose which operating
+ system to boot when you turn on your computer.
+ If you are unsure what to do, we recommend keeping the default choice.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Set user information
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/cal_users.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Next, you will be asked about some information.
+ Mainly, your 
+\series bold
+name
+\series default
+, which will be used by some programs to greet you, a 
+\series bold
+username
+\series default
+ to log in the system, the 
+\series bold
+name of your computer
+\series default
+ as it will be seen by others on the same network as you, and your 
+\series bold
+password
+\series default
+.
+ Your password must be entered twice to make sure there were no typos.
+ Finally, you can decide whether or not you want to be asked your password
+ when logging in and if you want to use the same password for the administrator
+ account.
+ Recommended settings are already selected.
+ Unless you really prefer it another way, we suggest you leave it as is.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Look back at your choices and confirm
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "summary"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/cal_summary_erase_disk.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+As the last step before the installation takes place, you will be presented
+ a short summary of all the choices you made in the other sections.
+ Make sure the partition scheme is to your liking, as this is the point
+ of no return.
+ 
+\series bold
+Once you click Next, you will no longer be able to edit the partition scheme
+ and all data stored on overwritten partitions will be lost.
+
+\series default
+ If you changed your mind, you can go 
+\series bold
+Back
+\series default
+ a few times to choose another setup.
+ The information stored in other filled fields will be kept, so you will
+ not need to write it again.
+ Once you are satisfied with the summary, click 
+\series bold
+Next
+\series default
+ to start the installation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Installation...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/cal_install_slideshow.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+You can now kick back and let the installation proceed! While the installation
+ takes place, a slideshow will present you some key features of your new
+ operating system, Manjaro.
+ The installation should take but a few minutes.
+ The progress bar will fill up slowly at first, but will soon pick up speed.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+...
+ complete!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/cal_finish.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The installation is now done! To restart your system immediatly and boot
+ into your new operating system, select 
+\series bold
+Restart now
+\series default
+ and then click 
+\series bold
+Quit
+\series default
+.
+ If you want to continue exploring the live version of Manjaro, click 
+\series bold
+Quit
+\series default
+ without selecting 
+\series bold
+Restart now
+\series default
+.
+ When restarting, if you changed the boot order to boot on the live media,
+ you will need to put it back as it was to boot on your hard drive.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Using the Calamares installer - Advanced installation
+\begin_inset CommandInset label
+LatexCommand label
+name "advancedInstall"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Using the Thus graphical automatic installer
 \begin_inset Index idx
 status open
 
@@ -3311,7 +3904,7 @@ Choose your language
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3798,7 +4391,7 @@ Installation...
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3838,7 +4431,7 @@ The automatic installation process is well underway.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3985,7 +4578,7 @@ If you like Manjaro, you might consider joining the Manjaro community on
 \end_layout
 
 \begin_layout Chapter
-Using the graphical installer - experienced users
+Using the Thus graphical installer - experienced users
 \end_layout
 
 \begin_layout Standard
