@@ -3237,6 +3237,29 @@ Automatic installation
 
 \end_layout
 
+\begin_layout Standard
+The simplest installation method is to overwrite the entire hard drive and
+ let the installer suggest you a partition scheme for your new operating
+ system.
+ This is refered as the Automatic installation.
+ This is a suitable method if you want to start from scratch, since you
+ will lose all data stored on your disk.
+ If you want to preserve it, you can back it up on an external hard disk
+ before the installation and copy it back after.
+ Other installation methods are presented at the section 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "advancedInstall"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
 \begin_layout Section
 Choose your language
 \end_layout
@@ -3259,7 +3282,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-This screen is th fist one you will see when starting the installer.
+This screen is the first one you will see when starting the installer.
  You can select your language from the 
 \series bold
 Language
@@ -3352,6 +3375,8 @@ Change...
 
 \series default
  button, a menu will pop up, allowing you to choose the system locale.
+ This will affect how certain characters will appear.
+ Choosing the one corresponding to your language is best.
 \end_layout
 
 \end_inset
@@ -3401,14 +3426,12 @@ status open
 Next, you will be able to choose your keyboard layout.
  Choose your language in the list to the left and then the desired subcategory
  in the list to the right.
+ This will ensure the characters you type are the same on the screen as
+ they are on your keyboard.
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -3481,18 +3504,39 @@ status open
 \begin_layout Plain Layout
 !!! CHANGE SCREENSHOT TO SHOW ALL OPTIONS !!! It will then be time to decide
  which method to use to partition your hard drive.
+ The selected hard drive is displayed at the top of the window, along with
+ an indication stating if it uses BIOS or UEFI.
+ This section covers systems under BIOS.
+ UEFI systems are covered in chapter 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "UEFIInstall"
+
+\end_inset
+
+
+\series default
+.
  The current state of your drive is displayed at the bottom of the window.
- Several partitionning options are available.
- The first one will erase all data on your drive and automatically create
- a partition scheme that will suit Manjaro.
- The second will install Manjaro alongside your existing operating system
- by shrinking its partition to make room for Manjaro.
- The third will install on an existing partition, erasing all data stored
- on it.
- The last one allows you to create, modify and delete partitions yourself
- so your system is exactly the way you want it to be.
- This chapter will focus on the first option, while the others will be covered
- later in chapter 
+ Several partitioning options are available.
+ This chapter will focus on the first option, which erases all data on your
+ drive and automatically creates a partition scheme that will suit Manjaro.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Others options will be covered later in chapter 
 \series bold
 
 \begin_inset CommandInset ref
@@ -3504,17 +3548,16 @@ reference "advancedInstall"
 
 \series default
 .
+ The second one will install Manjaro alongside your existing operating system
+ by shrinking its partition to make room for Manjaro.
+ The third one will install Manjaro on an existing partition, erasing all
+ data stored on it.
+ The last one allows you to create, modify and delete partitions yourself
+ so your system is exactly the way you want it to be.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newpage pagebreak
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -3535,6 +3578,9 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -3545,7 +3591,8 @@ Erase disk
 \series default
 , the bottom of the window will change to display your current hard drive
  setup and the one proposed by the installer, which will be applied at the
- very end, when accepting the summary shown at section 
+ very end of the installation process, when accepting the summary shown
+ at section 
 \series bold
 
 \begin_inset CommandInset ref
@@ -3557,7 +3604,20 @@ reference "summary"
 
 \series default
 .
- You can also choose to encrypt your Manjaro partition.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You can also choose to encrypt your Manjaro partition.
  That way, anyone trying to access to the data it contains will have to
  enter a password of your choosing.
  The 
@@ -3569,17 +3629,7 @@ Boot loader location
  A boot loader is a program which enables you to choose which operating
  system to boot when you turn on your computer.
  If you are unsure what to do, we recommend keeping the default choice.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newpage pagebreak
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -3625,7 +3675,7 @@ name of your computer
 password
 \series default
 .
- Your password must be entered twice to make sure there were no typos.
+ Your password must be entered twice to make sure there are no typos.
  Finally, you can decide whether or not you want to be asked your password
  when logging in and if you want to use the same password for the administrator
  account.
@@ -3775,7 +3825,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The installation is now done! To restart your system immediatly and boot
+The installation is now done! To restart your system immediately and boot
  into your new operating system, select 
 \series bold
 Restart now
@@ -3817,6 +3867,155 @@ name "advancedInstall"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Overwriting the whole hard drive may not always be the desired installation
+ method.
+ More control can be achieved by using the other options offered in the
+ installer.
+ Each of them will be covered separately in the subsections below.
+\end_layout
+
+\begin_layout Subsection
+Installing alongside an existing operating system
+\end_layout
+
+\begin_layout Standard
+A first method is to shrink an existing partition to make room on your disk
+ and used the freed space to install Manjaro.
+ This is a suitable method if you want to dual-boot two operating systems
+ but do not want to go through the hastle of partitioning your disk yourself.
+ This part will be handled by the installer.
+\end_layout
+
+\begin_layout Subsection
+Replacing existing partition
+\end_layout
+
+\begin_layout Standard
+A third option would be to select an existing partition and overwrite it
+ to install Manjaro.
+ This could be useful if you are already dual-booting two different operating
+ systems and want to replace one of the two instead of installing a third
+ one.
+ You may also wish to prepare an empty partition yourself beforehand and
+ select it during the installation.
+\end_layout
+
+\begin_layout Subsection
+Manual partitioning
+\end_layout
+
+\begin_layout Standard
+The last option is the one that gives you the most control.
+ You will get the chance to adjust yourself the partition scheme of your
+ hard drive using the built-in partition manager and make it exactly the
+ way you want it.
+\end_layout
+
+\begin_layout Chapter
+Installing on a UEFI
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+UEFI
+\end_layout
+
+\end_inset
+
+ system with Calamares
+\begin_inset CommandInset label
+LatexCommand label
+name "UEFIInstall"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+UEFI is the commonly agreed on name for both the EFI & UEFI standards which
+ merged.
+ It does not include the old EFI v1, or Apple's own non-standard version
+ of EFI.
+\end_layout
+
+\begin_layout Standard
+Some newer hardware do not use the well-known BIOS to manage boot options.
+ Instead, a new one named UEFI (Unified Extensible Firmware Interface) is
+ used.
+ It often goes hand in hand with the nefarious Secure Boot option making
+ it more difficult to install other operating systems than Microsoft Windows.
+ If your computer came with Microsoft Windows 8 or later installed, your
+ computer uses UEFI.
+ However, the Linux community reacted to this and developped means to install
+ on those systems as well.
+ Some installers, such as Calamares, can even automate the process so it
+ makes no difference to the user whether their machine uses UEFI or BIOS.
+\end_layout
+
+\begin_layout Section
+Booting in UEFI mode
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+The most important step is to ensure that your machine does not have Secure
+ Boot enabled
+\series default
+.
+ Only a very limited number of operating systems will boot with this enabled.
+ You must disable this in your BIOS before proceeding; if you don't know
+ how to do this please refer to your computer's user manual.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/uefi-install/boot-selection.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In UEFI mode the Manjaro boot selection screen looks quite different.
+ However, the two main installation options are still there.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once you have booted the system from the Live CD/USB you will be presented
+ with the Manjaro boot selection screen.
+ It has two main options for the drivers it will use (either Free or non-Free).
+ The main difference is the lack of any option for language or keyboard
+ layout.
+ This is actually not that big of a problem, since these can be setup in
+ the live environment and in the Calamares installer, which will make them
+ permanent on the installed system.
 \end_layout
 
 \begin_layout Chapter
@@ -5275,7 +5474,7 @@ The most important step is to ensure that your machine does not have Secure
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
