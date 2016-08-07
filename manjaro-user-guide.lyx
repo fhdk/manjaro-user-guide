@@ -3492,7 +3492,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-erase-disk/cal_partitions.png
+	filename images/calamares-erase-disk/partition.png
 	lyxscale 50
 	width 100col%
 
@@ -3502,8 +3502,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-!!! CHANGE SCREENSHOT TO SHOW ALL OPTIONS !!! It will then be time to decide
- which method to use to partition your hard drive.
+It will then be time to decide which method to use to partition your hard
+ drive.
  The selected hard drive is displayed at the top of the window.
  Left of it is an indication stating if it uses BIOS or UEFI and .
  This section covers systems under BIOS.
