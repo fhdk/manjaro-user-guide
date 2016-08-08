@@ -4581,6 +4581,483 @@ name "gparted"
 
 \end_layout
 
+\begin_layout Standard
+Gparted is a graphical program used to modify partitions on drives.
+ It is very powerful and yet has a very user-friendly interface.
+ Partitions are sections of a drive which store data using a certain format
+ named file system.
+ Examples of well-known file systems are ntfs (used by Microsoft Windows),
+ ext4 (used by Linux) and fat32.
+ All drives, be they hard drives or flash drives such as USB keys contain
+ one or more partitions.
+ GParted allows you to create and delete partitons, as well as change the
+ attributes, such as their size, their location on the disk and the file
+ system.
+ It can also create partition tables of type MBR and GPT.
+\end_layout
+
+\begin_layout Standard
+Int this section, we will demonstrate how to reduce the size of an existing
+ partition and use the freed space to create two new partitions, which will
+ be used to install Manjaro later on!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+First things first, let's fire it up! You can find GParted in the menu of
+ the live version of Manjaro.
+ It can also be found in the repositories of most Linux distributions.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_1.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+After authenticating, a window similar to the one presented on the picture
+ will appear.
+ A bar shows a diagramatic representation of your drive, which is indicated
+ on the button at the top right of the window.
+ If you have multiple drives, you can select another by clicking on this
+ button.
+ Each partition is represented by a rectangle in the bar.
+ The coloured part shows the portion that contains data.
+ All partitions are also presented in the form of a list with information
+ about them.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_2.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Clicking on either a partition in the list or the rectangle in the bar represent
+ing it will select it and offer options as to what to do with it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_3.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In the top panel are several buttons each representing a different action.
+ The first one is disabled for now as it creates a partition from empty
+ space, the second deletes the selected partition and the third one allows
+ to resize a partition.
+ This is the one we are interested in.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_resize_modif.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Clicking it will bring up another window showing the partition up close
+ at the top as well as the size of the partition.
+ To reduce the size of the partition, click and drag the edges of the rectangle.
+ Alternatively, you can write how much space you want to free on each side
+ of the partition in the fields below.
+ Once some space has been freed, you can also drag the partition around
+ to position it in the space it used to fill.
+ Click the 
+\series bold
+Resize/Move
+\series default
+ button once you are done.
+ 
+\series bold
+Before resizing a partition, it is strongly suggested to back the data stored
+ on it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_create.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once some space has been freed on the drive, you can use it to create a
+ new partition! Select it and click the first button in the top bar.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_create_2.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In the window that pops up, you will get the chance to set the size of the
+ new partition you will create.
+ By default, it takes all of the available free space, but you can change
+ that in the same manner as when resizing the partition earlier.
+ You can also, among other options, choose the file system used by the partition.
+ For Linux partitions, ext4 usually works fine, though other choices such
+ as xfs and btrfs are also available.
+ You can also give a label to your partition, which will make it easier
+ for you to identify it.
+ Clicking the 
+\series bold
++ Add
+\series default
+ button will close the window.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If your new partition does not take all of the available space, you can
+ repeat this step to create other partitions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_apply.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+After all of this work, still no actual changes have been made to your drive.
+ Instead, your modifications have been recorded into a list, visible at
+ the bottom of the window.
+ To apply the changes, click the checkmark button at the top of the window.
+ This is your last chance to make changes.
+ 
+\series bold
+Once you click the checkmark button, the modifications will be applied to
+ the drive.
+
+\series default
+ Alternatively, to cancel the last modification, click the button to its
+ left.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_working.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A new window will pop up indicating the operations being worked on...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_success.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+...
+ and at the end if the modifications were applied successfully.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_result.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Congratulations, you have now successfully created new partitions which
+ you will be able to use to install Manjaro!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Installing on a UEFI
 \begin_inset Index idx
@@ -5677,7 +6154,7 @@ Create a partition table
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -5820,7 +6297,7 @@ Partition 1: Root and Boot
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -5975,7 +6452,7 @@ Finalising the partitions
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
