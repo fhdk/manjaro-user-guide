@@ -3238,6 +3238,22 @@ Automatic installation
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The simplest installation method is to overwrite the entire hard drive and
  let the installer suggest you a partition scheme for your new operating
  system.
@@ -3864,6 +3880,22 @@ Using the Calamares installer - Advanced installation
 \begin_inset CommandInset label
 LatexCommand label
 name "advancedInstall"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
 
 \end_inset
 
@@ -5079,6 +5111,22 @@ name "UEFIInstall"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Quote
 UEFI is the commonly agreed on name for both the EFI & UEFI standards which
  merged.
@@ -5162,6 +5210,215 @@ Once you have booted the system from the Live CD/USB you will be presented
  This is actually not that big of a problem, since these can be setup in
  the live environment and in the Calamares installer, which will make them
  permanent on the installed system.
+\end_layout
+
+\begin_layout Section
+Differences in the partition setup
+\end_layout
+
+\begin_layout Standard
+The key difference in the way the partitions are arranged compared to the
+ case with BIOS is that a small partition of a few hundreds of Mbs must
+ be created to house some files used when booting the system.
+ Luckily, in all assisted installation options, Calamares handles the creation
+ of this partition if it does not already exists and writes the necessary
+ files to it.
+ If the partition already exists, it is detected and used to write the files.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/partitions.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once the Calamares installer is executed, the first noticeable difference
+ with the case with a BIOS is at the top of the screen, where EFI is specified
+ instead.
+ In this case, a GPT partition table is also used.
+ The bottom of the screen also displays a partition scheme a little different
+ from before, with the sda1 partition storing the files used when booting.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Assisted installation
+\end_layout
+
+\begin_layout Standard
+The installation using the three assisted installation options do not change
+ much from the case with a BIOS.
+ Calamares takes care of the differences for you.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/erase/select_erase.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+When selecting the 
+\series bold
+Erase disk
+\series default
+ option, the suggested partition setup will also differ.
+ This will also change the summary presented at the end.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/alongside/click_partition_alongside.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+When selecting the 
+\series bold
+Install alongside
+\series default
+ option and clicking on the partition to shrink, the suggested partition
+ setup will mention if an existing EFI partition was detected.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/replace/click_partition_replace.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+When selecting the 
+\series bold
+Replace a partition
+\series default
+ option and clicking on the partition to overwrite, the suggested partition
+ setup will also mention if an existing EFI partition was detected.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Manual installation
+\end_layout
+
+\begin_layout Section
+Dual-booting with Microsoft Windows 10
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Microsoft Windows 10
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -6712,7 +6969,7 @@ In automatic mode, Thus creates a conservative partition layout that will
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -6746,7 +7003,7 @@ The partition layout created by Thus in automatic mode (with separate Home).
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7204,7 +7461,7 @@ Start the advanced installation process
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7246,7 +7503,7 @@ When you reach the sixth step of the installation process, select
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7283,7 +7540,7 @@ On the partitioning screen you can see the 100GB of free space we just created.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7336,7 +7593,7 @@ A partition of 100MB should be enough, but the mountpoint
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7385,7 +7642,7 @@ Select the mountpoint
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
