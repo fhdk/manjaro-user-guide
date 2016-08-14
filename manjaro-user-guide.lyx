@@ -4208,7 +4208,14 @@ Next
 \end_layout
 
 \begin_layout Subsection
-Manual partitioning
+Manual partitioning 
+\begin_inset CommandInset label
+LatexCommand label
+name "BIOS-manual"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5218,10 +5225,10 @@ Differences in the partition setup
 
 \begin_layout Standard
 The key difference in the way the partitions are arranged compared to the
- case with BIOS is that a small partition of a few hundreds of Mbs must
- be created to house some files used when booting the system.
+ case with BIOS is that a small partition of a few hundred MB must be created
+ to house some files used when booting the system.
  Luckily, in all assisted installation options, Calamares handles the creation
- of this partition if it does not already exists and writes the necessary
+ of this partition if it does not already exist and writes the necessary
  files to it.
  If the partition already exists, it is detected and used to write the files.
 \end_layout
@@ -5251,8 +5258,8 @@ Once the Calamares installer is executed, the first noticeable difference
  with the case with a BIOS is at the top of the screen, where EFI is specified
  instead.
  In this case, a GPT partition table is also used.
- The bottom of the screen also displays a partition scheme a little different
- from before, with the sda1 partition storing the files used when booting.
+ The bottom of the screen displays the current partition scheme, with the
+ sda1 partition storing the files used when booting.
 \end_layout
 
 \end_inset
@@ -5300,12 +5307,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-When selecting the 
+The 
 \series bold
 Erase disk
 \series default
- option, the suggested partition setup will also differ.
- This will also change the summary presented at the end.
+ option suggests a EFI partition at the beginning, a root partition for
+ Manjaro and a swap partition at the end.
 \end_layout
 
 \end_inset
@@ -5405,6 +5412,1098 @@ Replace a partition
 
 \begin_layout Section
 Manual installation
+\end_layout
+
+\begin_layout Standard
+The last installation options is the one that most drastically changes if
+ you are using a UEFI system.
+ The following steps will walk you through the process of creating a partition
+ scheme suitable for your system in three different scenarios.
+ Ths first one (
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "efi-from-scratch"
+
+\end_inset
+
+
+\series default
+) will show you how to create your partition scheme from within Calamares
+ without using existing partitions.
+ The second one (
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "efi-gparted"
+
+\end_inset
+
+
+\series default
+) will show you how to create the partitions with GParted before using them
+ in the Calamares installer.
+ Finally, the third one (
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "existing-efi"
+
+\end_inset
+
+
+\series default
+) will show you how to use previously created partitions during the installation
+, including a EFI partition used by another operating system.
+ 
+\end_layout
+
+\begin_layout Subsection
+Creating partitions from scratch 
+\begin_inset CommandInset label
+LatexCommand label
+name "efi-from-scratch"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This scenario will assume that you do not wish to use a single existing
+ partition.
+ We will thus start with a completely empty hard drive.
+ This will also be the case if you are using a brand new drive or are using
+ a virtual machine.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/partition_table.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once you select the 
+\series bold
+Manual partitioning
+\series default
+ option, the first thing to make sure is that the partition table is of
+ type GPT.
+ To create a new partition table, click on the 
+\series bold
+New Partition Table
+\series default
+ button and select 
+\series bold
+GUID Partition Table (GPT)
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/click_create.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Then, select the empty space and click on 
+\series bold
+Create
+\series default
+ to make a new partition.
+ The first one we will create will be the EFI partition, which will house
+ files used when booting.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/efi_fat32.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In the dialog that appears, select a size of a few hundred MB.
+ Here I chose 500 MB.
+ Then, select 
+\series bold
+fat32
+\series default
+ as the file system.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/boot_efi.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Next, choose 
+\series bold
+/boot/efi
+\series default
+ as the mount point.
+ The contents of the partition will be accessible from this directory.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/efi_flags.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Finally, select the 
+\series bold
+boot
+\series default
+ and 
+\series bold
+esp
+\series default
+ flags from the list.
+ Once this is done, click the 
+\series bold
+OK
+\series default
+ button.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/swap_linuxswap.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The next partition we will create is the swap.
+ This partition will be used if you ever run out of RAM to complete operations.
+ The suggested size for this partition is a few GB.
+ Here I chose 4 GB.
+ Choose 
+\series bold
+linuxswap
+\series default
+ as the file system.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/swap_slide.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+You can also click and drag the partition to move it elsewhere in the unallocate
+d space.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/partitions_manual.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Next are the partitions used by Manjaro itself.
+ There are a variety of possible scenarios.
+ Here I chose the simplest where I only created a single partition mounted
+ under the 
+\series bold
+/
+\series default
+ directory.
+ Another scenario with the 
+\series bold
+/home
+\series default
+ directory being housed on another partition is presented in the section
+ 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "BIOS-manual"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/summary_manual.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+You can then proceed as usual up to the summary, which is the last step
+ before the changes are applied to your drive.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Using GParted to create partitions beforehand 
+\begin_inset CommandInset label
+LatexCommand label
+name "efi-gparted"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The creation of the partition table and partitions shown above can also
+ be handled by GParted.
+ The following steps will guide you through the process.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_partition_table.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+To create a new partition table, select 
+\series bold
+Device > Create Partition Table...
+
+\series default
+ .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_gpt.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+From the dialog box that pops up you can then choose the type of partition
+ table to be created.
+ For a UEFI system, a 
+\series bold
+GPT
+\series default
+ partition table is recommended.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_create.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once this is done, select the unaloccated space and click on the first button
+ at the top of the window to create a new partiton.
+ The first one we will create is the EFI partition.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_efi.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Like in the case where Calamares was used to create the partitions, it is
+ recommended to choose a size of a few hundred MB.
+ It is necessary to use the 
+\series bold
+fat32
+\series default
+ file system.
+ You can also set a label to make the partition easier to recognize.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_swap.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Next, select the rest of the empty space and create a new partition.
+ This one will be the swap.
+ It is recommended to choose a size of a few GB.
+ It is necessary to use the 
+\series bold
+linux-swap
+\series default
+ file system.
+ You can click and drag the partition to move it elsewhere in the unallocated
+ space.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_root.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Finally, create the partitions that will be used by Manjaro.
+ Here I chose to make a single one that will later be mounted under the
+ 
+\series bold
+/
+\series default
+ directory.
+ I chose the 
+\series bold
+ext4
+\series default
+ file system, although others such as xfs and btrfs are available.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_apply.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+It is finally time to apply the changes! Make sure everything is to your
+ liking and then click on the checkmark button.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_manage_flags.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A few flags then need to be set so the EFI partition behaves correctly.
+ 
+\series bold
+Right click
+\series default
+ on the partition you intend to use for the EFI partition and select 
+\series bold
+Manage Flags
+\series default
+ from the drop-down menu.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_flags.png
+	lyxscale 50
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In the dialog box that appears, select 
+\series bold
+boot
+\series default
+ and 
+\series bold
+esp
+\series default
+.
+ 
+\series bold
+Close
+\series default
+ the dialog box once this is done.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_result.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+That's it! Your partitions are all set up! It is now time to put them to
+ use in the installer.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Using an already existing EFI partition 
+\begin_inset CommandInset label
+LatexCommand label
+name "existing-efi"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You may want to consider this scenario is you prepared the partitions beforehand
+ with a tool like GParted or if you are dual-booting with another operating
+ system.
+ In the later case, you will probably want to use the same EFI partition
+ for Manjaro and the other operating system.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/cal_edit_efi.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once in the 
+\series bold
+Manual partitioning
+\series default
+ option, select the partition you want for the EFI partition and click on
+ the 
+\series bold
+Edit
+\series default
+ button.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/cal_boot_efi.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In the dialog box that appears, choose to mount the partition under 
+\series bold
+/boot/efi
+\series default
+.
+ You also have the option to either keep the contents of the partition or
+ format it.
+ 
+\series bold
+Keeping them is especially important when dual-booting with another operating
+ system.
+
+\series default
+ That way, the Calamares installer will write the files necessary for booting
+ Manjaro alongside those of the other operating system.
+ Also, make sure the 
+\series bold
+boot
+\series default
+ and 
+\series bold
+esp
+\series default
+ flags are checked.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/cal_root.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Next, select the other partitions you want to use and choose their respective
+ mount points.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/summary_gparted.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once everything is set up, you can proceed up to the summary.
+ As always, this is the very last step where you can go back to make changes.
+ Once you click the 
+\series bold
+Next
+\series default
+ button, the modifications will be applied to your drive and the actual
+ installation will begin.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
