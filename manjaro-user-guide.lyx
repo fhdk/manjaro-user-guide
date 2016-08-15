@@ -9694,11 +9694,11 @@ Add/Remove Software
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/pamac.png
+	filename images/pamac/pamac_install.png
 	lyxscale 50
 	width 95col%
 
@@ -10739,11 +10739,11 @@ Pamac
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/update-manager.png
+	filename images/pamac/pamac_update.png
 	lyxscale 50
 	width 95col%
 
@@ -10757,7 +10757,8 @@ status collapsed
 
 \begin_layout Plain Layout
 Pamac's Update Manager is available from the system tray.
- In this screenshot it has a red icon, indicating there are software updates.
+ In this screenshot it has an icon with an exclamation mark, indicating
+ there are software updates.
  An update check is performed automatically; all you have to do is click
 \series bold
  Apply
@@ -10951,11 +10952,11 @@ Pamac
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/pamac-search.png
+	filename images/pamac/pamac_whisker_menu.png
 	lyxscale 50
 	width 95col%
 
@@ -10968,14 +10969,9 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Pamac allows easy access to the available software.
- All software applications in the repositories are free; no need to worry
- about purchase or licensing costs.
- Once you've found the package you want to install, right-click and select
-\series bold
- Install
-\series default
-, then click the tick in the top-left corner to confirm.
+Pamac is a piece of software that allows you to install software on your
+ computer.
+ You can find it under the name Add/Remove Software in the application menu.
 \end_layout
 
 \end_inset
@@ -10992,11 +10988,97 @@ Pamac allows easy access to the available software.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/pamac-install.png
+	filename images/pamac/pamac_detail_click.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pamac allows easy access to the available software.
+ All software applications in the repositories are free; no need to worry
+ about purchase or licensing costs.
+ To obtain more information on a package, can right-click on it and select
+ 
+\series bold
+Details
+\series default
+.
+ This will give you a description of the package, link to the official website
+ of the package, a list of dependencies and much more.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/pamac/pamac_install.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once you've found the package you want to install, right-click and select
+\series bold
+ Install
+\series default
+, then click on the 
+\series bold
+Apply
+\series default
+ button that will appear at the bottom of the window to confirm.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/pamac/pamac_summary.png
 	lyxscale 50
 	width 95col%
 
@@ -11013,7 +11095,7 @@ The packages to be installed are listed so you can check this is what you
  want to do.
  When you are happy with the selection, click
 \series bold
- OK
+ Commit
 \series default
  and the software will be downloaded and installed.
 \end_layout
@@ -11032,11 +11114,11 @@ The packages to be installed are listed so you can check this is what you
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/pamac-auth.png
+	filename images/pamac/pamac_authenticate.png
 	lyxscale 50
 	width 95col%
 
@@ -11054,9 +11136,9 @@ To stop other users removing important software from the system you will
  If you don't know this you can't go any further.
  There are methods to reset this password if needed; visit the forum or
  IRC channel to find out more.
- Enter your administrative password and click
+ Enter your administrative password and click 
 \series bold
- OK
+Authenticate
 \series default
 .
 \end_layout
@@ -11075,11 +11157,11 @@ To stop other users removing important software from the system you will
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/pamac-downloading.png
+	filename images/pamac/pamac_processing.png
 	lyxscale 50
 	width 95col%
 
@@ -11110,11 +11192,11 @@ The software packages will be downloaded and installed.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/pamac-done.png
+	filename images/pamac/pamac_software_installed.png
 	lyxscale 50
 	width 95col%
 
@@ -11127,42 +11209,9 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The new software will show as installed within Pamac..
+The new software will show as installed within Pamac and is available in
+ the application menu ready for you to use.
  You can close Pamac now if you want.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/maintaining-your-system/pamac-new-software-installed.png
-	lyxscale 50
-	width 95col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-The new software is available in the application menu ready for you to use.
 \end_layout
 
 \end_inset
