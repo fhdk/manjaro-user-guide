@@ -4355,7 +4355,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-manual/man_part_edit_modif.png
+	filename images/calamares-manual/man_part_edit.png
 	lyxscale 50
 	width 100col%
 
@@ -4805,7 +4805,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/gparted/gparted_resize_modif.png
+	filename images/gparted/gparted_resize.png
 	lyxscale 50
 	width 100col%
 
@@ -9211,7 +9211,7 @@ ons from its user and developer community!
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
