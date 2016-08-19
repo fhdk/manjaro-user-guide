@@ -481,6 +481,14 @@ Fernyhough Editor of the User Guide 0.8.9-0.8.13, 15.09-16.06, Community Managem
 Sabras Wiki
 \end_layout
 
+\begin_layout Description
+Manuel
+\begin_inset space ~
+\end_inset
+
+Barrette Editor of the User Guide 16.08
+\end_layout
+
 \begin_layout Subsection*
 Alumni
 \end_layout
@@ -2312,7 +2320,7 @@ Click
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -5181,7 +5189,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/uefi-install/boot-selection.png
+	filename images/calamares-uefi/UEFI_manjaro_menu.png
 	lyxscale 50
 	width 100col%
 
@@ -6518,6 +6526,42 @@ Microsoft Windows 10
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Installing Manjaro alongside a Microsoft Windows 10 installation can essentialy
+ be done in the same manner as any other installation on a UEFI system.
+ 
+\series bold
+Make sure the Secure Boot option is disabled
+\series default
+ and it should be fine.
+\end_layout
+
+\begin_layout Subsection
+Update the GRUB bootloader, or, Where did Windows go?
+\end_layout
+
+\begin_layout Standard
+Sometimes the bootloader GRUB2 doesn't detect an existing Microsoft Windows
+ installation when installing.
+ This means that only Manjaro Linux will appear in the list of options when
+ you boot the machine.
+\end_layout
+
+\begin_layout Standard
+To solve this problem, run the command:
+\end_layout
+
+\begin_layout LyX-Code
+
+\family typewriter
+sudo update-grub
+\end_layout
+
+\begin_layout Standard
+in a terminal after booting into Manjaro and it will detect Windows and
+ add an entry to the boot menu.
 \end_layout
 
 \begin_layout Chapter
@@ -8230,7 +8274,7 @@ http://rufus.akeo.ie/
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -8402,7 +8446,7 @@ Your computer will be set up with no free space into which Manjaro can be
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -8445,7 +8489,7 @@ manjaro
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -8481,7 +8525,7 @@ Right click on the largest NTFS partition and select
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
