@@ -3919,7 +3919,14 @@ Overwriting the whole hard drive may not always be the desired installation
 \end_layout
 
 \begin_layout Subsection
-Installing alongside an existing operating system
+Installing alongside an existing operating system 
+\begin_inset CommandInset label
+LatexCommand label
+name "alongside"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4078,7 +4085,14 @@ Next
 \end_layout
 
 \begin_layout Subsection
-Replacing existing partition
+Replacing existing partition 
+\begin_inset CommandInset label
+LatexCommand label
+name "replace"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5285,7 +5299,14 @@ Once the Calamares installer is executed, the first noticeable difference
 \end_layout
 
 \begin_layout Section
-Assisted installation
+Assisted installation 
+\begin_inset CommandInset label
+LatexCommand label
+name "assistedUEFI"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6384,7 +6405,7 @@ status open
 \begin_inset Graphics
 	filename images/calamares-uefi/gparted/cal_boot_efi.png
 	lyxscale 50
-	width 100col%
+	width 50col%
 
 \end_inset
 
@@ -6441,7 +6462,7 @@ status open
 \begin_inset Graphics
 	filename images/calamares-uefi/gparted/cal_root.png
 	lyxscale 50
-	width 100col%
+	width 50col%
 
 \end_inset
 
@@ -6529,13 +6550,530 @@ Microsoft Windows 10
 \end_layout
 
 \begin_layout Standard
-Installing Manjaro alongside a Microsoft Windows 10 installation can essentialy
- be done in the same manner as any other installation on a UEFI system.
- 
+The above instructions used Linux Mint as the already installed operating
+ system.
+ However, the partition scheme used by Windows is a bit different from the
+ one typically used by Linux.
+ This section shows the differences in the installation steps between the
+ two cases.
+\end_layout
+
+\begin_layout Subsection
+Download the installation media
+\end_layout
+
+\begin_layout Standard
+First, make sure you have downloaded a 64-bit version of Manjaro.
+ It doesn't matter which edition you choose, but the filename must end with
 \series bold
-Make sure the Secure Boot option is disabled
+ x86_64.iso
 \series default
- and it should be fine.
+.
+\end_layout
+
+\begin_layout Standard
+Next, create the Live media by burning the disc image to a DVD or writing
+ to a USB flash drive.
+ The process is very similar to a non-UEFI installation, but for Windows
+ users using USB media, Rufus
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://rufus.akeo.ie/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ is highly recommended.
+ Rufus should use the following settings:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float marginfigure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/uefi-install/rufus.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rufus with recommended settings
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Device: "choose your USB" (Attention: choose correctly, the device selected
+ here will be formatted!)
+\end_layout
+
+\begin_layout Description
+Partition
+\begin_inset space ~
+\end_inset
+
+scheme: GPT partition scheme for UEFI
+\end_layout
+
+\begin_layout Description
+File
+\begin_inset space ~
+\end_inset
+
+system: FAT32 (Default)
+\end_layout
+
+\begin_layout Description
+Cluster
+\begin_inset space ~
+\end_inset
+
+size: 4096 bytes (Default)
+\end_layout
+
+\begin_layout Description
+Volume
+\begin_inset space ~
+\end_inset
+
+label: MJRO1608
+\end_layout
+
+\begin_layout Description
+Format
+\begin_inset space ~
+\end_inset
+
+Options: Quick format.
+ Create a bootable disk using: ISO Image (Click on the DVD icon to select
+ your downloaded disc image).
+ Create extended label and icon files.
+\end_layout
+
+\begin_layout Standard
+Click
+\series bold
+ Start
+\series default
+, and you are done! (though it takes between around two and five minutes
+ to complete).
+\end_layout
+
+\begin_layout Standard
+Once you are done, restart your computer and boot on the USB key as was
+ explained earlier.
+\end_layout
+
+\begin_layout Subsection
+Installing Manjaro next to Microsoft Windows 10
+\end_layout
+
+\begin_layout Standard
+The EFI partition created and used by Windows can also be used by Manjaro.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_alongside.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Using the assisted installation option, select the partition used as the
+ C drive by Windows.
+ It should be the biggest one.
+ Then, move the slider as explained in section 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "alongside"
+
+\end_inset
+
+
+\series default
+ to increase or decrease the size of the partition that will be created
+ for Manjaro.
+ The Windows EFI partition is detected automatically.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This can also be done in the manual partitioning option.
+ The steps below are very similar to the ones presented in other sections
+ such as 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "BIOS-manual"
+
+\end_inset
+
+
+\series default
+ and 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "efi-from-scratch"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_edit_Cdrive.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once again, this time using the manual partitioning option, select the partition
+ used as the C: drive by Windows and 
+\series bold
+Edit
+\series default
+ it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_reduce_Cdrive.png
+	lyxscale 50
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Then, use the slider at the top of the window that pops up to reduce its
+ size.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_create.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Next, select the freed space and click on 
+\series bold
+Create
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_root.png
+	lyxscale 50
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Now you can create some new partitions! Here I chose the simplest partition
+ scheme, as I create a single partition mounted as / and with the ext4 file
+ system.
+ No matter the partition scheme you choose, there must be one partition
+ mounted as /.
+ The rest is up to you.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_edit_EFI.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once the partitions are created, select the EFI partition that was created
+ by Windows and 
+\series bold
+Edit
+\series default
+ it.
+ It should be the only one using the 
+\series bold
+fat32
+\series default
+ file system.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_mount_EFI.png
+	lyxscale 50
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Choose to 
+\series bold
+Keep
+\series default
+ the content of the partition.
+ This will make sure that the files used by Windows will not be deleted.
+ If you choose to format it, you will not be able to boot into Windows anymore,
+ so keeping its content is very important.
+ Then, select 
+\series bold
+/boot/efi
+\series default
+ as the mount point and make sure the 
+\series bold
+boot
+\series default
+ and 
+\series bold
+esp
+\series default
+ flags are checked.
+ Once this is done, the partitioning is over!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_summary_manual.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+You can then continue through the rest of the installer up until the summary.
+ As always, this is your very last chance to review the changes you are
+ about to make.
+ If you are satisfied with them, you can click 
+\series bold
+Next
+\series default
+ and proceed with the installation!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
