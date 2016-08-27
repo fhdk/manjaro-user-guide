@@ -1395,7 +1395,7 @@ If the code generated from the disc image matches that contained in the
 \begin_layout Standard
 From this point on we'll assume you are using the file
 \series bold
- manjaro-xfce-16.08-pre5-x86_64-sha1sum.txt
+ manjaro-xfce-16.08-x86_64-sha1sum.txt
 \series default
 .
 \end_layout
@@ -1437,7 +1437,7 @@ jonathon@box:~/download$ ls
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-xfce-16.08-pre5-x86_64-sha1sum.txt  manjaro-xfce-16.08-pre5-x86_64.iso
+manjaro-xfce-16.08-x86_64-sha1sum.txt  manjaro-xfce-16.08-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1450,21 +1450,21 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-jonathon@box:~/download$ sha256sum -c manjaro-xfce-16.08-pre5-x86_64-sha1sum.txt
+jonathon@box:~/download$ sha1sum -c manjaro-xfce-16.08-x86_64-sha1sum.txt
 \end_layout
 
 \begin_layout Standard
 The line shows the result of the checks.
- In this case, it shows that
+ In this case, it shows that 
 \family typewriter
-sha256sum
+sha1sum
 \family default
  has successfully verified the disc image I downloaded against the checksum
  value in the file.
 \end_layout
 
 \begin_layout LyX-Code
-sha256sum: manjaro-xfce-16.08-pre5-x86_64.iso: OK
+sha256sum: manjaro-xfce-16.08-x86_64.iso: OK
 \end_layout
 
 \begin_layout Standard
@@ -1479,7 +1479,7 @@ Manual verification
 To manually check the integrity of your downloaded file, first open the
  downloaded
 \series bold
- manjaro-xfce-16.08-pre5-x86_64-sha1sum.txt
+ manjaro-xfce-16.08-x86_64-sha1sum.txt
 \series default
  checksum file using a text editor such as Gedit.
  Once the checksum file has been opened, and the codes are visible, open
@@ -1539,7 +1539,7 @@ Then you can generate an SHA-1 hash code for the disc image using:
 \begin_layout LyX-Code
 jonathon@box:~/download$
 \family typewriter
- sha1sum manjaro-xfce-16.08-pre5-x86_64.iso
+ sha1sum manjaro-xfce-16.08-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1668,7 +1668,7 @@ To speed up the process it's probably a good idea to deselect the hashes
 
  To verify the checksum is correct, open the
 \series bold
- manjaro-xfce-16.08-pre5-x86_64-sha1sum.txt
+ manjaro-xfce-16.08-x86_64-sha1sum.txt
 \series default
  in a text editor such as Notepad, copy the checksum for the disc image
  file you have downloaded, and paste it into the verification box.
@@ -1821,7 +1821,7 @@ KDE
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-15.09-rc3-i686.iso
+manjaro-kde-16.08-i686.iso
 \end_layout
 
 \end_inset
@@ -1859,7 +1859,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-15.09-rc3-x86_64.iso
+manjaro-kde-16.08-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1897,7 +1897,7 @@ Xfce
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-15.09-rc3-i686.iso
+manjaro-xfce-16.08-i686.iso
 \end_layout
 
 \end_inset
@@ -1935,7 +1935,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-15.09-rc3-x86_64.iso
+manjaro-xfce-16.08-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1973,7 +1973,7 @@ Net
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-net-15.09-rc3-i686.iso
+manjaro-net-16.08-i686.iso
 \end_layout
 
 \end_inset
@@ -1982,7 +1982,7 @@ manjaro-net-15.09-rc3-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-540MB
+630MB
 \end_layout
 
 \end_inset
@@ -2011,7 +2011,7 @@ CD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-net-15.09-rc3-x86_64.iso
+manjaro-net-16.08-x86_64.iso
 \end_layout
 
 \end_inset
@@ -2721,8 +2721,8 @@ Write the image with:
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-15.09-rc3-x86_64.iso of=/dev/(Device identifier from
- above) bs=4M
+sudo dd if=manjaro-xfce-16.08-x86_64.iso of=/dev/(Device identifier from above)
+ bs=4M
 \begin_inset Newline newline
 \end_inset
 
@@ -2738,7 +2738,7 @@ My USB drive is at /dev/sdc so I would use:
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-15.09-rc3-x86_64.iso of=/dev/sdc bs=4M
+sudo dd if=manjaro-xfce-16.08-x86_64.iso of=/dev/sdc bs=4M
 \end_layout
 
 \begin_layout Enumerate
@@ -2842,7 +2842,7 @@ Volume
 \begin_inset space ~
 \end_inset
 
-label: MJRO1509
+label: MJRO1608
 \end_layout
 
 \begin_layout Description
@@ -9450,7 +9450,7 @@ The text-based installer is only recommended for advanced users.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -9496,7 +9496,7 @@ Set date and time
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -9535,7 +9535,7 @@ Hard disk(s) preparation
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -9580,7 +9580,7 @@ Install system
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -9621,7 +9621,7 @@ Configure system
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -9667,7 +9667,7 @@ Install bootloader
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -9707,7 +9707,7 @@ Quit
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -9794,7 +9794,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome.png
+	filename images/welcome-to-manjaro-2016/welcome_installed.png
 	lyxscale 50
 	width 100col%
 
@@ -9868,11 +9868,11 @@ Super
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/software-menu.png
+	filename images/welcome-to-manjaro-2016/app_menu.png
 	lyxscale 50
 	width 100col%
 
@@ -9901,6 +9901,7 @@ Software applications that are installed will be displayed in the applications
 
 \begin_layout Standard
 You can see that the five main software applications have an item in the
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -9928,11 +9929,11 @@ Favourites
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/add-to-favourites.png
+	filename images/welcome-to-manjaro-2016/add_favourites.png
 	lyxscale 50
 	width 100col%
 
@@ -9959,11 +9960,11 @@ Add to Favourites
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/remove-from-favourites.png
+	filename images/welcome-to-manjaro-2016/remove_favourites.png
 	lyxscale 50
 	width 100col%
 
@@ -10016,11 +10017,11 @@ Terminal Emulator
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/terminal.png
+	filename images/welcome-to-manjaro-2016/terminal.png
 	lyxscale 50
 	width 95col%
 
@@ -10049,9 +10050,9 @@ ls
 \end_inset
 
 Learning how to use the terminal is not needed for running Manjaro.
- It's highly recommended, however; check out sites like
+ It's highly recommended, however; check out sites like 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -10091,11 +10092,11 @@ File Manager
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/file-manager.png
+	filename images/welcome-to-manjaro-2016/file_manager.png
 	lyxscale 50
 	width 95col%
 
@@ -10153,11 +10154,11 @@ Web Browser
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/web-browser.png
+	filename images/welcome-to-manjaro-2016/web_browser.png
 	lyxscale 50
 	width 95col%
 
@@ -10209,11 +10210,11 @@ Mail Reader
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/mail-reader.png
+	filename images/welcome-to-manjaro-2016/mail_reader.png
 	lyxscale 50
 	width 95col%
 
@@ -10290,7 +10291,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The
+The 
 \series bold
 Package Manager
 \series default
@@ -10301,11 +10302,11 @@ Package Manager
 \begin_inset Newline newline
 \end_inset
 
-There are two main software managers in Manjaro:
+There are two main software managers in Manjaro : 
 \series bold
 Pamac
 \series default
- (installed with the Xfce edition) and
+ (installed with the Xfce edition) and 
 \series bold
 Octopi
 \series default
@@ -10378,11 +10379,11 @@ Whichever method you use, we look forward to meeting you!
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/getting-help/welcome.png
+	filename images/welcome-to-manjaro-2016/welcome_installed.png
 	lyxscale 50
 	width 95col%
 
@@ -10451,11 +10452,11 @@ http://forum.manjaro.org/
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/getting-help/forums.png
+	filename images/welcome-to-manjaro-2016/discussion_forum.png
 	lyxscale 50
 	width 95col%
 
@@ -10526,11 +10527,11 @@ http://bit.ly/manjaro-irc-web/
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/getting-help/irc-channel.png
+	filename images/welcome-to-manjaro-2016/irc_channels.png
 	lyxscale 50
 	width 95col%
 
@@ -10600,11 +10601,11 @@ http://lists.manjaro.org/listinfo/manjaro-general
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/getting-help/mailing-lists.png
+	filename images/welcome-to-manjaro-2016/mailing_list.png
 	lyxscale 50
 	width 95col%
 
@@ -10669,11 +10670,11 @@ http://wiki.manjaro.org/index.php?title=Main_Page
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/getting-help/wiki.png
+	filename images/welcome-to-manjaro-2016/wiki.png
 	lyxscale 50
 	width 95col%
 
@@ -10760,11 +10761,11 @@ Xfce settings manager
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/xfce-settings.png
+	filename images/welcome-to-manjaro-2016/xfce_settings_manager.png
 	lyxscale 50
 	width 95col%
 
@@ -10809,11 +10810,11 @@ Manjaro Settings Manager
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/manjaro-settings-manager.png
+	filename images/welcome-to-manjaro-2016/manjaro_settings_manager.png
 	lyxscale 50
 	width 95col%
 
@@ -10834,7 +10835,7 @@ The
  you set during installation.
  System-wide languages, keyboard layouts, users, and hardware drivers are
  all taken care of from here.
- It is available under
+ It is available under 
 \series bold
 Settings
 \series default
@@ -11387,11 +11388,11 @@ Octopi is an alternative software manager for Manjaro.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/octopi-upgrade-system.png
+	filename images/welcome-to-manjaro-2016/octopi_update_notifier.png
 	lyxscale 50
 	width 95col%
 
@@ -11427,11 +11428,11 @@ Octopi's update notifier is available from the system tray.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/octopi-updates.png
+	filename images/welcome-to-manjaro-2016/octopi_full_updates.png
 	lyxscale 50
 	width 95col%
 
@@ -11445,10 +11446,10 @@ status collapsed
 
 \begin_layout Plain Layout
 Alternatively, you can load Octopi's full interface.
- The red star indicated there are updated available, and the number shows
- how many.
- To show what is available, click on the red icon.
- To install the updates, click on the arrow next to the red icon and then
+ The number at the bottom shows how many updates there are.
+ To show what is available, click on the button with the red icon and the
+ number of updates.
+ To install the updates, click on the arrow next to the button and then
  click on
 \series bold
  Install
@@ -11822,11 +11823,11 @@ The process of installing new software using Octopi is very similar to Pamac.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/octopi-search.png
+	filename images/welcome-to-manjaro-2016/octopi_install.png
 	lyxscale 50
 	width 95col%
 
@@ -11863,11 +11864,11 @@ Octopi allows easy access to the available software.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/octopi-install-optional-deps.png
+	filename images/welcome-to-manjaro-2016/octopi_optional_dep.png
 	lyxscale 50
 	width 95col%
 
@@ -11882,7 +11883,7 @@ status collapsed
 \begin_layout Plain Layout
 Some software will have other packages it can optionally use if they are
  installed.
- These
+ These 
 \begin_inset Quotes eld
 \end_inset
 
@@ -11908,11 +11909,51 @@ optional dependencies
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/octopi-install-confirm.png
+	filename images/welcome-to-manjaro-2016/octopi_commit.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A summary of the transactions is displayed at the bottom of the window.
+ Once you are ready to apply them, click on the checkmark at the top-left
+ of the window to 
+\series bold
+Commit
+\series default
+ them.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro-2016/octopi_confirmation.png
 	lyxscale 50
 	width 95col%
 
@@ -11948,11 +11989,11 @@ The packages to be installed are listed so you can check this is what you
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/octopi-installed.png
+	filename images/welcome-to-manjaro-2016/octopi_installed.png
 	lyxscale 50
 	width 95col%
 
@@ -11983,11 +12024,11 @@ Octopi will show a confirmation that it installed the new software.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/octopi-new-software-installed.png
+	filename images/welcome-to-manjaro-2016/octopi_app_menu_installed.png
 	lyxscale 50
 	width 95col%
 
@@ -12055,7 +12096,7 @@ Pacman is the Arch Linux
 \series bold
  pac
 \series default
-kage
+kage 
 \series bold
 man
 \series default
@@ -12125,11 +12166,11 @@ You can also force a package list synchronisation before performing an update:
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/pacman-syyu.png
+	filename images/welcome-to-manjaro-2016/pacman_syyu.png
 	lyxscale 50
 	width 95col%
 
@@ -12349,11 +12390,11 @@ To update the mirror list use the following command:
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/pacman-mirrors.png
+	filename images/welcome-to-manjaro-2016/pacman_mirrors_g.png
 	lyxscale 50
 	width 95col%
 
@@ -12416,11 +12457,11 @@ If you would like more control over which mirrors to use, run the command:
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/pacman-mirrors-i.png
+	filename images/welcome-to-manjaro-2016/pacman_mirrors_i.png
 	lyxscale 50
 	width 95col%
 
@@ -12472,6 +12513,95 @@ sudo pacman-mirrors -g -c all
 
 \begin_layout Standard
 Remember to force a download of the package lists to use the new mirrors!
+\end_layout
+
+\begin_layout Subsection
+Updating mirrors from Pamac
+\end_layout
+
+\begin_layout Standard
+Mirrors can also be refreshed from within Pamac.
+ You can also select the country from which to choose the mirrors.
+ Choosing your country or one close to yours is generally a good idea.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float marginfigure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro-2016/pamac_preferences.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+From Pamac, click the pancake menu at the top right of the window and select
+ 
+\series bold
+Preferences
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float marginfigure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro-2016/pamac_mirrors.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In the window that pops up, go to the 
+\series bold
+Official Repositories
+\series default
+ tab.
+ There, you will be able to choose the location of the mirrors and refresh
+ them.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -12782,26 +12912,6 @@ Forces an update of the package lists and an update of any packages to bring
 Ensures no packages are left out of line with the current repository state.
 \end_layout
 
-\begin_layout Standard
-To make things easier, Manjaro includes a command alias
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-https://forum.manjaro.org/index.php?topic=12383.0
-\end_layout
-
-\end_inset
-
- that runs the above four commands:
-\end_layout
-
-\begin_layout Quote
-
-\family typewriter
-fixit
-\end_layout
-
 \begin_layout Section
 More information
 \end_layout
@@ -12809,7 +12919,7 @@ More information
 \begin_layout Standard
 Remember - there is plenty of information on the wiki 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -12820,7 +12930,7 @@ http://wiki.manjaro.org/
 
  and discussion forum 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
