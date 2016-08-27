@@ -3229,7 +3229,17 @@ The welcome screen gives some links to common tasks, documentation (like
 \end_layout
 
 \begin_layout Chapter
-Using the Calamares installer - Automatic installation
+Assisted installation on a BIOS
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+BIOS
+\end_layout
+
+\end_inset
+
+ system with Calamares
 \begin_inset Index idx
 status open
 
@@ -3259,15 +3269,10 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-The simplest installation method is to overwrite the entire hard drive and
- let the installer suggest you a partition scheme for your new operating
- system.
- This is refered as the Automatic installation.
- This is a suitable method if you want to start from scratch, since you
- will lose all data stored on your disk.
- If you want to preserve it, you can back it up on an external hard disk
- before the installation and copy it back after.
- Other installation methods are presented at the section 
+The graphical installer used by Manjaro is called Calamares.
+ It offers a choice of three different assisted installation options, which
+ we will cover here one by one.
+ The manual installation is presented in section 
 \series bold
 
 \begin_inset CommandInset ref
@@ -3282,6 +3287,20 @@ reference "advancedInstall"
 \end_layout
 
 \begin_layout Section
+Erase disk and let Calamares set up the partitions
+\end_layout
+
+\begin_layout Standard
+The simplest installation method is to overwrite the entire hard drive and
+ let the installer suggest you a partition scheme for your new operating
+ system.
+ This is a suitable method if you want to start from scratch, since you
+ will lose all data stored on your disk.
+ If you want to preserve it, you can back it up on an external hard disk
+ before the installation and copy it back after.
+\end_layout
+
+\begin_layout Subsection
 Choose your language
 \end_layout
 
@@ -3309,6 +3328,9 @@ This screen is the first one you will see when starting the installer.
 Language
 \series default
  menu.
+ Also, if you differ from the recommended settings, such as not being connected
+ to the Internet, not being plugged in, this is where you will receive a
+ warning.
 \end_layout
 
 \end_inset
@@ -3325,7 +3347,7 @@ Language
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Choose your location
 \end_layout
 
@@ -3418,7 +3440,7 @@ Change...
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Choose your keyboard layout
 \end_layout
 
@@ -3501,7 +3523,7 @@ Keyboard Model
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Select the partitioning method
 \end_layout
 
@@ -3527,7 +3549,7 @@ It will then be time to decide which method to use to partition your hard
  drive.
  The selected hard drive is displayed at the top of the window.
  Left of it is an indication stating if it uses BIOS or UEFI and .
- This section covers systems under BIOS.
+ This chapter covers systems under BIOS.
  UEFI systems are covered in chapter 
 \series bold
 
@@ -3544,7 +3566,7 @@ reference "UEFIInstall"
  disk.
  The current state of your drive is displayed at the bottom of the window.
  Several partitioning options are available.
- This chapter will focus on the third option, which erases all data on your
+ This section will focus on the third option, which erases all data on your
  drive and automatically creates a partition scheme that will suit Manjaro.
 \end_layout
 
@@ -3559,7 +3581,13 @@ reference "UEFIInstall"
 \end_layout
 
 \begin_layout Standard
-Others options will be covered later in chapter 
+The first one will install Manjaro alongside your existing operating system
+ by shrinking its partition to make room for Manjaro.
+ The second one will install Manjaro on an existing partition, erasing all
+ data stored on it.
+ The last one allows you to create, modify and delete partitions yourself
+ so your system is exactly the way you want it to be.
+ The latter option will be covered later in chapter 
 \series bold
 
 \begin_inset CommandInset ref
@@ -3571,12 +3599,6 @@ reference "advancedInstall"
 
 \series default
 .
- The first one will install Manjaro alongside your existing operating system
- by shrinking its partition to make room for Manjaro.
- The second one will install Manjaro on an existing partition, erasing all
- data stored on it.
- The last one allows you to create, modify and delete partitions yourself
- so your system is exactly the way you want it to be.
 \end_layout
 
 \begin_layout Standard
@@ -3614,7 +3636,7 @@ Erase disk
 , the bottom of the window will change to display your current hard drive
  setup and the one proposed by the installer, which will be applied at the
  very end of the installation process, when accepting the summary shown
- at section 
+ in subsection 
 \series bold
 
 \begin_inset CommandInset ref
@@ -3657,7 +3679,7 @@ Boot loader location
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Set user information
 \end_layout
 
@@ -3715,7 +3737,7 @@ password
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Look back at your choices and confirm
 \end_layout
 
@@ -3785,7 +3807,7 @@ Next
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Installation...
 \end_layout
 
@@ -3824,7 +3846,7 @@ You can now kick back and let the installation proceed! While the installation
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 ...
  complete!
 \end_layout
@@ -3880,11 +3902,25 @@ Restart now
 
 \end_layout
 
-\begin_layout Chapter
-Using the Calamares installer - Advanced installation
+\begin_layout Standard
+However, overwriting the whole hard drive may not always be the desired
+ installation method.
+ More control can be achieved by using the other options offered in the
+ installer.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Installing alongside an existing operating system 
 \begin_inset CommandInset label
 LatexCommand label
-name "advancedInstall"
+name "alongside"
 
 \end_inset
 
@@ -3901,25 +3937,6 @@ status open
 \backslash
 setcounter{figure}{0}
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Overwriting the whole hard drive may not always be the desired installation
- method.
- More control can be achieved by using the other options offered in the
- installer.
- Each of them will be covered separately in the subsections below.
-\end_layout
-
-\begin_layout Subsection
-Installing alongside an existing operating system 
-\begin_inset CommandInset label
-LatexCommand label
-name "alongside"
 
 \end_inset
 
@@ -4081,11 +4098,27 @@ Next
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Replacing existing partition 
 \begin_inset CommandInset label
 LatexCommand label
 name "replace"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
 
 \end_inset
 
@@ -4219,18 +4252,37 @@ Next
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
+\begin_layout Chapter
+Manual installation on a BIOS
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+BIOS
+\end_layout
+
+\end_inset
+
+ system with Calamares 
+\begin_inset CommandInset label
+LatexCommand label
+name "advancedInstall"
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsection
-Manual partitioning 
-\begin_inset CommandInset label
-LatexCommand label
-name "BIOS-manual"
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
 
 \end_inset
 
@@ -4242,6 +4294,10 @@ The last option is the one that gives you the most control.
  You will get the chance to adjust yourself the partition scheme of your
  hard drive using the built-in partition manager and make it exactly the
  way you want it.
+\end_layout
+
+\begin_layout Section
+Setting everything from within Calamares
 \end_layout
 
 \begin_layout Standard
@@ -4282,6 +4338,10 @@ Next
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Free some space
 \end_layout
 
 \begin_layout Standard
@@ -4447,6 +4507,10 @@ Please note that no actual modifications to your hard drive will take place
 
 \end_layout
 
+\begin_layout Subsection
+Create partitions
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -4582,6 +4646,21 @@ Revert All Changes
 \end_layout
 
 \begin_layout Standard
+Here a swap partition was already created.
+ If you want or have to create a new one, create a partition as was done
+ for the other ones and choose 
+\series bold
+linuxswap
+\series default
+ as the file system.
+ You do not have to select a mount point for it.
+\end_layout
+
+\begin_layout Subsection
+Look back and confirm
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -4628,11 +4707,27 @@ Next
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Using GParted to create, delete and modify partitions
 \begin_inset CommandInset label
 LatexCommand label
 name "gparted"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
 
 \end_inset
 
@@ -4778,6 +4873,10 @@ ing it will select it and offer options as to what to do with it.
 
 \end_layout
 
+\begin_layout Subsection
+Shrink an existing partition
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -4872,6 +4971,10 @@ Before resizing a partition, it is strongly suggested to back the data stored
 
 \end_layout
 
+\begin_layout Subsection
+Create new partitions
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -4964,6 +5067,10 @@ If your new partition does not take all of the available space, you can
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Apply changes
 \end_layout
 
 \begin_layout Standard
@@ -5117,7 +5224,7 @@ Congratulations, you have now successfully created new partitions which
 \end_layout
 
 \begin_layout Chapter
-Installing on a UEFI
+Assisted installation on a UEFI
 \begin_inset Index idx
 status open
 
@@ -5127,7 +5234,7 @@ UEFI
 
 \end_inset
 
- system with Calamares
+ system with Calamares 
 \begin_inset CommandInset label
 LatexCommand label
 name "UEFIInstall"
@@ -5295,6 +5402,13 @@ Once the Calamares installer is executed, the first noticeable difference
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Assisted installation 
 \begin_inset CommandInset label
@@ -5307,9 +5421,29 @@ name "assistedUEFI"
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The installation using the three assisted installation options do not change
  much from the case with a BIOS.
  Calamares takes care of the differences for you.
+\end_layout
+
+\begin_layout Subsection
+Erase disk
 \end_layout
 
 \begin_layout Standard
@@ -5351,6 +5485,10 @@ Erase disk
 
 \end_layout
 
+\begin_layout Subsection
+Install alongside
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -5388,6 +5526,10 @@ Install alongside
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Replace a partition
 \end_layout
 
 \begin_layout Standard
@@ -5429,15 +5571,18 @@ Replace a partition
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
+\begin_layout Chapter
+Manual installation on a UEFI
+\begin_inset Index idx
+status open
 
-
+\begin_layout Plain Layout
+UEFI
 \end_layout
 
-\begin_layout Section
-Manual installation
+\end_inset
+
+ system with Calamares
 \end_layout
 
 \begin_layout Standard
@@ -5487,11 +5632,27 @@ reference "existing-efi"
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Creating partitions from scratch 
 \begin_inset CommandInset label
 LatexCommand label
 name "efi-from-scratch"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
 
 \end_inset
 
@@ -5504,6 +5665,10 @@ This scenario will assume that you do not wish to use a single existing
  We will thus start with a completely empty hard drive.
  This will also be the case if you are using a brand new drive or are using
  a virtual machine.
+\end_layout
+
+\begin_layout Subsection
+Create a partition table
 \end_layout
 
 \begin_layout Standard
@@ -5556,6 +5721,10 @@ GUID Partition Table (GPT)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Create the EFI partition
 \end_layout
 
 \begin_layout Standard
@@ -5724,6 +5893,10 @@ OK
 
 \end_layout
 
+\begin_layout Subsection
+Create the swap partition
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -5801,6 +5974,10 @@ d space.
 
 \end_layout
 
+\begin_layout Subsection
+Create other partitions
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -5834,13 +6011,13 @@ Next are the partitions used by Manjaro itself.
 \series bold
 /home
 \series default
- directory being housed on another partition is presented in the section
+ directory being housed on another partition is presented in the chapter
  
 \series bold
 
 \begin_inset CommandInset ref
 LatexCommand nameref
-reference "BIOS-manual"
+reference "advancedInstall"
 
 \end_inset
 
@@ -5857,6 +6034,10 @@ reference "BIOS-manual"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Look back and confirm
 \end_layout
 
 \begin_layout Standard
@@ -5901,7 +6082,7 @@ You can then proceed as usual up to the summary, which is the last step
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Using GParted to create partitions beforehand 
 \begin_inset CommandInset label
 LatexCommand label
@@ -5913,9 +6094,29 @@ name "efi-gparted"
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The creation of the partition table and partitions shown above can also
  be handled by GParted.
  The following steps will guide you through the process.
+\end_layout
+
+\begin_layout Subsection
+Create a partition table
 \end_layout
 
 \begin_layout Standard
@@ -5997,6 +6198,10 @@ GPT
 
 \end_layout
 
+\begin_layout Subsection
+Create the EFI partition
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -6074,6 +6279,10 @@ fat32
 
 \end_layout
 
+\begin_layout Subsection
+Create the swap partition
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -6115,6 +6324,10 @@ linux-swap
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Create other partitions
 \end_layout
 
 \begin_layout Standard
@@ -6162,6 +6375,10 @@ ext4
 
 \end_layout
 
+\begin_layout Subsection
+Apply changes
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -6195,6 +6412,10 @@ It is finally time to apply the changes! Make sure everything is to your
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Set the flags for the EFI partition
 \end_layout
 
 \begin_layout Standard
@@ -6329,11 +6550,27 @@ That's it! Your partitions are all set up! It is now time to put them to
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Using an already existing EFI partition 
 \begin_inset CommandInset label
 LatexCommand label
 name "existing-efi"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
 
 \end_inset
 
@@ -6525,20 +6762,29 @@ Next
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
+\begin_layout Chapter
 Dual-booting with Microsoft Windows 10
 \begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
 Microsoft Windows 10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
 \end_layout
 
 \end_inset
@@ -6555,7 +6801,7 @@ The above instructions used Linux Mint as the already installed operating
  two cases.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Download the installation media
 \end_layout
 
@@ -6691,12 +6937,14 @@ Once you are done, restart your computer and boot on the USB key as was
  explained earlier.
 \end_layout
 
-\begin_layout Subsection
-Installing Manjaro next to Microsoft Windows 10
+\begin_layout Section
+Assisted installation
 \end_layout
 
 \begin_layout Standard
-The EFI partition created and used by Windows can also be used by Manjaro.
+The assisted installation options do a good job of setting everything up.
+ If you do not wish to bother yourself creating everything by hand, you
+ can rely on Calamares to do the dirty work for you!
 \end_layout
 
 \begin_layout Standard
@@ -6753,6 +7001,10 @@ reference "alongside"
 
 \end_layout
 
+\begin_layout Section
+Manual installation
+\end_layout
+
 \begin_layout Standard
 This can also be done in the manual partitioning option.
  The steps below are very similar to the ones presented in other sections
@@ -6761,7 +7013,7 @@ This can also be done in the manual partitioning option.
 
 \begin_inset CommandInset ref
 LatexCommand nameref
-reference "BIOS-manual"
+reference "advancedInstall"
 
 \end_inset
 
@@ -6779,6 +7031,10 @@ reference "efi-from-scratch"
 
 \series default
 .
+\end_layout
+
+\begin_layout Subsection
+Shrink the C: drive partition
 \end_layout
 
 \begin_layout Standard
@@ -6853,6 +7109,10 @@ Then, use the slider at the top of the window that pops up to reduce its
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Create partitions
 \end_layout
 
 \begin_layout Standard
@@ -6932,6 +7192,10 @@ Now you can create some new partitions! Here I chose the simplest partition
 
 \end_layout
 
+\begin_layout Subsection
+Choose the EFI partition
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -6964,7 +7228,7 @@ Edit
 fat32
 \series default
  file system.
- 
+ The EFI partition created and used by Windows can also be used by Manjaro.
 \end_layout
 
 \end_inset
@@ -7032,6 +7296,10 @@ esp
 
 \end_layout
 
+\begin_layout Subsection
+Look back and confirm
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -7073,7 +7341,7 @@ Next
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Update the GRUB bootloader, or, Where did Windows go?
 \end_layout
 
@@ -7234,7 +7502,7 @@ Choose your location
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7288,7 +7556,7 @@ Check the minimum requirements
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7362,7 +7630,7 @@ Set your timezone
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7423,7 +7691,7 @@ Choose your keyboard layout
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7485,7 +7753,7 @@ Set the installation type
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7534,7 +7802,7 @@ Once complete, click
 
 \begin_layout Standard
 \begin_inset Flex Marginnote
-status collapsed
+status open
 
 \begin_layout Plain Layout
 It is generally recommended that you
@@ -7769,7 +8037,7 @@ Boot your new operating system
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7816,7 +8084,7 @@ Log in
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7991,7 +8259,7 @@ Start the advanced installation method
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -8037,7 +8305,7 @@ Choose your disk
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -8134,7 +8402,7 @@ GPT on a non-EFI system
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -8182,7 +8450,7 @@ A two-partition scenario
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -8294,7 +8562,7 @@ Partition 2: Home
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -8338,7 +8606,7 @@ Swap partition
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -8436,7 +8704,7 @@ Verify partitioning actions
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
