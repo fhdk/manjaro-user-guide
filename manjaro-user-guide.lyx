@@ -986,7 +986,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome.png
+	filename images/calamares-erase-disk/welcome_live.png
 	lyxscale 33
 	width 95text%
 
@@ -1159,7 +1159,7 @@ status open
 
 \begin_layout Plain Layout
 
-http://manjaro.github.io/download/
+https://manjaro.org/get-manjaro/
 \end_layout
 
 \end_inset
@@ -1316,26 +1316,23 @@ To verify the integrity of the disc image you have to download the appropriate
  image file.
  For example, the file
 \series bold
- manjaro-xfce-15.09-rc3-x86_64-sha256sum.txt
+ manjaro-xfce-16.08-pre5-x86_64-sha1sum.txt
 \series default
  contains checksum hashes for all the available disc image files and will
  have content similar to this:
 \end_layout
 
 \begin_layout LyX-Code
-ce7471ddb5496abdbe484a9615ff0b6b42cedc47258aa5ad37fa5c252e28371d  manjaro-xfce-1
-5.09-rc3-x86_64.iso
+11df913e652fc2ea4ae12a2403ea49f6a5e1a39d  manjaro-xfce-16.08-pre5-x86_64.iso
 \end_layout
 
 \begin_layout Section
-MD5 and SHA-256
+SHA-1
 \end_layout
 
 \begin_layout Standard
-You may have seen there are three checksum files.
- One ends -sha256sum.txt, one in -sha1sum.txt, and the other ends -md5sum.txt.
- MD5 and SHA are two types of hashing algorithms; the 'sha' part of the
- checksum file name stands for
+SHA and others like MD5 are different types of hashing algorithms; the 'sha'
+ part of the checksum file name stands for
 \series bold
  Secure Hash Algorithm
 \series default
@@ -1350,9 +1347,10 @@ You may have seen there are three checksum files.
 \end_layout
 
 \begin_layout Standard
-Whilst MD5 is commonly used, SHA-256 is newer and more secure and is beginning
- to replace MD5.
+Whilst MD5 is commonly used, SHA-1 and SHA-256 are newer and more secure
+ and are beginning to replace MD5.
  For the purpose of checking the integrity of the downloaded file MD5 is
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1360,9 +1358,8 @@ good enough
 \begin_inset Quotes erd
 \end_inset
 
- but SHA-256 is a better solution.
+ but SHA-1 is a better solution.
  The checking process is the same for both algorithms.
- We recommend you use SHA-256.
  For more about hashing algorithms Wikipedia has lots of information.
 \begin_inset Foot
 status open
@@ -1398,7 +1395,7 @@ If the code generated from the disc image matches that contained in the
 \begin_layout Standard
 From this point on we'll assume you are using the file
 \series bold
- manjaro-xfce-15.09-rc3-x86_64-sha256sum.txt
+ manjaro-xfce-16.08-pre5-x86_64-sha1sum.txt
 \series default
 .
 \end_layout
@@ -1412,11 +1409,11 @@ Automatic verification
 \end_layout
 
 \begin_layout Standard
-The program
+The program 
 \family typewriter
-sha256sum
+sha1sum
 \family default
-can automatically compare the checksum of the disc image you downloaded
+ can automatically compare the checksum of the disc image you downloaded
  against the value in the text file.
  The process should be very straightforward!
 \end_layout
@@ -1424,7 +1421,7 @@ can automatically compare the checksum of the disc image you downloaded
 \begin_layout Standard
 For this example, I first open a terminal and change to the directory where
  I downloaded the disc image file and checksum file.
- I use the command
+ I use the command 
 \family typewriter
 ls
 \family default
@@ -1440,12 +1437,12 @@ jonathon@box:~/download$ ls
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-xfce-15.09-rc3-x86_64-sha256sum.txt  manjaro-xfce-15.09-rc3-x86_64.iso
+manjaro-xfce-16.08-pre5-x86_64-sha1sum.txt  manjaro-xfce-16.08-pre5-x86_64.iso
 \end_layout
 
 \begin_layout Standard
 As you can see I have downloaded the 64-bit Xfce edition.
- Next, I run the
+ Next, I run the 
 \family typewriter
 sha1sum
 \family default
@@ -1453,7 +1450,7 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-jonathon@box:~/download$ sha256sum -c manjaro-xfce-15.09-rc3-x86_64-sha256sum.txt
+jonathon@box:~/download$ sha256sum -c manjaro-xfce-16.08-pre5-x86_64-sha1sum.txt
 \end_layout
 
 \begin_layout Standard
@@ -1467,7 +1464,7 @@ sha256sum
 \end_layout
 
 \begin_layout LyX-Code
-sha256sum: manjaro-xfce-15.09-rc3-x86_64.iso: OK
+sha256sum: manjaro-xfce-16.08-pre5-x86_64.iso: OK
 \end_layout
 
 \begin_layout Standard
@@ -1482,7 +1479,7 @@ Manual verification
 To manually check the integrity of your downloaded file, first open the
  downloaded
 \series bold
- manjaro-xfce-15.09-rc3-x86_64-sha256sum.txt
+ manjaro-xfce-16.08-pre5-x86_64-sha1sum.txt
 \series default
  checksum file using a text editor such as Gedit.
  Once the checksum file has been opened, and the codes are visible, open
@@ -1542,7 +1539,7 @@ Then you can generate an SHA-1 hash code for the disc image using:
 \begin_layout LyX-Code
 jonathon@box:~/download$
 \family typewriter
- sha256sum manjaro-xfce-15.09-rc3-x86_64.iso
+ sha1sum manjaro-xfce-16.08-pre5-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1671,7 +1668,7 @@ To speed up the process it's probably a good idea to deselect the hashes
 
  To verify the checksum is correct, open the
 \series bold
- manjaro-xfce-15.09-rc3-x86_64-sha256sum.txt
+ manjaro-xfce-16.08-pre5-x86_64-sha1sum.txt
 \series default
  in a text editor such as Notepad, copy the checksum for the disc image
  file you have downloaded, and paste it into the verification box.
