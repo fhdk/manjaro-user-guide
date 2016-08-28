@@ -1488,39 +1488,6 @@ To manually check the integrity of your downloaded file, first open the
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/linux-checksum.png
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Verifying the checksum displayed in gedit against the output of sha1sum
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 For example, if your disc image file is located in a directory named
 \family typewriter
  download
@@ -3130,7 +3097,7 @@ rs.
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3287,7 +3254,14 @@ reference "advancedInstall"
 \end_layout
 
 \begin_layout Section
-Erase disk and let Calamares set up the partitions
+Erase disk and let Calamares set up the partitions 
+\begin_inset CommandInset label
+LatexCommand label
+name "eraseDisk"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3296,8 +3270,8 @@ The simplest installation method is to overwrite the entire hard drive and
  system.
  This is a suitable method if you want to start from scratch, since you
  will lose all data stored on your disk.
- If you want to preserve it, you can back it up on an external hard disk
- before the installation and copy it back after.
+ If you want to preserve your data, you can back it up on an external hard
+ disk before the installation and copy it back after.
 \end_layout
 
 \begin_layout Subsection
@@ -3329,8 +3303,8 @@ Language
 \series default
  menu.
  Also, if you differ from the recommended settings, such as not being connected
- to the Internet, not being plugged in, this is where you will receive a
- warning.
+ to the Internet or not being plugged in, this is where you will receive
+ a warning.
 \end_layout
 
 \end_inset
@@ -3548,8 +3522,8 @@ status open
 It will then be time to decide which method to use to partition your hard
  drive.
  The selected hard drive is displayed at the top of the window.
- Left of it is an indication stating if it uses BIOS or UEFI and .
- This chapter covers systems under BIOS.
+ Left of it is an indication stating if it uses BIOS or UEFI.
+ This chapter covers systems using BIOS.
  UEFI systems are covered in chapter 
 \series bold
 
@@ -3581,13 +3555,13 @@ reference "UEFIInstall"
 \end_layout
 
 \begin_layout Standard
-The first one will install Manjaro alongside your existing operating system
- by shrinking its partition to make room for Manjaro.
+The first option will install Manjaro alongside your existing operating
+ system by shrinking a partition to make room for Manjaro.
  The second one will install Manjaro on an existing partition, erasing all
  data stored on it.
  The last one allows you to create, modify and delete partitions yourself
  so your system is exactly the way you want it to be.
- The latter option will be covered later in chapter 
+ The latter option will be covered in chapter 
 \series bold
 
 \begin_inset CommandInset ref
@@ -3701,8 +3675,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Next, you will be asked about some information.
- Mainly, your 
+Next, you will be asked for your 
 \series bold
 name
 \series default
@@ -3714,12 +3687,12 @@ username
 \series bold
 name of your computer
 \series default
- as it will be seen by others on the same network as you, and your 
+ as it will be seen by others on the same network as you, and a 
 \series bold
 password
 \series default
 .
- Your password must be entered twice to make sure there are no typos.
+ The password must be entered twice to make sure there are no typos.
  Finally, you can decide whether or not you want to be asked your password
  when logging in and if you want to use the same password for the administrator
  account.
@@ -3770,13 +3743,13 @@ status open
 
 \begin_layout Plain Layout
 As the last step before the installation takes place, you will be presented
- a short summary of all the choices you made in the other sections.
+ with a short summary of all the choices you made in the other sections.
  Make sure the partition scheme is to your liking, as this is the point
  of no return.
  
 \series bold
 Once you click Next, you will no longer be able to edit the partition scheme
- and all data stored on overwritten partitions will be lost.
+ and all data stored on the partitions you chose to overwrite will be lost.
 
 \series default
  If you changed your mind, you can go 
@@ -3833,7 +3806,8 @@ You can now kick back and let the installation proceed! While the installation
  takes place, a slideshow will present you some key features of your new
  operating system, Manjaro.
  The installation should take but a few minutes.
- The progress bar will fill up slowly at first, but will soon pick up speed.
+ The progress bar will fill up slowly at first but it will soon pick up
+ speed.
 \end_layout
 
 \end_inset
@@ -3917,7 +3891,7 @@ However, overwriting the whole hard drive may not always be the desired
 \end_layout
 
 \begin_layout Section
-Installing alongside an existing operating system 
+Install alongside an existing operating system 
 \begin_inset CommandInset label
 LatexCommand label
 name "alongside"
@@ -3944,8 +3918,8 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-A first method is to shrink an existing partition to make room on your disk
- and used the freed space to install Manjaro.
+Another available option is to shrink an existing partition to make room
+ on your disk and used the freed space to install Manjaro.
  This is a suitable method if you want to dual-boot two operating systems
  but do not want to go through the hastle of partitioning your disk yourself.
  This part will be handled by the installer.
@@ -3970,8 +3944,9 @@ status open
 
 \begin_layout Plain Layout
 When selecting the option to install Manjaro alongside another operating
- system, the bottom of the window will display the current state of the
- hard drive and another after modifications, which at first is identical.
+ system, the bottom of the window will display a bar representing the current
+ state of the hard drive and another representing its state after modifications,
+ which at first is identical.
 \end_layout
 
 \end_inset
@@ -4002,8 +3977,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-When clicking a partition in the bar representing the current state, the
- bottom bar will change to show this partition split in two.
+When clicking on a partition in the bar representing the current state,
+ the bottom bar will change to show this partition split in two.
 \end_layout
 
 \end_inset
@@ -4069,8 +4044,19 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The rest of the process is similar to the one presented earlier when choosing
- the automatic installation.
+The rest of the process is similar to the one presented earlier in section
+ 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "eraseDisk"
+
+\end_inset
+
+
+\series default
+.
  You will once again enter your user information and get a summary of your
  choices.
  Once you click 
@@ -4126,14 +4112,14 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-A third option would be to select an existing partition and overwrite it
+Another option would be to select an existing partition and overwrite it
  to install Manjaro.
  This could be useful if you are already dual-booting two different operating
  systems and want to replace one of the two instead of installing a third
  one.
  You may also wish to prepare an empty partition yourself beforehand and
  select it during the installation.
- This will be covered in the section 
+ This will be covered in section 
 \series bold
 
 \begin_inset CommandInset ref
@@ -4166,8 +4152,9 @@ status open
 
 \begin_layout Plain Layout
 When selecting the option to install Manjaro on an existing partition, the
- bottom of the window will display the current state of the hard drive and
- another after modifications, which at first is identical.
+ bottom of the window will display a bar representing the current state
+ of the hard drive and another representing its state after modifications,
+ which at first is identical.
 \end_layout
 
 \end_inset
@@ -4230,8 +4217,19 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The rest of the process is similar to the one presented earlier when choosing
- the automatic installation.
+The rest of the process is similar to the one presented earlier in section
+ 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "eraseDisk"
+
+\end_inset
+
+
+\series default
+.
  You will once again enter your user information and get a summary of your
  choices.
  Once you click 
@@ -4484,13 +4482,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Click and drag on the edges of the partition to resize it.
+Click and drag the edges of the partition to resize it.
  It cannot be made smaller than the size required to store the data on it.
  Clicking 
 \series bold
 OK
 \series default
- will close the window and update the diagram and list of partitions.
+ will close the window and update the diagram and the list of partitions.
  
 \series bold
 Please note that no actual modifications to your hard drive will take place
@@ -4612,12 +4610,17 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Once everything is done, take a moment to verify the setup is to your liking.
+Here I chose to create a separate partition for the 
+\series bold
+/home
+\series default
+ directory, which is used to store user files such as music, pictures and
+ videos.
+ Once everything is done, take a moment to verify the setup is to your liking.
  
 \series bold
 All partitions that have a mount point specified will be used during the
  installation of Manjaro.
- Make sure none of them are under another operating system.
 
 \series default
  You can abandon all changes by clicking the 
@@ -4627,12 +4630,6 @@ Revert All Changes
  at the top right of the window.
  At the bottom of the window you also have the option to specify whether
  or not to install the GRUB boot loader as well as where to install it.
- Here I chose to create a separate partition for the 
-\series bold
-/home
-\series default
- directory, which is used to store user files such as music, pictures and
- videos.
 \end_layout
 
 \end_inset
@@ -4646,7 +4643,7 @@ Revert All Changes
 \end_layout
 
 \begin_layout Standard
-Here a swap partition was already created.
+In this case a swap partition was already created.
  If you want or have to create a new one, create a partition as was done
  for the other ones and choose 
 \series bold
@@ -4678,8 +4675,19 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The rest of the process is similar to the one presented earlier when choosing
- the automatic installation.
+The rest of the process is similar to the one presented earlier in section
+ 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "eraseDisk"
+
+\end_inset
+
+
+\series default
+.
  You will once again enter your user information and get a summary of your
  choices.
  Once you click 
@@ -4744,13 +4752,13 @@ Gparted is a graphical program used to modify partitions on drives.
  All drives, be they hard drives or flash drives such as USB keys contain
  one or more partitions.
  GParted allows you to create and delete partitons, as well as change the
- attributes, such as their size, their location on the disk and the file
+ attributes, such as their size, their location on the disk and their file
  system.
  It can also create partition tables of type MBR and GPT.
 \end_layout
 
 \begin_layout Standard
-Int this section, we will demonstrate how to reduce the size of an existing
+In this section, we will demonstrate how to reduce the size of an existing
  partition and use the freed space to create two new partitions, which will
  be used to install Manjaro later on!
 \end_layout
@@ -4819,7 +4827,7 @@ status open
 After authenticating, a window similar to the one presented on the picture
  will appear.
  A bar shows a diagramatic representation of your drive, which is indicated
- on the button at the top right of the window.
+ on the button at the top-right of the window.
  If you have multiple drives, you can select another by clicking on this
  button.
  Each partition is represented by a rectangle in the bar.
@@ -4901,7 +4909,7 @@ status open
 In the top panel are several buttons each representing a different action.
  The first one is disabled for now as it creates a partition from empty
  space, the second deletes the selected partition and the third one allows
- to resize a partition.
+ to resize the selected partition.
  This is the one we are interested in.
 \end_layout
 
@@ -4997,7 +5005,7 @@ status open
 
 \begin_layout Plain Layout
 Once some space has been freed on the drive, you can use it to create a
- new partition! Select it and click the first button in the top bar.
+ new partition! Select it and click on the first button in the top bar.
 \end_layout
 
 \end_inset
@@ -5272,7 +5280,7 @@ Some newer hardware do not use the well-known BIOS to manage boot options.
  Instead, a new one named UEFI (Unified Extensible Firmware Interface) is
  used.
  It still has BIOS-like menus and often has a legacy mode, which uses BIOS.
- UEFI often goes hand in hand with the nefarious Secure Boot option that
+ UEFI often goes hand in hand with the infamous Secure Boot option that
  makes it more difficult to boot operating systems outside of a select few.
  If your computer came with Microsoft Windows 8 or later installed, your
  computer uses UEFI and probably has Secure Boot enabled by default.
@@ -5296,7 +5304,8 @@ The most important step is to ensure that your machine does not have Secure
 .
  Only a very limited number of operating systems will boot with this enabled.
  You must disable this in your BIOS before proceeding; if you don't know
- how to do this please refer to your computer's user manual.
+ how to do this please refer to your computer's user manual, as it differs
+ for all computers.
 \end_layout
 
 \begin_layout Standard
@@ -5340,7 +5349,7 @@ Once you have booted the system from the Live CD/USB you will be presented
  It has two main options for the drivers it will use (either Free or non-Free).
  The main difference is the lack of any option for language or keyboard
  layout.
- This is actually not that big of a problem, since these can be setup in
+ This is actually not that big of a problem, since these can be set up in
  the live environment and in the Calamares installer, which will make them
  permanent on the installed system.
 \end_layout
@@ -5353,6 +5362,7 @@ Differences in the partition setup
 The key difference in the way the partitions are arranged compared to the
  case with BIOS is that a small partition of a few hundred MB must be created
  to house some files used when booting the system.
+ This partition must use the fat32 file system.
  Luckily, in all assisted installation options, Calamares handles the creation
  of this partition if it does not already exist and writes the necessary
  files to it.
@@ -5383,7 +5393,8 @@ status open
 Once the Calamares installer is executed, the first noticeable difference
  with the case with a BIOS is at the top of the screen, where EFI is specified
  instead.
- In this case, a GPT partition table is also used.
+ In this case, a GPT partition table is also used instead of the MBR partition
+ table more commonly found on BIOS systems.
  The bottom of the screen displays the current partition scheme, with the
  sda1 partition storing the files used when booting.
 \end_layout
@@ -5437,8 +5448,8 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-The installation using the three assisted installation options do not change
- much from the case with a BIOS.
+The installation using the three assisted installation options does not
+ change much from the case with a BIOS.
  Calamares takes care of the differences for you.
 \end_layout
 
@@ -5586,8 +5597,8 @@ UEFI
 \end_layout
 
 \begin_layout Standard
-The last installation options is the one that most drastically changes if
- you are using a UEFI system.
+The last installation option is the one that changes the most if you are
+ using a UEFI system.
  The following steps will walk you through the process of creating a partition
  scheme suitable for your system in three different scenarios.
  Ths first one (
@@ -5718,6 +5729,13 @@ GUID Partition Table (GPT)
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -5893,6 +5911,13 @@ OK
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Create the swap partition
 \end_layout
@@ -5974,6 +5999,13 @@ d space.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Create other partitions
 \end_layout
@@ -6001,8 +6033,8 @@ status open
 \begin_layout Plain Layout
 Next are the partitions used by Manjaro itself.
  There are a variety of possible scenarios.
- Here I chose the simplest where I only created a single partition mounted
- under the 
+ Here I chose the simplest case where I only created a single partition
+ mounted under the 
 \series bold
 /
 \series default
@@ -6179,7 +6211,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-From the dialog box that pops up you can then choose the type of partition
+In the dialog box that pops up you can then choose the type of partition
  table to be created.
  For a UEFI system, a 
 \series bold
@@ -6193,6 +6225,13 @@ GPT
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -6224,7 +6263,7 @@ status open
 
 \begin_layout Plain Layout
 Once this is done, select the unaloccated space and click on the first button
- at the top of the window to create a new partiton.
+ at the top-left of the window to create a new partiton.
  The first one we will create is the EFI partition.
 \end_layout
 
@@ -6261,6 +6300,9 @@ status open
 \begin_layout Plain Layout
 Like in the case where Calamares was used to create the partitions, it is
  recommended to choose a size of a few hundred MB.
+ You may notice that GParted uses a different unit for the size of the partition
+s, namely MiB.
+ MiB are not the same as MB, but close enough for what we want to do.
  It is necessary to use the 
 \series bold
 fat32
@@ -6274,6 +6316,13 @@ fat32
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -6401,7 +6450,7 @@ status open
 
 \begin_layout Plain Layout
 It is finally time to apply the changes! Make sure everything is to your
- liking and then click on the checkmark button.
+ liking and then click the checkmark button.
 \end_layout
 
 \end_inset
@@ -6409,6 +6458,13 @@ It is finally time to apply the changes! Make sure everything is to your
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -6442,9 +6498,9 @@ status open
 A few flags then need to be set so the EFI partition behaves correctly.
  
 \series bold
-Right click
+Right-click
 \series default
- on the partition you intend to use for the EFI partition and select 
+ on the partition you intend to use as the EFI partition and select 
 \series bold
 Manage Flags
 \series default
@@ -6709,6 +6765,19 @@ status open
 \begin_layout Plain Layout
 Next, select the other partitions you want to use and choose their respective
  mount points.
+ If you want to dual-boot, you may want to shrink an existing partition
+ and create partitions for Manjaro as illustrated in section 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "advancedInstall"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \end_inset
@@ -6793,8 +6862,8 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-The above instructions used Linux Mint as the already installed operating
- system.
+The above instructions for a UEFI system used Linux Mint as the already
+ installed operating system.
  However, the partition scheme used by Windows is a bit different from the
  one typically used by Linux.
  This section shows the differences in the installation steps between the
@@ -6968,8 +7037,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Using the assisted installation option, select the partition used as the
- C drive by Windows.
+Using the assisted installation option to install Manjaro alongside Windows,
+ select the partition used as the C drive by Windows.
  It should be the biggest one.
  Then, move the slider as explained in section 
 \series bold
@@ -7034,165 +7103,6 @@ reference "efi-from-scratch"
 \end_layout
 
 \begin_layout Subsection
-Shrink the C: drive partition
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/windows-keep-efi/windows_manual_edit_Cdrive.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Once again, this time using the manual partitioning option, select the partition
- used as the C: drive by Windows and 
-\series bold
-Edit
-\series default
- it.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/windows-keep-efi/windows_manual_reduce_Cdrive.png
-	lyxscale 50
-	width 50col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Then, use the slider at the top of the window that pops up to reduce its
- size.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Create partitions
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/windows-keep-efi/windows_manual_create.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Next, select the freed space and click on 
-\series bold
-Create
-\series default
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/windows-keep-efi/windows_manual_root.png
-	lyxscale 50
-	width 50col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Now you can create some new partitions! Here I chose the simplest partition
- scheme, as I create a single partition mounted as / and with the ext4 file
- system.
- No matter the partition scheme you choose, there must be one partition
- mounted as /.
- The rest is up to you.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
 Choose the EFI partition
 \end_layout
 
@@ -7217,8 +7127,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Once the partitions are created, select the EFI partition that was created
- by Windows and 
+The EFI partition created and used by Windows can also be used by Manjaro.
+ Select the EFI partition that was created by Windows and 
 \series bold
 Edit
 \series default
@@ -7228,7 +7138,6 @@ Edit
 fat32
 \series default
  file system.
- The EFI partition created and used by Windows can also be used by Manjaro.
 \end_layout
 
 \end_inset
@@ -7296,6 +7205,238 @@ esp
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Shrink the C: drive partition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_edit_Cdrive.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Like in the previous section, but this time using the manual partitioning
+ option, select the partition used as the C: drive by Windows and 
+\series bold
+Edit
+\series default
+ it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_reduce_Cdrive.png
+	lyxscale 50
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Then, use the slider at the top of the window that pops up to reduce its
+ size.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Create a swap partition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_create.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Next, select the freed space and click on 
+\series bold
+Create
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_swap.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A swap partition is a partition which will be used if your computer runs
+ out of RAM or when it is put in hibernation.
+ It is generally a few GB large and uses the 
+\series bold
+linuxswap
+\series default
+ file system.
+ You do not need to mount it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Create the other partitions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_root.png
+	lyxscale 50
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Now you can create some new partitions! Here I chose the simplest partition
+ scheme, as I create a single partition mounted as / and with the ext4 file
+ system.
+ No matter the partition scheme you choose, there must be one partition
+ mounted as /.
+ The rest is up to you.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Look back and confirm
 \end_layout
@@ -7338,6 +7479,10 @@ Next
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
