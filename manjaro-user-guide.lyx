@@ -481,6 +481,14 @@ Fernyhough Editor of the User Guide 0.8.9-0.8.13, 15.09-16.06, Community Managem
 Sabras Wiki
 \end_layout
 
+\begin_layout Description
+Manuel
+\begin_inset space ~
+\end_inset
+
+Barrette Editor of the User Guide 16.08
+\end_layout
+
 \begin_layout Subsection*
 Alumni
 \end_layout
@@ -783,7 +791,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome.png
+	filename images/calamares-erase-disk/welcome_live.png
 	lyxscale 50
 	width 100text%
 
@@ -978,7 +986,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome.png
+	filename images/calamares-erase-disk/welcome_live.png
 	lyxscale 33
 	width 95text%
 
@@ -1151,7 +1159,7 @@ status open
 
 \begin_layout Plain Layout
 
-http://manjaro.github.io/download/
+https://manjaro.org/get-manjaro/
 \end_layout
 
 \end_inset
@@ -1308,26 +1316,23 @@ To verify the integrity of the disc image you have to download the appropriate
  image file.
  For example, the file
 \series bold
- manjaro-xfce-15.09-rc3-x86_64-sha256sum.txt
+ manjaro-xfce-16.08-pre5-x86_64-sha1sum.txt
 \series default
  contains checksum hashes for all the available disc image files and will
  have content similar to this:
 \end_layout
 
 \begin_layout LyX-Code
-ce7471ddb5496abdbe484a9615ff0b6b42cedc47258aa5ad37fa5c252e28371d  manjaro-xfce-1
-5.09-rc3-x86_64.iso
+11df913e652fc2ea4ae12a2403ea49f6a5e1a39d  manjaro-xfce-16.08-pre5-x86_64.iso
 \end_layout
 
 \begin_layout Section
-MD5 and SHA-256
+SHA-1
 \end_layout
 
 \begin_layout Standard
-You may have seen there are three checksum files.
- One ends -sha256sum.txt, one in -sha1sum.txt, and the other ends -md5sum.txt.
- MD5 and SHA are two types of hashing algorithms; the 'sha' part of the
- checksum file name stands for
+SHA and others like MD5 are different types of hashing algorithms; the 'sha'
+ part of the checksum file name stands for
 \series bold
  Secure Hash Algorithm
 \series default
@@ -1342,9 +1347,10 @@ You may have seen there are three checksum files.
 \end_layout
 
 \begin_layout Standard
-Whilst MD5 is commonly used, SHA-256 is newer and more secure and is beginning
- to replace MD5.
+Whilst MD5 is commonly used, SHA-1 and SHA-256 are newer and more secure
+ and are beginning to replace MD5.
  For the purpose of checking the integrity of the downloaded file MD5 is
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1352,9 +1358,8 @@ good enough
 \begin_inset Quotes erd
 \end_inset
 
- but SHA-256 is a better solution.
+ but SHA-1 is a better solution.
  The checking process is the same for both algorithms.
- We recommend you use SHA-256.
  For more about hashing algorithms Wikipedia has lots of information.
 \begin_inset Foot
 status open
@@ -1390,7 +1395,7 @@ If the code generated from the disc image matches that contained in the
 \begin_layout Standard
 From this point on we'll assume you are using the file
 \series bold
- manjaro-xfce-15.09-rc3-x86_64-sha256sum.txt
+ manjaro-xfce-16.08-x86_64-sha1sum.txt
 \series default
 .
 \end_layout
@@ -1404,11 +1409,11 @@ Automatic verification
 \end_layout
 
 \begin_layout Standard
-The program
+The program 
 \family typewriter
-sha256sum
+sha1sum
 \family default
-can automatically compare the checksum of the disc image you downloaded
+ can automatically compare the checksum of the disc image you downloaded
  against the value in the text file.
  The process should be very straightforward!
 \end_layout
@@ -1416,7 +1421,7 @@ can automatically compare the checksum of the disc image you downloaded
 \begin_layout Standard
 For this example, I first open a terminal and change to the directory where
  I downloaded the disc image file and checksum file.
- I use the command
+ I use the command 
 \family typewriter
 ls
 \family default
@@ -1432,12 +1437,12 @@ jonathon@box:~/download$ ls
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-xfce-15.09-rc3-x86_64-sha256sum.txt  manjaro-xfce-15.09-rc3-x86_64.iso
+manjaro-xfce-16.08-x86_64-sha1sum.txt  manjaro-xfce-16.08-x86_64.iso
 \end_layout
 
 \begin_layout Standard
 As you can see I have downloaded the 64-bit Xfce edition.
- Next, I run the
+ Next, I run the 
 \family typewriter
 sha1sum
 \family default
@@ -1445,21 +1450,21 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-jonathon@box:~/download$ sha256sum -c manjaro-xfce-15.09-rc3-x86_64-sha256sum.txt
+jonathon@box:~/download$ sha1sum -c manjaro-xfce-16.08-x86_64-sha1sum.txt
 \end_layout
 
 \begin_layout Standard
 The line shows the result of the checks.
- In this case, it shows that
+ In this case, it shows that 
 \family typewriter
-sha256sum
+sha1sum
 \family default
  has successfully verified the disc image I downloaded against the checksum
  value in the file.
 \end_layout
 
 \begin_layout LyX-Code
-sha256sum: manjaro-xfce-15.09-rc3-x86_64.iso: OK
+sha256sum: manjaro-xfce-16.08-x86_64.iso: OK
 \end_layout
 
 \begin_layout Standard
@@ -1474,45 +1479,12 @@ Manual verification
 To manually check the integrity of your downloaded file, first open the
  downloaded
 \series bold
- manjaro-xfce-15.09-rc3-x86_64-sha256sum.txt
+ manjaro-xfce-16.08-x86_64-sha1sum.txt
 \series default
  checksum file using a text editor such as Gedit.
  Once the checksum file has been opened, and the codes are visible, open
  up your terminal and change to the directory where your downloaded disc
  image is stored.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/linux-checksum.png
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Verifying the checksum displayed in gedit against the output of sha1sum
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1534,7 +1506,7 @@ Then you can generate an SHA-1 hash code for the disc image using:
 \begin_layout LyX-Code
 jonathon@box:~/download$
 \family typewriter
- sha256sum manjaro-xfce-15.09-rc3-x86_64.iso
+ sha1sum manjaro-xfce-16.08-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1663,7 +1635,7 @@ To speed up the process it's probably a good idea to deselect the hashes
 
  To verify the checksum is correct, open the
 \series bold
- manjaro-xfce-15.09-rc3-x86_64-sha256sum.txt
+ manjaro-xfce-16.08-x86_64-sha1sum.txt
 \series default
  in a text editor such as Notepad, copy the checksum for the disc image
  file you have downloaded, and paste it into the verification box.
@@ -1816,7 +1788,7 @@ KDE
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-15.09-rc3-i686.iso
+manjaro-kde-16.08-i686.iso
 \end_layout
 
 \end_inset
@@ -1854,7 +1826,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-15.09-rc3-x86_64.iso
+manjaro-kde-16.08-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1892,7 +1864,7 @@ Xfce
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-15.09-rc3-i686.iso
+manjaro-xfce-16.08-i686.iso
 \end_layout
 
 \end_inset
@@ -1930,7 +1902,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-15.09-rc3-x86_64.iso
+manjaro-xfce-16.08-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1968,7 +1940,7 @@ Net
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-net-15.09-rc3-i686.iso
+manjaro-net-16.08-i686.iso
 \end_layout
 
 \end_inset
@@ -1977,7 +1949,7 @@ manjaro-net-15.09-rc3-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-540MB
+630MB
 \end_layout
 
 \end_inset
@@ -2006,7 +1978,7 @@ CD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-net-15.09-rc3-x86_64.iso
+manjaro-net-16.08-x86_64.iso
 \end_layout
 
 \end_inset
@@ -2312,7 +2284,7 @@ Click
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2716,8 +2688,8 @@ Write the image with:
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-15.09-rc3-x86_64.iso of=/dev/(Device identifier from
- above) bs=4M
+sudo dd if=manjaro-xfce-16.08-x86_64.iso of=/dev/(Device identifier from above)
+ bs=4M
 \begin_inset Newline newline
 \end_inset
 
@@ -2733,7 +2705,7 @@ My USB drive is at /dev/sdc so I would use:
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-15.09-rc3-x86_64.iso of=/dev/sdc bs=4M
+sudo dd if=manjaro-xfce-16.08-x86_64.iso of=/dev/sdc bs=4M
 \end_layout
 
 \begin_layout Enumerate
@@ -2837,7 +2809,7 @@ Volume
 \begin_inset space ~
 \end_inset
 
-label: MJRO1509
+label: MJRO1608
 \end_layout
 
 \begin_layout Description
@@ -3125,7 +3097,7 @@ rs.
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3188,11 +3160,11 @@ Once you select Start, Manjaro will boot up.
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome.png
+	filename images/calamares-erase-disk/welcome_live.png
 	lyxscale 50
 	width 100text%
 
@@ -3224,7 +3196,17 @@ The welcome screen gives some links to common tasks, documentation (like
 \end_layout
 
 \begin_layout Chapter
-Using the graphical automatic installer
+Assisted installation on a BIOS
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+BIOS
+\end_layout
+
+\end_inset
+
+ system with Calamares
 \begin_inset Index idx
 status open
 
@@ -3254,56 +3236,45 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-This guide is intended for those with limited technical knowledge and experience.
- With these steps it won't be necessary to manually partition your computer's
- hard disc or to manually edit any configuration files.
- However, the overall flexibility of the process is not as great as the
- advanced installation process.
-\end_layout
+The graphical installer used by Manjaro is called Calamares.
+ It offers a choice of three different assisted installation options, which
+ we will cover here one by one.
+ The manual installation is presented in section 
+\series bold
 
-\begin_layout Standard
-Where possible, make sure you are connected to the internet before booting
- from your installation media into the Live environment.
- This allows the installer to update itself to the very latest available
- version.
- If you have a hard-wired connection via an Ethernet cable then Manjaro
- will automatically connect to the internet without you having to do anything.
- Otherwise, once you have booted into Manjaro's desktop, you will need to
- select and then connect to your wireless network.
-\end_layout
-
-\begin_layout Standard
-For a constantly-updated version, check out the wiki:
-\end_layout
-
-\begin_layout Description
-User
-\begin_inset space ~
-\end_inset
-
-guide:
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://wiki.manjaro.org/index.php?title=Graphical_Installation_Guide_for_Beginners_
-0.8.8
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "advancedInstall"
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
+\series default
+.
 \end_layout
 
 \begin_layout Section
+Erase disk and let Calamares set up the partitions 
+\begin_inset CommandInset label
+LatexCommand label
+name "eraseDisk"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The simplest installation method is to overwrite the entire hard drive and
+ let the installer suggest you a partition scheme for your new operating
+ system.
+ This is a suitable method if you want to start from scratch, since you
+ will lose all data stored on your disk.
+ If you want to preserve your data, you can back it up on an external hard
+ disk before the installation and copy it back after.
+\end_layout
+
+\begin_layout Subsection
 Choose your language
 \end_layout
 
@@ -3311,33 +3282,29 @@ Choose your language
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/beginner-installer/language-selection.png
+	filename images/calamares-erase-disk/cal_welcome.png
 	lyxscale 50
 	width 100col%
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-If you selected your preferred language before booting then it should already
- be selected for you.
-\end_layout
-
-\begin_layout Plain Layout
-Once selected, click
+This screen is the first one you will see when starting the installer.
+ You can select your language from the 
 \series bold
- Forward
+Language
 \series default
- to proceed to the next step.
+ menu.
+ Also, if you differ from the recommended settings, such as not being connected
+ to the Internet or not being plugged in, this is where you will receive
+ a warning.
 \end_layout
 
 \end_inset
@@ -3348,9 +3315,13 @@ Once selected, click
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Choose your location
 \end_layout
 
@@ -3358,11 +3329,11 @@ Choose your location
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/beginner-installer/location-selection.png
+	filename images/calamares-erase-disk/cal_location.png
 	lyxscale 50
 	width 100col%
 
@@ -3375,16 +3346,16 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The locations available to choose will depend upon the language you selected
- in the previous step.
-\end_layout
-
-\begin_layout Plain Layout
-Once selected, click
+You can select your time zone by either clicking on the map close to your
+ location or by browsing the 
 \series bold
- Forward
+Region
 \series default
- to proceed to the next step.
+ and 
+\series bold
+Zone
+\series default
+ menus.
 \end_layout
 
 \end_inset
@@ -3395,104 +3366,35 @@ Once selected, click
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Check the minimum requirements
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/beginner-installer/check-status.png
+	filename images/calamares-erase-disk/cal_locale_2.png
 	lyxscale 50
 	width 100col%
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Your computer will automatically be checked to make sure that Manjaro can
- safely be installed.
- This will include checking that enough storage space is available.
-\begin_inset Newline newline
-\end_inset
-
-Once satisfied that your system meets the minimum requirements necessary,
- click
+When clicking on the 
 \series bold
- Forward
+Change...
+
 \series default
- to proceed to the next step.
+ button, a menu will pop up, allowing you to choose the system locale.
+ This will affect how certain characters will appear.
+ Choosing the one corresponding to your language is best.
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Marginnote
-status collapsed
-
-\begin_layout Plain Layout
-Although the absolute minimum allowed is 6 Gigabytes, at least 15 Gigabytes
- of free space is recommended.
-\end_layout
-
-\end_inset
-
-
-\begin_inset Flex Marginnote
-status collapsed
-
-\begin_layout Plain Layout
-While it's not necessary to have an active internet connection to install
- Manjaro it's highly recommended.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Set your timezone
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/beginner-installer/set-timezone.png
-	lyxscale 50
-	width 100col%
 
 \end_inset
 
@@ -3500,46 +3402,19 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-To set your timezone, either click on the map or pick from the menus.
-
-\series bold
- Zone
-\series default
- is the continent you live on.
-
-\series bold
- Region
-\series default
- is the city closest to where you live.
- We recommend keeping
-\series bold
- Network Time Protocol
-\series default
- synchronisation enabled so your clock will never be wrong! This relies
- on an active internet connection, however.
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Choose your keyboard layout
 \end_layout
 
@@ -3547,48 +3422,29 @@ Choose your keyboard layout
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/beginner-installer/keyboard-layout.png
+	filename images/calamares-erase-disk/cal_keyboard.png
 	lyxscale 50
 	width 100col%
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Just because you live in a certain location that doesn't mean you have to
- use the keyboard layout native to it.
- This screen allows you to choose your keyboard layout and variant such
- as 'Dvorak' or one with 'dead keys' for extended punctuation.
-\end_layout
-
-\begin_layout Plain Layout
-To choose your desired layout simply click first on a
-\series bold
- Layout
-\series default
-, then on a
-\series bold
- Variant
-\series default
-.
- Variants shown will depend on the layout chosen.
-\end_layout
-
-\begin_layout Plain Layout
-Once satisfied that these details are correct, click
-\series bold
- Forward
-\series default
- to proceed to the next step.
+Next, you will be able to choose your keyboard layout.
+ Choose your language in the list to the left and then the desired subcategory
+ in the list to the right.
+ This will ensure the characters you type are the same on the screen as
+ they are on your keyboard.
 \end_layout
 
 \end_inset
@@ -3599,90 +3455,6 @@ Once satisfied that these details are correct, click
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Set the installation type
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/beginner-installer/set-installation-type.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-To proceed with the 'automatic' (and very easy) installation method make
- sure that the
-\series bold
- Erase disc and install Manjaro (automatic)
-\series default
- option has been selected.
-
-\series bold
- Be aware that this will wipe the disc you choose in the next step and erase
- all its data.
-\end_layout
-
-\begin_layout Plain Layout
-Once complete, click
-\series bold
- Forward
-\series default
- to proceed to the next step.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Marginnote
-status collapsed
-
-\begin_layout Plain Layout
-It is generally recommended that you
-\series bold
- Set your Home in a different partition/volume
-\series default
-.
- This keeps your documents separate from the operating system files.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Choose your disk
 \end_layout
 
 \begin_layout Standard
@@ -3693,29 +3465,22 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/beginner-installer/set-install-disk.png
+	filename images/calamares-erase-disk/cal_keyboard_menu.png
 	lyxscale 50
 	width 100col%
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-If you have more than one hard drive on your computer, then you will need
- to decide which one to wipe so you can install Manjaro.
-\end_layout
-
-\begin_layout Plain Layout
-Once selected, click
+You can also choose your keyboard model from the 
 \series bold
- Install Now!
+Keyboard Model
 \series default
- to proceed to the next step.
+ menu.
+ The list is very extensive, so yours will likely be listed there!
 \end_layout
 
 \end_inset
@@ -3726,10 +3491,14 @@ Once selected, click
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
-\begin_layout Section
-Add your user account
+\begin_layout Subsection
+Select the partitioning method
 \end_layout
 
 \begin_layout Standard
@@ -3740,186 +3509,39 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/beginner-installer/add-user-account.png
+	filename images/calamares-erase-disk/partition.png
 	lyxscale 50
 	width 100col%
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Now it's time to personalise your installation! Enter your real name, a
- name for your computer (just enter 'manjaro' if you can't think of one),
- and your username.
- Your username will be the name of your personal account in Manjaro.
-\end_layout
-
-\begin_layout Plain Layout
-You will also need to enter your intended password twice.
- Remember that the use of upper and lower case letters matters (e.g.
- 'abc123' is not the same as 'ABC123').
-\end_layout
-
-\begin_layout Plain Layout
-All done! Once satisfied that these details are correct, click
+It will then be time to decide which method to use to partition your hard
+ drive.
+ The selected hard drive is displayed at the top of the window.
+ Left of it is an indication stating if it uses BIOS or UEFI.
+ This chapter covers systems using BIOS.
+ UEFI systems are covered in chapter 
 \series bold
- Forward
-\series default
- to view the installation process.
-\end_layout
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "UEFIInstall"
 
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Installation...
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/beginner-installer/installation-in-progress.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-The automatic installation process is well underway.
- While you wait for it to complete, useful information about Manjaro and
- its community will be displayed.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-...complete!
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/beginner-installer/installation-finished.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Once the installation has finished you will be asked if you want to restart
- your system.
- Select
-\series bold
- Yes
-\series default
- to reboot immediately, or
-\series bold
- No
-\series default
- to close the installer and continue using the Manjaro Live environment.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Boot your new operating system
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/beginner-installer/boot-from-hdd.png
-	lyxscale 50
-	width 92col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-When you reboot, if you accidentally boot from the Live CD or USB drive
- you used to install Manjaro, you can choose
-\series bold
- Boot from Hard Disk
-\series default
- and press
-\series bold
-<Enter>
 \series default
 .
+ The partition table type, MBR ou GPT, is indicated at the right of the
+ disk.
+ The current state of your drive is displayed at the bottom of the window.
+ Several partitioning options are available.
+ This section will focus on the third option, which erases all data on your
+ drive and automatically creates a partition scheme that will suit Manjaro.
 \end_layout
 
 \end_inset
@@ -3930,51 +3552,27 @@ When you reboot, if you accidentally boot from the Live CD or USB drive
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Log in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
+The first option will install Manjaro alongside your existing operating
+ system by shrinking a partition to make room for Manjaro.
+ The second one will install Manjaro on an existing partition, erasing all
+ data stored on it.
+ The last one allows you to create, modify and delete partitions yourself
+ so your system is exactly the way you want it to be.
+ The latter option will be covered in chapter 
+\series bold
 
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/beginner-installer/login.png
-	lyxscale 50
-	width 92col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Once Manjaro has booted enter your username and password and enjoy your
- fresh Manjaro system!
-\begin_inset Newline newline
-\end_inset
-
-If you like Manjaro, you might consider joining the Manjaro community on
- its forums or IRC channel.
- We look forward to meeting you!
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "advancedInstall"
 
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
+\series default
+.
 \end_layout
 
 \begin_layout Standard
@@ -3984,8 +3582,323 @@ If you like Manjaro, you might consider joining the Manjaro community on
 
 \end_layout
 
-\begin_layout Chapter
-Using the graphical installer - experienced users
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/erase_disk.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+When selecting the option 
+\series bold
+Erase disk
+\series default
+, the bottom of the window will change to display your current hard drive
+ setup and the one proposed by the installer, which will be applied at the
+ very end of the installation process, when accepting the summary shown
+ in subsection 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "summary"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You can also choose to encrypt your Manjaro partition.
+ That way, anyone trying to access to the data it contains will have to
+ enter a password of your choosing.
+ The 
+\series bold
+Boot loader location
+\series default
+ menu allows you to choose whether or not to install a boot loader, and
+ if so where to install it.
+ A boot loader is a program which enables you to choose which operating
+ system to boot when you turn on your computer.
+ If you are unsure what to do, we recommend keeping the default choice.
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Set user information
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/cal_users.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Next, you will be asked for your 
+\series bold
+name
+\series default
+, which will be used by some programs to greet you, a 
+\series bold
+username
+\series default
+ to log in the system, the 
+\series bold
+name of your computer
+\series default
+ as it will be seen by others on the same network as you, and a 
+\series bold
+password
+\series default
+.
+ The password must be entered twice to make sure there are no typos.
+ Finally, you can decide whether or not you want to be asked your password
+ when logging in and if you want to use the same password for the administrator
+ account.
+ Recommended settings are already selected.
+ Unless you really prefer it another way, we suggest you leave it as is.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Look back at your choices and confirm
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "summary"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/summary_erase_disk.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+As the last step before the installation takes place, you will be presented
+ with a short summary of all the choices you made in the other sections.
+ Make sure the partition scheme is to your liking, as this is the point
+ of no return.
+ 
+\series bold
+Once you click Next, you will no longer be able to edit the partition scheme
+ and all data stored on the partitions you chose to overwrite will be lost.
+
+\series default
+ If you changed your mind, you can go 
+\series bold
+Back
+\series default
+ a few times to choose another setup.
+ The information stored in other filled fields will be kept, so you will
+ not need to write it again.
+ Once you are satisfied with the summary, click 
+\series bold
+Next
+\series default
+ to start the installation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Installation...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/cal_install_slideshow.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+You can now kick back and let the installation proceed! While the installation
+ takes place, a slideshow will present you some key features of your new
+ operating system, Manjaro.
+ The installation should take but a few minutes.
+ The progress bar will fill up slowly at first but it will soon pick up
+ speed.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+...
+ complete!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/cal_finish.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The installation is now done! To restart your system immediately and boot
+ into your new operating system, select 
+\series bold
+Restart now
+\series default
+ and then click 
+\series bold
+Quit
+\series default
+.
+ If you want to continue exploring the live version of Manjaro, click 
+\series bold
+Quit
+\series default
+ without selecting 
+\series bold
+Restart now
+\series default
+.
+ When restarting, if you changed the boot order to boot on the live media,
+ you will need to put it back as it was to boot on your hard drive.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+However, overwriting the whole hard drive may not always be the desired
+ installation method.
+ More control can be achieved by using the other options offered in the
+ installer.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Install alongside an existing operating system 
+\begin_inset CommandInset label
+LatexCommand label
+name "alongside"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4005,54 +3918,72 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-This guide is intended for those with sufficient technical knowledge to
- manually create their own partitions.
- As such, this guide focuses on providing an example of how to use the 'Advanced
-' installation
-\begin_inset Index idx
+Another available option is to shrink an existing partition to make room
+ on your disk and used the freed space to install Manjaro.
+ This is a suitable method if you want to dual-boot two operating systems
+ but do not want to go through the hastle of partitioning your disk yourself.
+ This part will be handled by the installer.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Advanced installation
+\begin_inset Graphics
+	filename images/calamares-alongside/alongside_1.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+When selecting the option to install Manjaro alongside another operating
+ system, the bottom of the window will display a bar representing the current
+ state of the hard drive and another representing its state after modifications,
+ which at first is identical.
 \end_layout
 
 \end_inset
 
- method in general, rather than outlining the entire installation process,
- or listing all the popular partition schemes that may be used.
+
 \end_layout
 
-\begin_layout Standard
-This guide also assumes you have read the Automatic installation guide steps
- 1-5 as these are exactly the same.
-\end_layout
-
-\begin_layout Standard
-Where possible, make sure you are connected to the internet before booting
- from your installation media into the Live environment.
- If you have a hard-wired connection via an Ethernet cable, then Manjaro
- will automatically connect to the internet without you having to do anything.
- Otherwise, once you have booted into Manjaro's desktop, you will need to
- select and then connect to your wireless network.
-\end_layout
-
-\begin_layout Standard
-For a constantly-updated version of this guide, check out the wiki page:
-\end_layout
-
-\begin_layout Description
-User
-\begin_inset space ~
 \end_inset
 
-guide:
-\begin_inset Flex URL
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-alongside/alongside_2.png
+	lyxscale 50
+	width 100col%
 
-http://wiki.manjaro.org/index.php?title=Graphical_Installation_Guide_for_Experience
-d_Users_0.8.8
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+When clicking on a partition in the bar representing the current state,
+ the bottom bar will change to show this partition split in two.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4061,38 +3992,84 @@ d_Users_0.8.8
 \end_layout
 
 \begin_layout Standard
-For a refresher on partitioning your disk, check out the wiki pages on partition
-ing and partitioning scenarios:
-\end_layout
-
-\begin_layout Description
-Partitioning:
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://wiki.manjaro.org/index.php?title=Partitioning_Overview_and_Existing_Partitio
-n_Tables
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Description
-Partitioning
-\begin_inset space ~
-\end_inset
-
-scenarios:
-\begin_inset Flex URL
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-alongside/alongside_3.png
+	lyxscale 50
+	width 100col%
 
-http://wiki.manjaro.org/index.php?title=Cfdisk_Basic_Partitioning_Scenarios
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Click and drag the separation between the two parts to change the amount
+ of space that will be freed to install Manjaro.
+ On this picture, Manjaro will be installed on the part indicated in red.
+ Please note that you cannot shrink the existing partition to a size smaller
+ than the space needed to store the data on it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-alongside/summary_alongside.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The rest of the process is similar to the one presented earlier in section
+ 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "eraseDisk"
+
+\end_inset
+
+
+\series default
+.
+ You will once again enter your user information and get a summary of your
+ choices.
+ Once you click 
+\series bold
+Next
+\series default
+, the installation will begin.
+ This is your last chance to make changes.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4108,136 +4085,76 @@ http://wiki.manjaro.org/index.php?title=Cfdisk_Basic_Partitioning_Scenarios
 \end_layout
 
 \begin_layout Section
-Start the advanced installation method
+Replacing existing partition 
+\begin_inset CommandInset label
+LatexCommand label
+name "replace"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/advanced-installer/choose-advanced-install.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-When you reach the sixth step of the installation process, select
-\series bold
- Manage your partitions and where to install Manjaro (advanced)
-\series default
- and then click
-\series bold
- Forward
-\series default
- to proceed.
+\backslash
+setcounter{figure}{0}
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Choose your disk
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
+Another option would be to select an existing partition and overwrite it
+ to install Manjaro.
+ This could be useful if you are already dual-booting two different operating
+ systems and want to replace one of the two instead of installing a third
+ one.
+ You may also wish to prepare an empty partition yourself beforehand and
+ select it during the installation.
+ This will be covered in section 
+\series bold
 
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/advanced-installer/choose-disk.png
-	lyxscale 50
-	width 100col%
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "gparted"
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-If you have more than one hard drive on your computer select the one you
- want to partition.
- This example already has a partition layout, but we're going to start fresh
- by clicking
-\series bold
- New partition table
 \series default
 .
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Create a partition table
-\end_layout
-
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/advanced-installer/choose-partition-layout.png
+	filename images/calamares-replace/replace_partition.png
 	lyxscale 50
 	width 100col%
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The partition table type you chose will normally depend on your system.
- Non-EFI systems are normally best with MBR, whereas EFI systems should
- use GPT.
- Once you're happy, click
-\series bold
- OK
-\series default
- to create the partition table.
+When selecting the option to install Manjaro on an existing partition, the
+ bottom of the window will display a bar representing the current state
+ of the hard drive and another representing its state after modifications,
+ which at first is identical.
 \end_layout
 
 \end_inset
@@ -4248,37 +4165,28 @@ The partition table type you chose will normally depend on your system.
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-GPT on a non-EFI system
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/advanced-installer/gpt-bios-warning.png
+	filename images/calamares-replace/replace_2.png
 	lyxscale 50
 	width 100col%
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-You will get a warning if you create a GPT partition table on a non-EFI
- system.
- You can still proceed if you want, but be aware of the extra partition.
- Don't delete it!
+When clicking a partition in the bar representing the current state, the
+ bottom bar will change to show this partition overwritten by Manjaro.
 \end_layout
 
 \end_inset
@@ -4289,308 +4197,47 @@ You will get a warning if you create a GPT partition table on a non-EFI
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-A two-partition scenario
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/advanced-installer/empty-disk.png
+	filename images/calamares-replace/summary_replace.png
 	lyxscale 50
 	width 100col%
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-In this scenario we will cover the most common partition layout.
- Root and Boot files will be in a single partition and Home in a second
- partition to keep documents separate from system files.
- We'll add an optional swap partition in the remaining space.
- As there are only three partitions total, each can be Primary partitions.
-\begin_inset Newline newline
-\end_inset
-
-With the free space highlighted, we'll click
+The rest of the process is similar to the one presented earlier in section
+ 
 \series bold
-+Add
-\series default
- to create the first partition.
-\end_layout
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "eraseDisk"
 
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Partition 1: Root and Boot
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/advanced-installer/partition-1-root.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-The first partition will contain the system and boot files (
-\series bold
-/
-\series default
- and
-\series bold
- /boot
-\series default
-).
- As such, we must allocate enough space for all system programs.
- 20GB is generally sufficient, but if you have a smaller disc you can reduce
- this.
- We have selected XFS as the file system and made sure to set the mountpoint
- to
-\series bold
-/
-\series default
- (root).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Partition 2: Home
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/advanced-installer/partition-2-home.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-We've added a second partition to hold our user documents.
- It's set to be 60GB in size, with the XFS file system, and the mountpoint
- is set to
-\series bold
- /home
-\series default
- (Home).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Swap partition
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/advanced-installer/partition-3-swap.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Finally, we've added a swap partition.
- This will act as extra (very, very slow) RAM if we run out.
- It's not really suitable as anything other than a last resort but can sometimes
- make the difference between losing work and quitting cleanly.
- This is set to take the remainder of the free space, about 4GB.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Finalising the partitions
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/advanced-installer/partitions-ready.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-The partition layout is ready, but before continuing it's worth checking
- over.
- You can change and adapt the layout freely at this point as nothing has
- been written to disc.
-\begin_inset Newline newline
-\end_inset
-
-Once you are happy, click
-\series bold
- Install now!
-\series default
- to proceed.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Verify partitioning actions
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/advanced-installer/check-partition-actions.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-As a final check, the installer will ask you to verify that you want to
- write the partition layout to disc.
- If you want to go back and make a change, click
-\series bold
- Cancel
 \series default
 .
- Otherwise to continue to install Manjaro, click
+ You will once again enter your user information and get a summary of your
+ choices.
+ Once you click 
 \series bold
- OK
+Next
 \series default
-.
- The rest of the process is the same as for the Automatic installer, so
- we're done here!
+, the installation will begin.
+ This is your last chance to make changes.
 \end_layout
 
 \end_inset
@@ -4598,20 +4245,994 @@ As a final check, the installer will ask you to verify that you want to
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
 \end_inset
 
 
 \end_layout
 
 \begin_layout Chapter
-Installing on a UEFI
+Manual installation on a BIOS
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+BIOS
+\end_layout
+
+\end_inset
+
+ system with Calamares 
+\begin_inset CommandInset label
+LatexCommand label
+name "advancedInstall"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The last option is the one that gives you the most control.
+ You will get the chance to adjust yourself the partition scheme of your
+ hard drive using the built-in partition manager and make it exactly the
+ way you want it.
+\end_layout
+
+\begin_layout Section
+Setting everything from within Calamares
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-manual/manual.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Unlike in other scenarios, selecting 
+\series bold
+Manual partitioning
+\series default
+ will not change the information displayed at the bottom of the window.
+ Click 
+\series bold
+Next
+\series default
+ to start partitioning.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Free some space
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-manual/man_part.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The next screen displays the disk being edited and its state, both in the
+ form of a bar and a list of partitions.
+ Both represent the same thing, only in a different form.
+ The button 
+\series bold
+New Partition Table
+\series default
+ allows you to create a new partition table, either of type MBR or GPT.
+ This will erase all data and destroy all partitions on the drive.
+ You can also keep your existing partition table and only edit the partitions
+ on it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-manual/manual_part_2.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Clicking on a partition either in the bar or in the list will highlight
+ it.
+ The options to 
+\series bold
+Edit
+\series default
+ or 
+\series bold
+Delete
+\series default
+ the partition will become available.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-manual/man_part_edit.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Clicking on 
+\series bold
+Edit
+\series default
+ will bring up another window indicating information about the partition,
+ such as its size, what you want to do with its content, its file system,
+ its mount point if you want to use it for your Manjaro installation and
+ its flags.
+ The portion of the partition that has data on it is located on the left
+ side of the bar and has a slight 3D effect.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-manual/man_part_resize.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Click and drag the edges of the partition to resize it.
+ It cannot be made smaller than the size required to store the data on it.
+ Clicking 
+\series bold
+OK
+\series default
+ will close the window and update the diagram and the list of partitions.
+ 
+\series bold
+Please note that no actual modifications to your hard drive will take place
+ until you accept the summary later on.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Create partitions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-manual/man_part_create_1.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+You can then select the space freed and click on 
+\series bold
+Create
+\series default
+ to create a new partition using all of the empty space, or just a fraction
+ of it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-manual/man_part_create_2.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A new window will pop up here as well with information about the partition
+ you wish to create.
+ Adjust its size as you wish and choose a file system.
+ For Linux, 
+\series bold
+ext4
+\series default
+ is usually a good choice.
+ Then, choose a mount point for the partition.
+ This represents under which directory each partition will be accessible.
+ 
+\series bold
+The only obligation is that you must have a partition mounted under /, which
+ is the top most directory of the Linux directory tree.
+
+\series default
+ You can arrange the rest to your liking.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-manual/man_part_result.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Here I chose to create a separate partition for the 
+\series bold
+/home
+\series default
+ directory, which is used to store user files such as music, pictures and
+ videos.
+ Once everything is done, take a moment to verify the setup is to your liking.
+ 
+\series bold
+All partitions that have a mount point specified will be used during the
+ installation of Manjaro.
+
+\series default
+ You can abandon all changes by clicking the 
+\series bold
+Revert All Changes
+\series default
+ at the top right of the window.
+ At the bottom of the window you also have the option to specify whether
+ or not to install the GRUB boot loader as well as where to install it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this case a swap partition was already created.
+ If you want or have to create a new one, create a partition as was done
+ for the other ones and choose 
+\series bold
+linuxswap
+\series default
+ as the file system.
+ You do not have to select a mount point for it.
+\end_layout
+
+\begin_layout Subsection
+Look back and confirm
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-manual/summary_manual.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The rest of the process is similar to the one presented earlier in section
+ 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "eraseDisk"
+
+\end_inset
+
+
+\series default
+.
+ You will once again enter your user information and get a summary of your
+ choices.
+ Once you click 
+\series bold
+Next
+\series default
+, the installation will begin.
+ This is your last chance to make changes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Using GParted to create, delete and modify partitions
+\begin_inset CommandInset label
+LatexCommand label
+name "gparted"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gparted is a graphical program used to modify partitions on drives.
+ It is very powerful and yet has a very user-friendly interface.
+ Partitions are sections of a drive which store data using a certain format
+ named file system.
+ Examples of well-known file systems are ntfs (used by Microsoft Windows),
+ ext4 (used by Linux) and fat32.
+ All drives, be they hard drives or flash drives such as USB keys contain
+ one or more partitions.
+ GParted allows you to create and delete partitons, as well as change the
+ attributes, such as their size, their location on the disk and their file
+ system.
+ It can also create partition tables of type MBR and GPT.
+\end_layout
+
+\begin_layout Standard
+In this section, we will demonstrate how to reduce the size of an existing
+ partition and use the freed space to create two new partitions, which will
+ be used to install Manjaro later on!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+First things first, let's fire it up! You can find GParted in the menu of
+ the live version of Manjaro.
+ It can also be found in the repositories of most Linux distributions.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_1.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+After authenticating, a window similar to the one presented on the picture
+ will appear.
+ A bar shows a diagramatic representation of your drive, which is indicated
+ on the button at the top-right of the window.
+ If you have multiple drives, you can select another by clicking on this
+ button.
+ Each partition is represented by a rectangle in the bar.
+ The coloured part shows the portion that contains data.
+ All partitions are also presented in the form of a list with information
+ about them.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_2.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Clicking on either a partition in the list or the rectangle in the bar represent
+ing it will select it and offer options as to what to do with it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Shrink an existing partition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_3.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In the top panel are several buttons each representing a different action.
+ The first one is disabled for now as it creates a partition from empty
+ space, the second deletes the selected partition and the third one allows
+ to resize the selected partition.
+ This is the one we are interested in.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_resize.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Clicking it will bring up another window showing the partition up close
+ at the top as well as the size of the partition.
+ To reduce the size of the partition, click and drag the edges of the rectangle.
+ Alternatively, you can write how much space you want to free on each side
+ of the partition in the fields below.
+ Once some space has been freed, you can also drag the partition around
+ to position it in the space it used to fill.
+ Click the 
+\series bold
+Resize/Move
+\series default
+ button once you are done.
+ 
+\series bold
+Before resizing a partition, it is strongly suggested to back the data stored
+ on it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Create new partitions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_create.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once some space has been freed on the drive, you can use it to create a
+ new partition! Select it and click on the first button in the top bar.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_create_2.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In the window that pops up, you will get the chance to set the size of the
+ new partition you will create.
+ By default, it takes all of the available free space, but you can change
+ that in the same manner as when resizing the partition earlier.
+ You can also, among other options, choose the file system used by the partition.
+ For Linux partitions, ext4 usually works fine, though other choices such
+ as xfs and btrfs are also available.
+ You can also give a label to your partition, which will make it easier
+ for you to identify it.
+ Clicking the 
+\series bold
++ Add
+\series default
+ button will close the window.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If your new partition does not take all of the available space, you can
+ repeat this step to create other partitions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Apply changes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_apply.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+After all of this work, still no actual changes have been made to your drive.
+ Instead, your modifications have been recorded into a list, visible at
+ the bottom of the window.
+ To apply the changes, click the checkmark button at the top of the window.
+ This is your last chance to make changes.
+ 
+\series bold
+Once you click the checkmark button, the modifications will be applied to
+ the drive.
+
+\series default
+ Alternatively, to cancel the last modification, click the button to its
+ left.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_working.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A new window will pop up indicating the operations being worked on...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_success.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+...
+ and at the end if the modifications were applied successfully.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gparted/gparted_result.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Congratulations, you have now successfully created new partitions which
+ you will be able to use to install Manjaro!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Assisted installation on a UEFI
 \begin_inset Index idx
 status open
 
@@ -4621,7 +5242,14 @@ UEFI
 
 \end_inset
 
- system
+ system with Calamares 
+\begin_inset CommandInset label
+LatexCommand label
+name "UEFIInstall"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4648,15 +5276,19 @@ UEFI is the commonly agreed on name for both the EFI & UEFI standards which
 \end_layout
 
 \begin_layout Standard
-If you have a relatively new computer (e.g.
- post-2012) it will probably have UEFI support; it certainly will if it
- came with Microsoft Windows 8 or later installed.
- At this point in time, installing a Linux distribution on a UEFI system
- can be tricky.
- Thankfully Manjaro's installer, Thus, does a good job of correctly setting
- up everything.
- However, there are still important considerations, especially when it comes
- to the partitioning table.
+Some newer hardware do not use the well-known BIOS to manage boot options.
+ Instead, a new one named UEFI (Unified Extensible Firmware Interface) is
+ used.
+ It still has BIOS-like menus and often has a legacy mode, which uses BIOS.
+ UEFI often goes hand in hand with the infamous Secure Boot option that
+ makes it more difficult to boot operating systems outside of a select few.
+ If your computer came with Microsoft Windows 8 or later installed, your
+ computer uses UEFI and probably has Secure Boot enabled by default.
+ However, the Linux community reacted to this and developped means to install
+ and boot Linux on those systems as well.
+ Some installers, such as Calamares, can even automate the process so it
+ makes virtually no difference to the user whether their machine uses UEFI
+ or BIOS.
 \end_layout
 
 \begin_layout Section
@@ -4672,18 +5304,19 @@ The most important step is to ensure that your machine does not have Secure
 .
  Only a very limited number of operating systems will boot with this enabled.
  You must disable this in your BIOS before proceeding; if you don't know
- how to do this please refer to your computer's user manual.
+ how to do this please refer to your computer's user manual, as it differs
+ for all computers.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/uefi-install/boot-selection.png
+	filename images/calamares-uefi/UEFI_manjaro_menu.png
 	lyxscale 50
 	width 100col%
 
@@ -4716,9 +5349,68 @@ Once you have booted the system from the Live CD/USB you will be presented
  It has two main options for the drivers it will use (either Free or non-Free).
  The main difference is the lack of any option for language or keyboard
  layout.
- However, this is actually not that important! When you run Thus and choose
- your language and keyboard layout this will take effect within the Live
- environment, along with setting these for the installed system.
+ This is actually not that big of a problem, since these can be set up in
+ the live environment and in the Calamares installer, which will make them
+ permanent on the installed system.
+\end_layout
+
+\begin_layout Section
+Differences in the partition setup
+\end_layout
+
+\begin_layout Standard
+The key difference in the way the partitions are arranged compared to the
+ case with BIOS is that a small partition of a few hundred MB must be created
+ to house some files used when booting the system.
+ This partition must use the fat32 file system.
+ Luckily, in all assisted installation options, Calamares handles the creation
+ of this partition if it does not already exist and writes the necessary
+ files to it.
+ If the partition already exists, it is detected and used to write the files.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/partitions.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once the Calamares installer is executed, the first noticeable difference
+ with the case with a BIOS is at the top of the screen, where EFI is specified
+ instead.
+ In this case, a GPT partition table is also used instead of the MBR partition
+ table more commonly found on BIOS systems.
+ The bottom of the screen displays the current partition scheme, with the
+ sda1 partition storing the files used when booting.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4729,7 +5421,14 @@ Once you have booted the system from the Live CD/USB you will be presented
 \end_layout
 
 \begin_layout Section
-Installing Manjaro as the only operating system
+Assisted installation 
+\begin_inset CommandInset label
+LatexCommand label
+name "assistedUEFI"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4749,33 +5448,24 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-With Manjaro, Thus does an excellent job setting up your system.
- Once you have loaded the Live environment the installation steps are exactly
- the same as for a non-UEFI installation.
- The main difference is in the partition layout: this is important if you
- wish to manually partition the drive to suit your own requirements.
+The installation using the three assisted installation options does not
+ change much from the case with a BIOS.
+ Calamares takes care of the differences for you.
 \end_layout
 
-\begin_layout Standard
-In automatic mode, Thus creates a conservative partition layout that will
- work on all systems.
- However, the key extra partition for compatibility with UEFI systems is
- a fat32-formatted partition mounted at
-\family typewriter
- /boot/efi
-\family default
- - make sure to include this if you partition manually!
+\begin_layout Subsection
+Erase disk
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/uefi-install/automatic-mode-layout.png
+	filename images/calamares-uefi/erase/select_erase.png
 	lyxscale 50
 	width 100col%
 
@@ -4788,7 +5478,12 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The partition layout created by Thus in automatic mode (with separate Home).
+The 
+\series bold
+Erase disk
+\series default
+ option suggests a EFI partition at the beginning, a root partition for
+ Manjaro and a swap partition at the end.
 \end_layout
 
 \end_inset
@@ -4799,17 +5494,21 @@ The partition layout created by Thus in automatic mode (with separate Home).
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Install alongside
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/uefi-install/manual-partitioning.png
+	filename images/calamares-uefi/alongside/click_partition_alongside.png
 	lyxscale 50
 	width 100col%
 
@@ -4822,9 +5521,12 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-A manual partition layout.
- Note the lack of a GRUB BIOS partition; this is not necessary with a GPT
- partition layout under EFI.
+When selecting the 
+\series bold
+Install alongside
+\series default
+ option and clicking on the partition to shrink, the suggested partition
+ setup will mention if an existing EFI partition was detected.
 \end_layout
 
 \end_inset
@@ -4835,27 +5537,121 @@ A manual partition layout.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Replace a partition
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/replace/click_partition_replace.png
+	lyxscale 50
+	width 100col%
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Section
-Installing alongside Microsoft Windows 8
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+When selecting the 
+\series bold
+Replace a partition
+\series default
+ option and clicking on the partition to overwrite, the suggested partition
+ setup will also mention if an existing EFI partition was detected.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Manual installation on a UEFI
 \begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
-Microsoft Windows 8
+UEFI
 \end_layout
 
 \end_inset
 
- or later
+ system with Calamares
+\end_layout
+
+\begin_layout Standard
+The last installation option is the one that changes the most if you are
+ using a UEFI system.
+ The following steps will walk you through the process of creating a partition
+ scheme suitable for your system in three different scenarios.
+ Ths first one (
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "efi-from-scratch"
+
+\end_inset
+
+
+\series default
+) will show you how to create your partition scheme from within Calamares
+ without using existing partitions.
+ The second one (
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "efi-gparted"
+
+\end_inset
+
+
+\series default
+) will show you how to create the partitions with GParted before using them
+ in the Calamares installer.
+ Finally, the third one (
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "existing-efi"
+
+\end_inset
+
+
+\series default
+) will show you how to use previously created partitions during the installation
+, including a EFI partition used by another operating system.
+ 
+\end_layout
+
+\begin_layout Section
+Creating partitions from scratch 
+\begin_inset CommandInset label
+LatexCommand label
+name "efi-from-scratch"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4875,20 +5671,1206 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-It is possible that you want install Manjaro but keep an existing Windows
- 8 installation on your computer.
- This is possible, but a little more complicated to set up.
- It's not for the faint-of-heart, and you should make sure you have a backup
- of any important documents or information before proceeding.
-\end_layout
-
-\begin_layout Standard
-The following instructions assume you are using a machine with UEFI enabled,
- Secure Boot disabled, and are using drives with a GUID Partition Table
- (GPT).
+This scenario will assume that you do not wish to use a single existing
+ partition.
+ We will thus start with a completely empty hard drive.
+ This will also be the case if you are using a brand new drive or are using
+ a virtual machine.
 \end_layout
 
 \begin_layout Subsection
+Create a partition table
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/partition_table.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once you select the 
+\series bold
+Manual partitioning
+\series default
+ option, the first thing to make sure is that the partition table is of
+ type GPT.
+ To create a new partition table, click on the 
+\series bold
+New Partition Table
+\series default
+ button and select 
+\series bold
+GUID Partition Table (GPT)
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Create the EFI partition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/click_create.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Then, select the empty space and click on 
+\series bold
+Create
+\series default
+ to make a new partition.
+ The first one we will create will be the EFI partition, which will house
+ files used when booting.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/efi_fat32.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In the dialog that appears, select a size of a few hundred MB.
+ Here I chose 500 MB.
+ Then, select 
+\series bold
+fat32
+\series default
+ as the file system.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/boot_efi.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Next, choose 
+\series bold
+/boot/efi
+\series default
+ as the mount point.
+ The contents of the partition will be accessible from this directory.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/efi_flags.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Finally, select the 
+\series bold
+boot
+\series default
+ and 
+\series bold
+esp
+\series default
+ flags from the list.
+ Once this is done, click the 
+\series bold
+OK
+\series default
+ button.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Create the swap partition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/swap_linuxswap.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The next partition we will create is the swap.
+ This partition will be used if you ever run out of RAM to complete operations.
+ The suggested size for this partition is a few GB.
+ Here I chose 4 GB.
+ Choose 
+\series bold
+linuxswap
+\series default
+ as the file system.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/swap_slide.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+You can also click and drag the partition to move it elsewhere in the unallocate
+d space.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Create other partitions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/partitions_manual.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Next are the partitions used by Manjaro itself.
+ There are a variety of possible scenarios.
+ Here I chose the simplest case where I only created a single partition
+ mounted under the 
+\series bold
+/
+\series default
+ directory.
+ Another scenario with the 
+\series bold
+/home
+\series default
+ directory being housed on another partition is presented in the chapter
+ 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "advancedInstall"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Look back and confirm
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/manual/summary_manual.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+You can then proceed as usual up to the summary, which is the last step
+ before the changes are applied to your drive.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Using GParted to create partitions beforehand 
+\begin_inset CommandInset label
+LatexCommand label
+name "efi-gparted"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The creation of the partition table and partitions shown above can also
+ be handled by GParted.
+ The following steps will guide you through the process.
+\end_layout
+
+\begin_layout Subsection
+Create a partition table
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_partition_table.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+To create a new partition table, select 
+\series bold
+Device > Create Partition Table...
+
+\series default
+ .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_gpt.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In the dialog box that pops up you can then choose the type of partition
+ table to be created.
+ For a UEFI system, a 
+\series bold
+GPT
+\series default
+ partition table is recommended.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Create the EFI partition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_create.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once this is done, select the unaloccated space and click on the first button
+ at the top-left of the window to create a new partiton.
+ The first one we will create is the EFI partition.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_efi.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Like in the case where Calamares was used to create the partitions, it is
+ recommended to choose a size of a few hundred MB.
+ You may notice that GParted uses a different unit for the size of the partition
+s, namely MiB.
+ MiB are not the same as MB, but close enough for what we want to do.
+ It is necessary to use the 
+\series bold
+fat32
+\series default
+ file system.
+ You can also set a label to make the partition easier to recognize.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Create the swap partition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_swap.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Next, select the rest of the empty space and create a new partition.
+ This one will be the swap.
+ It is recommended to choose a size of a few GB.
+ It is necessary to use the 
+\series bold
+linux-swap
+\series default
+ file system.
+ You can click and drag the partition to move it elsewhere in the unallocated
+ space.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Create other partitions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_root.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Finally, create the partitions that will be used by Manjaro.
+ Here I chose to make a single one that will later be mounted under the
+ 
+\series bold
+/
+\series default
+ directory.
+ I chose the 
+\series bold
+ext4
+\series default
+ file system, although others such as xfs and btrfs are available.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Apply changes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_apply.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+It is finally time to apply the changes! Make sure everything is to your
+ liking and then click the checkmark button.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Set the flags for the EFI partition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_manage_flags.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A few flags then need to be set so the EFI partition behaves correctly.
+ 
+\series bold
+Right-click
+\series default
+ on the partition you intend to use as the EFI partition and select 
+\series bold
+Manage Flags
+\series default
+ from the drop-down menu.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_flags.png
+	lyxscale 50
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In the dialog box that appears, select 
+\series bold
+boot
+\series default
+ and 
+\series bold
+esp
+\series default
+.
+ 
+\series bold
+Close
+\series default
+ the dialog box once this is done.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/gparted_result.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+That's it! Your partitions are all set up! It is now time to put them to
+ use in the installer.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Using an already existing EFI partition 
+\begin_inset CommandInset label
+LatexCommand label
+name "existing-efi"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You may want to consider this scenario is you prepared the partitions beforehand
+ with a tool like GParted or if you are dual-booting with another operating
+ system.
+ In the later case, you will probably want to use the same EFI partition
+ for Manjaro and the other operating system.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/cal_edit_efi.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once in the 
+\series bold
+Manual partitioning
+\series default
+ option, select the partition you want for the EFI partition and click on
+ the 
+\series bold
+Edit
+\series default
+ button.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/cal_boot_efi.png
+	lyxscale 50
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In the dialog box that appears, choose to mount the partition under 
+\series bold
+/boot/efi
+\series default
+.
+ You also have the option to either keep the contents of the partition or
+ format it.
+ 
+\series bold
+Keeping them is especially important when dual-booting with another operating
+ system.
+
+\series default
+ That way, the Calamares installer will write the files necessary for booting
+ Manjaro alongside those of the other operating system.
+ Also, make sure the 
+\series bold
+boot
+\series default
+ and 
+\series bold
+esp
+\series default
+ flags are checked.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/cal_root.png
+	lyxscale 50
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Next, select the other partitions you want to use and choose their respective
+ mount points.
+ If you want to dual-boot, you may want to shrink an existing partition
+ and create partitions for Manjaro as illustrated in section 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "advancedInstall"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/gparted/summary_gparted.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once everything is set up, you can proceed up to the summary.
+ As always, this is the very last step where you can go back to make changes.
+ Once you click the 
+\series bold
+Next
+\series default
+ button, the modifications will be applied to your drive and the actual
+ installation will begin.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Dual-booting with Microsoft Windows 10
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Microsoft Windows 10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The above instructions for a UEFI system used Linux Mint as the already
+ installed operating system.
+ However, the partition scheme used by Windows is a bit different from the
+ one typically used by Linux.
+ This section shows the differences in the installation steps between the
+ two cases.
+\end_layout
+
+\begin_layout Section
 Download the installation media
 \end_layout
 
@@ -4933,11 +6915,11 @@ http://rufus.akeo.ie/
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/uefi-install/rufus.png
+	filename images/calamares-uefi/rufus.png
 	width 100col%
 
 \end_inset
@@ -4996,7 +6978,7 @@ Volume
 \begin_inset space ~
 \end_inset
 
-label: MJRO1509
+label: MJRO1608
 \end_layout
 
 \begin_layout Description
@@ -5019,255 +7001,30 @@ Click
  to complete).
 \end_layout
 
-\begin_layout Subsection
-Boot the Live environment
+\begin_layout Standard
+Once you are done, restart your computer and boot on the USB key as was
+ explained earlier.
+\end_layout
+
+\begin_layout Section
+Assisted installation
 \end_layout
 
 \begin_layout Standard
-Before booting, check your BIOS settings: UEFI must be
-\series bold
- on
-\series default
- and Secure Boot
-\series bold
- off
-\series default
-.
- Manjaro currently doesn't support Secure Boot.
-\end_layout
-
-\begin_layout Standard
-Boot with your Live media and select which set of drivers you would like
- to use:
-\end_layout
-
-\begin_layout Description
-Boot
-\begin_inset space ~
-\end_inset
-
-Manjaro
-\begin_inset space ~
-\end_inset
-
-Linux
-\begin_inset space ~
-\end_inset
-
-...
-\begin_inset space ~
-\end_inset
-
-(default) This chooses the open-source graphics card drivers.
-\end_layout
-
-\begin_layout Description
-Boot
-\begin_inset space ~
-\end_inset
-
-Manjaro
-\begin_inset space ~
-\end_inset
-
-Linux
-\begin_inset space ~
-\end_inset
-
-...
-\begin_inset space ~
-\end_inset
-
-(nonfree) This option chooses the proprietary graphics card drivers from
- Nvidia or AMD.
-\end_layout
-
-\begin_layout Standard
-If you're not sure which to use, refer back to the earlier section
-\series bold
- Booting the Live environment
-\series default
-.
-\end_layout
-
-\begin_layout Subsection
-Adjust your partition sizes
-\end_layout
-
-\begin_layout Standard
-Your computer will be set up with no free space into which Manjaro can be
- installed.
- As such, you need to shrink the main Microsoft Windows partition to make
- space! To do this, we will use GParted, the GNOME Partition Editor.
+The assisted installation options do a good job of setting everything up.
+ If you do not wish to bother yourself creating everything by hand, you
+ can rely on Calamares to do the dirty work for you!
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/uefi-install/start-gparted.png
-	lyxscale 50
-	width 95col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Start
-\series bold
- GParted
-\series default
- from the applications menu.
- The 'root' password is '
-\series bold
-manjaro
-\series default
-' (without quotes).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/uefi-install/gparted-selecting-shrink.png
-	lyxscale 50
-	width 95col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Right click on the largest NTFS partition and select
-\series bold
- Resize/Move
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/uefi-install/gparted-selecting-shrink2.png
-	lyxscale 50
-	width 95col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Make space at the end of the partition for Manjaro.
- Ideally this should be at least 50GB, but you can't shrink the partition
- smaller than its used space (minimum size).
- When you're happy with the new size, click
-\series bold
- Resize/Move
-\series default
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Once you are happy with the new partition layout, on the menu go to
-\series bold
- Edit
-\series default
-,
-\series bold
- Apply all operations
-\series default
-.
- There will be a confirmation message; to continue you must click
-\series bold
- Apply
-\series default
-.
-\end_layout
-
-\begin_layout Standard
-The resizing process will take some time.
- Perhaps another chance to get a cup of tea! Once it has completed, close
- GParted and then run
-\series bold
- Install Manjaro Linux
-\series default
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Start the advanced installation process
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/advanced-installer/choose-advanced-install.png
+	filename images/calamares-uefi/windows-keep-efi/windows_alongside.png
 	lyxscale 50
 	width 100col%
 
@@ -5280,15 +7037,23 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-When you reach the sixth step of the installation process, select
+Using the assisted installation option to install Manjaro alongside Windows,
+ select the partition used as the C drive by Windows.
+ It should be the biggest one.
+ Then, move the slider as explained in section 
 \series bold
- Manage your partitions and where to install Manjaro (advanced)
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "alongside"
+
+\end_inset
+
+
 \series default
- and then click
-\series bold
- Forward
-\series default
- to proceed.
+ to increase or decrease the size of the partition that will be created
+ for Manjaro.
+ The Windows EFI partition is detected automatically.
 \end_layout
 
 \end_inset
@@ -5296,112 +7061,62 @@ When you reach the sixth step of the installation process, select
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Manual installation
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/uefi-install/thus-partitions-begin.png
-	lyxscale 50
-	width 95col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-On the partitioning screen you can see the 100GB of free space we just created.
- Note the 100MB fat32 partition: this is the EFI boot partition needed by
- Windows.
- At this point you have two choices.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/uefi-install/thus-use-manjaro-efi-partition.png
-	lyxscale 50
-	width 95col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Firstly, you can create another, new, EFI partition just for Manjaro.
- This means everything is kept separate to Windows.
-\begin_inset Newline newline
-\end_inset
-
-A partition of 100MB should be enough, but the mountpoint
+This can also be done in the manual partitioning option.
+ The steps below are very similar to the ones presented in other sections
+ such as 
 \series bold
- must
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "advancedInstall"
+
+\end_inset
+
+
 \series default
- be
-\family typewriter
+ and 
 \series bold
- /boot/efi
-\family default
-\series default
- and the partition type
-\series bold
- fat32
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "efi-from-scratch"
+
+\end_inset
+
+
 \series default
 .
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+\begin_layout Subsection
+Choose the EFI partition
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/uefi-install/thus-use-windows-efi-partition.png
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_edit_EFI.png
 	lyxscale 50
-	width 95col%
+	width 100col%
 
 \end_inset
 
@@ -5412,22 +7127,17 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Otherwise, you can reuse the EFI partition created by Windows.
- This is normally quite safe to do.
-\begin_inset Newline newline
-\end_inset
-
-Select the mountpoint
-\family typewriter
+The EFI partition created and used by Windows can also be used by Manjaro.
+ Select the EFI partition that was created by Windows and 
 \series bold
- /boot/efi
-\family default
+Edit
 \series default
- but make sure you
+ it.
+ It should be the only one using the 
 \series bold
- do not
+fat32
 \series default
- format the partition - or you won't be able to boot Windows!
+ file system.
 \end_layout
 
 \end_inset
@@ -5444,13 +7154,13 @@ Select the mountpoint
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/uefi-install/thus-partitions-done.png
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_mount_EFI.png
 	lyxscale 50
-	width 95col%
+	width 50col%
 
 \end_inset
 
@@ -5461,19 +7171,28 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Create the rest of partitions as normal.
- You need at least a root partition (mountpoint
-\family typewriter
+Choose to 
 \series bold
- /
-\family default
+Keep
 \series default
-).
- Click
+ the content of the partition.
+ This will make sure that the files used by Windows will not be deleted.
+ If you choose to format it, you will not be able to boot into Windows anymore,
+ so keeping its content is very important.
+ Then, select 
 \series bold
- Install now!
+/boot/efi
 \series default
-, confirm the changes, and proceed with the rest of the installation process!
+ as the mount point and make sure the 
+\series bold
+boot
+\series default
+ and 
+\series bold
+esp
+\series default
+ flags are checked.
+ Once this is done, the partitioning is over!
 \end_layout
 
 \end_inset
@@ -5494,6 +7213,276 @@ Create the rest of partitions as normal.
 \end_layout
 
 \begin_layout Subsection
+Shrink the C: drive partition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_edit_Cdrive.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Like in the previous section, but this time using the manual partitioning
+ option, select the partition used as the C: drive by Windows and 
+\series bold
+Edit
+\series default
+ it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_reduce_Cdrive.png
+	lyxscale 50
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Then, use the slider at the top of the window that pops up to reduce its
+ size.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Create a swap partition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_create.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Next, select the freed space and click on 
+\series bold
+Create
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_swap.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A swap partition is a partition which will be used if your computer runs
+ out of RAM or when it is put in hibernation.
+ It is generally a few GB large and uses the 
+\series bold
+linuxswap
+\series default
+ file system.
+ You do not need to mount it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Create the other partitions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_manual_root.png
+	lyxscale 50
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Now you can create some new partitions! Here I chose the simplest partition
+ scheme, as I create a single partition mounted as / and with the ext4 file
+ system.
+ No matter the partition scheme you choose, there must be one partition
+ mounted as /.
+ The rest is up to you.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Look back and confirm
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/windows-keep-efi/windows_summary_manual.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+You can then continue through the rest of the installer up until the summary.
+ As always, this is your very last chance to review the changes you are
+ about to make.
+ If you are satisfied with them, you can click 
+\series bold
+Next
+\series default
+ and proceed with the installation!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Update the GRUB bootloader, or, Where did Windows go?
 \end_layout
 
@@ -5505,8 +7494,7 @@ Sometimes the bootloader GRUB2 doesn't detect an existing Microsoft Windows
 \end_layout
 
 \begin_layout Standard
-This is easy to solve.
- Run the command:
+To solve this problem, run the command:
 \end_layout
 
 \begin_layout LyX-Code
@@ -5574,7 +7562,7 @@ The text-based installer is only recommended for advanced users.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -5620,7 +7608,7 @@ Set date and time
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -5659,7 +7647,7 @@ Hard disk(s) preparation
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -5704,7 +7692,7 @@ Install system
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -5745,7 +7733,7 @@ Configure system
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -5791,7 +7779,7 @@ Install bootloader
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -5831,7 +7819,7 @@ Quit
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -5914,11 +7902,11 @@ ons from its user and developer community!
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome.png
+	filename images/welcome-to-manjaro-2016/welcome_installed.png
 	lyxscale 50
 	width 100col%
 
@@ -5992,11 +7980,11 @@ Super
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/software-menu.png
+	filename images/welcome-to-manjaro-2016/app_menu.png
 	lyxscale 50
 	width 100col%
 
@@ -6025,6 +8013,7 @@ Software applications that are installed will be displayed in the applications
 
 \begin_layout Standard
 You can see that the five main software applications have an item in the
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -6052,11 +8041,11 @@ Favourites
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/add-to-favourites.png
+	filename images/welcome-to-manjaro-2016/add_favourites.png
 	lyxscale 50
 	width 100col%
 
@@ -6083,11 +8072,11 @@ Add to Favourites
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/remove-from-favourites.png
+	filename images/welcome-to-manjaro-2016/remove_favourites.png
 	lyxscale 50
 	width 100col%
 
@@ -6140,11 +8129,11 @@ Terminal Emulator
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/terminal.png
+	filename images/welcome-to-manjaro-2016/terminal.png
 	lyxscale 50
 	width 95col%
 
@@ -6173,9 +8162,9 @@ ls
 \end_inset
 
 Learning how to use the terminal is not needed for running Manjaro.
- It's highly recommended, however; check out sites like
+ It's highly recommended, however; check out sites like 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -6215,11 +8204,11 @@ File Manager
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/file-manager.png
+	filename images/welcome-to-manjaro-2016/file_manager.png
 	lyxscale 50
 	width 95col%
 
@@ -6277,11 +8266,11 @@ Web Browser
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/web-browser.png
+	filename images/welcome-to-manjaro-2016/web_browser.png
 	lyxscale 50
 	width 95col%
 
@@ -6333,11 +8322,11 @@ Mail Reader
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/mail-reader.png
+	filename images/welcome-to-manjaro-2016/mail_reader.png
 	lyxscale 50
 	width 95col%
 
@@ -6397,11 +8386,11 @@ Add/Remove Software
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/pamac.png
+	filename images/pamac/pamac_install.png
 	lyxscale 50
 	width 95col%
 
@@ -6414,7 +8403,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The
+The 
 \series bold
 Package Manager
 \series default
@@ -6425,11 +8414,11 @@ Package Manager
 \begin_inset Newline newline
 \end_inset
 
-There are two main software managers in Manjaro:
+There are two main software managers in Manjaro : 
 \series bold
 Pamac
 \series default
- (installed with the Xfce edition) and
+ (installed with the Xfce edition) and 
 \series bold
 Octopi
 \series default
@@ -6502,11 +8491,11 @@ Whichever method you use, we look forward to meeting you!
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/getting-help/welcome.png
+	filename images/welcome-to-manjaro-2016/welcome_installed.png
 	lyxscale 50
 	width 95col%
 
@@ -6575,11 +8564,11 @@ http://forum.manjaro.org/
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/getting-help/forums.png
+	filename images/welcome-to-manjaro-2016/discussion_forum.png
 	lyxscale 50
 	width 95col%
 
@@ -6650,11 +8639,11 @@ http://bit.ly/manjaro-irc-web/
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/getting-help/irc-channel.png
+	filename images/welcome-to-manjaro-2016/irc_channels.png
 	lyxscale 50
 	width 95col%
 
@@ -6724,11 +8713,11 @@ http://lists.manjaro.org/listinfo/manjaro-general
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/getting-help/mailing-lists.png
+	filename images/welcome-to-manjaro-2016/mailing_list.png
 	lyxscale 50
 	width 95col%
 
@@ -6793,11 +8782,11 @@ http://wiki.manjaro.org/index.php?title=Main_Page
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/getting-help/wiki.png
+	filename images/welcome-to-manjaro-2016/wiki.png
 	lyxscale 50
 	width 95col%
 
@@ -6884,11 +8873,11 @@ Xfce settings manager
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/xfce-settings.png
+	filename images/welcome-to-manjaro-2016/xfce_settings_manager.png
 	lyxscale 50
 	width 95col%
 
@@ -6933,11 +8922,11 @@ Manjaro Settings Manager
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/manjaro-settings-manager.png
+	filename images/welcome-to-manjaro-2016/manjaro_settings_manager.png
 	lyxscale 50
 	width 95col%
 
@@ -6958,7 +8947,7 @@ The
  you set during installation.
  System-wide languages, keyboard layouts, users, and hardware drivers are
  all taken care of from here.
- It is available under
+ It is available under 
 \series bold
 Settings
 \series default
@@ -7024,7 +9013,8 @@ setcounter{figure}{0}
 
 \begin_layout Standard
 Manjaro comes with excellent printing support.
- Most printers can be installed just by plugging them in!
+ Most printers can be installed just by plugging them in! This demonstration
+ was done on an older Manjaro system but the procedure is still the same.
 \end_layout
 
 \begin_layout Standard
@@ -7042,7 +9032,7 @@ sudo pacman -S manjaro-printer
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7442,11 +9432,11 @@ Pamac
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/update-manager.png
+	filename images/pamac/pamac_update.png
 	lyxscale 50
 	width 95col%
 
@@ -7460,7 +9450,8 @@ status collapsed
 
 \begin_layout Plain Layout
 Pamac's Update Manager is available from the system tray.
- In this screenshot it has a red icon, indicating there are software updates.
+ In this screenshot it has an icon with an exclamation mark, indicating
+ there are software updates.
  An update check is performed automatically; all you have to do is click
 \series bold
  Apply
@@ -7510,11 +9501,11 @@ Octopi is an alternative software manager for Manjaro.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/octopi-upgrade-system.png
+	filename images/welcome-to-manjaro-2016/octopi_update_notifier.png
 	lyxscale 50
 	width 95col%
 
@@ -7550,11 +9541,11 @@ Octopi's update notifier is available from the system tray.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/octopi-updates.png
+	filename images/welcome-to-manjaro-2016/octopi_full_updates.png
 	lyxscale 50
 	width 95col%
 
@@ -7568,10 +9559,10 @@ status collapsed
 
 \begin_layout Plain Layout
 Alternatively, you can load Octopi's full interface.
- The red star indicated there are updated available, and the number shows
- how many.
- To show what is available, click on the red icon.
- To install the updates, click on the arrow next to the red icon and then
+ The number at the bottom shows how many updates there are.
+ To show what is available, click on the button with the red icon and the
+ number of updates.
+ To install the updates, click on the arrow next to the button and then
  click on
 \series bold
  Install
@@ -7654,11 +9645,11 @@ Pamac
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/pamac-search.png
+	filename images/pamac/pamac_whisker_menu.png
 	lyxscale 50
 	width 95col%
 
@@ -7671,14 +9662,9 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Pamac allows easy access to the available software.
- All software applications in the repositories are free; no need to worry
- about purchase or licensing costs.
- Once you've found the package you want to install, right-click and select
-\series bold
- Install
-\series default
-, then click the tick in the top-left corner to confirm.
+Pamac is a piece of software that allows you to install software on your
+ computer.
+ You can find it under the name Add/Remove Software in the application menu.
 \end_layout
 
 \end_inset
@@ -7695,11 +9681,97 @@ Pamac allows easy access to the available software.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/pamac-install.png
+	filename images/pamac/pamac_detail_click.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pamac allows easy access to the available software.
+ All software applications in the repositories are free; no need to worry
+ about purchase or licensing costs.
+ To obtain more information on a package, can right-click on it and select
+ 
+\series bold
+Details
+\series default
+.
+ This will give you a description of the package, link to the official website
+ of the package, a list of dependencies and much more.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/pamac/pamac_install.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once you've found the package you want to install, right-click and select
+\series bold
+ Install
+\series default
+, then click on the 
+\series bold
+Apply
+\series default
+ button that will appear at the bottom of the window to confirm.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/pamac/pamac_summary.png
 	lyxscale 50
 	width 95col%
 
@@ -7716,7 +9788,7 @@ The packages to be installed are listed so you can check this is what you
  want to do.
  When you are happy with the selection, click
 \series bold
- OK
+ Commit
 \series default
  and the software will be downloaded and installed.
 \end_layout
@@ -7735,11 +9807,11 @@ The packages to be installed are listed so you can check this is what you
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/pamac-auth.png
+	filename images/pamac/pamac_authenticate.png
 	lyxscale 50
 	width 95col%
 
@@ -7757,9 +9829,9 @@ To stop other users removing important software from the system you will
  If you don't know this you can't go any further.
  There are methods to reset this password if needed; visit the forum or
  IRC channel to find out more.
- Enter your administrative password and click
+ Enter your administrative password and click 
 \series bold
- OK
+Authenticate
 \series default
 .
 \end_layout
@@ -7778,11 +9850,11 @@ To stop other users removing important software from the system you will
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/pamac-downloading.png
+	filename images/pamac/pamac_processing.png
 	lyxscale 50
 	width 95col%
 
@@ -7813,11 +9885,11 @@ The software packages will be downloaded and installed.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/pamac-done.png
+	filename images/pamac/pamac_software_installed.png
 	lyxscale 50
 	width 95col%
 
@@ -7830,42 +9902,9 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The new software will show as installed within Pamac..
+The new software will show as installed within Pamac and is available in
+ the application menu ready for you to use.
  You can close Pamac now if you want.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/maintaining-your-system/pamac-new-software-installed.png
-	lyxscale 50
-	width 95col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-The new software is available in the application menu ready for you to use.
 \end_layout
 
 \end_inset
@@ -7897,11 +9936,11 @@ The process of installing new software using Octopi is very similar to Pamac.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/octopi-search.png
+	filename images/welcome-to-manjaro-2016/octopi_install.png
 	lyxscale 50
 	width 95col%
 
@@ -7938,11 +9977,11 @@ Octopi allows easy access to the available software.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/octopi-install-optional-deps.png
+	filename images/welcome-to-manjaro-2016/octopi_optional_dep.png
 	lyxscale 50
 	width 95col%
 
@@ -7957,7 +9996,7 @@ status collapsed
 \begin_layout Plain Layout
 Some software will have other packages it can optionally use if they are
  installed.
- These
+ These 
 \begin_inset Quotes eld
 \end_inset
 
@@ -7983,11 +10022,51 @@ optional dependencies
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/octopi-install-confirm.png
+	filename images/welcome-to-manjaro-2016/octopi_commit.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A summary of the transactions is displayed at the bottom of the window.
+ Once you are ready to apply them, click on the checkmark at the top-left
+ of the window to 
+\series bold
+Commit
+\series default
+ them.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro-2016/octopi_confirmation.png
 	lyxscale 50
 	width 95col%
 
@@ -8023,11 +10102,11 @@ The packages to be installed are listed so you can check this is what you
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/octopi-installed.png
+	filename images/welcome-to-manjaro-2016/octopi_installed.png
 	lyxscale 50
 	width 95col%
 
@@ -8058,11 +10137,11 @@ Octopi will show a confirmation that it installed the new software.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/octopi-new-software-installed.png
+	filename images/welcome-to-manjaro-2016/octopi_app_menu_installed.png
 	lyxscale 50
 	width 95col%
 
@@ -8130,7 +10209,7 @@ Pacman is the Arch Linux
 \series bold
  pac
 \series default
-kage
+kage 
 \series bold
 man
 \series default
@@ -8200,11 +10279,11 @@ You can also force a package list synchronisation before performing an update:
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/pacman-syyu.png
+	filename images/welcome-to-manjaro-2016/pacman_syyu.png
 	lyxscale 50
 	width 95col%
 
@@ -8424,11 +10503,11 @@ To update the mirror list use the following command:
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/pacman-mirrors.png
+	filename images/welcome-to-manjaro-2016/pacman_mirrors_g.png
 	lyxscale 50
 	width 95col%
 
@@ -8491,11 +10570,11 @@ If you would like more control over which mirrors to use, run the command:
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/pacman-mirrors-i.png
+	filename images/welcome-to-manjaro-2016/pacman_mirrors_i.png
 	lyxscale 50
 	width 95col%
 
@@ -8547,6 +10626,95 @@ sudo pacman-mirrors -g -c all
 
 \begin_layout Standard
 Remember to force a download of the package lists to use the new mirrors!
+\end_layout
+
+\begin_layout Subsection
+Updating mirrors from Pamac
+\end_layout
+
+\begin_layout Standard
+Mirrors can also be refreshed from within Pamac.
+ You can also select the country from which to choose the mirrors.
+ Choosing your country or one close to yours is generally a good idea.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float marginfigure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro-2016/pamac_preferences.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+From Pamac, click the pancake menu at the top right of the window and select
+ 
+\series bold
+Preferences
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float marginfigure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro-2016/pamac_mirrors.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In the window that pops up, go to the 
+\series bold
+Official Repositories
+\series default
+ tab.
+ There, you will be able to choose the location of the mirrors and refresh
+ them.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -8857,26 +11025,6 @@ Forces an update of the package lists and an update of any packages to bring
 Ensures no packages are left out of line with the current repository state.
 \end_layout
 
-\begin_layout Standard
-To make things easier, Manjaro includes a command alias
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-https://forum.manjaro.org/index.php?topic=12383.0
-\end_layout
-
-\end_inset
-
- that runs the above four commands:
-\end_layout
-
-\begin_layout Quote
-
-\family typewriter
-fixit
-\end_layout
-
 \begin_layout Section
 More information
 \end_layout
@@ -8884,7 +11032,7 @@ More information
 \begin_layout Standard
 Remember - there is plenty of information on the wiki 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -8895,7 +11043,7 @@ http://wiki.manjaro.org/
 
  and discussion forum 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
