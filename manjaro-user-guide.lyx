@@ -2301,7 +2301,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Windows Disc Image Burner in Microsoft Windows 7
+Windows Disc Image Burner in Microsoft Windows 10
 \end_layout
 
 \end_inset
@@ -2793,7 +2793,7 @@ File
 \begin_inset space ~
 \end_inset
 
-system: FAT32 (Default)
+system: Large FAT32 (Default)
 \end_layout
 
 \begin_layout Description
@@ -2801,7 +2801,7 @@ Cluster
 \begin_inset space ~
 \end_inset
 
-size: 4096 bytes (Default)
+size: 32 kilobytes (Default)
 \end_layout
 
 \begin_layout Description
@@ -6962,7 +6962,7 @@ File
 \begin_inset space ~
 \end_inset
 
-system: FAT32 (Default)
+system: Large FAT32 (Default)
 \end_layout
 
 \begin_layout Description
@@ -6970,7 +6970,7 @@ Cluster
 \begin_inset space ~
 \end_inset
 
-size: 4096 bytes (Default)
+size: 32 kilobytes (Default)
 \end_layout
 
 \begin_layout Description
@@ -9013,8 +9013,7 @@ setcounter{figure}{0}
 
 \begin_layout Standard
 Manjaro comes with excellent printing support.
- Most printers can be installed just by plugging them in! This demonstration
- was done on an older Manjaro system but the procedure is still the same.
+ Most printers can be configured very easily!
 \end_layout
 
 \begin_layout Standard
@@ -9036,77 +9035,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/printer-detect.png
-	lyxscale 50
-	width 95col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-When you plug in your printer, Manjaro should detect this and automatically
- install the correct drivers...
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/maintaining-your-system/printer-ready.png
-	lyxscale 50
-	width 95col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-...
- and make the printer available!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/maintaining-your-system/printers.png
+	filename images/welcome-to-manjaro-2016/printer_menu.png
 	lyxscale 50
 	width 95col%
 
@@ -9140,11 +9069,11 @@ To check on the available printers, find and open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/printer-auto.png
+	filename images/welcome-to-manjaro-2016/printer_unlock.png
 	lyxscale 50
 	width 95col%
 
@@ -9157,8 +9086,9 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-If the printer was successfully installed it will show up here.
- You're ready to print!
+Adding a printer to the list requires administrator rights.
+ Click on the Unlock button at the top-right of the window.
+ You will be prompted for the administrator password.
 \end_layout
 
 \end_inset
@@ -9175,11 +9105,11 @@ If the printer was successfully installed it will show up here.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/printer-add.png
+	filename images/welcome-to-manjaro-2016/printer_add.png
 	lyxscale 50
 	width 95col%
 
@@ -9192,12 +9122,11 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Otherwise, you can add the printer manually.
- Click
+Then, click
 \series bold
  Add
 \series default
- to begin the process.
+ to begin configuring a printer.
 \end_layout
 
 \end_inset
@@ -9214,50 +9143,11 @@ Otherwise, you can add the printer manually.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/printer-add-password.png
-	lyxscale 50
-	width 95col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-You will need to enter your password to allow the printer detection process.
- Once you've typed in your password, click
-\series bold
- OK
-\series default
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/maintaining-your-system/printer-list.png
+	filename images/welcome-to-manjaro-2016/printer_choose.png
 	lyxscale 50
 	width 95col%
 
@@ -9299,11 +9189,127 @@ e with Manjaro.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/printer-details.png
+	filename images/welcome-to-manjaro-2016/printer_drivers.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Manjaro will then search for drivers that may be compatible with your printer.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro-2016/printer_select_drivers.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+If no specific driver is found, do not despair! You will be given the opportunit
+y to select one from a list.
+ If your printer's manufacturer is not listed, you can choose the 
+\series bold
+Generic
+\series default
+ driver.
+ This is the one I chose here.
+ You also have the option to choose a driver from a file or search once
+ again based on your printer model.
+ Once you have made your choice, click 
+\series bold
+Forward
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro-2016/printer_select_drivers_2.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+You will then have the choice to choose from a subcategory.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro-2016/printer_description.png
 	lyxscale 50
 	width 95col%
 
@@ -9335,11 +9341,51 @@ As Manjaro installs your printer you can change some settings like its name
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/maintaining-your-system/printer-properties.png
+	filename images/welcome-to-manjaro-2016/printer_setup.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+You will then be asked if you want to print a test page before being redirected
+ to the properties of your printer.
+ The configuration is done! You can click the 
+\series bold
+OK
+\series default
+ button to close the window.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro-2016/printer_installed.png
 	lyxscale 50
 	width 95col%
 
@@ -9357,6 +9403,11 @@ Your printer should now show in
  Printer Settings
 \series default
 , where you can view the print queue and change the printer settings.
+ To change the settings, you will once again need to click the 
+\series bold
+Unlock
+\series default
+ button at the top-right of the window.
  Happy printing!
 \end_layout
 
