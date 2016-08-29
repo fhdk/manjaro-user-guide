@@ -2301,7 +2301,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Windows Disc Image Burner in Microsoft Windows 7
+Windows Disc Image Burner in Microsoft Windows 10
 \end_layout
 
 \end_inset
@@ -2762,9 +2762,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Rufus with recommended settings.
- This screenshot is for an older version of Manjaro, but except for the
- volume label everything is identical.
+Rufus with recommended settings
 \end_layout
 
 \end_inset
@@ -2795,7 +2793,7 @@ File
 \begin_inset space ~
 \end_inset
 
-system: FAT32 (Default)
+system: Large FAT32 (Default)
 \end_layout
 
 \begin_layout Description
@@ -2803,7 +2801,7 @@ Cluster
 \begin_inset space ~
 \end_inset
 
-size: 4096 bytes (Default)
+size: 32 kilobytes (Default)
 \end_layout
 
 \begin_layout Description
@@ -6933,9 +6931,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Rufus with recommended settings.
- This screenshot is for an older version of Manjaro, but except for the
- volume label everything is identical.
+Rufus with recommended settings
 \end_layout
 
 \end_inset
@@ -6966,7 +6962,7 @@ File
 \begin_inset space ~
 \end_inset
 
-system: FAT32 (Default)
+system: Large FAT32 (Default)
 \end_layout
 
 \begin_layout Description
@@ -6974,7 +6970,7 @@ Cluster
 \begin_inset space ~
 \end_inset
 
-size: 4096 bytes (Default)
+size: 32 kilobytes (Default)
 \end_layout
 
 \begin_layout Description
