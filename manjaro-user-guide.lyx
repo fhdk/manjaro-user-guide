@@ -291,15 +291,12 @@ Core Team
 \end_layout
 
 \begin_layout Description
-Alexandre
+Philip
 \begin_inset space ~
 \end_inset
 
-A.
-\begin_inset space ~
-\end_inset
-
-Arnt Developer
+Müller Owner, Project Leader, Project Management and Coordination, Mirrors
+ Manager, Server Manager, Packager, Developer, Web Developer
 \end_layout
 
 \begin_layout Description
@@ -307,7 +304,7 @@ Guillaume
 \begin_inset space ~
 \end_inset
 
-Benoit Server Manager, Developer, Packager
+Benoit Developer, Moderation
 \end_layout
 
 \begin_layout Description
@@ -319,19 +316,11 @@ Buldó Developer, Packager
 \end_layout
 
 \begin_layout Description
-Alexandru
+Bernhard
 \begin_inset space ~
 \end_inset
 
-Ianu Systems Integrator, Packager
-\end_layout
-
-\begin_layout Description
-Łukasz
-\begin_inset space ~
-\end_inset
-
-Matysiak Developer
+Landauer Community Manager, Packager, Maintainer, Moderation, News
 \end_layout
 
 \begin_layout Description
@@ -339,98 +328,31 @@ Rob
 \begin_inset space ~
 \end_inset
 
-McCathie Systems Integrator, Packager
+McCathie Maintainer
 \end_layout
 
 \begin_layout Description
-Wlad
-\begin_inset space ~
-\end_inset
-
-Meixner Web Developer, Web Consultant
+Marcus Developer, Packager
 \end_layout
 
 \begin_layout Description
-Mateusz
+Teo
 \begin_inset space ~
 \end_inset
 
-Mikolajczyk Developer
+Mrnjavac Developer
 \end_layout
 
 \begin_layout Description
-Demiray
+Alexandre
 \begin_inset space ~
 \end_inset
 
-Muhterem Manjaro KDE Edition Maintainer, Turkish IRC and web support, Manjaro
- Artwork
-\end_layout
-
-\begin_layout Description
-Philip
+A.
 \begin_inset space ~
 \end_inset
 
-Müller Project Leader, Project Management and Coordination, Mirrors Manager,
- Packager, Developer, Web Developer
-\end_layout
-
-\begin_layout Description
-Roland
-\begin_inset space ~
-\end_inset
-
-Singer Founder, Designer, Developer, Web Developer, Packager
-\end_layout
-
-\begin_layout Subsection*
-Artwork
-\end_layout
-
-\begin_layout Description
-Lane
-\begin_inset space ~
-\end_inset
-
-Wiscombe
-\begin_inset space ~
-\end_inset
-
-(anex) Manjaro Artwork, MATE Community Edition Maintainer
-\end_layout
-
-\begin_layout Description
-David
-\begin_inset space ~
-\end_inset
-
-Linares
-\begin_inset space ~
-\end_inset
-
-(mcder3) Manjaro Artwork: Plasma5 Designer, Theme designer, Installer visual
- design
-\end_layout
-
-\begin_layout Subsection
-OpenRC Team
-\end_layout
-
-\begin_layout Description
-Artoo Packaging, Porting, Infrastructure
-\end_layout
-
-\begin_layout Description
-Aaditya
-\begin_inset space ~
-\end_inset
-
-Bagga Documentation, Testing, ISOs
-\end_layout
-
-\begin_layout Subsection*
-Community and Support
+Arnt Developer, Moderation
 \end_layout
 
 \begin_layout Description
@@ -442,27 +364,19 @@ de
 \begin_inset space ~
 \end_inset
 
-Kroon Community Support and IRC Manager
+Kroon Community
+\end_layout
+
+\begin_layout Subsection*
+Artwork
 \end_layout
 
 \begin_layout Description
-dicktater Community Global Moderator
-\end_layout
+David
+\begin_inset space ~
+\end_inset
 
-\begin_layout Description
-Esclapion LXQt Community Edition Maintainer, Community Support
-\end_layout
-
-\begin_layout Description
-excalibur1234 Community Support
-\end_layout
-
-\begin_layout Description
-Jonathan Community Global Moderator
-\end_layout
-
-\begin_layout Description
-shariebeth Community Global Moderator
+Linares Designer
 \end_layout
 
 \begin_layout Subsection*
