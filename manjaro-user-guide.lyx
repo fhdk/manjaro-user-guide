@@ -7575,7 +7575,7 @@ The applications menu is the easiest way of starting the software programs
  The icon for this is in the corner of the screen.
  Go ahead and click on it now!
 \begin_inset Flex Marginnote
-status collapsed
+status open
 
 \begin_layout Plain Layout
 You can also press the
@@ -7854,8 +7854,7 @@ File Manager
 \series default
  is a graphical interface for managing your documents and directories.
  Most file managers work in a similar way; if you've used another, you can
- probably use this one! Hint: you can find this user guide in the Manjaro
- directory!
+ probably use this one!
 \end_layout
 
 \end_inset
@@ -7916,9 +7915,19 @@ Web Browser
 \series default
  allows you to visit and view web pages so you can read news stories, check
  the weather forecast, and all the rest.
- The software application that is installed will depend on the Edition of
- Manjaro you installed, but they all work in a similar way.
- If you have a particular preference you can easily add or remove software.
+ If you have a particular preference for a browser that is not installed
+ by default, you can easily add or remove software as shown in section 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "install_software"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \end_inset
@@ -7975,7 +7984,8 @@ Mail Reader
  (in a similar way to all mail readers) but once that is set up you should
  be good to go! As with the web browser, there are a range of choices for
  mail reader.
- For example, if you prefer Claws or Sylpheed you can install it!
+ For example, if you prefer Claws, Sylpheed or Evolution you can install
+ it!
 \end_layout
 
 \end_inset
@@ -8050,6 +8060,18 @@ Pamac
 Octopi
 \series default
  (installed with the KDE edition).
+ Installation of new software is covered in details in section 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "install_software"
+
+\end_inset
+
+
+\series default
+.
 \end_layout
 
 \end_inset
@@ -8175,11 +8197,11 @@ forum
 \family typewriter
 \size larger
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
-http://forum.manjaro.org/
+https://forum.manjaro.org/
 \end_layout
 
 \end_inset
@@ -8254,7 +8276,7 @@ status open
 
 \begin_layout Plain Layout
 
-http://bit.ly/manjaro-irc-web/
+https://manjaro.org/irc-channel/
 \end_layout
 
 \end_inset
@@ -8300,6 +8322,11 @@ Join #manjaro on irc.freenode.net, whether via a web or desktop client, and
 \end_layout
 
 \begin_layout Standard
+German, French and Russian IRC channels are also available, respectively
+ at #manjaro-de, #manjaro-fr and #manjaro-ru.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -8324,11 +8351,11 @@ Mailing list
 \family typewriter
 \size larger
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
-http://lists.manjaro.org/listinfo/manjaro-general
+https://lists.manjaro.org/listinfo/manjaro-general
 \end_layout
 
 \end_inset
@@ -8393,11 +8420,11 @@ Wiki
 \family typewriter
 \size larger
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
-http://wiki.manjaro.org/index.php?title=Main_Page
+https://wiki.manjaro.org/
 \end_layout
 
 \end_inset
@@ -8644,8 +8671,8 @@ Manjaro comes with excellent printing support.
 \end_layout
 
 \begin_layout Standard
-If you installed a minimal or Net edition you may have to install printing
- support first:
+If you installed a Net edition you may have to install printing support
+ first:
 \end_layout
 
 \begin_layout Quote
@@ -8915,7 +8942,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-You will then have the choice to choose from a subcategory.
+You will then have the choice to choose from a driver subcategory to refine
+ your choice.
 \end_layout
 
 \end_inset
@@ -9134,7 +9162,8 @@ Pamac's Update Manager is available from the system tray.
 \series bold
  Apply
 \series default
- and any updates will proceed automatically!
+ and enter your password when prompted and any updates will proceed automaticall
+y!
 \end_layout
 
 \end_inset
@@ -9277,6 +9306,13 @@ Installing new software
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "install_software"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -9298,7 +9334,7 @@ setcounter{figure}{0}
 \begin_layout Standard
 There's a huge amount of software freely available in the Manjaro repositories.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Be careful before enabling the AUR.
@@ -9502,12 +9538,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-To stop other users removing important software from the system you will
- have to provide an administrative password.
- If you don't know this you can't go any further.
+To stop other users from removing important software from the system you
+ will have to provide an administrator password.
+ If you kept the default settings when creating a user during the installation,
+ your own password will work.
+ If you don't know it, you can't go any further.
  There are methods to reset this password if needed; visit the forum or
  IRC channel to find out more.
- Enter your administrative password and click 
+ Enter your password and click 
 \series bold
 Authenticate
 \series default
@@ -9638,7 +9676,7 @@ Octopi allows easy access to the available software.
 \series bold
  Install
 \series default
-, then click the tick in the top-left corner to confirm.
+.
 \end_layout
 
 \end_inset
@@ -9763,7 +9801,8 @@ The packages to be installed are listed so you can check this is what you
 \series bold
  Yes
 \series default
- and the software will be downloaded and installed.
+, type in your password when prompted and the software will be downloaded
+ and installed.
 \end_layout
 
 \end_inset
@@ -10015,7 +10054,7 @@ Installing software
 Installing a package is equally straightforward.
  For example, to install Leafpad:
 \begin_inset Flex Marginnote
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Many software applications depend on other software packages.
@@ -10109,7 +10148,7 @@ It's a good idea to become familiar with the pacman commands.
  interrupted.
  The pacman man
 \begin_inset Flex Marginnote
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -10287,8 +10326,8 @@ sudo pacman-mirrors -i
 This will allow you to select which mirror, or mirrors, to try when checking
  for software updates and downloading new packages.
  It's normally best to choose mirrors that are geographically close to you,
- so if you're in Canada then Canadian and US servers are generally a good
- bet.
+ so if you're in Canada then servers from Canada and the US are generally
+ a good bet.
  Of course, you're free to choose whichever you want!
 \end_layout
 
@@ -10312,7 +10351,7 @@ Updating mirrors from Pamac
 
 \begin_layout Standard
 Mirrors can also be refreshed from within Pamac.
- You can also select the country from which to choose the mirrors.
+ There you can select the country from which to choose the mirrors.
  Choosing your country or one close to yours is generally a good idea.
 \end_layout
 
@@ -10420,7 +10459,8 @@ branches
 \end_layout
 
 \begin_layout Standard
-When you install Manjaro you will be using the stable branch.
+When you install Manjaro, unless you specifically installed a preview version,
+ you will be using the stable branch.
  This set of packages has the most testing and so is the best for most users.
  However, you may want to help test packages before they move to the stable
  repository:
@@ -10455,7 +10495,7 @@ sudo pacman-mirrors -g -b unstable
 
 \begin_layout Standard
 After switching branches you will need to force an update of the package
- lists:
+ lists and packages:
 \end_layout
 
 \begin_layout Quote
@@ -10714,7 +10754,7 @@ status open
 
 \begin_layout Plain Layout
 
-http://wiki.manjaro.org/
+https://wiki.manjaro.org/
 \end_layout
 
 \end_inset
@@ -10725,7 +10765,7 @@ status open
 
 \begin_layout Plain Layout
 
-http://forum.manjaro.org/
+https://forum.manjaro.org/
 \end_layout
 
 \end_inset
