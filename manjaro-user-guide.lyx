@@ -2884,7 +2884,7 @@ When you boot from your installation media (CD/DVD or USB flash drive) you
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2933,7 +2933,7 @@ First, set your preferred language by pressing the
 \begin_inset Float marginfigure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3158,8 +3158,8 @@ Welcome to Manjaro!
 \end_layout
 
 \begin_layout Standard
-The welcome screen gives some links to common tasks, documentation (like
- the thing you're reading now!) and the support channels.
+The welcome screen gives some links to common tasks, documentation and the
+ support channels.
  There are also links to the installation programs.
  Don't worry if you close the welcome screen: you can load it again, and
  all the links are also present elsewhere in the menus.
@@ -3356,22 +3356,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-When clicking on the 
+When clicking on one of the 
 \series bold
 Change...
 
 \series default
- button, a menu will pop up, allowing you to choose the system locale.
- This will affect how certain characters will appear.
- Choosing the one corresponding to your language is best.
+ buttons, a menu will pop up, allowing you to respectively choose the system
+ language and the format of the numbers and dates.
+ Choosing the ones corresponding to your language and country is best.
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
