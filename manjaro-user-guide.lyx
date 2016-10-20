@@ -3347,7 +3347,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-erase-disk/cal_locale_2.png
+	filename images/calamares-erase-disk/cal_locale.png
 	lyxscale 50
 	width 100col%
 
@@ -4108,7 +4108,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-replace/replace_partition.png
+	filename images/calamares-replace/replace_1.png
 	lyxscale 50
 	width 100col%
 
