@@ -1287,14 +1287,15 @@ To verify the integrity of the disc image you have to download the appropriate
  image file.
  For example, the file
 \series bold
- manjaro-xfce-16.10-rc1-stable-x86_64.iso.sha1
+ manjaro-xfce-minimal-16.10-dev-unstable-x86_64.iso.sha1
 \series default
  contains the SHA-1 checksum hash for the xfce disc image and will have
  content similar to this:
 \end_layout
 
 \begin_layout LyX-Code
-8099809bec1bf143fe87703b56b774645093f514  manjaro-xfce-16.10-rc1-stable-x86_64.iso
+47404952b31ee8d1e8f5922928d0d82152f8bc5c  manjaro-xfce-minimal-16.10-dev-unstable
+-x86_64.iso
 \end_layout
 
 \begin_layout Section
@@ -4582,7 +4583,8 @@ Here I chose to create a separate partition for the
 \series default
  directory, which is used to store user files such as music, pictures and
  videos.
- Once everything is done, take a moment to verify the setup is to your liking.
+ Once everything is done, take a moment to verify if the setup is to your
+ liking.
  
 \series bold
 All partitions that have a mount point specified will be used during the
@@ -4610,6 +4612,8 @@ Revert All Changes
 
 \begin_layout Standard
 In this case a swap partition was already created.
+ This partition will be used if you ever run out of RAM to complete operations
+ or when the computer is put in hibernation.
  If you want or have to create a new one, create a partition as was done
  for the other ones and choose 
 \series bold
@@ -4709,15 +4713,15 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-Gparted is a graphical program used to modify partitions on drives.
+GParted is a graphical program used to modify partitions on drives.
  It is very powerful and yet has a very user-friendly interface.
  Partitions are sections of a drive which store data using a certain format
  named file system.
  Examples of well-known file systems are ntfs (used by Microsoft Windows),
  ext4 (used by Linux) and fat32.
- All drives, be they hard drives or flash drives such as USB keys contain
+ All drives, be they hard drives or flash drives such as USB keys, contain
  one or more partitions.
- GParted allows you to create and delete partitons, as well as change the
+ GParted allows you to create and delete partitons, as well as change their
  attributes, such as their size, their location on the disk and their file
  system.
  It can also create partition tables of type MBR and GPT.
@@ -5010,8 +5014,12 @@ In the window that pops up, you will get the chance to set the size of the
  By default, it takes all of the available free space, but you can change
  that in the same manner as when resizing the partition earlier.
  You can also, among other options, choose the file system used by the partition.
- For Linux partitions, ext4 usually works fine, though other choices such
- as xfs and btrfs are also available.
+ For Linux partitions, 
+\series bold
+ext4
+\series default
+ usually works fine, though other choices such as xfs and btrfs are also
+ available.
  You can also give a label to your partition, which will make it easier
  for you to identify it.
  Clicking the 
@@ -5077,10 +5085,6 @@ After all of this work, still no actual changes have been made to your drive.
 \series bold
 Once you click the checkmark button, the modifications will be applied to
  the drive.
-
-\series default
- Alternatively, to cancel the last modification, click the button to its
- left.
 \end_layout
 
 \end_inset
@@ -5269,9 +5273,9 @@ The most important step is to ensure that your machine does not have Secure
 \series default
 .
  Only a very limited number of operating systems will boot with this enabled.
- You must disable this in your BIOS before proceeding; if you don't know
- how to do this please refer to your computer's user manual, as it differs
- for all computers.
+ You must disable Secure Boot in your BIOS before proceeding; if you don't
+ know how to do this please refer to your computer's user manual, as it
+ differs for all computers.
 \end_layout
 
 \begin_layout Standard
@@ -5313,8 +5317,8 @@ In UEFI mode the Manjaro boot selection screen looks quite different.
 Once you have booted the system from the Live CD/USB you will be presented
  with the Manjaro boot selection screen.
  It has two main options for the drivers it will use (either Free or non-Free).
- The main difference is the lack of any option for language or keyboard
- layout.
+ The main difference compared to the case with a BIOS system is the lack
+ of any option for language or keyboard layout.
  This is actually not that big of a problem, since these can be set up in
  the live environment and in the Calamares installer, which will make them
  permanent on the installed system.
@@ -5357,8 +5361,8 @@ status open
 
 \begin_layout Plain Layout
 Once the Calamares installer is executed, the first noticeable difference
- with the case with a BIOS is at the top of the screen, where EFI is specified
- instead.
+ compared to the case with a BIOS is at the top of the screen, where EFI
+ is specified instead.
  In this case, a GPT partition table is also used instead of the MBR partition
  table more commonly found on BIOS systems.
  The bottom of the screen displays the current partition scheme, with the
@@ -5738,7 +5742,7 @@ Create
 \series default
  to make a new partition.
  The first one we will create will be the EFI partition, which will house
- files used when booting.
+ some files used when booting.
 \end_layout
 
 \end_inset
@@ -5772,7 +5776,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-In the dialog that appears, select a size of a few hundred MB.
+In the window that appears, select a size of a few hundred MB.
  Here I chose 500 MB.
  Then, select 
 \series bold
@@ -5817,7 +5821,8 @@ Next, choose
 /boot/efi
 \series default
  as the mount point.
- The contents of the partition will be accessible from this directory.
+ The contents of the partition will be accessible from this directory once
+ Manjaro is installed.
 \end_layout
 
 \end_inset
@@ -5910,7 +5915,8 @@ status open
 
 \begin_layout Plain Layout
 The next partition we will create is the swap.
- This partition will be used if you ever run out of RAM to complete operations.
+ This partition will be used if you ever run out of RAM to complete operations
+ or when the computer is put in hibernation.
  The suggested size for this partition is a few GB.
  Here I chose 4 GB.
  Choose 
@@ -6009,8 +6015,7 @@ Next are the partitions used by Manjaro itself.
 \series bold
 /home
 \series default
- directory being housed on another partition is presented in the chapter
- 
+ directory being housed on another partition is presented in chapter 
 \series bold
 
 \begin_inset CommandInset ref
@@ -6177,8 +6182,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-In the dialog box that pops up you can then choose the type of partition
- table to be created.
+In the window that pops up you can then choose the type of partition table
+ to be created.
  For a UEFI system, a 
 \series bold
 GPT
@@ -6294,7 +6299,7 @@ fat32
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Create the swap partition
 \end_layout
 
@@ -6504,7 +6509,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-In the dialog box that appears, select 
+In the window that appears, select 
 \series bold
 boot
 \series default
@@ -6517,7 +6522,7 @@ esp
 \series bold
 Close
 \series default
- the dialog box once this is done.
+ the window once this is done.
 \end_layout
 
 \end_inset
@@ -6672,7 +6677,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-In the dialog box that appears, choose to mount the partition under 
+In the window that appears, choose to mount the partition under 
 \series bold
 /boot/efi
 \series default
@@ -6852,8 +6857,8 @@ First, make sure you have downloaded a 64-bit version of Manjaro.
 \begin_layout Standard
 Next, create the Live media by burning the disc image to a DVD or writing
  to a USB flash drive.
- The process is very similar to a non-UEFI installation, but for Windows
- users using USB media, Rufus
+ The process is very similar to a non-UEFI installation.
+ For Windows users using USB media, Rufus
 \begin_inset Foot
 status open
 
@@ -6944,7 +6949,7 @@ Volume
 \begin_inset space ~
 \end_inset
 
-label: MJRO1608
+label: MJRO1610
 \end_layout
 
 \begin_layout Description
@@ -6978,7 +6983,7 @@ Assisted installation
 
 \begin_layout Standard
 The assisted installation options do a good job of setting everything up.
- If you do not wish to bother yourself creating everything by hand, you
+ If you do not wish to bother yourself creating everything manually, you
  can rely on Calamares to do the dirty work for you!
 \end_layout
 
@@ -7004,7 +7009,7 @@ status open
 
 \begin_layout Plain Layout
 Using the assisted installation option to install Manjaro alongside Windows,
- select the partition used as the C drive by Windows.
+ select the partition used as the C: drive by Windows.
  It should be the biggest one.
  Then, move the slider as explained in section 
 \series bold
@@ -7142,7 +7147,7 @@ Choose to
 Keep
 \series default
  the content of the partition.
- This will make sure that the files used by Windows will not be deleted.
+ This will make sure that the files used by Windows are not deleted.
  If you choose to format it, you will not be able to boot into Windows anymore,
  so keeping its content is very important.
  Then, select 
@@ -7158,7 +7163,6 @@ boot
 esp
 \series default
  flags are checked.
- Once this is done, the partitioning is over!
 \end_layout
 
 \end_inset
@@ -7326,7 +7330,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-A swap partition is a partition which will be used if your computer runs
+We will now create a swap partition, which is used if your computer runs
  out of RAM or when it is put in hibernation.
  It is generally a few GB large and uses the 
 \series bold
@@ -7453,7 +7457,7 @@ Update the GRUB bootloader, or, Where did Windows go?
 \end_layout
 
 \begin_layout Standard
-Sometimes the bootloader GRUB2 doesn't detect an existing Microsoft Windows
+Sometimes the bootloader GRUB2 does not detect an existing Microsoft Windows
  installation when installing.
  This means that only Manjaro Linux will appear in the list of options when
  you boot the machine.
