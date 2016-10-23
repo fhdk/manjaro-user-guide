@@ -408,7 +408,7 @@ Manuel
 \begin_inset space ~
 \end_inset
 
-Barrette Editor of the User Guide 16.08
+Barrette Editor of the User Guide 16.08-16.10
 \end_layout
 
 \begin_layout Subsection*
@@ -1759,7 +1759,7 @@ KDE
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-16.08-i686.iso
+manjaro-kde-16.10-i686.iso
 \end_layout
 
 \end_inset
@@ -1797,7 +1797,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-16.08-x86_64.iso
+manjaro-kde-16.10-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1835,7 +1835,7 @@ Xfce
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-16.08-i686.iso
+manjaro-xfce-16.10-i686.iso
 \end_layout
 
 \end_inset
@@ -1873,7 +1873,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-16.08-x86_64.iso
+manjaro-xfce-16.10-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1911,7 +1911,7 @@ Net
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-net-16.08-i686.iso
+manjaro-net-16.10-i686.iso
 \end_layout
 
 \end_inset
@@ -1949,7 +1949,7 @@ CD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-net-16.08-x86_64.iso
+manjaro-net-16.10-x86_64.iso
 \end_layout
 
 \end_inset
@@ -2202,7 +2202,7 @@ Selecting the disc image file and clicking on
 \series bold
  Burn disc image
 \series default
-, or simply double-clicking on the file itself, will start the
+ will start the
 \series bold
  Windows Disc Image Burner
 \series default
@@ -2220,27 +2220,14 @@ Start
  Windows Disc Image Burner
 \series default
 .
-\begin_inset Flex Marginnote
-status open
-
-\begin_layout Plain Layout
-For more information about this program see:
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://windows.microsoft.com/en-gb/windows7/burn-a-cd-or-dvd-from-an-iso-file
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+\begin_layout Enumerate
+Select your CD/DVD in the 
+\series bold
+Disc burner
+\series default
+ menu.
 \end_layout
 
 \begin_layout Enumerate
@@ -2764,7 +2751,7 @@ File
 \begin_inset space ~
 \end_inset
 
-system: Large FAT32 (Default)
+system: FAT32 (Default)
 \end_layout
 
 \begin_layout Description
@@ -2772,7 +2759,7 @@ Cluster
 \begin_inset space ~
 \end_inset
 
-size: 32 kilobytes (Default)
+size: 4096 bytes (Default)
 \end_layout
 
 \begin_layout Description
@@ -2789,7 +2776,7 @@ Format
 \end_inset
 
 Options: Quick format.
- Create a bootable disk using: ISO Image (Click on the DVD icon to select
+ Create a bootable disk using ISO Image (Click on the DVD icon to select
  your downloaded disc image).
  Create extended label and icon files.
 \end_layout
@@ -4317,7 +4304,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-manual/man_part.png
+	filename images/calamares-manual/man_part_1.png
 	lyxscale 50
 	width 100col%
 
@@ -4358,7 +4345,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-manual/manual_part_2.png
+	filename images/calamares-manual/man_part_2.png
 	lyxscale 50
 	width 100col%
 
@@ -6933,7 +6920,7 @@ File
 \begin_inset space ~
 \end_inset
 
-system: Large FAT32 (Default)
+system: FAT32 (Default)
 \end_layout
 
 \begin_layout Description
@@ -6941,7 +6928,7 @@ Cluster
 \begin_inset space ~
 \end_inset
 
-size: 32 kilobytes (Default)
+size: 4096 bytes (Default)
 \end_layout
 
 \begin_layout Description
@@ -6958,7 +6945,7 @@ Format
 \end_inset
 
 Options: Quick format.
- Create a bootable disk using: ISO Image (Click on the DVD icon to select
+ Create a bootable disk using ISO Image (Click on the DVD icon to select
  your downloaded disc image).
  Create extended label and icon files.
 \end_layout
