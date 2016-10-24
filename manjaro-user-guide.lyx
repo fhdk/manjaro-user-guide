@@ -96,7 +96,7 @@ fixltx2e
 \begin_layout Standard
 \begin_inset External
 	template PDFPages
-	filename cover.pdf
+	filename guide_cover.pdf
 	lyxscale 50
 
 \end_inset
@@ -385,6 +385,14 @@ David
 \end_inset
 
 Linares Designer
+\end_layout
+
+\begin_layout Description
+Pablo
+\begin_inset space ~
+\end_inset
+
+Díaz Cover art of the User Guide 16.10
 \end_layout
 
 \begin_layout Subsection*
