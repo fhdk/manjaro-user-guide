@@ -1364,7 +1364,7 @@ If the code generated from the disc image matches that contained in the
 \begin_layout Standard
 From this point on we'll assume you are using the file
 \series bold
- manjaro-xfce-16.10-x86_64.iso.sha1
+ manjaro-xfce-16.10-stable-x86_64.iso.sha1
 \series default
 .
 \end_layout
@@ -1406,7 +1406,7 @@ jonathon@box:~/download$ ls
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-xfce-16.10-x86_64.iso.sha1  manjaro-xfce-16.10-x86_64.iso
+manjaro-xfce-16.10-x86_64.iso.sha1  manjaro-xfce-16.10-stable-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1419,7 +1419,7 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-jonathon@box:~/download$ sha1sum -c manjaro-xfce-16.10-x86_64.iso.sha1
+jonathon@box:~/download$ sha1sum -c manjaro-xfce-16.10-stable-x86_64.iso.sha1
 \end_layout
 
 \begin_layout Standard
@@ -1433,7 +1433,7 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-xfce-16.10-x86_64.iso: OK
+manjaro-xfce-16.10-stable-x86_64.iso: OK
 \end_layout
 
 \begin_layout Standard
@@ -1448,7 +1448,7 @@ Manual verification
 To manually check the integrity of your downloaded file, first open the
  downloaded
 \series bold
- manjaro-xfce-16.10-x86_64.iso.sha1
+ manjaro-xfce-16.10-stable-x86_64.iso.sha1
 \series default
  checksum file using a text editor such as Gedit.
  Once the checksum file has been opened, and the code is visible, open up
@@ -1475,7 +1475,11 @@ Then you can generate an SHA-1 hash code for the disc image using:
 \begin_layout LyX-Code
 jonathon@box:~/download$
 \family typewriter
- sha1sum manjaro-xfce-16.10-x86_64.iso
+ sha1sum manjaro-xfce-16.10
+\family default
+-stable
+\family typewriter
+-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1604,7 +1608,7 @@ To speed up the process it's probably a good idea to deselect the hashes
 
  To verify the checksum is correct, open the
 \series bold
- manjaro-xfce-16.10-x86_64.iso.sha1
+ manjaro-xfce-16.10-stable-x86_64.iso.sha1
 \series default
  in a text editor such as Notepad, copy the checksum for the disc image
  file you have downloaded, and paste it into the verification box.
@@ -1756,7 +1760,7 @@ KDE
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-16.10-i686.iso
+manjaro-kde-16.10-stable-i686.iso
 \end_layout
 
 \end_inset
@@ -1794,7 +1798,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-16.10-x86_64.iso
+manjaro-kde-16.10-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1832,7 +1836,7 @@ Xfce
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-16.10-i686.iso
+manjaro-xfce-16.10-stable-i686.iso
 \end_layout
 
 \end_inset
@@ -1870,7 +1874,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-16.10-x86_64.iso
+manjaro-xfce-16.10-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1908,7 +1912,7 @@ Net
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-net-16.10-i686.iso
+manjaro-net-16.10-stable-i686.iso
 \end_layout
 
 \end_inset
@@ -1946,7 +1950,7 @@ CD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-net-16.10-x86_64.iso
+manjaro-net-16.10-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -2643,8 +2647,8 @@ Write the image with:
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-16.10-x86_64.iso of=/dev/(Device identifier from above)
- bs=4M
+sudo dd if=manjaro-xfce-16.10-stable-x86_64.iso of=/dev/(Device identifier
+ from above) bs=4M
 \begin_inset Newline newline
 \end_inset
 
@@ -2660,7 +2664,7 @@ My USB drive is at /dev/sdc so I would use:
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-16.10-x86_64.iso of=/dev/sdc bs=4M
+sudo dd if=manjaro-xfce-16.10-stable-x86_64.iso of=/dev/sdc bs=4M
 \end_layout
 
 \begin_layout Enumerate
@@ -3280,7 +3284,7 @@ Partition A partition is a portion of a drive which stores data (files)
  using a certain format named file system.
  It may be part of an operating system installation, or simply be used for
  storing files.
- A drive may be split into multiple partition, each acting as its own seperate
+ A drive may be split into multiple partitions, each acting as its own seperate
  entity and using its own file system.
  All drives, be they hard drives or flash drives such as USB keys, contain
  one or more partitions.
