@@ -1423,7 +1423,7 @@ jonathon@box:~/download$ sha1sum -c manjaro-xfce-16.10-stable-x86_64.iso.sha1
 \end_layout
 
 \begin_layout Standard
-The line shows the result of the checks.
+The line below shows the result of the checks.
  In this case, it shows that 
 \family typewriter
 sha1sum
@@ -1606,11 +1606,11 @@ To speed up the process it's probably a good idea to deselect the hashes
 
 \end_inset
 
- To verify the checksum is correct, open the
+ To verify if the checksum is correct, open the
 \series bold
  manjaro-xfce-16.10-stable-x86_64.iso.sha1
 \series default
- in a text editor such as Notepad, copy the checksum for the disc image
+ file in a text editor such as Notepad, copy the checksum for the disc image
  file you have downloaded, and paste it into the verification box.
  Then click
 \series bold
@@ -2082,7 +2082,7 @@ Insert a blank CD/DVD.
 status open
 
 \begin_layout Plain Layout
-It's a good idea to use rewriteable disc (e.g.
+It's a good idea to use a rewriteable disc (e.g.
  CD-RW or DVD-RW).
  Although slightly more expensive individually than a write-once disc you
  can reuse the disc again and again, for example when the next version of
@@ -2151,7 +2151,11 @@ Click the
 \series default
 .
  We strongly recommend you select the slowest speed available.
- Once selected, click the Close button.
+ Once selected, click the 
+\series bold
+Close
+\series default
+ button.
 \begin_inset Flex Marginnote
 status open
 
@@ -2527,7 +2531,7 @@ To take advantage of the faster access times and much quieter nature of
  file.
  One of the easiest is to use
 \series bold
- ImageWriter
+ SUSE Studio ImageWriter
 \series default
 .
 \begin_inset Float marginfigure
@@ -2550,7 +2554,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-ImageWriter
+SUSE Studio Imagewriter
 \begin_inset Newline newline
 \end_inset
 
@@ -2579,14 +2583,26 @@ https://en.opensuse.org/SDB:Live_USB_stick
 \end_layout
 
 \begin_layout Standard
-ImageWriter should be available for installation from your distribution's
- Software Center / Software Manager / Package Manager / repositories.
- Once Imagewriter has been downloaded and installed, ensure that your USB
- flash drive is plugged in before starting the application.
+
+\emph on
+SUSE Studio Imagewriter
+\emph default
+ should be available for installation from your distribution's Software
+ Center / Software Manager / Package Manager / repositories.
+ Once 
+\emph on
+SUSE Studio Imagewriter
+\emph default
+ has been downloaded and installed, ensure that your USB flash drive is
+ plugged in before starting the application.
 \end_layout
 
 \begin_layout Standard
-The process of using ImageWriter is very straightforward:
+The process of using 
+\emph on
+SUSE Studio Imagewriter
+\emph default
+ is very straightforward:
 \end_layout
 
 \begin_layout Enumerate
@@ -2611,7 +2627,7 @@ Click on the
 
 \begin_layout Enumerate
 Once it has finished, reboot your system, making sure to select the USB
- flash drive as the boot device.
+ flash drive as the boot device in the BIOS menu (or its UEFI equivalent).
 \end_layout
 
 \begin_layout Subsection
@@ -2625,9 +2641,9 @@ If you don't want to install extra software, and you are comfortable using
 \end_layout
 
 \begin_layout Enumerate
-Connect the USB flash drive to your PC, open a terminal and
+Connect the USB flash drive to your PC, open a terminal and 
 \family typewriter
- cd
+cd
 \family default
  to where you downloaded the disc image.
 \end_layout
@@ -2668,8 +2684,8 @@ sudo dd if=manjaro-xfce-16.10-stable-x86_64.iso of=/dev/sdc bs=4M
 \end_layout
 
 \begin_layout Enumerate
-Once completed reboot your system and boot from the USB drive in the normal
- way.
+Once completed reboot your system and boot from the USB drive by selecting
+ it as the boot device in the BIOS menu (or its UEFI equivalent).
 \end_layout
 
 \begin_layout Section
@@ -2787,8 +2803,8 @@ Click
 \series bold
  Start
 \series default
-, and you are done! (though it takes between around two and five minutes
- to complete).
+, and you are done (though it takes between around two and five minutes
+ to complete)!
 \end_layout
 
 \begin_layout Part
