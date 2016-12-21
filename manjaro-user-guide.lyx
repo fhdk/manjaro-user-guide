@@ -10787,7 +10787,7 @@ Pacman-mirrors
 This will test the speed of all currently available mirrors and set your
  machine to use the best for you.
  Once this command has completed, you should force a download of the package
- lists:
+ lists with the command:
 \end_layout
 
 \begin_layout Quote
@@ -10900,6 +10900,7 @@ From Pamac, click the pancake menu at the top right of the window and select
 Preferences
 \series default
 .
+ You will be prompted for an administrator password.
 \end_layout
 
 \end_inset
@@ -10981,7 +10982,8 @@ When you install Manjaro, unless you specifically installed a preview version,
  you will be using the stable branch.
  This set of packages has the most testing and so is the best for most users.
  However, you may want to help test packages before they move to the stable
- repository:
+ repository.
+ To do this, you can switch to the testing branch with the command:
 \end_layout
 
 \begin_layout Quote
@@ -11002,7 +11004,8 @@ If you want to live on the bleeding edge, you can switch to the unstable
  branch.
  This is normally used by the Manjaro developers.
  Packages from the unstable branch can cause problems, so this is not something
- to do lightly:
+ to do lightly.
+ If you ever decide to try it out, the command is:
 \end_layout
 
 \begin_layout Quote
@@ -11024,7 +11027,9 @@ sudo pacman -Syyu
 
 \begin_layout Standard
 If you switch away from the stable branch, but want to move back, it's actually
- pretty easy:
+ pretty easy.
+ You can switch back to the stable branch in the same way you left it, with
+ the command:
 \end_layout
 
 \begin_layout Quote
@@ -11180,6 +11185,7 @@ pacman
 .
  The pipe, |, takes the output from the first and feeds it to the second.
  To check whether another program is running you can just change the text
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -11203,8 +11209,8 @@ ps x | grep octopi
 \end_layout
 
 \begin_layout Standard
-Once you are sure an installer is not running, you can delete pacman's lock
- file:
+Once you are sure an installer is not running, you can delete Pacman's lock
+ file with the command:
 \end_layout
 
 \begin_layout Quote
@@ -11289,6 +11295,7 @@ https://forum.manjaro.org/
 \end_inset
 
 .
+ Do not hesitate to use them!
 \end_layout
 
 \begin_layout Standard
