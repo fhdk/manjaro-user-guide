@@ -8071,7 +8071,7 @@ If you don't want the welcome screen to load each time you log in, just
 \begin_layout Standard
 The applications menu is the easiest way of starting the software programs
  that are installed on your Manjaro system.
- The icon for this is in the corner of the screen.
+ The icon for this is in the bottom left corner of the screen.
  Go ahead and click on it now!
 \begin_inset Flex Marginnote
 status open
@@ -8546,7 +8546,11 @@ Package Manager
  allows you to search for, install, and remove software applications.
  In this example I have searched for the Chromium web browser, and am about
  to install it.
- Once I'm happy with my selections I can click on the tick to continue.
+ Once I'm happy with my selections I can click on 
+\series bold
+Apply
+\series default
+ to continue.
 \begin_inset Newline newline
 \end_inset
 
@@ -8807,7 +8811,7 @@ status open
 Join #manjaro on irc.freenode.net, whether via a web or desktop client, and
  you'll find a very nice bunch of people ready to chat! To talk on the IRC
  channel you will have to connect first.
- Hexchat comes installed in the Xfce edition.
+ Hexchat, which enables you to do so, comes installed in the Xfce edition.
 \end_layout
 
 \end_inset
@@ -9654,7 +9658,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Pamac's Update Manager is available from the system tray.
+Pamac's Update Manager is available from the system tray at the bottom right
+ corner of the screen.
  In this screenshot it has an icon with an exclamation mark, indicating
  there are software updates.
  An update check is performed automatically; all you have to do is click
@@ -9699,7 +9704,7 @@ Octopi
 \begin_layout Standard
 Octopi is an alternative software manager for Manjaro.
  It is installed with the Openbox and KDE editions as it is based on the
- QT toolset.
+ Qt toolset.
  It also has a very funky icon!
 \end_layout
 
@@ -9724,7 +9729,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Octopi's update notifier is available from the system tray.
+Octopi's update notifier is available from the system tray at the bottom
+ right corner of the screen.
  In this screenshot it has a red icon, indicating there are software updates.
  An update check is performed automatically; all you have to do is click
 \series bold
@@ -9883,7 +9889,11 @@ status open
 \begin_layout Plain Layout
 Pamac is a piece of software that allows you to install software on your
  computer.
- You can find it under the name Add/Remove Software in the application menu.
+ You can find it under the name 
+\series bold
+Add/Remove Software
+\series default
+ in the application menu.
 \end_layout
 
 \end_inset
@@ -9920,14 +9930,13 @@ status open
 Pamac allows easy access to the available software.
  All software applications in the repositories are free; no need to worry
  about purchase or licensing costs.
- To obtain more information on a package, can right-click on it and select
- 
+ To obtain more information on a package, right-click on it and select 
 \series bold
 Details
 \series default
 .
- This will give you a description of the package, link to the official website
- of the package, a list of dependencies and much more.
+ This will give you a description of the package, a link to the official
+ website of the package, a list of dependencies and much more.
 \end_layout
 
 \end_inset
@@ -10003,8 +10012,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The packages to be installed are listed so you can check this is what you
- want to do.
+The packages to be installed are listed so you can check if this is what
+ you want to do.
  When you are happy with the selection, click
 \series bold
  Commit
@@ -10150,7 +10159,8 @@ Octopi
 \end_layout
 
 \begin_layout Standard
-The process of installing new software using Octopi is very similar to Pamac.
+The process of installing new software using Octopi is very similar to the
+ one using Pamac.
 \end_layout
 
 \begin_layout Standard
@@ -10300,8 +10310,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The packages to be installed are listed so you can check this is what you
- want to do.
+The packages to be installed are listed so you can check if this is what
+ you want to do.
  When you are happy with the selection, click
 \series bold
  Yes
@@ -10476,7 +10486,8 @@ Updating software
 \end_layout
 
 \begin_layout Standard
-Pacman will allow you to perform an update of software already installed:
+Pacman will allow you to perform an update of software already installed
+ with the command:
 \end_layout
 
 \begin_layout Quote
@@ -10487,7 +10498,8 @@ sudo pacman -Su
 
 \begin_layout Standard
 It's a good idea to check whether the package lists are up-to-date at the
- same time:
+ same time.
+ To do so, type:
 \end_layout
 
 \begin_layout Quote
@@ -10497,7 +10509,8 @@ sudo pacman -Syu
 \end_layout
 
 \begin_layout Standard
-You can also force a package list synchronisation before performing an update:
+You can also force a package list synchronisation before performing an update
+ with:
 \begin_inset Float marginfigure
 wide false
 sideways false
@@ -10542,7 +10555,7 @@ Searching for software
 
 \begin_layout Standard
 Finding a package by name is really straightforward.
- For example, to search for a text editor called Leafpad:
+ For example, to search for a text editor called Leafpad, type:
 \end_layout
 
 \begin_layout Quote
@@ -10557,13 +10570,13 @@ Installing software
 
 \begin_layout Standard
 Installing a package is equally straightforward.
- For example, to install Leafpad:
+ For example, to install Leafpad, type:
 \begin_inset Flex Marginnote
 status open
 
 \begin_layout Plain Layout
 Many software applications depend on other software packages.
- Thankfully, pacman will automatically detect and install these!
+ Thankfully, Pacman will automatically detect and install these!
 \end_layout
 
 \end_inset
@@ -10584,7 +10597,7 @@ Removing software
 \begin_layout Standard
 To remove a software package you need to know its name, but the command
  is straightforward.
- To remove Leafpad:
+ To remove Leafpad, type:
 \end_layout
 
 \begin_layout Quote
@@ -10603,7 +10616,7 @@ It's also possible to remove a package and any dependencies it required
 \series default
  packages.
  These serve no function other than taking up space! To remove a software
- package with its dependencies:
+ package with its dependencies, type:
 \end_layout
 
 \begin_layout Quote
@@ -10643,15 +10656,15 @@ Be warned, though: this is an advanced command!
 \end_layout
 
 \begin_layout Subsection
-Other pacman commands
+Other Pacman commands
 \end_layout
 
 \begin_layout Standard
-It's a good idea to become familiar with the pacman commands.
+It's a good idea to become familiar with the Pacman commands.
  It can be a very useful tool in case the other software managers refuse
  to complete an installation, for example if an installation process is
  interrupted.
- The pacman man
+ The Pacman man
 \begin_inset Flex Marginnote
 status open
 
@@ -10669,7 +10682,7 @@ ual
 
 \end_inset
 
-page is very informational:
+page is very informational and can be viewed with the command:
 \end_layout
 
 \begin_layout Quote
