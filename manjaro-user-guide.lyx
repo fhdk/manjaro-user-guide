@@ -3394,6 +3394,8 @@ Basic Input/Output System
  It offers various settings in menus accessible when pressing a specific
  key during boot.
  Systems using BIOS often have a MBR partition table.
+ It can be used to boot on a USB stick, start a Live environment and install
+ Manjaro.
 \end_layout
 
 \begin_layout Description
@@ -3425,6 +3427,14 @@ GRUB
 \series default
 .
  It is the one installed by Calamares, the installer used by Manjaro.
+\end_layout
+
+\begin_layout Description
+Live
+\begin_inset space ~
+\end_inset
+
+environment A Live environment is
 \end_layout
 
 \begin_layout Standard
@@ -3515,6 +3525,8 @@ The simplest installation method is to overwrite the entire hard drive and
  will lose all data stored on your disk.
  If you want to preserve your data, you can back it up on an external hard
  disk before the installation and copy it back after.
+ The other two assisted installation methods also enable you to preserve
+ your data.
 \end_layout
 
 \begin_layout Subsection
@@ -4131,7 +4143,7 @@ Restart now
 However, overwriting the whole hard drive may not always be the desired
  installation method.
  More control can be achieved by using the other options offered in the
- installer.
+ installer, which do not erase the whole hard drive.
 \end_layout
 
 \begin_layout Standard
@@ -4175,7 +4187,7 @@ setcounter{figure}{0}
 Another available option is to shrink an existing partition to make room
  on your disk and used the freed space to install Manjaro.
  This is a suitable method if you want to dual-boot two operating systems
- but do not want to go through the hastle of partitioning your disk yourself.
+ but do not want to go through the hassle of partitioning your disk yourself.
  This part will be handled by the installer.
 \end_layout
 
@@ -4268,6 +4280,9 @@ Click and drag the separation between the two parts to change the amount
  On this picture, Manjaro will be installed on the part indicated in red.
  Please note that you cannot shrink the existing partition to a size smaller
  than the space needed to store the data on it.
+ This limits how much the separation can be moved to the left.
+ However, you must also free enough space to be able to install Manjaro.
+ This limits how much the separation can be moved to the right.
 \end_layout
 
 \end_inset
@@ -5762,6 +5777,9 @@ Once the Calamares installer is executed, the first noticeable difference
  table more commonly found on BIOS systems.
  The bottom of the screen displays the current partition scheme, with the
  sda1 partition storing the files used when booting.
+ No matter which method you choose to install Manjaro, you won't be asked
+ whether you want to install the GRUB bootloader or not.
+ It will be installed automatically.
 \end_layout
 
 \end_inset
