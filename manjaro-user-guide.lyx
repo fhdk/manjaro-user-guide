@@ -4655,7 +4655,7 @@ status open
 The next screen displays the disk being edited and its state, both in the
  form of a bar and a list of partitions.
  Both represent the same thing, only in a different form.
- The button 
+ You can use whichever form you prefer! The button 
 \series bold
 New Partition Table
 \series default
@@ -4761,9 +4761,8 @@ Clicking on
 Edit
 \series default
  will bring up another window indicating information about the partition,
- such as its size, what you want to do with its content, its file system,
- its mount point if you want to use it for your Manjaro installation and
- its flags.
+ such as its size, what to do with its content, its file system, its mount
+ point if you want to use it for your Manjaro installation and its flags.
  The portion of the partition that has data on it is located on the left
  side of the bar and has a slight 3D effect.
 \end_layout
@@ -5547,7 +5546,7 @@ status open
 
 \begin_layout Plain Layout
 ...
- and at the end if the modifications were applied successfully.
+ and at the end if the modifications were applied successfully!
 \end_layout
 
 \end_inset
@@ -6024,8 +6023,7 @@ reference "efi-gparted"
 
 
 \series default
-) will show you how to create the partitions with GParted before using them
- in the Calamares installer.
+) will show you how to create the partitions with GParted.
  Finally, the third one (
 \series bold
 
@@ -6039,7 +6037,7 @@ reference "existing-efi"
 \series default
 ) will show you how to use previously created partitions during the installation
 , including a EFI partition used by another operating system.
- 
+ These partitions can have been previously created with GParted.
 \end_layout
 
 \begin_layout Section
@@ -6109,8 +6107,11 @@ Once you select the
 \series bold
 Manual partitioning
 \series default
- option, the first thing to make sure is that the partition table is of
- type GPT.
+ option and click on 
+\series bold
+Next
+\series default
+, the first thing to make sure is that the partition table is of type GPT.
  To create a new partition table, click on the 
 \series bold
 New Partition Table
@@ -6704,7 +6705,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Once this is done, select the unaloccated space and click on the first button
+Once this is done, select the unallocated space and click on the first button
  at the top-left of the window to create a new partiton.
  The first one we will create is the EFI partition.
 \end_layout
@@ -6951,7 +6952,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-A few flags then need to be set so the EFI partition behaves correctly.
+A bit more work is required once the operations have been successfully completed.
+ A few flags then need to be set so the EFI partition behaves correctly.
  
 \series bold
 Right-click
@@ -7093,7 +7095,7 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-You may want to consider this scenario is you prepared the partitions beforehand
+You may want to consider this scenario is you prepared partitions beforehand
  with a tool like GParted or if you are dual-booting with another operating
  system.
  In the later case, you will probably want to use the same EFI partition
@@ -7125,8 +7127,11 @@ Once in the
 \series bold
 Manual partitioning
 \series default
- option, select the partition you want for the EFI partition and click on
- the 
+ option and click 
+\series bold
+Next
+\series default
+, select the partition you want as the EFI partition and click on the 
 \series bold
 Edit
 \series default
@@ -7328,8 +7333,8 @@ The above instructions for a UEFI system used Linux Mint as the already
  installed operating system.
  However, the partition scheme used by Windows is a bit different from the
  one typically used by Linux.
- This section shows the differences in the installation steps between the
- two cases.
+ This section focuses on the differences in the installation steps between
+ the two cases.
 \end_layout
 
 \begin_layout Section
@@ -7730,6 +7735,7 @@ Like in the previous section, but this time using the manual partitioning
 Edit
 \series default
  it.
+ As previously stated, it should be the biggest one.
 \end_layout
 
 \end_inset
@@ -7765,6 +7771,9 @@ status open
 \begin_layout Plain Layout
 Then, use the slider at the top of the window that pops up to reduce its
  size.
+ The left part of the bar with a slight 3D effect represents the portion
+ of the partition that contains data.
+ You cannot shrink the partition below this threshold.
 \end_layout
 
 \end_inset
@@ -7900,10 +7909,10 @@ status open
 
 \begin_layout Plain Layout
 Now you can create some new partitions! Here I chose the simplest partition
- scheme, as I create a single partition mounted as / and with the ext4 file
- system.
+ scheme, as I created a single partition mounted as / and with the ext4
+ file system.
  No matter the partition scheme you choose, there must be one partition
- mounted as /.
+ mounted under /.
  The rest is up to you.
 \end_layout
 
