@@ -1611,7 +1611,11 @@ To speed up the process it's probably a good idea to deselect the hashes
  manjaro-xfce-16.10-stable-x86_64.iso.sha1
 \series default
  file in a text editor such as Notepad, copy the checksum for the disc image
- file you have downloaded, and paste it into the verification box.
+ file you have downloaded, and paste it into the 
+\series bold
+Hash
+\series default
+ verification box.
  Then click
 \series bold
  Verify
