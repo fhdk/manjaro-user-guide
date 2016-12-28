@@ -1059,6 +1059,7 @@ Every release of Manjaro is available for download, whether the current
  for each.
  A checksum can be used to check the integrity of the disc image file you
  download to make sure it hasn't been corrupted during the download.
+ This will be covered inthe next chapter.
 \end_layout
 
 \begin_layout Description
@@ -3493,7 +3494,7 @@ setcounter{figure}{0}
 The graphical installer used by Manjaro is called Calamares.
  It offers a choice of three different assisted installation options, which
  we will cover here one by one.
- The manual installation is presented in section 
+ The manual installation is presented in chapter 
 \series bold
 
 \begin_inset CommandInset ref
@@ -4965,8 +4966,12 @@ All partitions that have a mount point specified will be used during the
 Revert All Changes
 \series default
  at the top right of the window.
- At the bottom of the window you also have the option to specify whether
- or not to install the GRUB boot loader as well as where to install it.
+ The 
+\series bold
+Install boot loader on
+\series default
+ menu at the bottom of the window lets you select where to install the boot
+ loader.
 \end_layout
 
 \end_inset
@@ -5585,7 +5590,15 @@ status open
 
 \begin_layout Plain Layout
 Congratulations, you have now successfully created new partitions which
- you will be able to use to install Manjaro!
+ you will be able to use to install Manjaro! This is especially useful when
+ partitioning manually or when replacing an existing partition (
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "replace"
+
+\end_inset
+
+).
 \end_layout
 
 \end_inset
@@ -7234,7 +7247,7 @@ status open
 Next, select the other partitions you want to use and choose their respective
  mount points.
  If you want to dual-boot, you may want to shrink an existing partition
- and create partitions for Manjaro as illustrated in section 
+ and create partitions for Manjaro as illustrated in chapter 
 \series bold
 
 \begin_inset CommandInset ref
@@ -7474,7 +7487,14 @@ Click
 
 \begin_layout Standard
 Once you are done, restart your computer and boot on the USB key as was
- explained earlier.
+ explained earlier in chapter 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "UEFIInstall"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -7912,9 +7932,9 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Now you can create some new partitions! Here I chose the simplest partition
- scheme, as I created a single partition mounted as / and with the ext4
- file system.
+Now you can create some new partitions for Manjaro! Here I chose the simplest
+ partition scheme, as I created a single partition mounted as / and with
+ the ext4 file system.
  No matter the partition scheme you choose, there must be one partition
  mounted under /.
  The rest is up to you.
@@ -7983,14 +8003,22 @@ Next
 \end_layout
 
 \begin_layout Section
-Update the GRUB boot loader, or, Where did Windows go?
+Update the GRUB boot loader, or 
+\begin_inset Quotes eld
+\end_inset
+
+Where did Windows go?
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Sometimes the boot loader GRUB2 does not detect an existing Microsoft Windows
  installation when installing.
- This means that only Manjaro Linux will appear in the list of options when
- you boot the machine.
+ This means that only Manjaro Linux will appear in the list of installed
+ operating systems when you boot the machine.
 \end_layout
 
 \begin_layout Standard
