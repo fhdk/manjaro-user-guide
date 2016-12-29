@@ -8412,7 +8412,7 @@ File Manager
 \series default
  is a graphical interface for managing your documents and directories.
  Most file managers work in a similar way; if you've used another, you can
- probably use this one!
+ use this one!
 \end_layout
 
 \end_inset
@@ -8474,7 +8474,7 @@ Web Browser
  allows you to visit and view web pages so you can read news stories, check
  the weather forecast, and all the rest.
  If you have a particular preference for a browser that is not installed
- by default, you can easily add or remove software as shown in section 
+ by default, you can easily add another one as shown in section 
 \series bold
 
 \begin_inset CommandInset ref
@@ -10073,6 +10073,9 @@ status open
 \begin_layout Plain Layout
 The packages to be installed are listed so you can check if this is what
  you want to do.
+ If additional packages are needed by the one or those you want to install,
+ they will also be listed here.
+ They are called dependencies.
  When you are happy with the selection, click
 \series bold
  Commit
@@ -11075,7 +11078,7 @@ sudo pacman-mirrors -g -b unstable
 
 \begin_layout Standard
 After switching branches you will need to force an update of the package
- lists and packages:
+ lists and packages, which can be done with the command:
 \end_layout
 
 \begin_layout Quote
@@ -11195,7 +11198,7 @@ you can remove /var/lib/pacman/db.lck
 \end_layout
 
 \begin_layout Standard
-This means pacman thinks it is already running.
+This means Pacman thinks it is already running.
  If it is, and you try to force an installation or removal of software,
  the package database can be left in an inconsistent state.
  This would be bad.
@@ -11233,7 +11236,7 @@ grep pacman
 \end_layout
 
 \begin_layout Standard
-searches for the text
+searches for the text 
 \begin_inset Quotes eld
 \end_inset
 
@@ -11310,7 +11313,7 @@ In order, these commands:
 \end_layout
 
 \begin_layout Itemize
-Remove pacman's lock file;
+Remove Pacman's lock file;
 \end_layout
 
 \begin_layout Itemize
