@@ -798,7 +798,15 @@ setcounter{figure}{0}
 
 \begin_layout Standard
 There are three official editions of Manjaro available for download, as
- well as a number of unofficial 'community' editions.
+ well as a number of unofficial 
+\begin_inset Quotes eld
+\end_inset
+
+community
+\begin_inset Quotes erd
+\end_inset
+
+ editions.
 \begin_inset Flex Marginnote
 status open
 
@@ -856,7 +864,7 @@ Xfce The Xfce desktop environment is designed to be lightweight while retaining
 KDE This version includes the K Desktop Environment.
  It offers a highly integrated environment with plenty of functionality
  and options.
- It is also highly customisable and offers a slightly different feel than
+ It is also highly customizable and offers a slightly different feel than
  the other editions.
  KDE edition disc image files start with
 \series bold
@@ -1059,7 +1067,7 @@ Every release of Manjaro is available for download, whether the current
  for each.
  A checksum can be used to check the integrity of the disc image file you
  download to make sure it hasn't been corrupted during the download.
- This will be covered inthe next chapter.
+ This will be covered in the next chapter.
 \end_layout
 
 \begin_layout Description
@@ -1287,7 +1295,7 @@ To verify the integrity of the disc image you have to download the appropriate
 \series bold
  manjaro-xfce-minimal-16.10-dev-unstable-x86_64.iso.sha1
 \series default
- contains the SHA-1 checksum hash for the xfce disc image and will have
+ contains the SHA-1 checksum hash for the Xfce disc image and will have
  content similar to this:
 \end_layout
 
@@ -1301,7 +1309,14 @@ SHA-1
 \end_layout
 
 \begin_layout Standard
-SHA and others like MD5 are different types of hashing algorithms; the 'sha'
+SHA and others like MD5 are different types of hashing algorithms; the 
+\begin_inset Quotes eld
+\end_inset
+
+sha
+\begin_inset Quotes erd
+\end_inset
+
  part of the checksum file name stands for
 \series bold
  Secure Hash Algorithm
@@ -1659,7 +1674,7 @@ setcounter{figure}{0}
 \begin_layout Standard
 A disc image is not a copy-and-paste duplication of files: it's a bit-for-bit
  copy of the raw data that makes up the files and folders of that disc.
- This is why just copying a disc image file to a disc (or USB flashdrive)
+ This is why just copying a disc image file to a disc (or USB flash drive)
  to begin installing won't work: you'll need to use a disc burning or image
  writing application to translate that raw data into the files and folders.
 \begin_inset Flex Marginnote
@@ -2559,7 +2574,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-SUSE Studio Imagewriter
+SUSE Studio ImageWriter
 \begin_inset Newline newline
 \end_inset
 
@@ -2590,13 +2605,13 @@ https://en.opensuse.org/SDB:Live_USB_stick
 \begin_layout Standard
 
 \emph on
-SUSE Studio Imagewriter
+SUSE Studio ImageWriter
 \emph default
  should be available for installation from your distribution's Software
  Center / Software Manager / Package Manager / repositories.
  Once 
 \emph on
-SUSE Studio Imagewriter
+SUSE Studio ImageWriter
 \emph default
  has been downloaded and installed, ensure that your USB flash drive is
  plugged in before starting the application.
@@ -2605,7 +2620,7 @@ SUSE Studio Imagewriter
 \begin_layout Standard
 The process of using 
 \emph on
-SUSE Studio Imagewriter
+SUSE Studio ImageWriter
 \emph default
  is very straightforward:
 \end_layout
@@ -3305,7 +3320,7 @@ Partition A partition is a portion of a drive which stores data (files)
  using a certain format named file system.
  It may be part of an operating system installation, or simply be used for
  storing files.
- A drive may be split into multiple partitions, each acting as its own seperate
+ A drive may be split into multiple partitions, each acting as its own separate
  entity and using its own file system.
  All drives, be they hard drives or flash drives such as USB keys, contain
  one or more partitions.
@@ -3488,7 +3503,7 @@ Feel free to come back to this short list if you ever need it! Some links
 \end_layout
 
 \begin_layout Chapter
-Assisted installation on a BIOS system with the Calamares installer
+Assisted installation on a BIOS system
 \end_layout
 
 \begin_layout Standard
@@ -3832,7 +3847,7 @@ reference "UEFIInstall"
 
 \series default
 .
- The partition table type, MBR ou GPT, is indicated at the right of the
+ The partition table type, MBR or GPT, is indicated at the right of the
  disk.
  The current state of your drive is displayed at the bottom of the window.
  Several partitioning options are available.
@@ -4565,7 +4580,7 @@ Next
 \end_layout
 
 \begin_layout Chapter
-Manual installation on a BIOS system with the Calamares installer
+Manual installation on a BIOS system
 \end_layout
 
 \begin_layout Standard
@@ -5140,7 +5155,7 @@ setcounter{figure}{0}
 \begin_layout Standard
 GParted is a graphical program used to modify partitions on drives.
  It is very powerful and yet has a very user-friendly interface.
- GParted allows you to create and delete partitons, as well as change their
+ GParted allows you to create and delete partitions, as well as change their
  attributes, such as their size, their location on the disk and their file
  system.
  It can also create partition tables of type MBR and GPT.
@@ -5227,7 +5242,7 @@ status open
 \begin_layout Plain Layout
 After authenticating, a window similar to the one presented on the picture
  will appear.
- A bar shows a diagramatic representation of your drive, which is indicated
+ A bar shows a diagrammatic representation of your drive, which is indicated
  on the button at the top-right of the window.
  If you have multiple drives, you can select another by clicking on this
  button.
@@ -5653,7 +5668,7 @@ reference "replace"
 \end_layout
 
 \begin_layout Chapter
-Assisted installation on a UEFI system with the Calamares installer
+Assisted installation on a UEFI system
 \end_layout
 
 \begin_layout Standard
@@ -5721,7 +5736,7 @@ Some newer hardware do not use the well-known BIOS to manage boot options.
  makes it more difficult to boot operating systems outside of a select few.
  If your computer came with Microsoft Windows 8 or later installed, your
  computer uses UEFI and probably has Secure Boot enabled by default.
- However, the Linux community reacted to this and developped means to install
+ However, the Linux community reacted to this and developed means to install
  and boot Linux on those systems as well.
  Some installers, such as Calamares, can even automate the process so it
  makes virtually no difference to the user whether their machine uses UEFI
@@ -6229,7 +6244,7 @@ Once the Calamares installer is executed, the first noticeable difference
  The bottom of the screen displays the current partition scheme, with the
  sda1 partition storing the files used when booting.
  No matter which method you choose to install Manjaro, you won't be asked
- whether you want to install the GRUB bootloader or not.
+ whether you want to install the GRUB boot loader or not.
  It will be installed automatically.
 \end_layout
 
@@ -6420,7 +6435,7 @@ Replace a partition
 \end_layout
 
 \begin_layout Chapter
-Manual installation on a UEFI system with the Calamares installer
+Manual installation on a UEFI system
 \end_layout
 
 \begin_layout Standard
@@ -6447,11 +6462,11 @@ Manual installation
 \end_layout
 
 \begin_layout Standard
-The last installation option is the one that changes the most if you are
+The manual installation option is the one that changes the most if you are
  using a UEFI system.
  The following steps will walk you through the process of creating a partition
  scheme suitable for your system in three different scenarios.
- Ths first one (
+ The first one (
 \series bold
 
 \begin_inset CommandInset ref
@@ -7158,7 +7173,7 @@ status open
 
 \begin_layout Plain Layout
 Once this is done, select the unallocated space and click on the first button
- at the top-left of the window to create a new partiton.
+ at the top-left of the window to create a new partition.
  The first one we will create is the EFI partition.
 \end_layout
 
@@ -7781,8 +7796,8 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-The above instructions for a UEFI system used Linux Mint as the already
- installed operating system.
+The above screenshots for a UEFI system used Linux Mint as the already installed
+ operating system.
  However, the partition scheme used by Windows is a bit different from the
  one typically used by Linux.
  This section focuses on the differences in the installation steps between
@@ -9541,7 +9556,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The Xfce desktop is highly customisable.
+The Xfce desktop is highly customizable.
  The settings for your user account can be accessed both via the applications
  menu and the Xfce settings manager.
  Either way, there's a lot of tweaking you can do! Don't worry: the changes
