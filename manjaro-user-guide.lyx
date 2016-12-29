@@ -5791,6 +5791,400 @@ Once you have booted the system from the Live CD/USB you will be presented
  permanent on the installed system.
 \end_layout
 
+\begin_layout Subsection
+Change the language of the Live environment
+\end_layout
+
+\begin_layout Standard
+Some more steps are required if you want the Live environment to be in another
+ language than English on a UEFI system.
+ The keyboard layout can be set in the Calamares installer as shown earlier.
+ 
+\series bold
+Please note that these steps are not required for Manjaro to be installed
+ in another language.
+ They are only useful if you want the Live environment, before installing
+ Manjaro, to be in another language.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_manjaro_settings_manager.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In order for the Live environment to be displayed in another language, this
+ language will need to be added in the 
+\series bold
+Manjaro Settings Manager
+\series default
+.
+ It can be found in the applications menu.
+ An administrator password is required to launch it.
+ On the Live CD, the password is 
+\begin_inset Quotes eld
+\end_inset
+
+manjaro
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_languages.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Once the Manjaro Settings Manager is launched, click on 
+\series bold
+Language
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_languages_add.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A list of installed languages will then be displayed.
+ If the one you want is not listed, click the 
+\series bold
+Add
+\series default
+ button.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_languages_select.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Then, select the desired language in the list on the left, and if necessary
+ the appropriate subcategory in the menu on the right.
+ The 
+\series bold
+Locale
+\series default
+ menu allows you the choose the encoding.
+ Once you are satisfied, click 
+\series bold
+Add
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_languages_default.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The added language will then be in the list.
+ 
+\series bold
+Right-click
+\series default
+ on it and choose 
+\series bold
+Set as default display language and format
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_languages_apply.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Finally, 
+\series bold
+Apply
+\series default
+ these changes.
+ You can now close the window.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_log_out_1.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+However, the newly made changes will only take effect in the next desktop
+ session.
+ To log out, click the icon at the bottom right of the screen.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_log_out_2.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Select 
+\series bold
+Log Out
+\series default
+ in the window that pops up.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_choose_language.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+You will then be presented with the Live CD login screen.
+ Click on 
+\series bold
+en_US.utf8
+\series default
+ at the bottom right of the screen and select the language you want to use.
+ You can then log in.
+ The desktop will now be in the new language! On the Live CD, the username
+ and password are both 
+\begin_inset Quotes eld
+\end_inset
+
+manjaro
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Differences in the partition setup
 \end_layout
