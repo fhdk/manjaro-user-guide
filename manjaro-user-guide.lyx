@@ -824,7 +824,7 @@ https://manjaro.org/get-manjaro/
  of these would be a great choice for anyone who wants to try out Manjaro
  on a Live-CD
 \begin_inset Flex Marginnote
-status collapsed
+status open
 
 \begin_layout Plain Layout
 When you purchase retail software it generally comes on a disc, whether
@@ -3374,6 +3374,39 @@ Directory A directory is what is often called a folder on Windows.
 \end_layout
 
 \begin_layout Description
+Directory
+\begin_inset space ~
+\end_inset
+
+Tree The directories on Linux are arranged in the form of a tree, originating
+ from the / directory, called the 
+\begin_inset Quotes eld
+\end_inset
+
+root
+\begin_inset Quotes erd
+\end_inset
+
+ directory.
+ Each one has a specific use.
+ For example, the /home directory stores the users' personal files, while
+ the /etc directory stores system-wide configuration files.
+ A complete description of the directory tree can be found on Wikipedia:
+ 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
 Mount
 \begin_inset space ~
 \end_inset
@@ -3388,6 +3421,21 @@ e.
 \begin_layout Standard
 Moreover, several programs are used when booting your computer, from starting
  the hardware to logging in the operating system.
+\end_layout
+
+\begin_layout Description
+Live
+\begin_inset space ~
+\end_inset
+
+CD A Live CD is a version of an operating system that runs in the computer's
+ memory, without needing to access the hard drive.
+ It is generally loaded from a CD, DVD or USB key that was used at boot.
+ Changes made to the Live environment are not saved.
+ Live CDs are often used to give a preview of an operating system and include
+ tools to install it.
+ They can also be used to manage the hard drive's partitions and rescue
+ lost data.
 \end_layout
 
 \begin_layout Description
@@ -3432,14 +3480,6 @@ GRUB
 \series default
 .
  It is the one installed by Calamares, the installer used by Manjaro.
-\end_layout
-
-\begin_layout Description
-Live
-\begin_inset space ~
-\end_inset
-
-environment A Live environment is
 \end_layout
 
 \begin_layout Standard
@@ -4901,7 +4941,8 @@ ext4
  
 \series bold
 The only obligation is that you must have a partition mounted under /, which
- is the top most directory of the Linux directory tree.
+ is the root directory of the Linux directory tree, to which all others
+ connect directly or indirectly.
 
 \series default
  You can arrange the rest to your liking.
