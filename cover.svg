@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="cover.svg"
-   inkscape:export-filename="/home/jonathon/documents/Manjaro/manjaro-user-guide/cover.png"
+   inkscape:export-filename="/home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/cover.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -392,13 +392,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.41919192"
-     inkscape:cx="350.48904"
-     inkscape:cy="413.04996"
+     inkscape:zoom="1.3672106"
+     inkscape:cx="531.72333"
+     inkscape:cy="291.25228"
      inkscape:document-units="px"
      inkscape:current-layer="g4816"
      showgrid="false"
-     borderlayer="true" />
+     borderlayer="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata3108">
     <rdf:RDF>
@@ -407,7 +412,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -611,13 +616,13 @@
          sodipodi:linespacing="125%"
          id="text4166-3"
          y="957.19183"
-         x="516.31482"
+         x="227.72528"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;filter:url(#filter4514-6)"
          xml:space="preserve"><tspan
            y="957.19183"
-           x="516.31482"
+           x="227.72528"
            id="tspan4168-7"
-           sodipodi:role="line">user guide</tspan></text>
+           sodipodi:role="line">guide de l'utilisateur-trice</tspan></text>
     </g>
   </g>
   <g
