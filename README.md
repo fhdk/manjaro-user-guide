@@ -22,7 +22,7 @@ Les dépendances de base devraient être téléchargées en même temps que LyX.
 
 La couverture actuelle a été créée avec Inkscape. LyX permet d'insérer des fichiers PDF sans anicroche. Afin de simplifier les choses, la couverture du guide devrait donc être exportée en fichier PDF.
 
-![Manjaro User Guide cover](https://raw.githubusercontent.com/pattedetable/french-manjaro-user-guide/master/cover.png)
+![Manjaro User Guide cover](https://raw.githubusercontent.com/manjaro/manjaro-user-guide/french/cover.png)
 
 ## Génération
 
