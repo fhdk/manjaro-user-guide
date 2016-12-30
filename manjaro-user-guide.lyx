@@ -5830,7 +5830,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_manjaro_settings_manager.png
+	filename images/calamares-uefi/UEFI_manjaro_settings_manager.png
 	lyxscale 50
 	width 100col%
 
@@ -5880,7 +5880,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_languages.png
+	filename images/calamares-uefi/UEFI_languages.png
 	lyxscale 50
 	width 100col%
 
@@ -5918,7 +5918,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_languages_add.png
+	filename images/calamares-uefi/UEFI_languages_add.png
 	lyxscale 50
 	width 100col%
 
@@ -5957,7 +5957,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_languages_select.png
+	filename images/calamares-uefi/UEFI_languages_select.png
 	lyxscale 50
 	width 100col%
 
@@ -6002,7 +6002,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_languages_default.png
+	filename images/calamares-uefi/UEFI_languages_default.png
 	lyxscale 50
 	width 100col%
 
@@ -6045,7 +6045,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_languages_apply.png
+	filename images/calamares-uefi/UEFI_languages_apply.png
 	lyxscale 50
 	width 100col%
 
@@ -6084,7 +6084,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_log_out_1.png
+	filename images/calamares-uefi/UEFI_log_out_1.png
 	lyxscale 50
 	width 100col%
 
@@ -6120,7 +6120,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_log_out_2.png
+	filename images/calamares-uefi/UEFI_log_out_2.png
 	lyxscale 50
 	width 100col%
 
@@ -6158,7 +6158,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/french-manjaro-user-guide.git/images/calamares-uefi/UEFI_choose_language.png
+	filename images/calamares-uefi/UEFI_choose_language.png
 	lyxscale 50
 	width 100col%
 
