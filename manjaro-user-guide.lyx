@@ -105,7 +105,7 @@ fixltx2e
 \end_layout
 
 \begin_layout Title
-Guide de l'utilisateur-trice
+Guide d'utilisation
 \end_layout
 
 \begin_layout Author
@@ -398,9 +398,8 @@ Jonathon
 \begin_inset space ~
 \end_inset
 
-Fernyhough Éditeur du guide de l'utilisateur-trice 0.8.9-0.8.13, 15.09-15.12 (version
- originale anglaise), Gestionnaire de la communauté, Couverture du guide
- de l'utilisateur-trice
+Fernyhough Éditeur du guide d'utilisation 0.8.9-0.8.13, 15.09-15.12 (version originale
+ anglaise), Gestionnaire de la communauté, Couverture du guide d'utilisation
 \end_layout
 
 \begin_layout Description
@@ -412,8 +411,8 @@ Manuel
 \begin_inset space ~
 \end_inset
 
-Barrette Éditeur du guide de l'utilisateur-trice 16.08-16.10 (version originale
- anglaise), Traduction française du guide de l'utilisateur-trice 16.10
+Barrette Éditeur du guide d'utilisation 16.08-16.10 (version originale anglaise),
+ Traduction française du guide d'utilisation 16.10
 \end_layout
 
 \begin_layout Subsection*
@@ -538,7 +537,7 @@ Manjaro est développée indépendamment de Arch par une équipe complètement
 
 \begin_layout Itemize
 Manjaro est conçue pour être accessible aux personnes débutant avec Linux,
- alors que Arch vise plutôt les utilisateur-trice-s expérimenté-e-s.
+ alors que Arch vise plutôt celles plus expérimentées.
 \end_layout
 
 \begin_layout Itemize
@@ -622,9 +621,9 @@ Arch Linux
  À l'intérieur de la communauté Linux, Arch est réputée comme étant une
  distribution exceptionnellement rapide, puissante et légère qui donne accès
  aux versions les plus récentes des logiciels.
- Cependant, Arch vise traditionnellement les utilisateur-trice-s plus expériment
-é-e-s ou avec des connaissances techniques.
- Cela fait en sorte qu'elle est généralement considéré comme étant hors
+ Cependant, Arch vise traditionnellement les personnes possédant plus d'expérien
+ce ou de connaissances techniques.
+ Cela fait en sorte qu'elle est généralement considérée comme étant hors
  de portée de plusieurs personnes, surtout celles n'ayant pas l'expertise
  technique (ou la persévérance) nécessaire pour l'utiliser.
 \end_layout
@@ -633,11 +632,11 @@ Arch Linux
 Développée par une équipe répartie aux quatre coins du monde, Manjaro vise
  à fournir tous les bénéfices d'Arch Linux combinés à une approche concentrée
  sur la facilité d'utilisation et l'accessibilité.
- Disponible en versions 32 et 64 bits, Manjaro est adaptée autant aux débutant-e
--s qu'aux utilisateur-trice-s expérimenté-e-s avec Linux.
- Pour les débutant-e-s, un installateur facile d'approche est fourni et
- le système lui-même est conçu pour fonctionner sans problème directement
- après installation.
+ Disponible en versions 32 et 64 bits, Manjaro est adaptée autant aux personnes
+ débutant avec Linux qu'à celles plus expérimentées.
+ Pour les débutants et débutantes, un installateur facile d'approche est
+ fourni et le système lui-même est conçu pour fonctionner sans problème
+ directement après installation.
  Manjaro présente les caractéristiques suivantes :
 \end_layout
 
@@ -891,8 +890,8 @@ Live CD
 \begin_layout Description
 Xfce L'environnement de bureau Xfce est conçu pour être à la fois léger
  et conserver une interface de bureau familière.
- Si vous n'êtes pas certain-e de savoir quelle édition choisir, celle-ci
- est un bon choix.
+ Si vous n'êtes pas certain ou certaine de savoir quelle édition choisir,
+ celle-ci est un bon choix.
  Les fichiers d'image disque de l'édition Xfce commencent par
 \series bold
  manjaro-xfce
@@ -926,8 +925,8 @@ K Desktop Environment
 Net Cette édition de Manjaro ne procurent que l'installation de base, ne
  comprenant que les logiciels les plus basiques.
  N'utilisant au départ que la ligne de commande, cette édition vise les
- utilisateur-trice-s plus avancé-e-s qui souhaitent bâtir leur propre système
- Manjaro à partir du strict minimum.
+ utilisateurs et utilisatrices possédant des connaissances plus avancées
+ qui souhaitent bâtir leur propre système Manjaro à partir du strict minimum.
  Les fichiers d'image disque de l'édition Net commencent par
 \series bold
  manjaro-net
@@ -1087,7 +1086,7 @@ status open
 \begin_layout Standard
 En plus des trois éditions principales de Manjaro existent d'autres éditions
  comprenant divers logiciels ou environnements de bureau préinstallés.
- Ce manuel de l'utilisateur-trice suppose que vous utilisez la version Xfce.
+ Ce manuel d'utilisation suppose que vous utilisez la version Xfce.
  Toutes les captures d'écran présentes dans ce manuel proviendront de cette
  édition.
  Cependant, le processus d'installation et les divers logiciels fonctionnent
@@ -1135,7 +1134,7 @@ versions
 \end_inset
 
 stables de Manjaro visent à être utilisées par le grand public.
- Il s'agit du choix approprié pour la majorité des utilisateur-trice-s.
+ Il s'agit du choix approprié pour la majorité des gens.
  La version actuelle de Manjaro peut être téléchargée en tout temps à partir
  de la page 
 \begin_inset CommandInset href
@@ -1261,9 +1260,9 @@ versions
 \begin_inset space ~
 \end_inset
 
-test de Manjaro visent à être utilisées par les développeur-euse-s et les
- testeur-euse-s afin d'identifier les bogues et les problèmes qui peuvent
- survenir pendant le processus de développement.
+test de Manjaro visent à être utilisées par les développeurs et développeuses
+ ainsi que par les testeurs et testeuses afin d'identifier les bogues et
+ les problèmes qui peuvent survenir pendant le processus de développement.
 
 \series bold
  Elles ne sont pas appropriées pour être utilisées comme système d'exploitation
@@ -3192,8 +3191,8 @@ Choisir la langue sélectionnera aussi un agencement de clavier approprié
  pour le français.
  Si ce choix ne concorde pas avec votre agencement, par exemple si vous
  avez l'agencement des États-Unis mais parlez allemand, ou si vous êtes
- Québécois-e et utilisez donc un agencement de clavier différent de celui
- de la France, appuyez sur <
+ Québécois ou Québécoise et utilisez donc un agencement de clavier différent
+ de celui de la France, appuyez sur <
 \series bold
 F2
 \series default
@@ -3373,9 +3372,9 @@ Bienvenue dans Manjaro
 \begin_layout Standard
 Une fois que vous aurez sélectionné la façon de démarrer, Manjaro enclenchera
  son processus de démarrage.
- Il se peut que vous voyez beaucoup de texte défiler à l'écran - ne vous
- inquiétez pas, cela démontre que le système fonctionne! Après un moment,
- en supposant que votre matériel soit compatible, vous vous retrouverez
+ Il se peut que vous voyez beaucoup de texte défiler à l'écran.
+ Ne vous inquiétez pas, cela démontre que le système fonctionne! Après un
+ moment, en supposant que votre matériel soit compatible, vous vous retrouverez
  devant l'environnement de bureau Live et une fenêtre de bienvenue amicale.
 \end_layout
 
@@ -3644,8 +3643,8 @@ racine
 .
  Chacun d'entre eux remplit un rôle particulier.
  Par exemple, le répertoire /home héberge les fichiers personnels des utilisateu
-r-trice-s, alors que le répertoire /etc héberge des fichiers de configuration
- appliqués à tout le système.
+rs et utilisatrices, alors que le répertoire /etc héberge des fichiers de
+ configuration appliqués à tout le système.
  Une description complète de l'arbre des répertoires est disponible sur
  Wikipédia : 
 \begin_inset Flex URL
@@ -4265,7 +4264,7 @@ Emplacement du chargeur de démarrage
 \end_layout
 
 \begin_layout Subsection
-Saisir les informations de l'utilisateur-trice
+Saisir les informations de l'utilisateur ou de l'utilisatrice
 \end_layout
 
 \begin_layout Standard
@@ -4293,7 +4292,7 @@ nom
 , qui sera utilisé par certains programmes afin de vous souhaiter la bienvenue,
  un 
 \series bold
-nom d'utilisateur-trice
+nom d'utilisateur ou d'utilisatrice
 \series default
  pour vous connecter au système, le 
 \series bold
@@ -4712,8 +4711,8 @@ reference "eraseDisk"
 
 \series default
 .
- Vous devrez saisir les informations relatives à l'utilisateur-trice et
- vous vous ferez présenter un résumé de vos choix.
+ Vous devrez saisir les informations relatives à l'utilisateur ou l'utilisatrice
+ et vous vous ferez présenter un résumé de vos choix.
  À ce stade, une fois que vous aurez cliqué sur 
 \series bold
 Suivant
@@ -4890,8 +4889,8 @@ reference "eraseDisk"
 
 \series default
 .
- Vous devrez saisir les informations relatives à l'utilisateur-trice et
- vous vous ferez présenter un résumé de vos choix.
+ Vous devrez saisir les informations relatives à l'utilisateur ou l'utilisatrice
+ et vous vous ferez présenter un résumé de vos choix.
  À ce stade, une fois que vous aurez cliqué sur 
 \series bold
 Suivant
@@ -5449,8 +5448,8 @@ reference "eraseDisk"
 
 \series default
 .
- Vous devrez saisir les informations relatives à l'utilisateur-trice et
- vous vous ferez présenter un résumé de vos choix.
+ Vous devrez saisir les informations relatives à l'utilisateur ou l'utilisatrice
+ et vous vous ferez présenter un résumé de vos choix.
  À ce stade, une fois que vous aurez cliqué sur 
 \series bold
 Suivant
@@ -6111,7 +6110,7 @@ Le matériel plus récent n'utilise souvent pas BIOS pour gérer les options
  et de démarrer Linux sur ces systèmes.
  Certains installateurs, comme Calamares, permettent même d'automatiser
  le processus, rendant la procédure d'installation pratiquement la même
- aux yeux de l'utilisateur-trice, peu importe si BIOS ou UEFI est utilisé.
+ aux yeux de la personne l'utilisant, peu importe si BIOS ou UEFI est utilisé.
 \end_layout
 
 \begin_layout Section
@@ -6552,7 +6551,7 @@ en_US.utf8
  en bas à droite de l'écran et sélectionnez votre langue.
  Vous pouvez ensuite vous connecter.
  Le bureau sera alors affiché dans votre langue! Sur le CD autonome, le
- nom d'utilisateur-trice et le mot de passe sont tous deux 
+ pseudonyme et le mot de passe sont tous deux 
 \begin_inset Quotes fld
 \end_inset
 
@@ -9027,14 +9026,14 @@ Félicitations, vous avez installé Manjaro Linux!
 \end_layout
 
 \begin_layout Standard
-Une fois votre nom d'utilisateur-trice et votre mot de passe saisis, vous
- arriverez sur le bureau de Manjaro.
+Une fois votre nom d'utilisateur ou d'utilisatrice et votre mot de passe
+ saisis, vous arriverez sur le bureau de Manjaro.
  La fenêtre de bienvenue s'affichera automatiquement pour vous offrir des
  liens utiles vers la documentation, diverses ressources d'aide et de support
  de la communauté Manjaro et différentes façons de vous impliquer dans le
  projet si vous le désirez.
  Manjaro est un système d'exploitation libre et gratuit et repose donc sur
- les contributions de ses utilisateur-trice-s ainsi que des développeur-euse-s!
+ les contributions de sa communauté ainsi que des développeurs et développeuses!
 \end_layout
 
 \begin_layout Standard
@@ -9959,7 +9958,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Le wiki est essentiellement un guide de l'utilisateur-trice en ligne.
+Le wiki est essentiellement un guide d'utilisation en ligne.
  Il contient beaucoup d'information, de trucs, d'indices et d'instructions
  afin d'utiliser votre système Manjaro à sa pleine capacité.
  Si vous cherchez à savoir comment faire quelque chose, il y a de bonnes
@@ -10053,9 +10052,9 @@ status open
 
 \begin_layout Plain Layout
 Le bureau Xfce est hautement personnalisable.
- Les paramètres de votre compte d'utilisateur-trice sont accessibles par
- le menu des applications ainsi que par le gestionnaire de paramètres de
- Xfce.
+ Les paramètres de votre compte d'utilisateur ou d'utilisatrice sont accessibles
+ par le menu des applications ainsi que par le gestionnaire de paramètres
+ de Xfce.
  Dans tous les cas, vous pouvez modifier beaucoup de choses! Les changements
  n'affecteront que votre compte à vous et pas les autres que vous pourriez
  avoir ajoutés, alors pas de soucis à ce sujet!
@@ -10110,7 +10109,8 @@ gestionnaire de paramètres de Manjaro
  vous offre un ensemble d'outils pour modifier plusieurs paramètres de base,
  comme ceux que vous avez initialisés pendant l'installation, par exemple
  les langues utilisées par l'ensemble du système, les agencements du clavier,
- les utilisateur-trice-s ainsi que les pilotes utilisés par votre matériel.
+ les comptes des utilisateurs et utilisatrices ainsi que les pilotes utilisés
+ par votre matériel.
  Ce gestionnaire est accessible dans la catégorie 
 \series bold
 Paramètres
@@ -10251,7 +10251,7 @@ status open
 
 \begin_layout Plain Layout
 Ajouter une imprimante à la liste des imprimantes disponibles requiert les
- droits de super-utilisateur-trice.
+ droits administrateurs.
  Cliquez sur le bouton 
 \series bold
 Déverrouiller
@@ -10890,7 +10890,7 @@ status open
 Soyez prudent-e en permettant la recherche de paquets dans le AUR.
  Il s'agit d'un dépôt de logiciels maintenu par la communauté qui présente
  des risques et problèmes potentiels.
- Assurez-vous d'être familier-ère avec le processus de compilation.
+ Assurez-vous d'être familier ou familière avec le processus de compilation.
 \end_layout
 
 \end_inset
@@ -11107,9 +11107,9 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Comme mesure pour empêcher n'importe quel-le utilisateur ou utilisatrice
- de supprimer des logiciels importants, un mot de passe administrateur doit
- être fourni lorsque vient le temps de modifier les logiciels installés.
+Comme mesure pour empêcher n'importe qui de supprimer des logiciels importants,
+ un mot de passe administrateur doit être fourni lorsque vient le temps
+ de modifier les logiciels installés.
  Si vous avez conservé les paramètres par défaut lorsque vous avez créé
  un profil utilisateur pendant l'installation, votre mot de passe fonctionnera.
  Si vous ne le connaissez pas, impossible d'aller plus loin.
@@ -12090,7 +12090,7 @@ Une fois Manjaro installée, à moins que vous n'ayez spécifiquement choisi
  une version de développement, vous vous retrouverez à utiliser la branche
  stable.
  Cette branche contient les paquets les plus testés et est la branche la
- plus recommandée pour la majorité des utilisateur-trice-s.
+ plus recommandée pour la majorité des gens.
  Cependant, il se peut que vous vouliez aider à tester les paquets avant
  qu'ils ne soient déplacés vers le dépôt stable.
  Pour cela, vous pouvez changer de branche avec la commande :
@@ -12112,7 +12112,8 @@ Le dépôt de test contient des paquets qui ont été vérifiés par l'équipe
 \begin_layout Standard
 Si vous voulez utiliser la fine pointe des paquets disponibles, vous pouvez
  basculer vers la branche instable.
- Elle est normalement utilisée par les développeur-euse-s de Manjaro.
+ Elle est normalement utilisée par les développeurs et développeuses de
+ Manjaro.
  Les paquets de la branche instable peuvent causer des problèmes, alors
  ce n'est pas quelque chose à faire à la légère.
  Si vous décidez de vous lancer, la commande est :
@@ -12277,8 +12278,8 @@ ps x
 \end_layout
 
 \begin_layout Standard
-produit une liste des processus en fonctionnement pour tou-te-s les utilisateur-
-trices-s.
+produit une liste des processus en fonctionnement pour tous les utilisateurs
+ et utilisatrices.
  Deuxièmement, 
 \end_layout
 
