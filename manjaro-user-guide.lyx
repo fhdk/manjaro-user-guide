@@ -3079,14 +3079,14 @@ rs.
 \series default
  drivers are the best choice for Nvidia graphics and AMD graphics newer
  than the 8000-series.
- For older AMD and Nvidia hardware the
+ For older AMD and Nvidia hardware the 
 \series bold
- Free
+Free
 \series default
  drivers work very well.
- For AMD graphics older than the HD5000-series
+ For AMD graphics older than the HD5000-series 
 \series bold
- Free
+Free
 \series default
  drivers are the best choice.
 \begin_inset Float marginfigure
@@ -5026,8 +5026,10 @@ Revert All Changes
 \series bold
 Install boot loader on
 \series default
- menu at the bottom of the window lets you select where to install the boot
- loader.
+ menu at the bottom of the window allows you to choose whether or not to
+ install a boot loader, and if so where to install it.
+ Not installing one is useful if you already have one installed and you
+ wish to keep using it.
 \end_layout
 
 \end_inset
@@ -6214,7 +6216,7 @@ Differences in the partition setup
 \begin_layout Standard
 The key difference in the way the partitions are arranged compared to the
  case with BIOS is that a small partition of a few hundred MB must be created
- to house some files used when booting the system.
+ to house some of the files used when booting the system.
  This partition must use the fat32 file system.
  Luckily, in all assisted installation options, Calamares handles the creation
  of this partition if it does not already exist and writes the necessary
