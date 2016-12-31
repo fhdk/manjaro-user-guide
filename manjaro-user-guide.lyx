@@ -5372,8 +5372,10 @@ Annuler tous les changements
 \series bold
 Installer le chargeur de démarrage sur
 \series default
- au bas de la fenêtre vous permet de choisir où installer le chargeur de
- démarrage.
+ au bas de la fenêtre vous permet de choisir d'installer ou non un chargeur
+ de démarrage, et le cas échéant de choisir où l'installer.
+ Choisir de ne pas en installer un nouveau peut être utile si vous en avez
+ déjà un d'installé et que vous voulez continuer de l'utiliser.
 \end_layout
 
 \end_inset
