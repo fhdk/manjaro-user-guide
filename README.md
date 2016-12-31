@@ -2,7 +2,7 @@
 
 ## Introduction
 
-La source du Guide d'utilisation de Manjaro Linux pour les débutant-e-s en LaTeX (en utilisant LyX)
+La source du Guide d'utilisation pour les débutants et débutantes de Manjaro Linux en LaTeX (en utilisant LyX)
 
 Le style utilisé est [tufte-book](http://wiki.lyx.org/Layouts/Tufte-book). Il procure une disposition très professionnelle avec un minimum d'effort.
 
