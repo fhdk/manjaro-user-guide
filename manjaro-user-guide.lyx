@@ -500,7 +500,8 @@ Une note à propos de Manjaro et Arch
 \end_layout
 
 \begin_layout Standard
-Manjaro est basé sur une autre distribution nommée Arch Linux.
+Manjaro est une distribution GNU/Linux basée sur une autre distribution
+ nommée Arch Linux.
  De part ce fait, il est possible de puiser des logiciels dans un dépôt
  maintenu par la communauté, connu sous le nom 
 \begin_inset Quotes fld
@@ -522,21 +523,21 @@ Internet Relay Chat
 \end_inset
 
  (IRC) de Manjaro uniquement.
- Par exemple, même si Ubuntu est dérivé de Debian et qu'il a donc des similarité
-s avec son parent, il y a des différences substantielles entre ces deux
- systèmes d'exploitation et dans la manière qu'ils fonctionnent.
+ Par exemple, même si la distribution Ubuntu est dérivée de Debian et qu'elle
+ a donc des similarités avec cette dernière, il y a des différences substantiell
+es entre ces deux systèmes d'exploitation et dans la manière qu'ils fonctionnent.
  C'est la même chose dans le cas de Manjaro, qui est bien plus qu'une simple
  version facile à installer et préconfigurée du système d'exploitation Arch.
  Certaines des principales différences entre Manjaro et Arch sont :
 \end_layout
 
 \begin_layout Itemize
-Manjaro est développé indépendamment de Arch par une équipe complètement
+Manjaro est développée indépendamment de Arch par une équipe complètement
  différente.
 \end_layout
 
 \begin_layout Itemize
-Manjaro est conçu pour être accessible aux personnes débutant avec Linux,
+Manjaro est conçue pour être accessible aux personnes débutant avec Linux,
  alors que Arch vise plutôt les utilisateur-trice-s expérimenté-e-s.
 \end_layout
 
@@ -573,7 +574,7 @@ Manjaro comporte de nombreuses différences subtiles dans la façon dont il
 \end_layout
 
 \begin_layout Standard
-Une dernière fois, même si Manjaro est effectivement dérivé de Arch, il
+Une dernière fois, même si Manjaro est effectivement dérivé de Arch, elle
  n'est pas Arch!
 \end_layout
 
@@ -618,22 +619,22 @@ GNU/Linux
 Arch Linux
 \series default
 .
- À l'intérieur de la communauté Linux, Arch est réputé comme étant une distribut
-ion exceptionnellement rapide, puissante et légère qui donne accès aux versions
- les plus récentes des logiciels.
+ À l'intérieur de la communauté Linux, Arch est réputée comme étant une
+ distribution exceptionnellement rapide, puissante et légère qui donne accès
+ aux versions les plus récentes des logiciels.
  Cependant, Arch vise traditionnellement les utilisateur-trice-s plus expériment
 é-e-s ou avec des connaissances techniques.
- Cela fait en sorte qu'il est généralement considéré comme étant hors de
- portée de plusieurs personnes, surtout celles n'ayant pas l'expertise technique
- (ou la persévérance) nécessaire pour l'utiliser.
+ Cela fait en sorte qu'elle est généralement considéré comme étant hors
+ de portée de plusieurs personnes, surtout celles n'ayant pas l'expertise
+ technique (ou la persévérance) nécessaire pour l'utiliser.
 \end_layout
 
 \begin_layout Standard
-Développé par une équipe répartie aux quatre coins du monde, Manjaro vise
+Développée par une équipe répartie aux quatre coins du monde, Manjaro vise
  à fournir tous les bénéfices d'Arch Linux combinés à une approche concentrée
  sur la facilité d'utilisation et l'accessibilité.
- Disponible en versions 32 et 64 bits, Manjaro est adapté autant aux débutant-e-
-s qu'aux utilisateur-trice-s expérimenté-e-s avec Linux.
+ Disponible en versions 32 et 64 bits, Manjaro est adaptée autant aux débutant-e
+-s qu'aux utilisateur-trice-s expérimenté-e-s avec Linux.
  Pour les débutant-e-s, un installateur facile d'approche est fourni et
  le système lui-même est conçu pour fonctionner sans problème directement
  après installation.
@@ -710,7 +711,7 @@ Arch User Repository
 \end_layout
 
 \begin_layout Itemize
-La versatilité de pouvoir être façonné dans tous ses aspects pour satisfaire
+La versatilité de pouvoir être façonnée dans tous ses aspects pour satisfaire
  les préférences et goûts personnels de la personne l'utilisant
 \end_layout
 
@@ -3007,7 +3008,7 @@ setcounter{figure}{0}
 \begin_layout Standard
 Démarrer sur l'environnement Live, que ce soit sur un CD, un DVD ou une
  clé USB, vous donnera un aperçu de Manjaro et vous permettra de tester
- s'il performe bien sur votre machine.
+ si cette distribution performe bien sur votre machine.
  C'est important à vérifier avant de vous lancer dans l'installation d'un
  nouveau système d'exploitation!
 \end_layout
@@ -3266,8 +3267,8 @@ pilotes
 
 libres
 \series default
- sont ouverts (open-source), comme Manjaro lui-même, et créés et mis à jour
- par une large communauté.
+ sont ouverts (open-source), comme Manjaro elle-même, et créés et mis à
+ jour par une large communauté.
  Pour le matériel plus vieux et celui avec une carte graphique intégrée
  Intel, il s'agit du meilleur choix.
 \end_layout
@@ -4656,7 +4657,7 @@ status open
 Cliquez et maintenez tout en vous déplaçant à gauche ou à droite pour bouger
  la séparation entre les partitions.
  Ceci changera l'espace qui sera libéré pour l'installation de Manjaro.
- Sur l'image, La partition sur laquelle sera installé Manjaro est indiquée
+ Sur l'image, La partition sur laquelle sera installée Manjaro est indiquée
  en rouge.
 \end_layout
 
@@ -4845,7 +4846,7 @@ status open
 Dans la barre représentant l'état actuel du disque, cliquez sur la partition
  sur laquelle vous souhaitez installer Manjaro.
  la barre du bas affichera alors cette partition comme étant remplacée par
- une sur laquelle Manjaro est installé.
+ une sur laquelle Manjaro est installée.
 \end_layout
 
 \end_inset
@@ -6175,7 +6176,7 @@ Une fois que vous aurez démarré le système à partir du CD/DVD ou de la clé
  de menu de sélection pour la langue et l'agencement du clavier.
  Ce n'est cependant pas un problème insurmontable car vous pouvez les régler
  une fois dans l'environnement Live ainsi que dans l'installateur Calamares,
- qui les rendra permanents sur votre système une fois Manjaro installé.
+ qui les rendra permanents sur votre système une fois Manjaro installée.
 \end_layout
 
 \begin_layout Subsection
@@ -6188,7 +6189,7 @@ Si vous souhaitez profiter de l'environnement Live dans votre langue sur
  L'agencement du clavier peut lui être configuré dans Calamares.
  
 \series bold
-Notez que vous n'avez pas besoin de faire ceci pour que Manjaro soit installé
+Notez que vous n'avez pas besoin de faire ceci pour que Manjaro soit installée
  dans votre langue.
  Ces instructions ne sont que pour avoir l'environnement Live, avant installatio
 n, dans votre langue.
@@ -7153,7 +7154,7 @@ Choisissez ensuite le point de montage
 \series default
 .
  Le contenu de la partition sera accessible à partir de ce répertoire une
- fois Manjaro installé.
+ fois Manjaro installée.
 \end_layout
 
 \end_inset
@@ -7334,7 +7335,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Les partitions suivantes sont celles utilisées par Manjaro lui-même.
+Les partitions suivantes sont celles utilisées par Manjaro elle-même.
  Il y a tout un tas de différentes configurations possibles pour ces partitions.
  J'ai ici choisi le cas le plus simple, où je n'ai créé qu'une seule partition
  montée sous le répertoire 
@@ -8648,7 +8649,7 @@ esp
 \series default
  sont cochés.
  Le point de montage indique à partir de quel répertoire la partition sera
- accessible une fois Manjaro installé.
+ accessible une fois Manjaro installée.
 \end_layout
 
 \end_inset
@@ -8967,8 +8968,8 @@ Où est passé Windows?
 \begin_layout Standard
 Parfois, le chargeur de démarrage GRUB2 ne détecte pas une installation
  existante de Microsoft Windows lors de l'installation de Manjaro.
- Cela signifie que seul Manjaro Linux apparaîtra dans la liste des systèmes
- d'exploitation lorsque vous démarrerez votre machine.
+ Cela signifie que Windows n'apparaîtra pas dans la liste des systèmes d'exploit
+ation lorsque vous démarrerez votre machine.
 \end_layout
 
 \begin_layout Standard
@@ -9032,8 +9033,8 @@ Une fois votre nom d'utilisateur-trice et votre mot de passe saisis, vous
  liens utiles vers la documentation, diverses ressources d'aide et de support
  de la communauté Manjaro et différentes façons de vous impliquer dans le
  projet si vous le désirez.
- Manjaro est libre et gratuit; il repose donc sur les contributions de ses
- utilisateur-trice-s ainsi que des développeur-euse-s!
+ Manjaro est un système d'exploitation libre et gratuit et repose donc sur
+ les contributions de ses utilisateur-trice-s ainsi que des développeur-euse-s!
 \end_layout
 
 \begin_layout Standard
@@ -9630,7 +9631,7 @@ Il existe une grande variété de façons d'obtenir de l'aide et du support
 \end_layout
 
 \begin_layout Standard
-N'oubliez pas que Manjaro est maintenu par sa communauté.
+N'oubliez pas que Manjaro est maintenue par sa communauté.
  Sans sa communauté, Manjaro n'existerait pas!
 \end_layout
 
@@ -12085,7 +12086,7 @@ Branches
 \end_layout
 
 \begin_layout Standard
-Une fois Manjaro installé, à moins que vous n'ayez spécifiquement choisi
+Une fois Manjaro installée, à moins que vous n'ayez spécifiquement choisi
  une version de développement, vous vous retrouverez à utiliser la branche
  stable.
  Cette branche contient les paquets les plus testés et est la branche la
