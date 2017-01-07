@@ -3230,6 +3230,9 @@ propriétaires
 .
  Les différences entre les deux ne sont pas petites et votre choix peut
  dépendre du matériel que vous utilisez.
+ Ces pilotes gèrent notamment l'affichage à l'écran.
+ Le pilote approprié à votre carte graphique dans chacune de ces deux catégories
+ sera sélectionné.
  
 \begin_inset Flex Marginnote
 status open
@@ -7154,6 +7157,7 @@ Choisissez ensuite le point de montage
 .
  Le contenu de la partition sera accessible à partir de ce répertoire une
  fois Manjaro installée.
+ Attention de ne pas vous mélanger avec le point de montage /boot!
 \end_layout
 
 \end_inset
