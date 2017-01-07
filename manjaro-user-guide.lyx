@@ -3032,6 +3032,9 @@ There are two main sets of drivers that can be used by Manjaro:
 .
  The differences are not minor, and your choice can depend on your computer
  hardware.
+ Some of the drivers are used for display.
+ The one associated with your graphics card will be selected in both of
+ these categories.
 \begin_inset Flex Marginnote
 status open
 
@@ -6765,6 +6768,7 @@ Next, choose
  as the mount point.
  The contents of the partition will be accessible from this directory once
  Manjaro is installed.
+ Be careful not to accidentally choose /boot!
 \end_layout
 
 \end_inset
