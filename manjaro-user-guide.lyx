@@ -3312,6 +3312,30 @@ libres
 \end_layout
 
 \begin_layout Standard
+Pour démarrer Manjaro avec les pilotes 
+\series bold
+libres
+\series default
+, choisissez 
+\series bold
+Démarrer Manjaro Linux
+\series default
+ dans le menu de démarrage.
+\end_layout
+
+\begin_layout Standard
+Pour démarrer Manjaro avec les pilotes 
+\series bold
+propriétaires
+\series default
+, choisissez 
+\series bold
+Démarrer (avec des pilotes propriétaires)
+\series default
+ dans le menu de démarrage.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float marginfigure
 wide false
 sideways false
@@ -3342,30 +3366,6 @@ Démarrer Manjaro Linux
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Pour démarrer Manjaro avec les pilotes 
-\series bold
-libres
-\series default
-, choisissez 
-\series bold
-Démarrer Manjaro Linux
-\series default
- dans le menu de démarrage.
-\end_layout
-
-\begin_layout Standard
-Pour démarrer Manjaro avec les pilotes 
-\series bold
-propriétaires
-\series default
-, choisissez 
-\series bold
-Démarrer (avec des pilotes propriétaires)
-\series default
- dans le menu de démarrage.
 \end_layout
 
 \begin_layout Section
