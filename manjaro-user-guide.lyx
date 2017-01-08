@@ -2701,6 +2701,22 @@ My USB drive is at /dev/sdc so I would use:
 \end_inset
 
 sudo dd if=manjaro-xfce-16.10-stable-x86_64.iso of=/dev/sdc bs=4M
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family default
+To view how the writing process progresses, use the option 
+\family typewriter
+status=progress:
+\begin_inset Newline newline
+\end_inset
+
+sudo dd if=manjaro-xfce-16.10-stable-x86_64.iso of=/dev/sdc bs=4M status=progress
 \end_layout
 
 \begin_layout Enumerate
