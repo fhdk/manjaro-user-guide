@@ -2789,13 +2789,29 @@ sudo dd if=manjaro-xfce-16.10-stable-x86_64.iso of=/dev/(Identifiant trouvé
 
 
 \family default
-Ma clé USB est montée sous /dev/sdc, alors j'utiliserais:
+Ma clé USB est montée sous /dev/sdc, alors j'utiliserais :
 \family typewriter
 
 \begin_inset Newline newline
 \end_inset
 
 sudo dd if=manjaro-xfce-16.10-stable-x86_64.iso of=/dev/sdc bs=4M
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family default
+Pour voir la progression de l'écriture, vous pouvez utiliser l'option 
+\family typewriter
+status=progress :
+\begin_inset Newline newline
+\end_inset
+
+sudo dd if=manjaro-xfce-16.10-stable-x86_64.iso of=/dev/sdc bs=4M status=progress
 \end_layout
 
 \begin_layout Enumerate
@@ -9740,6 +9756,8 @@ Le forum de discussion de Manjaro est un bon endroit pour en apprendre davantage
  sur le projet.
  Vous pouvez vous y connecter en tout temps, y poser des questions ou répondre
  à celles d'autres personnes, puis y revenir plus tard.
+ Si l'anglais n'est pas votre point fort, une section en français est aussi
+ disponible.
 \end_layout
 
 \end_inset
@@ -9750,6 +9768,22 @@ Le forum de discussion de Manjaro est un bon endroit pour en apprendre davantage
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Un autre forum, entièrement en français mais non officiel, est aussi disponible
+ à l'adresse 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.manjaro.fr/forum/index.php
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
