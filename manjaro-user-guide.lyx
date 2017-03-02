@@ -5067,8 +5067,7 @@ Install boot loader on
 
 \begin_layout Standard
 In this case a swap partition was already created.
- This partition will be used if you ever run out of RAM to complete operations
- or when the computer is put in hibernation.
+ This partition will be used if you ever run out of RAM to complete operations.
  If you want or have to create a new one, create a partition as was done
  for the other ones and choose 
 \series bold
@@ -5868,16 +5867,6 @@ Manjaro Settings Manager
 \series default
 .
  It can be found in the applications menu.
- An administrator password is required to launch it.
- On the Live CD, the password is 
-\begin_inset Quotes eld
-\end_inset
-
-manjaro
-\begin_inset Quotes erd
-\end_inset
-
-.
 \end_layout
 
 \end_inset
@@ -6081,6 +6070,16 @@ Finally,
 Apply
 \series default
  these changes.
+ You will be prompted for an administrator password.
+ On the Live CD, the password is 
+\begin_inset Quotes eld
+\end_inset
+
+manjaro
+\begin_inset Quotes erd
+\end_inset
+
+.
  You can now close the window.
 \end_layout
 
@@ -6874,8 +6873,7 @@ status open
 
 \begin_layout Plain Layout
 The next partition we will create is the swap.
- This partition will be used if you ever run out of RAM to complete operations
- or when the computer is put in hibernation.
+ This partition will be used if you ever run out of RAM to complete operations.
  The suggested size for this partition is a few GB.
  Here I chose 4 GB.
  Choose 
@@ -7312,8 +7310,7 @@ status open
 \begin_layout Plain Layout
 Next, select the rest of the empty space and create a new partition.
  This one will be the swap.
- This partition will be used if you ever run out of RAM to complete operations
- or when the computer is put in hibernation.
+ This partition will be used if you ever run out of RAM to complete operations.
  It is recommended to choose a size of a few GB.
  It is necessary to use the 
 \series bold
@@ -8382,7 +8379,7 @@ status open
 
 \begin_layout Plain Layout
 We will now create a swap partition, which is used if your computer runs
- out of RAM or when it is put in hibernation.
+ out of RAM.
  It is generally a few GB large and uses the 
 \series bold
 linuxswap
