@@ -375,6 +375,14 @@ de
 Kroon Community
 \end_layout
 
+\begin_layout Description
+Hugo
+\begin_inset space ~
+\end_inset
+
+Posnic Developer
+\end_layout
+
 \begin_layout Subsection*
 Artwork
 \end_layout
@@ -409,7 +417,7 @@ Manuel
 \begin_inset space ~
 \end_inset
 
-Barrette Editor of the User Guide 16.08-16.10
+Barrette Editor of the User Guide 16.08-16.10, 17.0
 \end_layout
 
 \begin_layout Subsection*
@@ -1786,7 +1794,7 @@ manjaro-kde-17.0-stable-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.7 GB
+2.0 GB
 \end_layout
 
 \end_inset
@@ -1824,7 +1832,7 @@ manjaro-kde-17.0-stable-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.9 GB
+2.1 GB
 \end_layout
 
 \end_inset
@@ -1862,7 +1870,7 @@ manjaro-xfce-17.0-stable-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.3 GB
+1.4 GB
 \end_layout
 
 \end_inset
@@ -4863,7 +4871,7 @@ status open
 \begin_inset Graphics
 	filename images/calamares-manual/man_part_resize.png
 	lyxscale 50
-	width 100col%
+	width 50col%
 
 \end_inset
 
@@ -5309,6 +5317,13 @@ ing it will select it and offer options as to what to do with it.
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -8574,9 +8589,9 @@ Congratulations on installing Manjaro Linux!
 
 \begin_layout Standard
 Once you have logged in you will be presented with the Manjaro desktop.
- The Welcome Screen will load automatically and this gives you some useful
- links to documentation, ways to get help and support from the Manjaro community
-, and some ways you can get involved with the project.
+ The Manjaro Hello welcome screen will load automatically and this gives
+ you some useful links to documentation, ways to get help and support from
+ the Manjaro community, and some ways you can get involved with the project.
  Remember that Manjaro is free and open-source software: it relies on contributi
 ons from its user and developer community!
 \end_layout
@@ -8602,7 +8617,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The Manjaro Xfce Desktop with Welcome Screen.
+The Manjaro Xfce Desktop with Manjaro Hello.
 \end_layout
 
 \end_inset
@@ -8617,24 +8632,24 @@ The Manjaro Xfce Desktop with Welcome Screen.
 
 \begin_layout Standard
 If you don't want the welcome screen to load each time you log in, just
- untick the box
+ set the
 \series bold
- Show this dialog on startup
+ Launch at start
 \series default
-.
+ option off at the bottom right of the window.
  Don't worry: you can always find it again in the applications menu.
 \end_layout
 
 \begin_layout Standard
 The applications menu is the easiest way of starting the software programs
  that are installed on your Manjaro system.
- The icon for this is in the bottom left corner of the screen.
+ The icon for this is at the bottom left corner of the screen.
  Go ahead and click on it now!
 \begin_inset Flex Marginnote
 status open
 
 \begin_layout Plain Layout
-You can also press the
+You can also press the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -8642,7 +8657,7 @@ Windows
 \begin_inset Quotes erd
 \end_inset
 
- or
+ or 
 \begin_inset Quotes eld
 \end_inset
 
@@ -9217,7 +9232,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The welcome screen has links to some excellent resources.
+The Manjaro Hello screen has links to some excellent resources.
  It's well worth taking the time to have a look at each of them.
 \end_layout
 
