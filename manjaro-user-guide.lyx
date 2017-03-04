@@ -10876,8 +10876,8 @@ The packages to be installed are listed so you can check if this is what
 \series bold
  Yes
 \series default
-, type in your password when prompted and the software will be downloaded
- and installed.
+, type in the root (administrator) password when prompted and the software
+ will be downloaded and installed.
 \end_layout
 
 \end_inset
@@ -10913,40 +10913,7 @@ status open
 \begin_layout Plain Layout
 Octopi will show a confirmation that it installed the new software.
  You can close Octopi now if you want.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/welcome-to-manjaro/octopi_app_menu_installed.png
-	lyxscale 50
-	width 95col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-The new software is available in the application menu ready for you to use.
+ The new software is now ready to use!
 \end_layout
 
 \end_inset
