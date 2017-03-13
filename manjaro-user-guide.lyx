@@ -377,6 +377,14 @@ de
 Kroon Communauté
 \end_layout
 
+\begin_layout Description
+Hugo
+\begin_inset space ~
+\end_inset
+
+Posnic Développeur
+\end_layout
+
 \begin_layout Subsection*
 Art
 \end_layout
@@ -5414,7 +5422,7 @@ Installer le chargeur de démarrage sur
 \begin_layout Standard
 Dans le cas présenté ici, une partition swap avait déjà été créée.
  Cette partition est utilisée si vous manquez de mémoire vive pour compléter
- les opérations en cours ou si l'ordinateur est mis en veille.
+ les opérations en cours.
  Si vous voulez ou devez en créer une nouvelle, créez une partition de la
  même manière que vous avez procédé pour les autres et choisissez le système
  de fichiers 
@@ -7267,7 +7275,7 @@ status open
 \begin_layout Plain Layout
 La prochaine partition que nous allons créer est la partition swap.
  Cette partition est utilisée si vous manquez de mémoire vive pour compléter
- les opérations en cours ou si l'ordinateur est mis en veille.
+ les opérations en cours.
  La taille suggérée pour cette partition est de quelques Go.
  J'ai ici choisi 4 Go.
  Choisissez le système de fichiers 
@@ -7713,7 +7721,7 @@ Sélectionnez ensuite le reste de l'espace non alloué et créez une nouvelle
  partition.
  Celle-ci sera la swap.
  Cette partition est utilisée si vous manquez de mémoire vive pour compléter
- les opérations en cours ou si l'ordinateur est mis en veille.
+ les opérations en cours.
  Il est recommandé de choisir une taille de quelques Go.
  Il est nécessaire de choisir le système de fichiers 
 \series bold
@@ -8842,7 +8850,7 @@ status open
 \begin_layout Plain Layout
 Nous allons maintenant créer une partition swap, qui est utilisée lorsque
  votre ordinateur manque de mémoire vive pour effectuer les opérations en
- cours ou s'il est mis en veille.
+ cours.
  Elle a généralement une taille de quelques Go et utilise le système de
  fichiers 
 \series bold
