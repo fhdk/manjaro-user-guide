@@ -1385,18 +1385,17 @@ Pour vérifier l'intégrité de l'image disque, vous devez télécharger le fich
  Il devrait être disponible au même endroit que le fichier de l'image disque.
  Par exemple, le fichier 
 \series bold
-manjaro-xfce-minimal-16.10-dev-unstable-x86_64.iso.sha1
+manjaro-xfce-17.0-stable-x86_64.iso.sha1
 \series default
  contient la valeur de hachage pour le fichier de l'image disque 
 \series bold
-manjaro-xfce-minimal-16.10-dev-unstable-x86_64.iso
+manjaro-xfce-17.0-stable-x86_64.iso
 \series default
 , dans une forme similaire à
 \end_layout
 
 \begin_layout LyX-Code
-47404952b31ee8d1e8f5922928d0d82152f8bc5c  manjaro-xfce-minimal-16.10-dev-unstable
--x86_64.iso
+360d69fe4fac31ee91fb1e7d7ad4c03321e1ebf1  manjaro-xfce-17.0-stable-x86_64.iso
 \end_layout
 
 \begin_layout Section
@@ -1475,7 +1474,7 @@ Si la valeur de hachage générée à partir du fichier de l'image disque concor
 À partir de maintenant, dans les exemples, nous supposerons que vous utilisez
  le fichier de contrôle de somme 
 \series bold
-manjaro-xfce-16.10-stable-x86_64.iso.sha1
+manjaro-xfce-17.0-stable-x86_64.iso.sha1
 \series default
 .
 \end_layout
@@ -1518,7 +1517,7 @@ jonathon@box:~/download$ ls
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-xfce-16.10-stable-x86_64.iso.sha1  manjaro-xfce-16.10-stable-x86_64.iso
+manjaro-xfce-17.0-stable-x86_64.iso.sha1  manjaro-xfce-17.0-stable-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1533,7 +1532,7 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-jonathon@box:~/download$ sha1sum -c manjaro-xfce-16.10-stable-x86_64.iso.sha1
+jonathon@box:~/download$ sha1sum -c manjaro-xfce-17.0-stable-x86_64.iso.sha1
 \end_layout
 
 \begin_layout Standard
@@ -1548,7 +1547,7 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-xfce-16.10-stable-x86_64.iso: Réussi
+manjaro-xfce-17.0-stable-x86_64.iso: Réussi
 \end_layout
 
 \begin_layout Standard
@@ -1564,7 +1563,7 @@ Vérification manuelle
 Pour vérifier manuellement l'intégrité du fichier téléchargé, ouvrez premièremen
 t le fichier de somme de contrôle 
 \series bold
-manjaro-xfce-16.10-stable-x86_64.iso.sha1
+manjaro-xfce-17.0-stable-x86_64.iso.sha1
 \series default
  avec un éditeur de texte tel que Gedit.
  Une fois ce fichier ouvert et la valeur de hachage visible, ouvrez un terminal
@@ -1592,7 +1591,7 @@ Vous pouvez par la suite générer une valeur de hachage SHA-1 pour l'image
 \begin_layout LyX-Code
 jonathon@box:~/download$
 \family typewriter
- sha1sum manjaro-xfce-16.10-stable-x86_64.iso
+ sha1sum manjaro-xfce-17.0-stable-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1652,7 +1651,6 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/windows-checksum.png
-	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -1708,7 +1706,7 @@ Afin d'accélérer le processus, désélectionner les types de hachage que vous
 
  Pour vérifier si les valeurs de hachage concordent, ouvrez le fichier 
 \series bold
-manjaro-xfce-16.10-stable-x86_64.iso.sha1
+manjaro-xfce-17.0-stable-x86_64.iso.sha1
 \series default
  dans un éditeur de texte tel que Notepad, copiez la valeur de hachage qu'il
  contient pour l'image disque que vous avez téléchargée, collez-la dans
@@ -1871,7 +1869,7 @@ KDE
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-16.10-stable-i686.iso
+manjaro-kde-17.0-stable-i686.iso
 \end_layout
 
 \end_inset
@@ -1880,7 +1878,7 @@ manjaro-kde-16.10-stable-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.7 Go
+2,0 Go
 \end_layout
 
 \end_inset
@@ -1909,7 +1907,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-16.10-stable-x86_64.iso
+manjaro-kde-17.0-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1918,7 +1916,7 @@ manjaro-kde-16.10-stable-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.9 Go
+2,1 Go
 \end_layout
 
 \end_inset
@@ -1947,7 +1945,7 @@ Xfce
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-16.10-stable-i686.iso
+manjaro-xfce-17.0-stable-i686.iso
 \end_layout
 
 \end_inset
@@ -1956,7 +1954,7 @@ manjaro-xfce-16.10-stable-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.3 Go
+1,4 Go
 \end_layout
 
 \end_inset
@@ -1985,7 +1983,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-16.10-stable-x86_64.iso
+manjaro-xfce-17.0-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1994,7 +1992,7 @@ manjaro-xfce-16.10-stable-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.5 Go
+1,5 Go
 \end_layout
 
 \end_inset
@@ -2023,7 +2021,7 @@ Net
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-net-16.10-stable-i686.iso
+manjaro-net-17.0-stable-i686.iso
 \end_layout
 
 \end_inset
@@ -2061,7 +2059,7 @@ CD
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-net-16.10-stable-x86_64.iso
+manjaro-net-17.0-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -2369,7 +2367,6 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/windows-disc-image-burner.png
-	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -2786,7 +2783,7 @@ Vérifiez l'identifiant du périphérique avec :
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-16.10-stable-x86_64.iso of=/dev/(Identifiant trouvé
+sudo dd if=manjaro-xfce-17.0-stable-x86_64.iso of=/dev/(Identifiant trouvé
  plus haut) bs=4M
 \begin_inset Newline newline
 \end_inset
@@ -2803,7 +2800,7 @@ Ma clé USB est montée sous /dev/sdc, alors j'utiliserais :
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-16.10-stable-x86_64.iso of=/dev/sdc bs=4M
+sudo dd if=manjaro-xfce-17.0-stable-x86_64.iso of=/dev/sdc bs=4M
 \begin_inset Newline newline
 \end_inset
 
@@ -2819,7 +2816,7 @@ status=progress :
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-16.10-stable-x86_64.iso of=/dev/sdc bs=4M status=progress
+sudo dd if=manjaro-xfce-17.0-stable-x86_64.iso of=/dev/sdc bs=4M status=progress
 \end_layout
 
 \begin_layout Enumerate
