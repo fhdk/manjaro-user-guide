@@ -3434,8 +3434,16 @@ Bienvenue dans Manjaro!
 \end_layout
 
 \begin_layout Standard
-La fenêtre de bienvenue procure des liens vers de la documentation, des
- canaux de support et le programme d'installation.
+La fenêtre de bienvenue 
+\begin_inset Quotes fld
+\end_inset
+
+Manjaro Hello
+\begin_inset Quotes frd
+\end_inset
+
+ procure des liens vers de la documentation, des canaux de support et le
+ programme d'installation.
  Si vous fermez la fenêtre de bienvenue par mégarde, pas de soucis : vous
  pouvez la faire apparaître à nouveau à partir du menu des applications,
  et tous les liens sont aussi présents ailleurs dans des menus.
@@ -6291,9 +6299,9 @@ status open
 \begin_layout Plain Layout
 Une fois le gestionnaire de paramètres de Manjaro ouvert, cliquez sur 
 \series bold
-Language
+Locale Settings
 \series default
- (Langue).
+ (Paramètres de la langue).
 \end_layout
 
 \end_inset
@@ -6459,6 +6467,16 @@ Finalement, cliquez sur
 Apply
 \series default
  (Appliquer) pour appliquer les changements.
+ Le mot de passe administrateur vous sera demandé.
+ Sur la version Live, il s'agit de 
+\begin_inset Quotes fld
+\end_inset
+
+manjaro
+\begin_inset Quotes frd
+\end_inset
+
+.
  Vous pouvez ensuite fermer la fenêtre.
 \end_layout
 
