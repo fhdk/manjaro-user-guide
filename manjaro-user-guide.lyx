@@ -856,9 +856,9 @@ https://manjaro.org/get-manjaro/
 
 \end_inset
 
-Deux des trois éditions officielles comprennent un environnement de bureau
- préinstallé et une sélection de plusieurs applications populaires.
- Toutes deux sont un très bon choix pour quiconque souhaite essayer Manjaro
+Les trois éditions officielles comprennent un environnement de bureau préinstall
+é et une sélection de plusieurs applications populaires.
+ Elles sont toutes un très bon choix pour quiconque souhaite essayer Manjaro
  à partir d'un 
 \begin_inset Quotes fld
 \end_inset
@@ -891,8 +891,8 @@ Live CD
 \end_inset
 
  sans avoir à l'installer en premier lieu.
- Si le temps vous le permet, cela vaut la peine de les essayer toutes les
- deux afin de voir laquelle vous préférez!
+ Si le temps vous le permet, cela vaut la peine de toutes les essayer afin
+ de voir laquelle vous préférez!
 \end_layout
 
 \begin_layout Description
@@ -930,14 +930,15 @@ K Desktop Environment
 \end_layout
 
 \begin_layout Description
-Net Cette édition de Manjaro ne procurent que l'installation de base, ne
- comprenant que les logiciels les plus basiques.
- N'utilisant au départ que la ligne de commande, cette édition vise les
- utilisateurs et utilisatrices possédant des connaissances plus avancées
- qui souhaitent bâtir leur propre système Manjaro à partir du strict minimum.
- Les fichiers d'image disque de l'édition Net commencent par
+GNOME Cette édition de Manjaro inclut le bureau GNOME.
+ Celui-ci fait partie du projet GNU et offre un bureau non conventionnel
+ visant à être le plus intuitif possible, afin d'améliorer la productivité.
+ Il vient avec un ensemble très complet d'applications qui s'intègrent bien
+ à l'esthétique générale du bureau afin de combler les besoins courants
+ des personnes qui l'utilisent.
+ Les fichiers d'image disque de l'édition GNOME commencent par
 \series bold
- manjaro-net
+ manjaro-gnome
 \series default
 .
 \end_layout
@@ -1043,7 +1044,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/editions/net.png
+	filename images/editions/gnome.png
 	lyxscale 33
 	width 50text%
 
@@ -1069,7 +1070,7 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-Édition Net
+Édition GNOME
 \end_layout
 
 \end_inset
@@ -1102,17 +1103,29 @@ En plus des trois éditions principales de Manjaro existent d'autres éditions
 \end_layout
 
 \begin_layout Standard
-Le nom de chaque édition indique quel environnement de bureau est préinstallé
- sur celle-ci.
- À moins que vous n'ayez une forte préférence pour un autre environnement
- de bureau, nous suggérons que vous restiez avec la version Xfce.
+Le nom de chaque édition indique quel environnement de bureau (ou gestionnaire
+ de fenêtres) est préinstallé sur celle-ci.
+ À moins que vous n'ayez une préférence pour un autre environnement de bureau,
+ nous suggérons que vous restiez avec la version Xfce.
  Ce choix n'est pas définitif, car vous pouvez tout aussi bien changer plus
  tard ou installer d'autres environnements de bureau!
 \end_layout
 
 \begin_layout Standard
 Un grand choix d'éditions communautaires vous est offert, incluant : Cinnamon,
- GNOME, MATE, Netbook, Deepin, Openbox OpenRC et PekWM.
+ Lxqt, i3, Deepin, Budgie, MATE, Enlightenment, JWM et plusieurs autres!
+ La liste complète est disponible à l'adresse 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://sourceforge.net/projects/manjarolinux-community/files/
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
