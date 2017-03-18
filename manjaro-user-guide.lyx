@@ -9071,10 +9071,17 @@ Félicitations, vous avez installé Manjaro Linux!
 \begin_layout Standard
 Une fois votre nom d'utilisateur ou d'utilisatrice et votre mot de passe
  saisis, vous arriverez sur le bureau de Manjaro.
- La fenêtre de bienvenue s'affichera automatiquement pour vous offrir des
- liens utiles vers la documentation, diverses ressources d'aide et de support
- de la communauté Manjaro et différentes façons de vous impliquer dans le
- projet si vous le désirez.
+ La fenêtre de bienvenue 
+\begin_inset Quotes fld
+\end_inset
+
+Manjaro Hello
+\begin_inset Quotes frd
+\end_inset
+
+ s'affichera automatiquement pour vous offrir des liens utiles vers la documenta
+tion, diverses ressources d'aide et de support de la communauté Manjaro
+ et différentes façons de vous impliquer dans le projet si vous le désirez.
  Manjaro est un système d'exploitation libre et gratuit et repose donc sur
  les contributions de sa communauté ainsi que des développeurs et développeuses!
 \end_layout
@@ -9100,7 +9107,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Le bureau Xfce de Manjaro avec la fenêtre de bienvenue.
+Le bureau Xfce de Manjaro avec la fenêtre Manjaro Hello.
 \end_layout
 
 \end_inset
@@ -9115,11 +9122,11 @@ Le bureau Xfce de Manjaro avec la fenêtre de bienvenue.
 
 \begin_layout Standard
 Si vous ne souhaitez pas que la fenêtre de bienvenue s'affiche à chaque
- début de session, vous n'avez qu'à décocher la case 
+ début de session, vous n'avez qu'à désactiver l'option 
 \series bold
-Show this dialog on startup
+Lancer au démarrage
 \series default
- (Afficher cette fenêtre au démarrage).
+ en bas à droite de la fenêtre.
  Ne vous inquiétez pas, en cas de besoin vous pouvez toujours la retrouver
  dans le menu des applications.
 \end_layout
