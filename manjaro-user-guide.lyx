@@ -10249,8 +10249,16 @@ Manjaro a un excellent support pour les imprimantes.
 \end_layout
 
 \begin_layout Standard
-Si vous avez installé une édition Net, il se peut que vous deviez d'abord
- installer le support pour d'impression :
+Vous devrez d'abord installer le support pour d'impression.
+ Installez le paquet 
+\begin_inset Quotes fld
+\end_inset
+
+manjaro-printer
+\begin_inset Quotes frd
+\end_inset
+
+ avec Pamac ou Octopi (voir section suivante), ou encore par ligne de commande:
 \end_layout
 
 \begin_layout Quote
@@ -11463,8 +11471,8 @@ Les paquets à installer sont ensuite listés pour que vous puissiez vérifier
 \series bold
 Yes
 \series default
- (Oui), entrez votre mot de passe lorsque demandé et les logiciels seront
- téléchargés et installés.
+ (Oui), entrez le mot de passe administrateur lorsque demandé et les logiciels
+ seront téléchargés et installés.
 \end_layout
 
 \end_inset
@@ -12069,7 +12077,7 @@ Dans Pamac, cliquez sur le menu en forme de pile de crêpes en haut à droite
 Préférences
 \series default
 .
- Votre mot de passe administrateur vous sera demandé.
+ Votre mot de passe vous sera demandé.
 \end_layout
 
 \end_inset
