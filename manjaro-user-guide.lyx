@@ -8729,6 +8729,266 @@ in a terminal after booting into Manjaro and it will detect Windows and
  add an entry to the boot menu.
 \end_layout
 
+\begin_layout Chapter
+Encrypting your partitions
+\end_layout
+
+\begin_layout Standard
+In order to prevent others from accessing the data stored on your drive,
+ you may want to encrypt your partitions.
+ LUKS (
+\emph on
+Linux Unified Key Setup
+\emph default
+) is a tool developped to that end.
+ Luckily, the Calamares installer has built-in support for LUKS, which makes
+ encrypting your system a breeze! To access the data stored on the drive,
+ a passphrase of your choosing will have to be given.
+ Anyone who does not know it will be unable to access the data.
+ The process of encrypting your system is very similar on both BIOS and
+ UEFI systems.
+ A BIOS system is used below as an example.
+\end_layout
+
+\begin_layout Section
+Assisted installation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encryption/encryption.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In all assisted installation options (
+\emph on
+Install alongside
+\emph default
+, 
+\emph on
+Replace a partition
+\emph default
+ and 
+\emph on
+Erase disk
+\emph default
+), a checkbox above the two status bars enables you to automatically encrypt
+ your system during the installation.
+ Tick it to enable encryption.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encryption/encryption_passphrase.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+You will then be asked for the passphrase you want to use.
+ You will be prompted for this passphrase every time you boot your computer,
+ before reaching the GRUB menu.
+ Be sure to choose something you will remember!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encryption/summary_encryption.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The rest of the installation is the same as in all the other cases.
+ The summary at the end confirms that your new installation will use LUKS
+ encryption!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encryption/encryption_boot.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+When booting, a prompt will appear asking for your passphrase.
+ Characters won't show up when typed, so don't be surprised! If the correct
+ passphrase is entered, you will be redirected to the GRUB menu.
+ Otherwise, you will be unable to access your system.
+ You are given a single try every time you boot up your computer.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Manual installation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encryption/encryption_manual.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In the manual installation option, encryption can be set up when creating
+ a partition.
+ A checkbox will offer it to you, just below the File System menu.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/encryption/encryption_passphrase_manual.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+When ticking the box, you will be asked to enter a passphrase.
+ You will be prompted for it everytime you boot up your computer, much like
+ in the assisted installation options.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Welcome to Manjaro
 \end_layout
