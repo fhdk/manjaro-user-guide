@@ -6224,6 +6224,175 @@ Une fois que vous aurez démarré le système à partir du CD/DVD ou de la clé
 \end_layout
 
 \begin_layout Subsection
+Changer la disposition du clavier
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/xfce_settings.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+La disposition du clavier peut être changée à partir de l'installateur Calamares..
+ Vous pouvez cependant aussi la changer dans les 
+\series bold
+paramètres du bureau Xfce
+\series default
+ (Xfce settings).
+ Ceux-ci peuvent être accédés à partir du menu des applications.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/calamares-uefi/keyboard.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dans la fenêtre qui apparaît, cliquez sur les paramètres du 
+\series bold
+Clavier
+\series default
+ (Keyboard).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/calamares-uefi/keyboard_edit.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Une fois là, rendez-vous dans l'onglet 
+\series bold
+Disposition
+\series default
+ (Layout), sélectionnez la langue 
+\series bold
+Anglais (US)
+\series default
+ (English (US)) et cliquez sur 
+\series bold
+Modifier
+\series default
+ (Edit).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/calamares-uefi/keyboard_choose.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Trouvez ensuite votre langue dans la liste, sélectionnez-la et cliquez sur
+ le bouton 
+\series bold
+Valider
+\series default
+ (OK).
+ Une fois cela fait, vous pouvez alors fermer la fenêtre.
+ La disposition de votre clavier a été changée avec succès!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Changer la langue de l'environnement Live
 \end_layout
 
