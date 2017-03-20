@@ -9212,6 +9212,268 @@ dans un terminal après avoir démarré Manjaro.
  de démarrage.
 \end_layout
 
+\begin_layout Chapter
+Chiffrer vos partitions
+\end_layout
+
+\begin_layout Standard
+Afin d'empêcher les autres d'accéder aux données inscrites sur votre disque
+ dur, il peut être utile de chiffrer vos partitions.
+ Un outil développé à cette fin, LUKS (
+\emph on
+Linux Unified Key Setup
+\emph default
+), est inclus dans l'installateur Calamares afin de faciliter la création
+ d'installations chiffrées.
+ Toute personne tentant d'accéder aux données stockées sur le disque devra
+ fournir une phrase de passe de votre choix.
+ Si la personne ne connait pas la phrase de passe, elle ne pourra pas accéder
+ aux données.
+ Le processus de chiffrement est très semblable peu importe que vous utilisiez
+ un système avec BIOS ou UEFI.
+ L'exemple qui suit utilise un système avec BIOS.
+\end_layout
+
+\begin_layout Section
+Installation assistée
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/encryption/encryption.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dans toutes les options d'installation assistée (
+\emph on
+Installer à côté
+\emph default
+, 
+\emph on
+Remplacer une partition
+\emph default
+ et 
+\emph on
+Effacer le disque
+\emph default
+), une case est présente au-dessus des deux barres d'état du disque.
+ La cocher vous permettra de chiffrer votre système.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/encryption/encryption_passphrase.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+On vous demandera ensuite la phrase de passe que vous désirez utiliser.
+ Elle vous sera demandée à chaque démarrage de votre ordinateur avant d'atteindr
+e le menu GRUB.
+ Assurez-vous de choisir une phrase dont vous vous souviendrez!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/encryption/summary_encryption.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Le reste du processus d'installation est le même que dans tous les autres
+ cas.
+ Le résumé présenté à la fin vous confirmera que votre nouvelle installation
+ utilisera le chiffrement par LUKS! Tout cela se fera automatiquement.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/encryption/encryption_boot.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Au démarrage, vous vous ferez demander votre phrase de passe.
+ Les caractères ne s'afficheront pas à l'écran lorsque vous tapperez, alors
+ ne vous surprenez pas! Si la phrase de passe correcte est saisie, vous
+ serez redirigé-e vers le menu GRUB.
+ Sinon, vous ne pourrez pas accéder à votre système.
+ Vous n'avez qu'un seul essai à chaque démarrage de votre ordinateur.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Installation manuelle
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/encryption/encryption_manual.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pour ce qui est de l'option d'installation manuelle, le chiffrement peut
+ être mis en place lorsque vous créez une partition.
+ Une case située sous le menu Système de fichiers vous l'offrira.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/encryption/encryption_passphrase_manual.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+En cochant la case, on vous demandera de choisir une phrase de passe.
+ Elle vous sera demandée à chaque démarrage de votre ordinateur, comme dans
+ le cas de l'installation assistée.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Bienvenue dans Manjaro
 \end_layout
@@ -9254,13 +9516,9 @@ Félicitations, vous avez installé Manjaro Linux!
 Une fois votre nom d'utilisateur ou d'utilisatrice et votre mot de passe
  saisis, vous arriverez sur le bureau de Manjaro.
  La fenêtre de bienvenue 
-\begin_inset Quotes fld
-\end_inset
-
+\emph on
 Manjaro Hello
-\begin_inset Quotes frd
-\end_inset
-
+\emph default
  s'affichera automatiquement pour vous offrir des liens utiles vers la documenta
 tion, diverses ressources d'aide et de support de la communauté Manjaro
  et différentes façons de vous impliquer dans le projet si vous le désirez.
