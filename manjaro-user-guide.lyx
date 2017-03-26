@@ -1189,11 +1189,11 @@ https://manjaro.org/get-manjaro/
 \begin_inset Newline newline
 \end_inset
 
-D'autres versions stables à partir de la version 16.06.1 peuvent également
- être téléchargées à partir de la 
+D'autres versions stables plus anciennes peuvent également être téléchargées
+ sur 
 \begin_inset CommandInset href
 LatexCommand href
-name "section \"Stable Release\" du site Sourceforge"
+name "Sourceforge"
 target "https://sourceforge.net/projects/manjarolinux/files/release/"
 
 \end_inset
@@ -6248,7 +6248,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-La disposition du clavier peut être changée à partir de l'installateur Calamares..
+La disposition du clavier peut être changée à partir de l'installateur Calamares.
  Vous pouvez cependant aussi la changer dans les 
 \series bold
 paramètres du bureau Xfce
@@ -9350,7 +9350,8 @@ status open
 Le reste du processus d'installation est le même que dans tous les autres
  cas.
  Le résumé présenté à la fin vous confirmera que votre nouvelle installation
- utilisera le chiffrement par LUKS! Tout cela se fera automatiquement.
+ utilisera le chiffrement par LUKS! Toute la configuration se fera automatiqueme
+nt.
 \end_layout
 
 \end_inset
@@ -9420,7 +9421,7 @@ status open
 \begin_inset Graphics
 	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/encryption/encryption_manual.png
 	lyxscale 50
-	width 100col%
+	width 50col%
 
 \end_inset
 
@@ -9433,7 +9434,11 @@ status open
 \begin_layout Plain Layout
 Pour ce qui est de l'option d'installation manuelle, le chiffrement peut
  être mis en place lorsque vous créez une partition.
- Une case située sous le menu Système de fichiers vous l'offrira.
+ Une case située sous le menu 
+\emph on
+Système de fichiers
+\emph default
+ vous l'offrira.
 \end_layout
 
 \end_inset
@@ -9456,7 +9461,7 @@ status open
 \begin_inset Graphics
 	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/encryption/encryption_passphrase_manual.png
 	lyxscale 50
-	width 100col%
+	width 50col%
 
 \end_inset
 
@@ -10693,12 +10698,14 @@ setcounter{figure}{0}
 
 \begin_layout Standard
 Manjaro a un excellent support pour les imprimantes.
- La plupart peuvent être très facilement configurées!
+ La plupart sont automatiquement détectées, et plusieurs autres peuvent
+ être très facilement configurées!
 \end_layout
 
 \begin_layout Standard
-Vous devrez d'abord installer le support pour d'impression.
- Installez le paquet 
+Tout dépendant de l'édition que vous choisissez, il se peut que vous deviez
+ installer le support pour d'impression.
+ Si c'est le cas, installez le paquet 
 \begin_inset Quotes fld
 \end_inset
 
@@ -10736,7 +10743,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Pour vérifier les imprimantes disponibles, trouvez et ouvrez la 
+Pour vérifier les imprimantes disponibles, une fois le paquet installé,
+ trouvez et ouvrez la 
 \series bold
 Configuration de l'impression
 \series default
@@ -10881,13 +10889,6 @@ Si votre imprimante n'est pas affichée, il se pourrait qu'elle ne soit pas
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -10966,13 +10967,6 @@ Forward
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
 \end_inset
 
 
