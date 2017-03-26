@@ -8935,7 +8935,7 @@ status open
 \begin_inset Graphics
 	filename images/encryption/encryption_manual.png
 	lyxscale 50
-	width 50col%
+	width 75col%
 
 \end_inset
 
@@ -8948,7 +8948,11 @@ status open
 \begin_layout Plain Layout
 In the manual installation option, encryption can be set up when creating
  a partition.
- A checkbox will offer it to you, just below the File System menu.
+ A checkbox will offer it to you, just below the 
+\emph on
+File System
+\emph default
+ menu.
 \end_layout
 
 \end_inset
@@ -8971,7 +8975,7 @@ status open
 \begin_inset Graphics
 	filename images/encryption/encryption_passphrase_manual.png
 	lyxscale 50
-	width 50col%
+	width 75col%
 
 \end_inset
 
@@ -10190,12 +10194,14 @@ setcounter{figure}{0}
 
 \begin_layout Standard
 Manjaro comes with excellent printing support.
- Most printers can be configured very easily!
+ Most printers are detected automatically, and many others can be configured
+ very easily!
 \end_layout
 
 \begin_layout Standard
-You will first have to install printing support.
- Install the 
+Depending on which edition you are using, you may have to install printing
+ support.
+ In that case, install the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -10233,7 +10239,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-To check on the available printers, find and open
+To check on the available printers, once the package has been installed,
+ find and open
 \series bold
  Print Settings
 \series default
