@@ -9421,7 +9421,7 @@ status open
 \begin_inset Graphics
 	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/encryption/encryption_manual.png
 	lyxscale 50
-	width 50col%
+	width 75col%
 
 \end_inset
 
@@ -9461,7 +9461,7 @@ status open
 \begin_inset Graphics
 	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/encryption/encryption_passphrase_manual.png
 	lyxscale 50
-	width 50col%
+	width 75col%
 
 \end_inset
 
