@@ -833,7 +833,7 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-Trois éditions officielles de Manjaro sont disponibles ainsi que plusieurs
+Quatre éditions officielles de Manjaro sont disponibles ainsi que plusieurs
  éditions non officielles, dites communautaires.
  
 \begin_inset Flex Marginnote
@@ -856,8 +856,12 @@ https://manjaro.org/get-manjaro/
 
 \end_inset
 
-Les trois éditions officielles comprennent un environnement de bureau préinstall
-é et une sélection de plusieurs applications populaires.
+ Mise à part l'édition 
+\emph on
+Architect
+\emph default
+, les éditions officielles comprennent un environnement de bureau préinstallé
+ et une sélection de plusieurs applications populaires.
  Elles sont toutes un très bon choix pour quiconque souhaite essayer Manjaro
  à partir d'un 
 \begin_inset Quotes fld
@@ -943,6 +947,17 @@ GNOME Cette édition de Manjaro inclut le bureau GNOME.
 .
 \end_layout
 
+\begin_layout Description
+Architect Contrairement aux trois autres, cette édition ne vient pas équipée
+ d'un environnement de bureau préinstallé.
+ Au lieu de cela, vous aurez la possibilité de créer votre installation
+ de Manjaro telle que vous la voulez en choisissant quels paquets installer.
+ Vous pouvez de plus vous en servir pour installer n'importe quelle autre
+ édition, officielle ou communautaire.
+ Cette édition ne vise pas les débutants et débutantes, mais plutôt les
+ utilisateurs et utilisatrices de niveau intermédiaire et avancé.
+\end_layout
+
 \begin_layout Standard
 Chaque édition de Manjaro est disponible en versions 32 et 64 bits.
  Les noms des images disque pour les systèmes 32 bits se terminent par 
@@ -961,6 +976,21 @@ x86_64.iso
  pleine capacité.
  Assurez-vous de télécharger l'image disque appropriée pour la machine sur
  laquelle vous voulez installer Manjaro!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Marginnote
+status open
+
+\begin_layout Plain Layout
+Prenez note que Manjaro 17.0.5 est la dernière version à supporter les systèmes
+ 32 bits.
+ Après celle-ci, seuls les systèmes 64 bits le seront.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1093,7 +1123,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-En plus des trois éditions principales de Manjaro existent d'autres éditions
+En plus des quatre éditions principales de Manjaro existent d'autres éditions
  comprenant divers logiciels ou environnements de bureau préinstallés.
  Ce manuel d'utilisation suppose que vous utilisez la version Xfce.
  Toutes les captures d'écran présentes dans ce manuel proviendront de cette
@@ -1137,7 +1167,7 @@ Chaque sortie de Manjaro peut être téléchargée, qu'il s'agisse de la version
  stable actuelle, d'une version test en vue d'une sortie future ou d'une
  version précédente pour des raisons historiques.
  Lorsque vous visitez la page des téléchargements, vous trouverez un lien
- vers chacune des trois éditions principales en versions 32 et 64 bits,
+ vers chacune des quatre éditions principales en versions 32 et 64 bits,
  ainsi que leur fichier de somme de contrôle respectif.
  Une somme de contrôle peut être utilisée pour vérifier l'intégrité de l'image
  disque que vous téléchargez afin de vous assurer qu'elle n'a pas été corrompue
