@@ -6305,7 +6305,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/calamares-uefi/keyboard.png
+	filename images/calamares-uefi/keyboard.png
 	lyxscale 50
 	width 100col%
 
@@ -6343,7 +6343,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/calamares-uefi/keyboard_edit.png
+	filename images/calamares-uefi/keyboard_edit.png
 	lyxscale 50
 	width 100col%
 
@@ -6389,7 +6389,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/calamares-uefi/keyboard_choose.png
+	filename images/calamares-uefi/keyboard_choose.png
 	lyxscale 50
 	width 100col%
 
@@ -9280,7 +9280,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/encryption/encryption.png
+	filename images/encryption/encryption.png
 	lyxscale 50
 	width 100col%
 
@@ -9327,7 +9327,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/encryption/encryption_passphrase.png
+	filename images/encryption/encryption_passphrase.png
 	lyxscale 50
 	width 100col%
 
@@ -9364,7 +9364,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/encryption/summary_encryption.png
+	filename images/encryption/summary_encryption.png
 	lyxscale 50
 	width 100col%
 
@@ -9402,7 +9402,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/encryption/encryption_boot.png
+	filename images/encryption/encryption_boot.png
 	lyxscale 50
 	width 100col%
 
@@ -9449,7 +9449,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/encryption/encryption_manual.png
+	filename images/encryption/encryption_manual.png
 	lyxscale 50
 	width 75col%
 
@@ -9489,7 +9489,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/pattedetable/Guide Manjaro/manjaro-user-guide.git/images/encryption/encryption_passphrase_manual.png
+	filename images/encryption/encryption_passphrase_manual.png
 	lyxscale 50
 	width 75col%
 
