@@ -805,8 +805,8 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-There are three official editions of Manjaro available for download, as
- well as a number of unofficial 
+There are four official editions of Manjaro available for download, as well
+ as a number of unofficial 
 \begin_inset Quotes eld
 \end_inset
 
@@ -835,9 +835,13 @@ https://manjaro.org/get-manjaro/
 
 \end_inset
 
- They come complete with a pre-installed desktop environment and a selection
- of popular software applications, and either of these would be a great
- choice for anyone who wants to try out Manjaro on a Live-CD
+ With the exception of the 
+\emph on
+Architect
+\emph default
+ edition, they come complete with a pre-installed desktop environment and
+ a selection of popular software applications, and either of these would
+ be a great choice for anyone who wants to try out Manjaro on a Live-CD
 \begin_inset Flex Marginnote
 status open
 
@@ -893,6 +897,17 @@ GNOME This edition of Manjaro includes the GNOME desktop, which is part
 .
 \end_layout
 
+\begin_layout Description
+Architect This edition does not come with a preinstalled desktop like the
+ other three.
+ Instead, you are offered the opportunity to tailor your Manjaro installation
+ the way you want it to be by choosing which packages to install.
+ It can also be used to install any of the other available editions, either
+ official or community ones.
+ This edition is not meant for beginners, but more for intermediate and
+ advanced users.
+\end_layout
+
 \begin_layout Standard
 Each edition of Manjaro is available as 32- and 64-bit versions.
  Disc images available for 32-bit systems will end in
@@ -909,6 +924,20 @@ Each edition of Manjaro is available as 32- and 64-bit versions.
  make full use of its resources.
  Try to make sure that you download the appropriate disc image for your
  system!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Marginnote
+status open
+
+\begin_layout Plain Layout
+Please note that Manjaro 17.0.5 is the last version to support 32-bit systems.
+ Going forward, only 64-bit builds will be released.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1041,7 +1070,7 @@ Manjaro community editions
 \end_layout
 
 \begin_layout Standard
-In addition to the three main Manjaro editions, there are a number of editions
+In addition to the four main Manjaro editions, there are a number of editions
  that have certain software or desktop environments preinstalled.
  This user manual assumes you are using the Xfce version, and all screenshots
  will be from this.
@@ -1082,7 +1111,7 @@ Downloading a disc image
 Every release of Manjaro is available for download, whether the current
  stable release, upcoming test builds, or previous versions for historical
  interest.
- When you visit the download page you will find a link to each of the three
+ When you visit the download page you will find a link to each of the four
  main editions in both 32- and 64-bit versions, as well as a checksum file
  for each.
  A checksum can be used to check the integrity of the disc image file you
@@ -1129,8 +1158,7 @@ https://manjaro.org/get-manjaro/
 \begin_inset Newline newline
 \end_inset
 
-Other stable releases, starting from 16.06.1, can also be downloaded from
- the 
+Older stable releases can also be downloaded from the 
 \begin_inset CommandInset href
 LatexCommand href
 name "Stable Release section of the Sourceforge website"
