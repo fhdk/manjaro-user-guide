@@ -3243,15 +3243,19 @@ Choisir la langue et l'agencement du clavier
 \end_layout
 
 \begin_layout Standard
-Premièrement, sélectionnez la langue désirée en appuyant sur la touche 
+Premièrement, pour choisir la langue désirée, utilisez les touches directionnell
+es pour sélectionner la ligne 
+\emph on
+lang=en_US
+\emph default
+ et appuyez sur la touche <
 \series bold
-<F2>
+Entrer
 \series default
-.
- Les options disponibles peuvent être mises en surbrillance en utilisant
- les flèches du clavier.
- Dans ce cas, English (UK) (Anglais du Royaume-Uni) a été choisi par l'utilisate
-ur.
+>.
+ Une liste des langues disponibles apparaîtra.
+ Dans ce cas, English (US) (Anglais des États-Unis) a été choisi pour l'utilisat
+eur.
 \end_layout
 
 \begin_layout Standard
@@ -3288,13 +3292,25 @@ Sélection de la langue
 \end_layout
 
 \begin_layout Standard
-Une fois la langue sélectionnée, appuyez sur la touche <
+Utilisez les touches directionnelles pour mettre votre langue en surbrillance
+ et appuyez sur <
 \series bold
 Entrer
 \series default
-> pour confirmer et vous serez ramené-e au menu de démarrage.
- Par exemple, si vous sélectionnez la langue française, votre écran sera
- celui-ci :
+> pour confirmer votre choix et revenir au menu principal.
+\end_layout
+
+\begin_layout Standard
+Par la suite, pour choisir l'agencement du clavier, sélectionnez la ligne
+ 
+\emph on
+keytable=us
+\emph default
+ et appuyez sur <
+\series bold
+Entrer
+\series default
+>.
 \end_layout
 
 \begin_layout Standard
@@ -3305,7 +3321,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/media-boot-screen-french.png
+	filename images/media-choose-keyboard.png
 	width 100col%
 
 \end_inset
@@ -3317,7 +3333,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Menu de démarrage en français
+Sélection de l'agencement du clavier
 \end_layout
 
 \end_inset
@@ -3331,31 +3347,17 @@ Menu de démarrage en français
 \end_layout
 
 \begin_layout Standard
-Choisir la langue sélectionnera aussi un agencement de clavier approprié
- à cette langue, par exemple QWERTY sera sélectionné pour l'anglais et AZERTY
- pour le français.
- Si ce choix ne concorde pas avec votre agencement, par exemple si vous
- avez l'agencement des États-Unis mais parlez allemand, ou si vous êtes
- Québécois ou Québécoise et utilisez donc un agencement de clavier différent
- de celui de la France, appuyez sur <
-\series bold
-F2
-\series default
-> encore une fois, mais sélectionnez cette fois 
-\series bold
-Keyboard
-\series default
- ( ou 
-\series bold
-Clavier
-\series default
- si vous avez déjà changé la langue pour le français).
- Choisissez la langue correspondant à l'agencement de votre clavier, appuyez
- sur <
+Une liste des différents agencement disponibles apparaîtra.
+ Les deux dernières lettres indiquent dans quel pays, ou quelle langue,
+ ou une combinaison des deux, chacun est utilisé.
+ Sélectionnez celui qui vous convient à l'aide des touches directionnelles
+ et appuyez sur <
 \series bold
 Entrer
 \series default
-> pour confirmer et retourner au menu de démarrage.
+>.
+ Si vous ne voyez pas celui auquel vous êtes habitué-e, ne vous inquiétez
+ pas, vous pourrez le choisir une fois dans l'environnement Live.
 \end_layout
 
 \begin_layout Section
@@ -3373,8 +3375,8 @@ libres
 propriétaires
 \series default
 .
- Les différences entre les deux ne sont pas petites et votre choix peut
- dépendre du matériel que vous utilisez.
+ Les différences entre les deux sont grandes et votre choix peut dépendre
+ du matériel que vous utilisez.
  Ces pilotes gèrent notamment l'affichage à l'écran.
  Le pilote approprié à votre carte graphique dans chacune de ces deux catégories
  sera sélectionné.
@@ -3388,7 +3390,7 @@ En cas de doute, choisissez les pilotes
 libres
 \series default
 .
- Si vous voulez jouer à des jeux vidéos nécessitant beaucoup de ressources,
+ Si vous voulez jouer à des jeux vidéos avec une carte graphique Nvidia,
  choisissez les pilotes 
 \series bold
 propriétaires
@@ -3416,8 +3418,8 @@ libres
 \series default
  sont ouverts (open-source), comme Manjaro elle-même, et créés et mis à
  jour par une large communauté.
- Pour le matériel plus vieux et celui avec une carte graphique intégrée
- Intel, il s'agit du meilleur choix.
+ Pour les cartes graphiques AMD et le matériel avec une carte graphique
+ intégrée Intel, il s'agit du meilleur choix.
 \end_layout
 
 \begin_layout Description
@@ -3435,49 +3437,47 @@ propriétaires
 \series default
  sont à source fermée (closed-source), et créés et mis à jour uniquement
  par les fabricants du matériel.
- Il s'agit généralement du meilleur choix pour le matériel plus récent avec
- des cartes graphiques AMD ou Nvidia.
- Au moment de l'écriture de ce guide, les pilotes 
-\series bold
-propriétaires
-\series default
- sont le meilleur choix pour les cartes graphiques Nvidia ainsi que les
- cartes graphiques AMD plus récentes que la série 8000.
- Pour les cartes AMD et Nvidia plus âgées, les pilotes 
+ Il s'agit généralement du meilleur choix pour les cartes graphiques Nvidia
+ récentes.
+ Pour les cartes graphiques Nvidia plus âgées, les pilotes 
 \series bold
 libres
 \series default
  fonctionnent très bien.
- Pour les cartes graphiques AMD plus vieilles que la série HD5000, les pilotes
- 
-\series bold
-libres
-\series default
- sont le meilleur choix.
 \end_layout
 
 \begin_layout Standard
-Pour démarrer Manjaro avec les pilotes 
+Pour choisir quels pilotes utilisez, sélectionnez la ligne 
+\emph on
+driver=free
+\emph default
+ et appuyez sur <
 \series bold
-libres
+Entrer
 \series default
-, choisissez 
-\series bold
-Démarrer Manjaro Linux
-\series default
- dans le menu de démarrage.
+>.
+ Puis, dans la liste, choisissez 
+\emph on
+free
+\emph default
+ pour les pilotes libres, ou 
+\emph on
+nonfree
+\emph default
+ pour les pilotes propriétaires.
 \end_layout
 
 \begin_layout Standard
-Pour démarrer Manjaro avec les pilotes 
+Finalement, pour démarrer l'environnement Live de Manjaro avec les paramètres
+ choisis, sélectionnez la ligne començant par 
+\emph on
+Boot
+\emph default
+ et appuyez sur <
 \series bold
-propriétaires
+Entrer
 \series default
-, choisissez 
-\series bold
-Démarrer (avec des pilotes propriétaires)
-\series default
- dans le menu de démarrage.
+>.
 \end_layout
 
 \begin_layout Standard
@@ -3488,7 +3488,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/media-boot-screen-french.png
+	filename images/media-boot-manjaro.png
 	width 100col%
 
 \end_inset
