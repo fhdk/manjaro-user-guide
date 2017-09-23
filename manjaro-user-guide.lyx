@@ -3089,14 +3089,17 @@ Setting your language and keyboard layout
 \end_layout
 
 \begin_layout Standard
-First, set your preferred language by pressing the
+First, set your preferred language by moving the selection to 
+\emph on
+lang=en_US
+\emph default
+ entry using the arrow keys and pressing the
 \series bold
-<F2>
+ <Enter>
 \series default
  key.
- The options available can be highlighted for selection by using the arrow
- keys on your keyboard.
- In this instance, English (UK) has been highlighted for the user.
+ A list of available languages will appear.
+ In this instance, English (US) has been highlighted for the user.
 \begin_inset Float marginfigure
 wide false
 sideways false
@@ -3130,7 +3133,7 @@ Language selection
 \end_layout
 
 \begin_layout Standard
-Once selected, press <
+Use the arrow keys to select your language and press <
 \series bold
 Enter
 \series default
@@ -3138,24 +3141,61 @@ Enter
 \end_layout
 
 \begin_layout Standard
-Selecting the language will also set a keyboard layout appropriate to that
- language, for example it will select QWERTY for English and AZERTY for
- French.
- If this doesn't match your layout, or perhaps you have a US layout but
- speak German, press <
-\series bold
-F2
-\series default
-> again, but this time select
-\series bold
- Keyboard
-\series default
-.
- Pick the language that matches your keyboard layout, and press <
+Next, to select your keyboard layout, select the 
+\emph on
+keytable=us
+\emph default
+ entry and press <
 \series bold
 Enter
 \series default
-> to confirm and return to the boot menu.
+>.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float marginfigure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/media-choose-keyboard.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Keyboard layout selection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the menu that appears, each entry refers to a different layout.
+ The last two letters indicate the country or language in which they are
+ used, or a combination of the two.
+ Select the one appropriate for you and press <
+\series bold
+Enter
+\series default
+>.
+ If you cannot find the one you are used to, do not worry, you will be able
+ to select it once in the live environment.
 \end_layout
 
 \begin_layout Section
@@ -3186,7 +3226,7 @@ If in doubt, choose
  Free
 \series default
  drivers.
- If you want to play games, choose
+ If you want to play games with an Nvidia graphics card, choose
 \series bold
  non-Free
 \series default
@@ -3205,8 +3245,8 @@ Free
 \series default
  drivers are open-source, like Manjaro itself, written and updated by a
  large community.
- For older hardware and that with Intel-based integrated graphics, this
- is the best choice.
+ For AMD graphics cards and hardware with Intel-based integrated graphics,
+ this is the best choice.
 \end_layout
 
 \begin_layout Description
@@ -3216,24 +3256,43 @@ Non-Free
 \series default
  drivers are closed-source, written and updated only by the hardware manufacture
 rs.
- This is generally the best choice for newer hardware with AMD or Nvidia
- dedicated graphics.
- At the time of writing,
-\series bold
- non-Free
-\series default
- drivers are the best choice for Nvidia graphics and AMD graphics newer
- than the 8000-series.
- For older AMD and Nvidia hardware the 
+ This is generally the best choice for newer Nvidia dedicated graphics.
+ For older Nvidia hardware the 
 \series bold
 Free
 \series default
  drivers work very well.
- For AMD graphics older than the HD5000-series 
+\end_layout
+
+\begin_layout Standard
+To select which drivers to use, select the 
+\emph on
+driver=free
+\emph default
+ entry and press <
 \series bold
-Free
+Enter
 \series default
- drivers are the best choice.
+>.
+ In the menu that appears, select the desired driver type using the arrow
+ keys and press <
+\series bold
+Enter
+\series default
+>.
+\end_layout
+
+\begin_layout Standard
+Finally, to start the Manjaro live environment with the chosen parameters,
+ select the entry starting with 
+\emph on
+Boot
+\emph default
+ and press <
+\series bold
+Enter
+\series default
+>.
 \begin_inset Float marginfigure
 wide false
 sideways false
@@ -3241,7 +3300,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/media-boot-screen.png
+	filename images/media-boot-manjaro.png
 	width 100text%
 
 \end_inset
@@ -3261,30 +3320,6 @@ Start Manjaro Linux
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-To start Manjaro with
-\series bold
- Free
-\series default
- drivers, choose
-\series bold
- Start Manjaro Linux
-\series default
- from the boot menu.
-\end_layout
-
-\begin_layout Standard
-To start Manjaro with
-\series bold
- non-Free
-\series default
- drivers, choose
-\series bold
- Start (non-free drivers)
-\series default
- from the boot menu.
 \end_layout
 
 \begin_layout Section
