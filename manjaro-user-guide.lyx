@@ -11618,6 +11618,8 @@ Détails
 .
  Une description du paquet s'affichera, ainsi qu'un lien vers le site officiel
  du paquet, une liste de ses dépendances et plusieurs autres informations.
+ Cliquer avec le bouton de gauche sur le nom de l'application a le même
+ effet.
 \end_layout
 
 \end_inset
@@ -11656,7 +11658,8 @@ Une fois que vous avez trouvé le paquet que vous voulez installer, cliquez
 \series bold
 Installer
 \series default
-, puis cliquez sur le bouton 
+ (ou cochez la case à gauche du nom de l'application), puis cliquez sur
+ le bouton 
 \series bold
 Appliquer
 \series default
@@ -11736,9 +11739,9 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Comme mesure pour empêcher n'importe qui de supprimer des logiciels importants,
- un mot de passe administrateur doit être fourni lorsque vient le temps
- de modifier les logiciels installés.
+Pour empêcher n'importe qui de supprimer des logiciels importants, un mot
+ de passe administrateur doit être fourni lorsque vient le temps de modifier
+ les logiciels installés.
  Si vous avez conservé les paramètres par défaut lorsque vous avez créé
  un profil utilisateur pendant l'installation, votre mot de passe fonctionnera.
  Si vous ne le connaissez pas, impossible d'aller plus loin.
