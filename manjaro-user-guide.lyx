@@ -11116,6 +11116,7 @@ Details
 .
  This will give you a description of the package, a link to the official
  website of the package, a list of dependencies and much more.
+ You can also left-click on the name of the application to show its details.
 \end_layout
 
 \end_inset
@@ -11153,7 +11154,7 @@ Once you've found the package you want to install, right-click and select
 \series bold
  Install
 \series default
-, then click on the 
+ (or check the box left of the application's name), then click on the 
 \series bold
 Apply
 \series default
