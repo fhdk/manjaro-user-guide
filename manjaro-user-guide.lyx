@@ -2441,7 +2441,8 @@ Graveur d'image disque Windows
 \end_layout
 
 \begin_layout Standard
-Sélectionnez le fichier de l'image disque et cliquez sur 
+Cliquez avec le bouton de droite sur le fichier de l'image disque et sélectionne
+z 
 \series bold
 Graver l'image disque
 \series default
@@ -2590,7 +2591,7 @@ Imgburn
 
 \begin_layout Plain Layout
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2688,7 +2689,7 @@ InfraRecorder
 
 \begin_layout Plain Layout
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
