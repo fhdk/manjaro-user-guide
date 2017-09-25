@@ -10979,6 +10979,115 @@ Alternatively, you can load Octopi's full interface.
 \end_layout
 
 \begin_layout Section
+Installing language packages
+\end_layout
+
+\begin_layout Standard
+Once your software is up-to-date, you may want to check if all necessary
+ language packages are installed.
+ For that, head over to the 
+\series bold
+Manjaro Settings Manager
+\series default
+.
+ They can also be installed like regular packages (see section 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "install_software"
+
+\end_inset
+
+), but this method takes care of them all in one fell swoop.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/update_lang_pack_1.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In the 
+\series bold
+Manjaro Settings Manager
+\series default
+, double-click on 
+\series bold
+Language Packages
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/update_lang_pack_2.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Available language packages will be listed here.
+ If there are any, click on the 
+\series bold
+Install Packages
+\series default
+ button to install them.
+ You will be prompted for your password before proceeding to the installation.
+ In the example shown here, none are available.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Installing new software
 \end_layout
 
