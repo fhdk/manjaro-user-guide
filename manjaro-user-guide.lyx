@@ -11467,6 +11467,119 @@ Installation
 \end_layout
 
 \begin_layout Section
+Installer des paquets linguistiques
+\end_layout
+
+\begin_layout Standard
+Une fois vos logiciels à jour, il peut être bon de vérifier si tous les
+ paquets linguistiques nécessaires sont installés.
+ Pour ce faire, ouvrez le 
+\series bold
+Gestionnaire de paramètres de Manjaro
+\series default
+.
+ Les paquets linguistiques peuvent aussi être installés de la même façon
+ que les autres paquets (voir section 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "install_software"
+
+\end_inset
+
+), mais cette méthode permet de tous les installer d'un coup.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/update_lang_pack_1.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dans le 
+\series bold
+Gestionnaire de paramètres de Manjaro
+\series default
+, double-cliquez sur 
+\series bold
+Paquets linguistiques
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/update_lang_pack_2.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Les paquets linguistiques disponibles seront listés ici.
+ S'il y en a, cliquez sur le bouton 
+\series bold
+Installer les paquets
+\series default
+ pour les installer.
+ Votre mot de passe vous sera demandé avant de procéder à l'installation.
+ Dans l'exemple présenté ici, aucun paquet n'est disponible.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Installer de nouveaux logiciels
 \end_layout
 
