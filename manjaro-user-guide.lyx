@@ -3358,7 +3358,15 @@ Entrer
 \series default
 >.
  Si vous ne voyez pas celui auquel vous êtes habitué-e, ne vous inquiétez
- pas, vous pourrez le choisir une fois dans l'environnement Live.
+ pas, vous pourrez le choisir une fois dans l'environnement Live (voir sous-sect
+ion 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "keyboard_layout"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Section
@@ -3572,6 +3580,598 @@ Manjaro Hello
  Si vous fermez la fenêtre de bienvenue par mégarde, pas de soucis : vous
  pouvez la faire apparaître à nouveau à partir du menu des applications,
  et tous les liens sont aussi présents ailleurs dans des menus.
+\end_layout
+
+\begin_layout Subsection
+Changer la disposition du clavier
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "keyboard_layout"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si vous n'avez pas trouvé votre agencement de clavier préféré dans le menu
+ de démarrage, l'environnement Live propose d'autres avenues afin de le
+ choisir.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/xfce_settings.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+La disposition du clavier peut être changée à partir de l'installateur Calamares.
+ Vous pouvez cependant aussi la changer dans les 
+\series bold
+paramètres du bureau Xfce
+\series default
+ (Xfce settings).
+ Ceux-ci peuvent être accédés à partir du menu des applications.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/keyboard.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dans la fenêtre qui apparaît, cliquez sur les paramètres du 
+\series bold
+Clavier
+\series default
+ (Keyboard).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/keyboard_edit.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Une fois là, rendez-vous dans l'onglet 
+\series bold
+Disposition
+\series default
+ (Layout), sélectionnez la langue 
+\series bold
+Anglais (US)
+\series default
+ (English (US)) et cliquez sur 
+\series bold
+Modifier
+\series default
+ (Edit).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/keyboard_choose.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Trouvez ensuite votre langue dans la liste, sélectionnez-la et cliquez sur
+ le bouton 
+\series bold
+Valider
+\series default
+ (OK).
+ Une fois cela fait, vous pouvez alors fermer la fenêtre.
+ La disposition de votre clavier a été changée avec succès!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Changer la langue de l'environnement Live
+\end_layout
+
+\begin_layout Standard
+L'environnement Live offre de plus des moyens de changer la langue dans
+ lequel il est affiché.
+ 
+\series bold
+Notez que vous n'avez pas besoin de faire ceci pour que Manjaro soit installée
+ dans votre langue.
+ Ces instructions ne sont que pour avoir l'environnement Live, avant installatio
+n, dans votre langue.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/UEFI_manjaro_settings_manager.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pour avoir l'environnement Live complètement dans votre langue pendant que
+ vous l'utilisez, vous devrez aller l'ajouter dans le 
+\series bold
+gestionnaire de paramètres de Manjaro
+\series default
+ (Manjaro Settings Manager).
+ Il est disponible dans le menu des applications.
+ Vous devrez entrer un mot de passe administrateur pour continuer.
+ Sur le CD autonome (Live CD), celui-ci est 
+\begin_inset Quotes fld
+\end_inset
+
+manjaro
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/UEFI_languages.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Une fois le gestionnaire de paramètres de Manjaro ouvert, cliquez sur 
+\series bold
+Locale Settings
+\series default
+ (Paramètres de la langue).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/UEFI_languages_add.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Vous vous retrouverez alors devant la liste des langues installées.
+ Si la vôtre n'y est pas, cliquez sur le bouton 
+\series bold
+Add
+\series default
+ (Ajouter).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/UEFI_languages_select.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sélectionnez ensuite votre langue dans la liste de gauche, puis si nécessaire
+ la sous-catégorie appropriée dans la liste de droite.
+ Vous avez aussi le choix de l'encodage dans le menu 
+\series bold
+Locale
+\series default
+ (Paramètres régionaux).
+ Une fois satisfait-e, cliquez sur 
+\series bold
+Add
+\series default
+ (Ajouter).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/UEFI_languages_default.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+La langue ajoutée se retrouvera maintenant dans la liste.
+ 
+\series bold
+Cliquez avec le bouton de droite
+\series default
+ dessus et choisissez 
+\series bold
+Set as default display language and format
+\series default
+ (Choisir comme langue d'affichage et format par défaut).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/UEFI_languages_apply.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Finalement, cliquez sur 
+\series bold
+Apply
+\series default
+ (Appliquer) pour appliquer les changements.
+ Le mot de passe administrateur vous sera demandé.
+ Sur la version Live, il s'agit de 
+\begin_inset Quotes fld
+\end_inset
+
+manjaro
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Vous pouvez ensuite fermer la fenêtre.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/UEFI_log_out_1.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Les changement ne prendront cependant effet qu'à la prochaine connexion.
+ Pour fermer la session, cliquez sur l'icône tout en bas à droite de l'écran.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/UEFI_log_out_2.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sélectionnez ensuite 
+\series bold
+Log Out
+\series default
+ (Déconnexion) dans la fenêtre qui apparaîtra.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/UEFI_choose_language.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Vous vous retrouverez alors devant l'écran de connexion du CD autonome (Live
+ CD).
+ Cliquez sur 
+\series bold
+en_US.utf8
+\series default
+ en bas à droite de l'écran et sélectionnez votre langue.
+ Vous pouvez ensuite vous connecter.
+ Le bureau sera alors affiché dans votre langue! Sur le CD autonome, le
+ pseudonyme et le mot de passe sont tous deux 
+\begin_inset Quotes fld
+\end_inset
+
+manjaro
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -6309,597 +6909,9 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-L'écran de démarrage de Manjaro a une allure bien différente en mode UEFI.
- Les deux principales options d'installation sont malgré tout encore disponibles.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Une fois que vous aurez démarré le système à partir du CD/DVD ou de la clé
- USB Live, vous vous retrouverez devant l'écran de démarrage de Manjaro.
- Celui-ci présente deux options principales concernant les pilotes utilisés
- (libres et propriétaires).
- La différence principale comparativement au cas avec BIOS est l'absence
- de menu de sélection pour la langue et l'agencement du clavier.
- Ce n'est cependant pas un problème insurmontable car vous pouvez les régler
- une fois dans l'environnement Live ainsi que dans l'installateur Calamares,
- qui les rendra permanents sur votre système une fois Manjaro installée.
-\end_layout
-
-\begin_layout Subsection
-Changer la disposition du clavier
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/xfce_settings.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-La disposition du clavier peut être changée à partir de l'installateur Calamares.
- Vous pouvez cependant aussi la changer dans les 
-\series bold
-paramètres du bureau Xfce
-\series default
- (Xfce settings).
- Ceux-ci peuvent être accédés à partir du menu des applications.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/keyboard.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Dans la fenêtre qui apparaît, cliquez sur les paramètres du 
-\series bold
-Clavier
-\series default
- (Keyboard).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/keyboard_edit.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Une fois là, rendez-vous dans l'onglet 
-\series bold
-Disposition
-\series default
- (Layout), sélectionnez la langue 
-\series bold
-Anglais (US)
-\series default
- (English (US)) et cliquez sur 
-\series bold
-Modifier
-\series default
- (Edit).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/keyboard_choose.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Trouvez ensuite votre langue dans la liste, sélectionnez-la et cliquez sur
- le bouton 
-\series bold
-Valider
-\series default
- (OK).
- Une fois cela fait, vous pouvez alors fermer la fenêtre.
- La disposition de votre clavier a été changée avec succès!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Changer la langue de l'environnement Live
-\end_layout
-
-\begin_layout Standard
-Si vous souhaitez profiter de l'environnement Live dans votre langue sur
- un système utilisant UEFI, quelques étapes sont nécessaires.
- L'agencement du clavier peut lui être configuré dans Calamares.
- 
-\series bold
-Notez que vous n'avez pas besoin de faire ceci pour que Manjaro soit installée
- dans votre langue.
- Ces instructions ne sont que pour avoir l'environnement Live, avant installatio
-n, dans votre langue.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/UEFI_manjaro_settings_manager.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Pour avoir l'environnement Live complètement dans votre langue pendant que
- vous l'utilisez, vous devrez aller l'ajouter dans le 
-\series bold
-gestionnaire de paramètres de Manjaro
-\series default
- (Manjaro Settings Manager).
- Il est disponible dans le menu des applications.
- Vous devrez entrer un mot de passe administrateur pour continuer.
- Sur le CD autonome (Live CD), celui-ci est 
-\begin_inset Quotes fld
-\end_inset
-
-manjaro
-\begin_inset Quotes frd
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/UEFI_languages.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Une fois le gestionnaire de paramètres de Manjaro ouvert, cliquez sur 
-\series bold
-Locale Settings
-\series default
- (Paramètres de la langue).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/UEFI_languages_add.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Vous vous retrouverez alors devant la liste des langues installées.
- Si la vôtre n'y est pas, cliquez sur le bouton 
-\series bold
-Add
-\series default
- (Ajouter).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/UEFI_languages_select.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sélectionnez ensuite votre langue dans la liste de gauche, puis si nécessaire
- la sous-catégorie appropriée dans la liste de droite.
- Vous avez aussi le choix de l'encodage dans le menu 
-\series bold
-Locale
-\series default
- (Paramètres régionaux).
- Une fois satisfait-e, cliquez sur 
-\series bold
-Add
-\series default
- (Ajouter).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/UEFI_languages_default.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-La langue ajoutée se retrouvera maintenant dans la liste.
- 
-\series bold
-Cliquez avec le bouton de droite
-\series default
- dessus et choisissez 
-\series bold
-Set as default display language and format
-\series default
- (Choisir comme langue d'affichage et format par défaut).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/UEFI_languages_apply.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Finalement, cliquez sur 
-\series bold
-Apply
-\series default
- (Appliquer) pour appliquer les changements.
- Le mot de passe administrateur vous sera demandé.
- Sur la version Live, il s'agit de 
-\begin_inset Quotes fld
-\end_inset
-
-manjaro
-\begin_inset Quotes frd
-\end_inset
-
-.
- Vous pouvez ensuite fermer la fenêtre.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/UEFI_log_out_1.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Les changement ne prendront cependant effet qu'à la prochaine connexion.
- Pour fermer la session, cliquez sur l'icône tout en bas à droite de l'écran.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/UEFI_log_out_2.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sélectionnez ensuite 
-\series bold
-Log Out
-\series default
- (Déconnexion) dans la fenêtre qui apparaîtra.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/UEFI_choose_language.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Vous vous retrouverez alors devant l'écran de connexion du CD autonome (Live
- CD).
- Cliquez sur 
-\series bold
-en_US.utf8
-\series default
- en bas à droite de l'écran et sélectionnez votre langue.
- Vous pouvez ensuite vous connecter.
- Le bureau sera alors affiché dans votre langue! Sur le CD autonome, le
- pseudonyme et le mot de passe sont tous deux 
-\begin_inset Quotes fld
-\end_inset
-
-manjaro
-\begin_inset Quotes frd
-\end_inset
-
-.
+L'écran de démarrage de Manjaro a une allure très semblable en mode UEFI.
+ Changer la langue, l'agencement du clavier et les pilotes se fait de la
+ même façon qu'en mode BIOS, de même que lancer l'environnement Live.
 \end_layout
 
 \end_inset
