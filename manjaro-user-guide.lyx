@@ -3195,7 +3195,7 @@ Enter
 \series default
 >.
  If you cannot find the one you are used to, do not worry, you will be able
- to select it once in the live environment (see subsection 
+ to select it once in the Live environment (see subsection 
 \begin_inset CommandInset ref
 LatexCommand nameref
 reference "keyboard_layout"
@@ -3290,7 +3290,7 @@ Enter
 \end_layout
 
 \begin_layout Standard
-Finally, to start the Manjaro live environment with the chosen parameters,
+Finally, to start the Manjaro Live environment with the chosen parameters,
  select the entry starting with 
 \emph on
 Boot
@@ -3565,11 +3565,11 @@ OK
 \end_layout
 
 \begin_layout Subsection
-Change the language of the live environment
+Change the language of the Live environment
 \end_layout
 
 \begin_layout Standard
-Once in the live environment, it is still not too late to change the language
+Once in the Live environment, it is still not too late to change the language
  in which it is displayed.
  
 \series bold
@@ -3811,7 +3811,7 @@ Apply
 \series default
  these changes.
  You will be prompted for an administrator password.
- On the Live CD, the password is 
+ On the Live-CD, the password is 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3928,14 +3928,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-You will then be presented with the Live CD login screen.
+You will then be presented with the Live-CD login screen.
  Click on 
 \series bold
 en_US.utf8
 \series default
  at the bottom right of the screen and select the language you want to use.
  You can then log in.
- The desktop will now be in the new language! On the Live CD, the username
+ The desktop will now be in the new language! On the Live-CD, the username
  and password are both 
 \begin_inset Quotes eld
 \end_inset
@@ -4206,15 +4206,11 @@ Moreover, several programs are used when booting your computer, from starting
 \end_layout
 
 \begin_layout Description
-Live
-\begin_inset space ~
-\end_inset
-
-CD A Live CD is a version of an operating system that runs in the computer's
- memory, without needing to access the hard drive.
+Live-CD A Live-CD is a version of an operating system that runs in the computer'
+s memory, without needing to access the hard drive.
  It is generally loaded from a CD, DVD or USB key that was used at boot.
  Changes made to the Live environment are not saved.
- Live CDs are often used to give a preview of an operating system and include
+ Live-CDs are often used to give a preview of an operating system and include
  tools to install it.
  They can also be used to manage the hard drive's partitions and rescue
  lost data.
@@ -4943,7 +4939,7 @@ Restart now
 Quit
 \series default
 .
- If you want to continue exploring the live version of Manjaro, click 
+ If you want to continue exploring the Live version of Manjaro, click 
 \series bold
 Quit
 \series default
@@ -4952,7 +4948,7 @@ Quit
 Restart now
 \series default
 .
- When restarting, if you changed the boot order to boot on the live media,
+ When restarting, if you changed the boot order to boot on the Live media,
  you will need to put it back as it was to boot on your hard drive.
 \end_layout
 
@@ -5969,7 +5965,7 @@ status open
 
 \begin_layout Plain Layout
 First things first, let's fire it up! You can find GParted in the menu of
- the live version of Manjaro.
+ the Live version of Manjaro.
  It can also be found in the repositories of most Linux distributions.
 \end_layout
 
@@ -6559,7 +6555,7 @@ status open
 In UEFI mode the Manjaro boot selection screen is almost identical to the
  one in BIOS mode.
  The same steps for choosing the language, keyboard layout and drivers apply,
- as well as booting the live environment.
+ as well as booting the Live environment.
 \end_layout
 
 \end_inset
