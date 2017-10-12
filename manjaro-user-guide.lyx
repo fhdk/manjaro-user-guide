@@ -2876,7 +2876,20 @@ https://rufus.akeo.ie/
 \end_inset
 
  is highly recommended.
- Rufus should use the following settings:
+\end_layout
+
+\begin_layout Standard
+Select the USB key to be used in the Device menu.
+ Then, on the line beginning with 
+\emph on
+Create a bootable disk using
+\emph default
+, click on the DVD icon to select your downloaded disc image.
+ After doing so, in the menu left of the DVD icon, select 
+\series bold
+DD Image
+\series default
+.
 \end_layout
 
 \begin_layout Standard
@@ -2912,61 +2925,12 @@ Rufus with recommended settings
 
 \end_layout
 
-\begin_layout Description
-Device: "choose your USB" (Attention: choose correctly, the device selected
- here will be formatted!)
-\end_layout
-
-\begin_layout Description
-Partition
-\begin_inset space ~
-\end_inset
-
-scheme: MBR partition scheme for BIOS or UEFI
-\end_layout
-
-\begin_layout Description
-File
-\begin_inset space ~
-\end_inset
-
-system: FAT32 (Default)
-\end_layout
-
-\begin_layout Description
-Cluster
-\begin_inset space ~
-\end_inset
-
-size: 4096 bytes (Default)
-\end_layout
-
-\begin_layout Description
-Volume
-\begin_inset space ~
-\end_inset
-
-label: MJRO1705
-\end_layout
-
-\begin_layout Description
-Format
-\begin_inset space ~
-\end_inset
-
-Options: Quick format.
- Create a bootable disk using DD Image (Click on the DVD icon to select
- your downloaded disc image).
- Create extended label and icon files.
-\end_layout
-
 \begin_layout Standard
-Click
+Finally, click 
 \series bold
- Start
+Start
 \series default
-, and you are done (though it takes between around two and five minutes
- to complete)!
+ to begin the writing process!
 \end_layout
 
 \begin_layout Part
@@ -8270,8 +8234,22 @@ http://rufus.akeo.ie/
 
 \end_inset
 
- is highly recommended.
- Rufus should use the following settings:
+ is recommended.
+ 
+\end_layout
+
+\begin_layout Standard
+Select the USB key to be used in the Device menu.
+ Then, on the line beginning with 
+\emph on
+Create a bootable disk using
+\emph default
+, click on the DVD icon to select your downloaded disc image.
+ After doing so, in the menu left of the DVD icon, select 
+\series bold
+DD Image
+\series default
+.
 \end_layout
 
 \begin_layout Standard
@@ -8282,7 +8260,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/rufus.png
+	filename images/imagewriter-windows-rufus.png
 	width 100col%
 
 \end_inset
@@ -8307,66 +8285,13 @@ Rufus with recommended settings
 
 \end_layout
 
-\begin_layout Description
-Device: "choose your USB" (Attention: choose correctly, the device selected
- here will be formatted!)
-\end_layout
-
-\begin_layout Description
-Partition
-\begin_inset space ~
-\end_inset
-
-scheme: GPT partition scheme for UEFI
-\end_layout
-
-\begin_layout Description
-File
-\begin_inset space ~
-\end_inset
-
-system: FAT32 (Default)
-\end_layout
-
-\begin_layout Description
-Cluster
-\begin_inset space ~
-\end_inset
-
-size: 4096 bytes (Default)
-\end_layout
-
-\begin_layout Description
-Volume
-\begin_inset space ~
-\end_inset
-
-label: MJRO1705
-\end_layout
-
-\begin_layout Description
-Format
-\begin_inset space ~
-\end_inset
-
-Options: Quick format.
- Create a bootable disk using DD Image (Click on the DVD icon to select
- your downloaded disc image).
- Create extended label and icon files.
-\end_layout
-
 \begin_layout Standard
-Click
+Finally, click 
 \series bold
- Start
+Start
 \series default
-, and you are done! (though it takes between around two and five minutes
- to complete).
-\end_layout
-
-\begin_layout Standard
-Once you are done, restart your computer and boot on the USB key as was
- explained earlier in chapter 
+ to begin the writing process! Once you are done, restart your computer
+ and boot on the USB key as was explained earlier in chapter 
 \begin_inset CommandInset ref
 LatexCommand nameref
 reference "UEFIInstall"
