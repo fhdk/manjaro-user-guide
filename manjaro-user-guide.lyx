@@ -2955,7 +2955,7 @@ Format
 \end_inset
 
 Options: Quick format.
- Create a bootable disk using ISO Image (Click on the DVD icon to select
+ Create a bootable disk using DD Image (Click on the DVD icon to select
  your downloaded disc image).
  Create extended label and icon files.
 \end_layout
@@ -8320,7 +8320,7 @@ Format
 \end_inset
 
 Options: Quick format.
- Create a bootable disk using ISO Image (Click on the DVD icon to select
+ Create a bootable disk using DD Image (Click on the DVD icon to select
  your downloaded disc image).
  Create extended label and icon files.
 \end_layout
