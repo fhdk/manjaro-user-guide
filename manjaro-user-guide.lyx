@@ -4936,6 +4936,12 @@ reference "words"
 
 \series default
 .
+ 
+\emph on
+Veuillez noter que certaines options d'installation peuvent ne pas être
+ disponibles si elles sont inutiles.
+ Par exemple, il ne vous sera pas offert de remplacer une partition si votre
+ disque dur est vierge.
 \end_layout
 
 \begin_layout Standard
@@ -5124,11 +5130,17 @@ La dernière étape avant que l'installation ne s'exécute vous présente un
  court résumé de tous les choix faits dans les sections précédentes.
  Assurez-vous notamment que les partitions sont telles que vous les voulez,
  car il s'agit du point de non-retour.
+ Cliquer sur 
+\series bold
+Suivant
+\series default
+ ouvrira une boîte de dialogue vous demandant si vous souhaitez continuer
+ l'installation.
  
 \series bold
-Une fois que vous aurez cliqué sur Suivant, vous ne pourrez plus revenir
- sur votre choix et toutes les données stockées sur les partitions que vous
- avez choisi d'effacer seront perdues.
+Une fois que vous aurez cliqué sur Installer maintenant, vous ne pourrez
+ plus revenir sur votre choix et toutes les données stockées sur les partitions
+ que vous avez choisi d'effacer seront perdues.
 
 \series default
  Si vous changez d'avis, vous pouvez cliquer sur 
@@ -5138,11 +5150,7 @@ Précédent
  pour changer la configuration choisie.
  Les informations saisies dans les autres champs seront conservées, alors
  vous n'aurez pas besoin de les saisir à nouveau.
- Une fois satisfait-e du résumé, cliquez sur 
-\series bold
-Suivant
-\series default
- pour débuter l'installation.
+ Une fois satisfait-e du résumé, vous pouvez débuter l'installation.
 \end_layout
 
 \end_inset
@@ -5474,7 +5482,11 @@ reference "eraseDisk"
 \series bold
 Suivant
 \series default
-, l'installation débutera.
+ et sur 
+\series bold
+Installer maintenant
+\series default
+ dans la boîte de dialogue, l'installation débutera.
  Il s'agit de votre dernière chance pour effectuer des changements.
 \end_layout
 
@@ -5652,7 +5664,11 @@ reference "eraseDisk"
 \series bold
 Suivant
 \series default
-, l'installation débutera.
+ et sur 
+\series bold
+Installer maintenant
+\series default
+ dans la boîte de dialogue, l'installation débutera.
  Il s'agit de votre dernière chance pour effectuer des changements.
 \end_layout
 
@@ -6211,7 +6227,11 @@ reference "eraseDisk"
 \series bold
 Suivant
 \series default
-, l'installation débutera.
+ et sur 
+\series bold
+Installer maintenant
+\series default
+ dans la boîte de dialogue, l'installation débutera.
  Il s'agit de votre dernière chance pour effectuer des changements.
 \end_layout
 
@@ -7045,6 +7065,12 @@ reference "windows10"
 \end_inset
 
 .
+ 
+\emph on
+Veuillez noter que certaines options d'installation peuvent ne pas être
+ disponibles si elles sont inutiles.
+ Par exemple, il ne vous sera pas offert de remplacer une partition si votre
+ disque dur est vierge.
 \end_layout
 
 \begin_layout Subsection
@@ -8519,12 +8545,16 @@ Une fois que tout est configuré à votre goût, vous pouvez continuer comme
  dans les autres cas jusqu'au résumé.
  Comme à l'habitude, il s'agit de la toute dernière étape où il possible
  de revenir en arrière pour effectuer des changements.
- Une fois que vous aurez cliqué sur le bouton 
+ Une fois que vous aurez cliqué sur 
 \series bold
 Suivant
 \series default
-, les modifications seront appliquées à votre disque et l'installation en
- tant que telle débutera.
+ et sur 
+\series bold
+Installer maintenant
+\series default
+ dans la boîte de dialogue, les modifications seront appliquées à votre
+ disque et l'installation en tant que telle débutera.
 \end_layout
 
 \end_inset
