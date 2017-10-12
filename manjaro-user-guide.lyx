@@ -4659,6 +4659,12 @@ reference "words"
 
 \series default
 .
+ 
+\emph on
+Please note that some installation options may not be available if they
+ are not necessary.
+ For instance, you will not have the option to replace a partition on an
+ empty hard drive.
 \end_layout
 
 \begin_layout Standard
@@ -4832,10 +4838,16 @@ As the last step before the installation takes place, you will be presented
  with a short summary of all the choices you made in the other sections.
  Make sure the partition scheme is to your liking, as this is the point
  of no return.
+ When clicking 
+\series bold
+Next
+\series default
+, a dialog will appear asking if you wish to proceed with the installation.
  
 \series bold
-Once you click Next, you will no longer be able to edit the partition scheme
- and all data stored on the partitions you chose to overwrite will be lost.
+Once you click on Install now, you will no longer be able to edit the partition
+ scheme and all data stored on the partitions you chose to overwrite will
+ be lost.
 
 \series default
  If you changed your mind, you can go 
@@ -4845,11 +4857,7 @@ Back
  a few times to choose another setup.
  The information stored in other filled fields will be kept, so you will
  not need to write it again.
- Once you are satisfied with the summary, click 
-\series bold
-Next
-\series default
- to start the installation.
+ Once you are satisfied with the summary, continue the installation.
 \end_layout
 
 \end_inset
@@ -5155,7 +5163,11 @@ reference "eraseDisk"
 \series bold
 Next
 \series default
-, the installation will begin.
+ and then 
+\series bold
+Install now
+\series default
+ in the dialog, the installation will begin.
  This is your last chance to make changes.
 \end_layout
 
@@ -5328,7 +5340,11 @@ reference "eraseDisk"
 \series bold
 Next
 \series default
-, the installation will begin.
+ and then 
+\series bold
+Install now
+\series default
+ in the dialog, the installation will begin.
  This is your last chance to make changes.
 \end_layout
 
@@ -5865,7 +5881,11 @@ reference "eraseDisk"
 \series bold
 Next
 \series default
-, the installation will begin.
+ and then 
+\series bold
+Install now
+\series default
+ in the dialog, the installation will begin.
  This is your last chance to make changes.
 \end_layout
 
@@ -6687,6 +6707,12 @@ reference "windows10"
 \end_inset
 
 .
+ 
+\emph on
+Please note that some installation options may not be available if they
+ are not necessary.
+ For instance, you will not have the option to replace a partition on an
+ empty hard drive.
 \end_layout
 
 \begin_layout Subsection
@@ -8127,12 +8153,16 @@ status open
 \begin_layout Plain Layout
 Once everything is set up, you can proceed up to the summary.
  As always, this is the very last step where you can go back to make changes.
- Once you click the 
+ Once you click 
 \series bold
 Next
 \series default
- button, the modifications will be applied to your drive and the actual
- installation will begin.
+ and then 
+\series bold
+Install now
+\series default
+ in the dialog, the modifications will be applied to your drive and the
+ actual installation will begin.
 \end_layout
 
 \end_inset
