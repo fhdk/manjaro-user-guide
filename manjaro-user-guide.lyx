@@ -2977,7 +2977,28 @@ https://rufus.akeo.ie/
 \end_inset
 
  est recommandé.
- Rufus devrait utiliser les paramètres suivants :
+\end_layout
+
+\begin_layout Standard
+Sélectionnez la clé USB à utiliser dans le menu déroulant 
+\emph on
+Périphérique
+\emph default
+.
+ Ensuite, sur la ligne 
+\emph on
+Créer un disque de démarrage
+\emph default
+, cliquez sur l'icône de DVD pour sélectionner l'image disque.
+ Puis, tout juste à gauche, sélectionnez 
+\series bold
+Image DD
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+La fenêtre devrait ressembler à ceci :
 \end_layout
 
 \begin_layout Standard
@@ -3013,104 +3034,12 @@ Rufus avec les paramètres recommandés
 
 \end_layout
 
-\begin_layout Description
-Périphérique : 
-\begin_inset Quotes fld
-\end_inset
-
-Choisissez votre clé USB
-\begin_inset Quotes frd
-\end_inset
-
- (Attention: Choisissez correctement car le périphérique sélectionné sera
- formaté!)
-\end_layout
-
-\begin_layout Description
-Type
-\begin_inset space ~
-\end_inset
-
-de
-\begin_inset space ~
-\end_inset
-
-partition
-\begin_inset space ~
-\end_inset
-
-et
-\begin_inset space ~
-\end_inset
-
-système
-\begin_inset space ~
-\end_inset
-
-de
-\begin_inset space ~
-\end_inset
-
-destination : Type de partition MBR pour BIOS ou UEFI
-\end_layout
-
-\begin_layout Description
-Système
-\begin_inset space ~
-\end_inset
-
-de
-\begin_inset space ~
-\end_inset
-
-fichiers : FAT32 (Défaut)
-\end_layout
-
-\begin_layout Description
-Taille
-\begin_inset space ~
-\end_inset
-
-d'unité
-\begin_inset space ~
-\end_inset
-
-d'allocation : 4096 octets (Défaut)
-\end_layout
-
-\begin_layout Description
-Nom
-\begin_inset space ~
-\end_inset
-
-de
-\begin_inset space ~
-\end_inset
-
-volume : MJRO1705
-\end_layout
-
-\begin_layout Description
-Options
-\begin_inset space ~
-\end_inset
-
-de
-\begin_inset space ~
-\end_inset
-
-Formatage : Formatage rapide.
- Créer un disque de démarrage Image ISO (Cliquez sur l'icône de DVD pour
- sélectionner l'image disque).
- Ajouter un label étendu et une icône.
-\end_layout
-
 \begin_layout Standard
-Cliquez sur
+Enfin, cliquez sur
 \series bold
  Démarrer
 \series default
- et vous n'avez plus qu'à attendre! Le processus peut prendre quelques minutes.
+ pour commencer l'écriture!
 \end_layout
 
 \begin_layout Part
@@ -8663,7 +8592,25 @@ http://rufus.akeo.ie/
 \end_inset
 
  est fortement recommandé.
- Rufus devrait ici utiliser les paramètres suivants :
+ 
+\end_layout
+
+\begin_layout Standard
+Sélectionnez la clé USB à utiliser dans le menu déroulant 
+\emph on
+Périphérique
+\emph default
+.
+ Ensuite, sur la ligne 
+\emph on
+Créer un disque de démarrage
+\emph default
+, cliquez sur l'icône de DVD pour sélectionner l'image disque.
+ Puis, tout juste à gauche, sélectionnez 
+\series bold
+Image DD
+\series default
+.
 \end_layout
 
 \begin_layout Standard
@@ -8674,7 +8621,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/rufus.png
+	filename images/imagewriter-windows-rufus.png
 	width 100col%
 
 \end_inset
@@ -8699,106 +8646,14 @@ Rufus avec les paramètres recommandés
 
 \end_layout
 
-\begin_layout Description
-Périphérique : 
-\begin_inset Quotes fld
-\end_inset
-
-Choisissez votre clé USB
-\begin_inset Quotes frd
-\end_inset
-
- (Attention: Choisissez correctement car le périphérique sélectionné sera
- formaté!)
-\end_layout
-
-\begin_layout Description
-Type
-\begin_inset space ~
-\end_inset
-
-de
-\begin_inset space ~
-\end_inset
-
-partition
-\begin_inset space ~
-\end_inset
-
-et
-\begin_inset space ~
-\end_inset
-
-système
-\begin_inset space ~
-\end_inset
-
-de
-\begin_inset space ~
-\end_inset
-
-destination : Type de partition GPT pour UEFI
-\end_layout
-
-\begin_layout Description
-Système
-\begin_inset space ~
-\end_inset
-
-de
-\begin_inset space ~
-\end_inset
-
-fichiers : FAT32 (Défaut)
-\end_layout
-
-\begin_layout Description
-Taille
-\begin_inset space ~
-\end_inset
-
-d'unité
-\begin_inset space ~
-\end_inset
-
-d'allocation : 4096 octets (Défaut)
-\end_layout
-
-\begin_layout Description
-Nom
-\begin_inset space ~
-\end_inset
-
-de
-\begin_inset space ~
-\end_inset
-
-volume : MJRO1705
-\end_layout
-
-\begin_layout Description
-Options
-\begin_inset space ~
-\end_inset
-
-de
-\begin_inset space ~
-\end_inset
-
-Formatage : Formatage rapide.
- Créer un disque de démarrage Image ISO (Cliquez sur l'icône de DVD pour
- sélectionner l'image disque).
- Ajouter un label étendu et une icône.
-\end_layout
-
 \begin_layout Standard
-Cliquez sur
+Enfin, cliquez sur
 \series bold
  Démarrer
 \series default
- et vous n'avez plus qu'à attendre! Le processus peut prendre quelques minutes.
- Une fois terminé, redémarrez votre ordinateur et démarrez sur la clé USB
- comme il a été expliqué plus haut au chapitre 
+ pour commencer l'écriture! Une fois celle-ci terminée, redémarrez votre
+ ordinateur et démarrez sur la clé USB comme il a été expliqué plus haut
+ au chapitre 
 \begin_inset CommandInset ref
 LatexCommand nameref
 reference "UEFIInstall"
