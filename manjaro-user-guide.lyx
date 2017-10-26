@@ -758,7 +758,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-erase-disk/welcome_live.png
+	filename images/welcome_live.png
 	lyxscale 50
 	width 100text%
 
@@ -1016,7 +1016,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-erase-disk/welcome_live.png
+	filename images/welcome_live.png
 	lyxscale 33
 	width 95text%
 
@@ -3472,7 +3472,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-erase-disk/welcome_live.png
+	filename images/welcome_live.png
 	lyxscale 50
 	width 100text%
 
@@ -4530,20 +4530,7 @@ name "alongside"
 \end_layout
 
 \begin_layout Standard
-La façon la plus simple d'installer Manjaro est d'effacer l'entièreté du
- disque et de laisser l'installateur vous suggérer un ensemble de partitions
- pour votre nouveau système d'exploitation.
- Il s'agit d'une méthode appropriée si vous voulez partir de zéro, car vous
- perdrez toutes les données contenues sur le disque.
- Si vous souhaitez préserver vos données, vous pouvez effectuer une sauvegarde
- sur un disque dur externe avant de procéder à l'installation, puis les
- copier à nouveau sur le disque dur par la suite.
- Les autres méthodes assistées présentées plus bas vous permettent aussi
- de préserver vos données.
-\end_layout
-
-\begin_layout Standard
-SI vous installez Manjaro sur un ordinateur où un autre système d'exploitation
+Si vous installez Manjaro sur un ordinateur où un autre système d'exploitation
  est installé, vous voudrez probablement le conserver et choisir au démarrage
  lequel des deux utiliser.
  Cette section vous montrera comment accomplir cela sans avoir à vous casser
@@ -4563,7 +4550,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-erase-disk/cal_welcome.png
+	filename images/calamares-alongside/cal_welcome.png
 	lyxscale 50
 	width 100col%
 
@@ -4617,7 +4604,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-erase-disk/cal_location.png
+	filename images/calamares-alongside/cal_location.png
 	lyxscale 50
 	width 100col%
 
@@ -4660,7 +4647,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-erase-disk/cal_locale.png
+	filename images/calamares-alongside/cal_locale.png
 	lyxscale 50
 	width 100col%
 
@@ -4713,7 +4700,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-erase-disk/cal_keyboard.png
+	filename images/calamares-alongside/cal_keyboard.png
 	lyxscale 50
 	width 100col%
 
@@ -4748,7 +4735,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-erase-disk/cal_keyboard_menu.png
+	filename images/calamares-alongside/cal_keyboard_menu.png
 	lyxscale 50
 	width 100col%
 
@@ -4796,7 +4783,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-erase-disk/partition.png
+	filename images/calamares-alongside/partition.png
 	lyxscale 50
 	width 100col%
 
@@ -4871,379 +4858,6 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-erase-disk/erase_disk.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Lorsque l'option 
-\series bold
-Effacer le disque
-\series default
- est sélectionnée, le bas de la fenêtre change afin d'afficher l'état actuel
- du disque ainsi que celui proposé par l'installateur, qui sera appliqué
- à la toute fin de l'installation lorsque le résumé montré à la sous-section
- 
-\series bold
-
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "summary"
-
-\end_inset
-
-
-\series default
- sera accepté.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Vous pouvez aussi choisir de chiffrer votre partition Manjaro.
- De cette manière, quiconque tentant d'accéder aux données qu'il contient
- devra fournir un mot de passe de votre choix.
- Le menu intitulé 
-\series bold
-Emplacement du chargeur de démarrage
-\series default
- vous permet de choisir d'installer ou non un chargeur de démarrage, et
- le cas échéant de choisir où l'installer.
- Un chargeur de démarrage est un programme qui vous permet de choisir quel
- système d'exploitation utiliser lorsque vous allumez votre ordinateur.
- Si vous n'êtes pas certain-e de ce que vous devriez choisir, nous recommandons
- de conserver le choix par défaut.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Saisir les informations de l'utilisateur ou de l'utilisatrice
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-erase-disk/cal_users.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Par la suite, vous devrez fournir votre 
-\series bold
-nom
-\series default
-, qui sera utilisé par certains programmes afin de vous souhaiter la bienvenue,
- un 
-\series bold
-nom d'utilisateur ou d'utilisatrice
-\series default
- pour vous connecter au système, le 
-\series bold
-nom de votre ordinateur
-\series default
- tel qu'il sera vu par les autres se trouvant sur le même réseau que vous,
- ainsi qu'un 
-\series bold
-mot de passe
-\series default
-.
- Le mot de passe doit être saisi deux fois afin de s'assurer qu'il n'y a
- pas eu de faute de frappe.
- Finalement, vous avez le choix de vous faire demander ou non votre mot
- de passe lorsque vous vous connectez, et si le même mot de passe doit être
- utilisé pour le compte administrateur.
- Les paramètres recommandés sont déjà présélectionnés.
- Il est recommandé de les laisser tels qu'ils sont à moins d'avoir une préférenc
-e marquée pour une autre configuration.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Vérifier vos choix et confirmer
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "summary"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-erase-disk/summary_erase_disk.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-La dernière étape avant que l'installation ne s'exécute vous présente un
- court résumé de tous les choix faits dans les sections précédentes.
- Assurez-vous notamment que les partitions sont telles que vous les voulez,
- car il s'agit du point de non-retour.
- Cliquer sur 
-\series bold
-Suivant
-\series default
- ouvrira une boîte de dialogue vous demandant si vous souhaitez continuer
- l'installation.
- 
-\series bold
-Une fois que vous aurez cliqué sur Installer maintenant, vous ne pourrez
- plus revenir sur votre choix et toutes les données stockées sur les partitions
- que vous avez choisi d'effacer seront perdues.
-
-\series default
- Si vous changez d'avis, vous pouvez cliquer sur 
-\series bold
-Précédent
-\series default
- pour changer la configuration choisie.
- Les informations saisies dans les autres champs seront conservées, alors
- vous n'aurez pas besoin de les saisir à nouveau.
- Une fois satisfait-e du résumé, vous pouvez débuter l'installation.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Installation...
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-erase-disk/cal_install_slideshow.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Vous pouvez maintenant relaxer et laisser l'installation s'effectuer! Pendant
- que celle-ci se déroule, des diapositives défileront pour vous présenter
- quelques une des caractéristiques principales de votre nouveau système
- d'exploitation, Manjaro.
- L'installation ne devrait prendre que quelques minutes.
- La barre de progrès ne se remplira que lentement au début, mais accélérera
- plus tard.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-...
- terminée!
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-erase-disk/cal_finish.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-L'installation est terminée! Pour redémarrer votre système immédiatement
- et démarrer votre nouveau système d'exploitation, sélectionnez 
-\series bold
-Redémarrer maintenant
-\series default
- et puis cliquez sur 
-\series bold
-Quitter
-\series default
-.
- Si vous souhaitez plutôt continuer d'explorer la version Live de Manjaro,
- cliquez sur 
-\series bold
-Quitter
-\series default
- sans sélectionner 
-\series bold
-Redémarrer maintenant
-\series default
-.
- Lors du redémarrage, si vous avez modifié l'ordre de démarrage des périphérique
-s pour pouvoir démarrer sur le média Live, vous devrez le replacer dans
- son ordre initial pour pouvoir démarrer sur le disque dur.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Cependant, réécrire par-dessus la totalité du disque dur n'est pas toujours
- la meilleure méthode d'installation.
- D'autres méthodes offertes par l'installateur permettent d'avoir plus de
- contrôle sur la façon d'installer Manjaro et de ne pas effacer tout le
- disque.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Effacer le disque et laisser Calamares créer les partitions
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "eraseDisk"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setcounter{figure}{0}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Une autre option offerte par l'installateur est de diminuer la taille d'une
- partition existante afin de libérer de l'espace sur votre disque et d'utiliser
- celui-ci pour installer Manjaro.
- Cette méthode est tout indiquée si vous voulez par exemple avoir deux systèmes
- d'exploitation sur votre disque mais ne souhaitez pas vous casser la tête
- à partitionner vous-même votre disque.
- Cette partie sera prise en charge par l'installateur.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
 	filename images/calamares-alongside/alongside_1.png
 	lyxscale 50
 	width 100col%
@@ -5254,9 +4868,16 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Lorsque vous sélectionnez l'option d'installer Manjaro à côté d'un autre
- système d'exploitation, le bas de la fenêtre changera pour afficher la
- barre indiquant l'état actuel de votre disque ainsi qu'un nouvelle barre
+Lorsque vous sélectionnez l'option d'
+\series bold
+installer
+\series default
+ Manjaro 
+\series bold
+à côté
+\series default
+ d'un autre système d'exploitation, le bas de la fenêtre changera pour afficher
+ la barre indiquant l'état actuel de votre disque ainsi qu'un nouvelle barre
  représentant son état après les modifications.
  Au tout début, les deux barres sont identiques.
 \end_layout
@@ -5335,6 +4956,13 @@ Cliquez et maintenez tout en vous déplaçant à gauche ou à droite pour bouger
  Ceci changera l'espace qui sera libéré pour l'installation de Manjaro.
  Sur l'image, La partition sur laquelle sera installée Manjaro est indiquée
  en rouge.
+ Notez que vous ne pouvez pas réduire la taille de la partition sur laquelle
+ existe déjà votre système d'exploitation actuel autant que vous le voulez,
+ car vous devez laisser assez de place pour contenir les fichiers qu'elle
+ héberge.
+ Ceci limite à quel point vous pouvez bouger la séparation vers la gauche.
+ Vous devez aussi libérer assez de place pour pouvoir installer Manjaro.
+ Ceci limite à quel point vous pouvez bouger la séparation vers la droite.
 \end_layout
 
 \end_inset
@@ -5348,13 +4976,108 @@ Cliquez et maintenez tout en vous déplaçant à gauche ou à droite pour bouger
 \end_layout
 
 \begin_layout Standard
-Notez que vous ne pouvez pas réduire la taille de la partition sur laquelle
- existe déjà votre système d'exploitation actuel autant que vous le voulez,
- car vous devez laisser assez de place pour contenir les fichiers qu'elle
- héberge.
- Ceci limite à quel point vous pouvez bouger la séparation vers la gauche.
- Vous devez aussi libérer assez de place pour pouvoir installer Manjaro.
- Ceci limite à quel point vous pouvez bouger la séparation vers la droite.
+Vous pouvez aussi choisir de chiffrer votre partition Manjaro.
+ De cette manière, quiconque tentant d'accéder aux données qu'il contient
+ devra fournir un mot de passe de votre choix.
+ Le menu intitulé 
+\series bold
+Emplacement du chargeur de démarrage
+\series default
+ vous permet de choisir d'installer ou non un chargeur de démarrage, et
+ le cas échéant de choisir où l'installer.
+ Un chargeur de démarrage est un programme qui vous permet de choisir quel
+ système d'exploitation utiliser lorsque vous allumez votre ordinateur.
+ Si vous n'êtes pas certain-e de ce que vous devriez choisir, nous recommandons
+ de conserver le choix par défaut.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Saisir les informations de l'utilisateur ou de l'utilisatrice
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-alongside/cal_users.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Par la suite, vous devrez fournir votre 
+\series bold
+nom
+\series default
+, qui sera utilisé par certains programmes afin de vous souhaiter la bienvenue,
+ un 
+\series bold
+nom d'utilisateur ou d'utilisatrice
+\series default
+ pour vous connecter au système, le 
+\series bold
+nom de votre ordinateur
+\series default
+ tel qu'il sera vu par les autres se trouvant sur le même réseau que vous,
+ ainsi qu'un 
+\series bold
+mot de passe
+\series default
+.
+ Le mot de passe doit être saisi deux fois afin de s'assurer qu'il n'y a
+ pas eu de faute de frappe.
+ Finalement, vous avez le choix de vous faire demander ou non votre mot
+ de passe lorsque vous vous connectez, et si le même mot de passe doit être
+ utilisé pour le compte administrateur.
+ Les paramètres recommandés sont déjà présélectionnés.
+ Il est recommandé de les laisser tels qu'ils sont à moins d'avoir une préférenc
+e marquée pour une autre configuration.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Vérifier vos choix et confirmer
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "summary"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5375,31 +5098,137 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-La suite du processus est semblable à la démarche présentée plus tôt à la
- section 
+La dernière étape avant que l'installation ne s'exécute vous présente un
+ court résumé de tous les choix faits dans les sections précédentes.
+ Assurez-vous notamment que les partitions sont telles que vous les voulez,
+ car il s'agit du point de non-retour.
+ Cliquer sur 
 \series bold
+Suivant
+\series default
+ ouvrira une boîte de dialogue vous demandant si vous souhaitez continuer
+ l'installation.
+ 
+\series bold
+Une fois que vous aurez cliqué sur Installer maintenant, vous ne pourrez
+ plus revenir sur votre choix et toutes les données stockées sur les partitions
+ que vous avez choisi d'effacer seront perdues.
 
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "alongside"
+\series default
+ Si vous changez d'avis, vous pouvez cliquer sur 
+\series bold
+Précédent
+\series default
+ pour changer la configuration choisie.
+ Les informations saisies dans les autres champs seront conservées, alors
+ vous n'aurez pas besoin de les saisir à nouveau.
+ Une fois satisfait-e du résumé, vous pouvez débuter l'installation.
+\end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Installation...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-alongside/cal_install_slideshow.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Vous pouvez maintenant relaxer et laisser l'installation s'effectuer! Pendant
+ que celle-ci se déroule, des diapositives défileront pour vous présenter
+ quelques une des caractéristiques principales de votre nouveau système
+ d'exploitation, Manjaro.
+ L'installation ne devrait prendre que quelques minutes.
+ La barre de progrès ne se remplira que lentement au début, mais accélérera
+ plus tard.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+...
+ terminée!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-alongside/cal_finish.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+L'installation est terminée! Pour redémarrer votre système immédiatement
+ et démarrer votre nouveau système d'exploitation, sélectionnez 
+\series bold
+Redémarrer maintenant
+\series default
+ et puis cliquez sur 
+\series bold
+Quitter
 \series default
 .
- Vous devrez saisir les informations relatives à l'utilisateur ou l'utilisatrice
- et vous vous ferez présenter un résumé de vos choix.
- À ce stade, une fois que vous aurez cliqué sur 
+ Si vous souhaitez plutôt continuer d'explorer la version Live de Manjaro,
+ cliquez sur 
 \series bold
-Suivant
+Quitter
 \series default
- et sur 
+ sans sélectionner 
 \series bold
-Installer maintenant
+Redémarrer maintenant
 \series default
- dans la boîte de dialogue, l'installation débutera.
- Il s'agit de votre dernière chance pour effectuer des changements.
+.
+ Lors du redémarrage, si vous avez modifié l'ordre de démarrage des périphérique
+s pour pouvoir démarrer sur le média Live, vous devrez le replacer dans
+ son ordre initial pour pouvoir démarrer sur le disque dur.
 \end_layout
 
 \end_inset
@@ -5540,23 +5369,6 @@ Dans la barre représentant l'état actuel du disque, cliquez sur la partition
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-replace/summary_replace.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
 La suite du processus est semblable à la démarche présentée plus tôt à la
  section 
 \series bold
@@ -5570,18 +5382,31 @@ reference "alongside"
 
 \series default
 .
- Vous devrez saisir les informations relatives à l'utilisateur ou l'utilisatrice
- et vous vous ferez présenter un résumé de vos choix.
- À ce stade, une fois que vous aurez cliqué sur 
-\series bold
-Suivant
-\series default
- et sur 
-\series bold
-Installer maintenant
-\series default
- dans la boîte de dialogue, l'installation débutera.
- Il s'agit de votre dernière chance pour effectuer des changements.
+\end_layout
+
+\begin_layout Section
+Effacer le disque et laisser Calamares créer les partitions
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "eraseDisk"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
 \end_layout
 
 \end_inset
@@ -5589,6 +5414,91 @@ Installer maintenant
 
 \end_layout
 
+\begin_layout Standard
+La façon la plus simple d'installer Manjaro est d'effacer l'entièreté du
+ disque et de laisser l'installateur vous suggérer un ensemble de partitions
+ pour votre nouveau système d'exploitation.
+ Il s'agit d'une méthode appropriée si vous voulez partir de zéro, car vous
+ perdrez toutes les données contenues sur le disque.
+ Si vous souhaitez préserver vos données, vous pouvez effectuer une sauvegarde
+ sur un disque dur externe avant de procéder à l'installation, puis les
+ copier à nouveau sur le disque dur par la suite.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-erase-disk/erase_disk.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lorsque l'option 
+\series bold
+Effacer le disque
+\series default
+ est sélectionnée, le bas de la fenêtre change afin d'afficher l'état actuel
+ du disque ainsi que celui proposé par l'installateur, qui sera appliqué
+ à la toute fin de l'installation lorsque le résumé montré à la sous-section
+ 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "summary"
+
+\end_inset
+
+
+\series default
+ sera accepté.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La suite du processus est semblable à la démarche présentée plus tôt à la
+ section 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "alongside"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
