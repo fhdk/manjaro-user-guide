@@ -4516,13 +4516,13 @@ reference "advancedInstall"
 \end_layout
 
 \begin_layout Section
-Effacer le disque et laisser Calamares créer les partitions
+Installer à côté d'un système d'exploitation existant
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
-name "eraseDisk"
+name "alongside"
 
 \end_inset
 
@@ -4540,6 +4540,15 @@ La façon la plus simple d'installer Manjaro est d'effacer l'entièreté du
  copier à nouveau sur le disque dur par la suite.
  Les autres méthodes assistées présentées plus bas vous permettent aussi
  de préserver vos données.
+\end_layout
+
+\begin_layout Standard
+SI vous installez Manjaro sur un ordinateur où un autre système d'exploitation
+ est installé, vous voudrez probablement le conserver et choisir au démarrage
+ lequel des deux utiliser.
+ Cette section vous montrera comment accomplir cela sans avoir à vous casser
+ la tête à partitionner vous-même votre disque.
+ Cette partie sera prise en charge automatiquement par l'installateur.
 \end_layout
 
 \begin_layout Subsection
@@ -4793,10 +4802,6 @@ status open
 
 \end_inset
 
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
 Ce sera ensuite le moment de décider la méthode à utiliser pour partitionner
  votre disque dur.
  Le disque dur sélectionné est indiqué en haut de la fenêtre.
@@ -4818,14 +4823,10 @@ reference "UEFIInstall"
 .
  L'état actuel du disque est affiché au bas de la fenêtre.
  Plusieurs options de partitionnement sont disponibles.
- Cette section se concentrera sur la troisième option, qui efface toutes
- les données stockées sur le disque et crée automatiquement un ensemble
- de partitions qui conviendra à Manjaro.
-\end_layout
-
-\end_inset
-
-
+ Les options présentées dépendent de l'état du disque et peuvent ne pas
+ toutes être disponibles en même temps.
+ Par exemple, il ne vous sera pas offert de remplacer une partition si votre
+ disque dur est vierge.
 \end_layout
 
 \end_inset
@@ -4834,25 +4835,9 @@ reference "UEFIInstall"
 \end_layout
 
 \begin_layout Standard
-La première option installera Manjaro à côté d'un système d'exploitation
- déjà présent sur votre disque en diminuant la taille d'une partition pour
- faire de la place pour Manjaro.
- La seconde option installera Manjaro sur une partition existante en effaçant
- le contenu de celle-ci.
- La dernière option vous permet de créer, modifier et supprimer des partitions
- vous-même afin que votre système soit exactement comme vous le voulez.
- Cette option sera traitée dans le chapitre 
-\series bold
-
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "advancedInstall"
-
-\end_inset
-
-
-\series default
-.
+Dans cette section, nous allons installer Manjaro à côté d'un système d'exploita
+tion existant en diminuant la taille d'une partition pour faire de la place
+ pour Manjaro.
  Pour un rappel concernant les partitions, consultez le chapitre 
 \series bold
 
@@ -4867,10 +4852,8 @@ reference "words"
 .
  
 \emph on
-Veuillez noter que certaines options d'installation peuvent ne pas être
- disponibles si elles sont inutiles.
- Par exemple, il ne vous sera pas offert de remplacer une partition si votre
- disque dur est vierge.
+Veuillez noter que les changements ne seront appliqués qu'à la fin du processus
+ d'installation, alors n'ayez pas peur d'explorer les différentes possibilités.
 \end_layout
 
 \begin_layout Standard
@@ -5214,13 +5197,13 @@ Cependant, réécrire par-dessus la totalité du disque dur n'est pas toujours
 \end_layout
 
 \begin_layout Section
-Installer à côté d'un système d'exploitation existant
+Effacer le disque et laisser Calamares créer les partitions
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
-name "alongside"
+name "eraseDisk"
 
 \end_inset
 
@@ -5398,7 +5381,7 @@ La suite du processus est semblable à la démarche présentée plus tôt à la
 
 \begin_inset CommandInset ref
 LatexCommand nameref
-reference "eraseDisk"
+reference "alongside"
 
 \end_inset
 
@@ -5580,7 +5563,7 @@ La suite du processus est semblable à la démarche présentée plus tôt à la
 
 \begin_inset CommandInset ref
 LatexCommand nameref
-reference "eraseDisk"
+reference "alongside"
 
 \end_inset
 
@@ -6143,7 +6126,7 @@ La suite du processus est semblable à la démarche présentée plus tôt à la
 
 \begin_inset CommandInset ref
 LatexCommand nameref
-reference "eraseDisk"
+reference "alongside"
 
 \end_inset
 
