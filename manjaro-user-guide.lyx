@@ -4869,7 +4869,7 @@ Back
 \end_inset
 
 
-\begin_inset Newpage pagebreak
+\begin_inset Newpage clearpage
 \end_inset
 
 
@@ -6566,12 +6566,16 @@ The installation using the three assisted installation options does not
  Calamares takes care of the differences for you.
  For specific instructions about dual-booting with Windows, see chapter
  
+\series bold
+
 \begin_inset CommandInset ref
 LatexCommand nameref
 reference "windows10"
 
 \end_inset
 
+
+\series default
 .
  
 \emph on
