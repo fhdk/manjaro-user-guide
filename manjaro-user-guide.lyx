@@ -617,8 +617,7 @@ nded users.
 \begin_layout Standard
 Developed by a worldwide team, Manjaro aims to provide all of the benefits
  of Arch Linux combined with a focus on user-friendliness and accessibility.
- Available in both 32- and 64-bit versions, Manjaro is suitable for newcomers
- as well as experienced Linux users.
+ Manjaro is suitable for newcomers as well as experienced Linux users.
  For newcomers, a user-friendly installer is provided, and the system itself
  is designed to work fully
 \begin_inset Quotes eld
@@ -755,6 +754,62 @@ Welcome to Manjaro!
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Important note: End of 32-bit support
+\end_layout
+
+\begin_layout Standard
+Starting with Manjaro 17.0.6, 32-bit support has been dropped and only 64-bit
+ builds of the disc images will be released.
+ If you are using a 32-bit system, a new project called 
+\emph on
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Manjaro-32"
+target "https://manjaro32.org/"
+
+\end_inset
+
+
+\emph default
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://manjaro32.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ has recently been started, but is still in development.
+ For a list of some Linux distributions that still support 32-bit systems,
+ please see this page: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://forum.manjaro.org/t/list-of-distributions-for-32bit-x86-hardware-wiki/3196
+9
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Part
@@ -912,38 +967,6 @@ Architect This edition does not come with a preinstalled desktop like the
 manjaro-architect
 \series default
 .
-\end_layout
-
-\begin_layout Standard
-Each edition of Manjaro is available as 32- and 64-bit versions.
- Disc images available for 32-bit systems will end in
-\series bold
- i686.iso
-\series default
- and images for 64-bit systems will end in
-\series bold
- x86_64.iso
-\series default
-.
- A 64-bit operating system won't run on a 32-bit system, and although a
- 32-bit operating system will run on a 64-bit system it won't be able to
- make full use of its resources.
- Try to make sure that you download the appropriate disc image for your
- system!
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Marginnote
-status open
-
-\begin_layout Plain Layout
-Please note that Manjaro 17.0.6 is the last version to support 32-bit systems.
- Going forward, only 64-bit builds will be released.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1118,8 +1141,7 @@ Every release of Manjaro is available for download, whether the current
  stable release, upcoming test builds, or previous versions for historical
  interest.
  When you visit the download page you will find a link to each of the four
- main editions in both 32- and 64-bit versions, as well as a checksum file
- for each.
+ main editions , as well as a checksum file for each.
  A checksum can be used to check the integrity of the disc image file you
  download to make sure it hasn't been corrupted during the download.
  This will be covered in the next chapter.
@@ -1765,7 +1787,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="4">
+<lyxtabular version="3" rows="5" columns="4">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -1831,7 +1853,7 @@ Xfce
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-17.0.6-stable-i686.iso
+manjaro-xfce-17.0.6-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1840,7 +1862,7 @@ manjaro-xfce-17.0.6-stable-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.5 GB
+1.6 GB
 \end_layout
 
 \end_inset
@@ -1850,44 +1872,6 @@ manjaro-xfce-17.0.6-stable-i686.iso
 
 \begin_layout Plain Layout
 DVD
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-manjaro-xfce-17.0.6-stable-x86_64.iso
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.6 GB
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -1907,7 +1891,7 @@ KDE
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-17.0.6-stable-i686.iso
+manjaro-kde-17.0.6-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1916,7 +1900,7 @@ manjaro-kde-17.0.6-stable-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.8 GB
+2.0 GB
 \end_layout
 
 \end_inset
@@ -1926,44 +1910,6 @@ manjaro-kde-17.0.6-stable-i686.iso
 
 \begin_layout Plain Layout
 DVD
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-manjaro-kde-17.0.6-stable-x86_64.iso
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2.0 GB
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -1983,7 +1929,7 @@ GNOME
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-gnome-17.0.6-stable-i686.iso
+manjaro-gnome-17.0.6-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1992,7 +1938,7 @@ manjaro-gnome-17.0.6-stable-i686.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.6 GB
+1.7 GB
 \end_layout
 
 \end_inset
@@ -2012,83 +1958,7 @@ DVD
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-manjaro-gnome-17.0.6-stable-x86_64.iso
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.7 GB
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 Architect
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-manjaro-architect-17.0.4-stable-i686.iso
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-470 MB
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-CD
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -2115,7 +1985,7 @@ manjaro-architect-17.0.4-stable-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+CD
 \end_layout
 
 \end_inset
