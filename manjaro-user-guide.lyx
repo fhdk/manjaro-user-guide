@@ -9101,41 +9101,16 @@ e le menu GRUB.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/encryption/summary_encryption.png
-	lyxscale 50
-	width 100col%
-
+\begin_inset Newpage newpage
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Le reste du processus d'installation est le même que dans tous les autres
- cas.
- Le résumé présenté à la fin vous confirmera que votre nouvelle installation
- utilisera le chiffrement par LUKS! Toute la configuration se fera automatiqueme
-nt.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+\begin_layout Standard
+Le système de fichiers à utiliser changera pour LUKS, signe que votre installati
+on sera chiffrée! Le reste du processus d'installation est le même que dans
+ tous les autres cas.
 \end_layout
 
 \begin_layout Standard
