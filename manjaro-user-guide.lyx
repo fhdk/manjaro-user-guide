@@ -8728,39 +8728,16 @@ You will then be asked for the passphrase you want to use.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/encryption/summary_encryption.png
-	lyxscale 50
-	width 100col%
-
+\begin_inset Newpage newpage
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-The rest of the installation is the same as in all the other cases.
- The summary at the end confirms that your new installation will use LUKS
- encryption!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+\begin_layout Standard
+The file system to be used will change to LUKS, confirming that your new
+ installation will be encrypted! The rest of the installation is the same
+ as in all the other cases.
 \end_layout
 
 \begin_layout Standard
