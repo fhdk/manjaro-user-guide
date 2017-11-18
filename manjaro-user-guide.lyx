@@ -419,8 +419,8 @@ Manuel
 \begin_inset space ~
 \end_inset
 
-Barrette Éditeur du guide d'utilisation 16.08-17.0.6 (version originale anglaise),
- Traduction française du guide d'utilisation 17.0-17.0.6
+Barrette Éditeur du guide d'utilisation 16.08-17.1 (version originale anglaise),
+ Traduction française du guide d'utilisation 17.0-17.1
 \end_layout
 
 \begin_layout Subsection*
@@ -1457,17 +1457,17 @@ Pour vérifier l'intégrité de l'image disque, vous devez télécharger le fich
  Il devrait être disponible au même endroit que le fichier de l'image disque.
  Par exemple, le fichier 
 \series bold
-manjaro-xfce-17.0.6-stable-x86_64.iso.sha1
+manjaro-xfce-17.1-pre2-stable-x86_64.iso.sha1
 \series default
  contient la valeur de hachage pour le fichier de l'image disque 
 \series bold
-manjaro-xfce-17.0.6-stable-x86_64.iso
+manjaro-xfce-17.1-pre2-stable-x86_64.iso
 \series default
 , dans une forme similaire à
 \end_layout
 
 \begin_layout LyX-Code
-c59c717a4b9de8df927b78cbe04e945424eb12c4  manjaro-xfce-17.0.6-stable-x86_64.iso
+3b47288a10cba6b5ce1e41582604342babf558cb  manjaro-xfce-17.1-pre2-stable-x86_64.iso
 \end_layout
 
 \begin_layout Section
@@ -1546,7 +1546,7 @@ Si la valeur de hachage générée à partir du fichier de l'image disque concor
 À partir de maintenant, dans les exemples, nous supposerons que vous utilisez
  le fichier de contrôle de somme 
 \series bold
-manjaro-xfce-17.0.6-stable-x86_64.iso.sha1
+manjaro-xfce-17.1-stable-x86_64.iso.sha1
 \series default
 .
 \end_layout
@@ -1589,7 +1589,7 @@ jonathon@box:~/download$ ls
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-xfce-17.0.6-stable-x86_64.iso.sha1  manjaro-xfce-17.0.6-stable-x86_64.iso
+manjaro-xfce-17.1-stable-x86_64.iso.sha1  manjaro-xfce-17.1-stable-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1604,7 +1604,7 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-jonathon@box:~/download$ sha1sum -c manjaro-xfce-17.0.6-stable-x86_64.iso.sha1
+jonathon@box:~/download$ sha1sum -c manjaro-xfce-17.1-stable-x86_64.iso.sha1
 \end_layout
 
 \begin_layout Standard
@@ -1619,7 +1619,7 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-xfce-17.0.6-stable-x86_64.iso: Réussi
+manjaro-xfce-17.1-stable-x86_64.iso: Réussi
 \end_layout
 
 \begin_layout Standard
@@ -1635,7 +1635,7 @@ Vérification manuelle
 Pour vérifier manuellement l'intégrité du fichier téléchargé, ouvrez premièremen
 t le fichier de somme de contrôle 
 \series bold
-manjaro-xfce-17.0.6-stable-x86_64.iso.sha1
+manjaro-xfce-17.1-stable-x86_64.iso.sha1
 \series default
  avec un éditeur de texte tel que Gedit.
  Une fois ce fichier ouvert et la valeur de hachage visible, ouvrez un terminal
@@ -1663,7 +1663,7 @@ Vous pouvez par la suite générer une valeur de hachage SHA-1 pour l'image
 \begin_layout LyX-Code
 jonathon@box:~/download$
 \family typewriter
- sha1sum manjaro-xfce-17.0.6-stable-x86_64.iso
+ sha1sum manjaro-xfce-17.1-stable-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1778,7 +1778,7 @@ Afin d'accélérer le processus, désélectionner les types de hachage que vous
 
  Pour vérifier si les valeurs de hachage concordent, ouvrez le fichier 
 \series bold
-manjaro-xfce-17.0.6-stable-x86_64.iso.sha1
+manjaro-xfce-17.1-stable-x86_64.iso.sha1
 \series default
  dans un éditeur de texte tel que Notepad, copiez la valeur de hachage qu'il
  contient pour l'image disque que vous avez téléchargée, collez-la dans
@@ -1941,7 +1941,7 @@ Xfce
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-17.0.6-stable-x86_64.iso
+manjaro-xfce-17.1-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1950,7 +1950,7 @@ manjaro-xfce-17.0.6-stable-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1,6 Go
+1,2 Go
 \end_layout
 
 \end_inset
@@ -1979,7 +1979,7 @@ KDE
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-17.0.6-stable-x86_64.iso
+manjaro-kde-17.1-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -2017,7 +2017,7 @@ GNOME
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-gnome-17.0.6-stable-x86_64.iso
+manjaro-gnome-17.1-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -2340,7 +2340,7 @@ Démarrez le
 \end_layout
 
 \begin_layout Enumerate
-Sélectionnez votre CD ou DVD dans le menu 
+Sélectionnez votre lecteur CD ou DVD dans le menu 
 \series bold
 Graveur
 \series default
@@ -2780,7 +2780,7 @@ Vérifiez l'identifiant du périphérique avec :
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-17.0.6-stable-x86_64.iso of=/dev/(Identifiant trouvé
+sudo dd if=manjaro-xfce-17.1-stable-x86_64.iso of=/dev/(Identifiant trouvé
  plus haut) bs=4M
 \begin_inset Newline newline
 \end_inset
@@ -2797,7 +2797,7 @@ Ma clé USB est montée sous /dev/sdc, alors j'utiliserais :
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-17.0.6-stable-x86_64.iso of=/dev/sdc bs=4M
+sudo dd if=manjaro-xfce-17.1-stable-x86_64.iso of=/dev/sdc bs=4M
 \begin_inset Newline newline
 \end_inset
 
@@ -2813,7 +2813,7 @@ status=progress :
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-17.0.6-stable-x86_64.iso of=/dev/sdc bs=4M status=progress
+sudo dd if=manjaro-xfce-17.1-stable-x86_64.iso of=/dev/sdc bs=4M status=progress
 \end_layout
 
 \begin_layout Enumerate
