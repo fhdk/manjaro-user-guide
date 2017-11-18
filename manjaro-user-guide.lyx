@@ -417,8 +417,8 @@ Manuel
 \begin_inset space ~
 \end_inset
 
-Barrette Editor of the User Guide 16.08-17.0.6, French translation of the User
- Guide 17.0-17.0.6
+Barrette Editor of the User Guide 16.08-17.1, French translation of the User
+ Guide 17.0-17.1
 \end_layout
 
 \begin_layout Subsection*
@@ -1369,14 +1369,14 @@ To verify the integrity of the disc image you have to download the appropriate
  image file.
  For example, the file
 \series bold
- manjaro-xfce-17.0.6-stable-x86_64.iso.sha1
+ manjaro-xfce-17.1-pre2-stable-x86_64.iso.sha1
 \series default
  contains the SHA-1 checksum hash for the Xfce disc image and will have
  content similar to this:
 \end_layout
 
 \begin_layout LyX-Code
-c59c717a4b9de8df927b78cbe04e945424eb12c4  manjaro-xfce-17.0.6-stable-x86_64.iso
+3b47288a10cba6b5ce1e41582604342babf558cb  manjaro-xfce-17.1-pre2-stable-x86_64.iso
 \end_layout
 
 \begin_layout Section
@@ -1455,7 +1455,7 @@ If the code generated from the disc image matches that contained in the
 \begin_layout Standard
 From this point on we'll assume you are using the file
 \series bold
- manjaro-xfce-17.0.6-stable-x86_64.iso.sha1
+ manjaro-xfce-17.1-stable-x86_64.iso.sha1
 \series default
 .
 \end_layout
@@ -1497,7 +1497,7 @@ jonathon@box:~/download$ ls
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-xfce-17.0.6-stable-x86_64.iso.sha1  manjaro-xfce-17.0.6-stable-x86_64.iso
+manjaro-xfce-17.1-stable-x86_64.iso.sha1  manjaro-xfce-17.1-stable-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1510,7 +1510,7 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-jonathon@box:~/download$ sha1sum -c manjaro-xfce-17.0.6-stable-x86_64.iso.sha1
+jonathon@box:~/download$ sha1sum -c manjaro-xfce-17.1-stable-x86_64.iso.sha1
 \end_layout
 
 \begin_layout Standard
@@ -1524,7 +1524,7 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-xfce-17.0.6-stable-x86_64.iso: OK
+manjaro-xfce-17.1-stable-x86_64.iso: OK
 \end_layout
 
 \begin_layout Standard
@@ -1539,7 +1539,7 @@ Manual verification
 To manually check the integrity of your downloaded file, first open the
  downloaded
 \series bold
- manjaro-xfce-17.0.6-stable-x86_64.iso.sha1
+ manjaro-xfce-17.1-stable-x86_64.iso.sha1
 \series default
  checksum file using a text editor such as Gedit.
  Once the checksum file has been opened, and the code is visible, open up
@@ -1568,7 +1568,7 @@ jonathon@box:~/download$
 \family typewriter
  sha1sum 
 \family default
-manjaro-xfce-17.0.6-stable-x86_64.iso
+manjaro-xfce-17.1-stable-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1697,7 +1697,7 @@ To speed up the process it's probably a good idea to deselect the hashes
 
  To verify if the checksum is correct, open the
 \series bold
- manjaro-xfce-17.0.6-stable-x86_64.iso.sha1
+ manjaro-xfce-17.1-stable-x86_64.iso.sha1
 \series default
  file in a text editor such as Notepad, copy the checksum for the disc image
  file you have downloaded, and paste it into the 
@@ -1853,7 +1853,7 @@ Xfce
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-17.0.6-stable-x86_64.iso
+manjaro-xfce-17.1-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1862,7 +1862,7 @@ manjaro-xfce-17.0.6-stable-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.6 GB
+1.2 GB
 \end_layout
 
 \end_inset
@@ -1891,7 +1891,7 @@ KDE
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-17.0.6-stable-x86_64.iso
+manjaro-kde-17.1-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1929,7 +1929,7 @@ GNOME
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-gnome-17.0.6-stable-x86_64.iso
+manjaro-gnome-17.1-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -2245,7 +2245,7 @@ Start
 \end_layout
 
 \begin_layout Enumerate
-Select your CD/DVD in the 
+Select your CD/DVD drive in the 
 \series bold
 Disc burner
 \series default
@@ -2680,7 +2680,7 @@ Write the image with:
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-17.0.6-stable-x86_64.iso of=/dev/(Device identifier
+sudo dd if=manjaro-xfce-17.1-stable-x86_64.iso of=/dev/(Device identifier
  from above) bs=4M
 \begin_inset Newline newline
 \end_inset
@@ -2697,7 +2697,7 @@ My USB drive is at /dev/sdc so I would use:
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-17.0.6-stable-x86_64.iso of=/dev/sdc bs=4M
+sudo dd if=manjaro-xfce-17.1-stable-x86_64.iso of=/dev/sdc bs=4M
 \begin_inset Newline newline
 \end_inset
 
@@ -2713,7 +2713,7 @@ status=progress:
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-17.0.6-stable-x86_64.iso of=/dev/sdc bs=4M status=progress
+sudo dd if=manjaro-xfce-17.1-stable-x86_64.iso of=/dev/sdc bs=4M status=progress
 \end_layout
 
 \begin_layout Enumerate
