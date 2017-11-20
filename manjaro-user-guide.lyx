@@ -788,7 +788,7 @@ Note importante : Fin du support pour systèmes 32 bits
 \end_layout
 
 \begin_layout Standard
-À partir de Manjaro 17.0.6, le support pour les systèmes 32 bits a pris fin
+À partir de Manjaro 17.1, le support pour les systèmes 32 bits a pris fin
  et seules des images disque 64 bits seront dorénavant produites.
  Si vous utilisez un système 32 bits, un nouveau projet appelé 
 \emph on
