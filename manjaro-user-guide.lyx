@@ -3207,9 +3207,15 @@ Welcome to Manjaro!
 \begin_layout Standard
 The welcome screen gives some links to common tasks, documentation and the
  support channels.
- There are also links to the installation programs.
+ There is also a link to the Calamares graphical installation program.
  Don't worry if you close the welcome screen: you can load it again, and
  all the links are also present elsewhere in the menus.
+\end_layout
+
+\begin_layout Standard
+On the desktop, a shortcut to the Manjaro Architect installer is also available,
+ although it is not aimed at beginners.
+ It is the same that is available in the Architect edition.
 \end_layout
 
 \begin_layout Subsection
@@ -3253,6 +3259,7 @@ status open
 
 \begin_layout Plain Layout
 The keyboard layout can be changed in the Calamares installer.
+ It will instantly be applied to the Live environment.
  However, you can also change it in the 
 \series bold
 Xfce settings
