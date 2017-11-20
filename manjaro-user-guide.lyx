@@ -3373,10 +3373,18 @@ Manjaro Hello
 \end_inset
 
  procure des liens vers de la documentation, des canaux de support et le
- programme d'installation.
+ programme d'installation graphique Calamares.
  Si vous fermez la fenêtre de bienvenue par mégarde, pas de soucis : vous
  pouvez la faire apparaître à nouveau à partir du menu des applications,
  et tous les liens sont aussi présents ailleurs dans des menus.
+\end_layout
+
+\begin_layout Standard
+Un lien vers le programme d'installation Manjaro Architect est aussi offert
+ sur le bureau.
+ Celui-ci n'est cependant pas conçu pour les personnes débutantes.
+ Il s'agit du même programme d'installation qui est inclus dans l'édition
+ Architect.
 \end_layout
 
 \begin_layout Subsection
@@ -3421,6 +3429,7 @@ status open
 
 \begin_layout Plain Layout
 La disposition du clavier peut être changée à partir de l'installateur Calamares.
+ Elle est alors appliquée instantanément à l'environnement Live.
  Vous pouvez cependant aussi la changer dans les 
 \series bold
 paramètres du bureau Xfce
