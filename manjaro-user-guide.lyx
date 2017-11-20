@@ -761,7 +761,7 @@ Important note: End of 32-bit support
 \end_layout
 
 \begin_layout Standard
-Starting with Manjaro 17.0.6, 32-bit support has been dropped and only 64-bit
+Starting with Manjaro 17.1, 32-bit support has been dropped and only 64-bit
  builds of the disc images will be released.
  If you are using a 32-bit system, a new project called 
 \emph on
