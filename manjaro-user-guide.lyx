@@ -2875,6 +2875,53 @@ F10
 \end_layout
 
 \begin_layout Section
+BIOS vs UEFI
+\end_layout
+
+\begin_layout Quote
+UEFI is the commonly agreed on name for both the EFI & UEFI standards which
+ merged.
+ It does not include the old EFI v1, or Apple's own non-standard version
+ of EFI.
+\end_layout
+
+\begin_layout Standard
+Some newer hardware do not use the well-known BIOS to manage boot options.
+ Instead, a new one named UEFI (Unified Extensible Firmware Interface) is
+ used.
+ It still has BIOS-like menus and often has a legacy mode, which uses BIOS.
+ UEFI often goes hand in hand with the infamous Secure Boot option that
+ makes it more difficult to boot operating systems outside of a select few.
+ If your computer came with Microsoft Windows 8 or later installed, your
+ computer uses UEFI and probably has Secure Boot enabled by default.
+ However, the Linux community reacted to this and developed means to install
+ and boot Linux on those systems as well.
+ Some installers, such as 
+\emph on
+Calamares
+\emph default
+ which is used by Manjaro, can even automate the process so it makes virtually
+ no difference to the user whether their machine uses UEFI or BIOS.
+\end_layout
+
+\begin_layout Subsection
+Booting in UEFI mode
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+The most important step is to ensure that your machine does not have Secure
+ Boot enabled
+\series default
+.
+ Only a very limited number of operating systems will boot with this enabled.
+ You must disable Secure Boot in your BIOS before proceeding; if you don't
+ know how to do this please refer to your computer's user manual, as it
+ differs for all computers.
+\end_layout
+
+\begin_layout Section
 The boot menu
 \end_layout
 
@@ -2883,6 +2930,9 @@ When you boot from your installation media (CD/DVD or USB flash drive) you
  should be presented with the Manjaro boot screen.
  This screen provides several options to help get the best experience from
  the Live environment.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float marginfigure
 wide false
 sideways false
@@ -2891,6 +2941,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/media-boot-screen.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -2899,7 +2950,42 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Boot menu
+Boot menu in BIOS mode
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/UEFI_manjaro_menu.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In UEFI mode the Manjaro boot selection screen is almost identical to the
+ one in BIOS mode.
 \end_layout
 
 \end_inset
@@ -2943,6 +3029,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/media-choose-language.png
+	lyxscale 50
 	width 100col%
 
 \end_inset
@@ -2996,6 +3083,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/media-choose-keyboard.png
+	lyxscale 50
 	width 100col%
 
 \end_inset
@@ -3143,6 +3231,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/media-boot-manjaro.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -3715,7 +3804,7 @@ Feel free to come back to this short list if you ever need it! Some links
 \end_layout
 
 \begin_layout Chapter
-Assisted installation on a BIOS system
+Dual-booting with Microsoft Windows 10
 \end_layout
 
 \begin_layout Standard
@@ -3723,18 +3812,18 @@ Assisted installation on a BIOS system
 status open
 
 \begin_layout Plain Layout
-BIOS
+Microsoft Windows 10
 \end_layout
 
 \end_inset
 
 
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Assisted installation
 \end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "windows10"
 
 \end_inset
 
@@ -3759,42 +3848,10 @@ setcounter{figure}{0}
 
 \begin_layout Standard
 The graphical installer used by Manjaro is called Calamares.
- It offers a choice of three different assisted installation options, which
- we will cover here one by one.
- The manual installation is presented in chapter 
-\series bold
-
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "advancedInstall"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
-\begin_layout Section
-Install Manjaro alongside an existing operating system
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "alongside"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-If you are installing Manjaro on a computer which already has another operating
- system installed, chances are you will want to dual-boot between the two
- of them.
+ If you are installing Manjaro on a computer which already has Windows installed
+, chances are you will want to dual-boot between the two of them.
  This section will show you how to accomplish this without going through
- the trouble of partitioning your disk yourself.
+ the trouble of partitioning the disk yourself.
  This part will be handled automatically by the installer.
 \end_layout
 
@@ -3945,10 +4002,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/calamares-alongside/cal_keyboard.png
 	lyxscale 50
@@ -4029,7 +4082,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-alongside/partition.png
+	filename images/calamares-alongside/partition-windows.png
 	lyxscale 50
 	width 100col%
 
@@ -4043,19 +4096,6 @@ It will then be time to decide which method to use to partition your hard
  drive.
  The selected hard drive is displayed at the top of the window.
  Left of it is an indication stating if it uses BIOS or UEFI.
- This chapter covers systems using BIOS.
- UEFI systems are covered in chapter 
-\series bold
-
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "UEFIInstall"
-
-\end_inset
-
-
-\series default
-.
  The partition table type, MBR or GPT, is indicated at the right of the
  disk.
  The current state of your drive is displayed at the bottom of the window.
@@ -4085,8 +4125,8 @@ install
 \series bold
 alongside
 \series default
- an existing operating system by shrinking a partition to make room for
- Manjaro.
+ an existing operating system, namely Windows, by shrinking a partition
+ to make room for Manjaro.
  For a refresher on partitions, see chapter 
 \series bold
 
@@ -4154,7 +4194,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-alongside/alongside_2.png
+	filename images/calamares-uefi/windows-keep-efi/windows_alongside.png
 	lyxscale 50
 	width 100col%
 
@@ -4164,7 +4204,9 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-When clicking on a partition in the bar representing the current state,
+We will choose to shrink the partition used as the C: drive by Windows.
+ It should be the biggest one.
+ When clicking on a partition in the bar representing the current state,
  the bottom bar will change to show this partition split in two.
 \end_layout
 
@@ -4216,19 +4258,6 @@ Click and drag the separation between the two parts to change the amount
 You can also choose to encrypt your Manjaro partition.
  That way, anyone trying to access to the data it contains will have to
  enter a password of your choosing.
- The 
-\series bold
-Boot loader location
-\series default
- menu allows you to choose whether or not to install a boot loader, and
- if so where to install it.
- A boot loader is a program which enables you to choose which operating
- system to boot when you turn on your computer.
- If you are unsure what to do, we recommend keeping the default choice.
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -4464,7 +4493,377 @@ Restart now
 \end_layout
 
 \begin_layout Section
-Replacing existing partition 
+Update the GRUB boot loader, or 
+\begin_inset Quotes eld
+\end_inset
+
+Where did Windows go?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sometimes the boot loader GRUB2 does not detect an existing Microsoft Windows
+ installation when installing.
+ This means that only Manjaro Linux will appear in the list of installed
+ operating systems when you boot the machine.
+\end_layout
+
+\begin_layout Standard
+To solve this problem, run the command:
+\end_layout
+
+\begin_layout LyX-Code
+
+\family typewriter
+sudo update-grub
+\end_layout
+
+\begin_layout Standard
+in a terminal after booting into Manjaro and it will detect Windows and
+ add an entry to the boot menu.
+\end_layout
+
+\begin_layout Chapter
+Assisted installation methods
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+BIOS
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+UEFI
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Assisted installation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Calamares offers a choice of three different assisted installation options,
+ which we will cover here one by one.
+ The manual installation is presented in chapter 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "advancedInstallBIOS"
+
+\end_inset
+
+
+\series default
+ for a BIOS system and 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "advancedInstallUEFI"
+
+\end_inset
+
+ for a UEFI system.
+\end_layout
+
+\begin_layout Section
+Differences in the partition setup between BIOS and UEFI systems
+\end_layout
+
+\begin_layout Standard
+The key difference in the way the partitions are arranged compared to the
+ case with BIOS is that a small partition of a few hundred MB must be created
+ to house some of the files used when booting the system.
+ This partition must use the fat32 file system.
+ Luckily, in all assisted installation options, Calamares handles the creation
+ of this partition if it does not already exist and writes the necessary
+ files to it.
+ If the partition already exists, it is detected and used to write the files.
+ In this section, it is on partition 
+\emph on
+sda1
+\emph default
+.
+ Also, on UEFI, no matter which method you choose to install Manjaro, you
+ won't be asked whether you want to install the GRUB boot loader or not.
+ It will be installed automatically.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-alongside/partition.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BIOS system
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/partitions.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+UEFI system
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Other than that, the process involved in each assisted installation option
+ is the same wether you are on a UEFI or BIOS system.
+ Calamares takes care of the differences for you.
+ For specific instructions about dual-booting with Windows, see chapter
+ 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "windows10"
+
+\end_inset
+
+
+\series default
+.
+ Also, note that some installation options may not be available if they
+ are not necessary.
+ For instance, you will not have the option to replace a partition on an
+ empty hard drive.
+\end_layout
+
+\begin_layout Section
+Install Manjaro alongside an existing operating system
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-alongside/alongside_2.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+When clicking on a partition in the bar representing the current state,
+ the bottom bar will change to show this partition split in two.
+ Drag the demarcation to adjust the size of the new partition, as shown
+ in section 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "windows10"
+
+\end_inset
+
+.
+ On a UEFI system, the suggested partition setup will mention if an existing
+ EFI partition was detected.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BIOS system
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/alongside/click_partition_alongside.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+UEFI system
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Replace an existing partition 
 \begin_inset CommandInset label
 LatexCommand label
 name "replace"
@@ -4553,6 +4952,15 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/calamares-replace/replace_2.png
 	lyxscale 50
@@ -4566,7 +4974,59 @@ status open
 \begin_layout Plain Layout
 When clicking a partition in the bar representing the current state, the
  bottom bar will change to show this partition overwritten by Manjaro.
+ On a UEFI system, the suggested partition setup will mention if an existing
+ EFI partition was detected.
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BIOS system
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/replace/click_partition_replace.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+UEFI system
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -4579,33 +5039,35 @@ When clicking a partition in the bar representing the current state, the
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
 The rest of the process is similar to the one presented earlier in section
  
 \series bold
 
 \begin_inset CommandInset ref
 LatexCommand nameref
-reference "alongside"
+reference "windows10"
 
 \end_inset
 
 
 \series default
 .
+ The 
+\series bold
+Boot loader location
+\series default
+ menu allows you to choose whether or not to install a boot loader, and
+ if so where to install it.
+ A boot loader is a program which enables you to choose which operating
+ system to boot when you turn on your computer.
+ If you are unsure what to do, we recommend keeping the default choice.
 \end_layout
 
 \begin_layout Section
-Erase disk and let Calamares choose a partition scheme
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "eraseDisk"
-
-\end_inset
-
-
+Erase the disk and let Calamares choose a partition scheme
 \end_layout
 
 \begin_layout Standard
@@ -4641,6 +5103,15 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/calamares-erase-disk/erase_disk.png
 	lyxscale 50
@@ -4674,7 +5145,59 @@ reference "summary"
 
 \series default
 .
+ On a UEFI system, Calamares suggests a EFI partition at the beginning,
+ a root partition for Manjaro and a swap partition at the end.
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BIOS system
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/calamares-uefi/erase/select_erase.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+UEFI system
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -4693,20 +5216,13 @@ The rest of the process is similar to the one presented earlier in section
 
 \begin_inset CommandInset ref
 LatexCommand nameref
-reference "alongside"
+reference "windows10"
 
 \end_inset
 
 
 \series default
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Chapter
@@ -4739,7 +5255,7 @@ Manual installation
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
-name "advancedInstall"
+name "advancedInstallBIOS"
 
 \end_inset
 
@@ -5219,7 +5735,7 @@ The rest of the process is similar to the one presented earlier in section
 
 \begin_inset CommandInset ref
 LatexCommand nameref
-reference "alongside"
+reference "windows10"
 
 \end_inset
 
@@ -5810,396 +6326,6 @@ reference "replace"
 \end_layout
 
 \begin_layout Chapter
-Assisted installation on a UEFI system
-\end_layout
-
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-UEFI
-\end_layout
-
-\end_inset
-
-
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Assisted installation
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "UEFIInstall"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setcounter{figure}{0}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Quote
-UEFI is the commonly agreed on name for both the EFI & UEFI standards which
- merged.
- It does not include the old EFI v1, or Apple's own non-standard version
- of EFI.
-\end_layout
-
-\begin_layout Standard
-Some newer hardware do not use the well-known BIOS to manage boot options.
- Instead, a new one named UEFI (Unified Extensible Firmware Interface) is
- used.
- It still has BIOS-like menus and often has a legacy mode, which uses BIOS.
- UEFI often goes hand in hand with the infamous Secure Boot option that
- makes it more difficult to boot operating systems outside of a select few.
- If your computer came with Microsoft Windows 8 or later installed, your
- computer uses UEFI and probably has Secure Boot enabled by default.
- However, the Linux community reacted to this and developed means to install
- and boot Linux on those systems as well.
- Some installers, such as Calamares, can even automate the process so it
- makes virtually no difference to the user whether their machine uses UEFI
- or BIOS.
-\end_layout
-
-\begin_layout Section
-Booting in UEFI mode
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-The most important step is to ensure that your machine does not have Secure
- Boot enabled
-\series default
-.
- Only a very limited number of operating systems will boot with this enabled.
- You must disable Secure Boot in your BIOS before proceeding; if you don't
- know how to do this please refer to your computer's user manual, as it
- differs for all computers.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/UEFI_manjaro_menu.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-In UEFI mode the Manjaro boot selection screen is almost identical to the
- one in BIOS mode.
- The same steps for choosing the language, keyboard layout and drivers apply,
- as well as booting the Live environment.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Differences in the partition setup
-\end_layout
-
-\begin_layout Standard
-The key difference in the way the partitions are arranged compared to the
- case with BIOS is that a small partition of a few hundred MB must be created
- to house some of the files used when booting the system.
- This partition must use the fat32 file system.
- Luckily, in all assisted installation options, Calamares handles the creation
- of this partition if it does not already exist and writes the necessary
- files to it.
- If the partition already exists, it is detected and used to write the files.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/partitions.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Once the Calamares installer is executed, the first noticeable difference
- compared to the case with a BIOS is at the top of the screen, where EFI
- is specified instead.
- In this case, a GPT partition table is also used instead of the MBR partition
- table more commonly found on BIOS systems.
- The bottom of the screen displays the current partition scheme, with the
- sda1 partition storing the files used when booting.
- No matter which method you choose to install Manjaro, you won't be asked
- whether you want to install the GRUB boot loader or not.
- It will be installed automatically.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Assisted installation
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "assistedUEFI"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setcounter{figure}{0}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The installation using the three assisted installation options does not
- change much from the case with a BIOS.
- Calamares takes care of the differences for you.
- For specific instructions about dual-booting with Windows, see chapter
- 
-\series bold
-
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "windows10"
-
-\end_inset
-
-
-\series default
-.
- 
-\emph on
-Please note that some installation options may not be available if they
- are not necessary.
- For instance, you will not have the option to replace a partition on an
- empty hard drive.
-\end_layout
-
-\begin_layout Subsection
-Install alongside
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/alongside/click_partition_alongside.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-When selecting the 
-\series bold
-Install alongside
-\series default
- option and clicking on the partition to shrink, the suggested partition
- setup will mention if an existing EFI partition was detected.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Replace a partition
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/replace/click_partition_replace.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-When selecting the 
-\series bold
-Replace a partition
-\series default
- option and clicking on the partition to overwrite, the suggested partition
- setup will also mention if an existing EFI partition was detected.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Erase disk
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/erase/select_erase.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-The 
-\series bold
-Erase disk
-\series default
- option suggests a EFI partition at the beginning, a root partition for
- Manjaro and a swap partition at the end.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Chapter
 Manual installation on a UEFI system
 \end_layout
 
@@ -6220,6 +6346,16 @@ status open
 \begin_layout Plain Layout
 Manual installation
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "advancedInstallUEFI"
 
 \end_inset
 
@@ -6709,7 +6845,7 @@ Next are the partitions used by Manjaro itself.
 
 \begin_inset CommandInset ref
 LatexCommand nameref
-reference "advancedInstall"
+reference "advancedInstallBIOS"
 
 \end_inset
 
@@ -7466,7 +7602,7 @@ Next, select the other partitions you want to use and choose their respective
 
 \begin_inset CommandInset ref
 LatexCommand nameref
-reference "advancedInstall"
+reference "advancedInstallBIOS"
 
 \end_inset
 
@@ -7530,244 +7666,6 @@ Install now
 
 \end_layout
 
-\begin_layout Chapter
-Dual-booting with Microsoft Windows 10
-\end_layout
-
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Microsoft Windows 10
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "windows10"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setcounter{figure}{0}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The screenshots in chapter 
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "UEFIInstall"
-
-\end_inset
-
- used Linux Mint as the already installed operating system.
- However, the partition scheme used by Windows is a bit different from the
- one typically used by Linux.
- This section focuses on the differences in the installation steps between
- the two cases.
-\end_layout
-
-\begin_layout Section
-Download the installation media
-\end_layout
-
-\begin_layout Standard
-First, make sure you have downloaded a 64-bit version of Manjaro.
- It doesn't matter which edition you choose, but the filename must end with
-\series bold
- x86_64.iso
-\series default
-.
-\end_layout
-
-\begin_layout Standard
-Next, create the Live media by burning the disc image to a DVD or writing
- to a USB flash drive.
- The process is very similar to a non-UEFI installation.
- For Windows users using USB media, Rufus
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://rufus.akeo.ie/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- is recommended.
- 
-\end_layout
-
-\begin_layout Standard
-Select the USB key to be used in the Device menu.
- Then, on the line beginning with 
-\emph on
-Create a bootable disk using
-\emph default
-, click on the DVD icon to select your downloaded disc image.
- After doing so, in the menu left of the DVD icon, select 
-\series bold
-DD Image
-\series default
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float marginfigure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/imagewriter-windows-rufus.png
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Rufus with recommended settings
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Finally, click 
-\series bold
-Start
-\series default
- to begin the writing process! Once you are done, restart your computer
- and boot on the USB key as was explained earlier in chapter 
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "UEFIInstall"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Section
-Assisted installation
-\end_layout
-
-\begin_layout Standard
-The assisted installation options do a good job of setting everything up.
- If you do not wish to bother yourself creating everything manually, you
- can rely on Calamares to do the dirty work for you!
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/windows-keep-efi/windows_alongside.png
-	lyxscale 50
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Using the assisted installation option to install Manjaro alongside Windows,
- select the partition used as the C: drive by Windows.
- It should be the biggest one.
- Then, move the slider as explained in section 
-\series bold
-
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "alongside"
-
-\end_inset
-
-
-\series default
- to increase or decrease the size of the partition that will be created
- for Manjaro.
- The Windows EFI partition is detected automatically.
- For a refresher on partitions and partition tables, see chapter 
-\series bold
-
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "words"
-
-\end_inset
-
-
-\series default
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Manual installation
 \end_layout
@@ -7780,7 +7678,7 @@ This can also be done in the manual partitioning option.
 
 \begin_inset CommandInset ref
 LatexCommand nameref
-reference "advancedInstall"
+reference "advancedInstallBIOS"
 
 \end_inset
 
@@ -8195,40 +8093,6 @@ Next
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Update the GRUB boot loader, or 
-\begin_inset Quotes eld
-\end_inset
-
-Where did Windows go?
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Sometimes the boot loader GRUB2 does not detect an existing Microsoft Windows
- installation when installing.
- This means that only Manjaro Linux will appear in the list of installed
- operating systems when you boot the machine.
-\end_layout
-
-\begin_layout Standard
-To solve this problem, run the command:
-\end_layout
-
-\begin_layout LyX-Code
-
-\family typewriter
-sudo update-grub
-\end_layout
-
-\begin_layout Standard
-in a terminal after booting into Manjaro and it will detect Windows and
- add an entry to the boot menu.
 \end_layout
 
 \begin_layout Chapter
