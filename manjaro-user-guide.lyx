@@ -730,7 +730,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome_live.png
+	filename images/boot/welcome_live.png
 	lyxscale 50
 	width 100text%
 
@@ -987,7 +987,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome_live.png
+	filename images/boot/welcome_live.png
 	lyxscale 33
 	width 95text%
 
@@ -1034,7 +1034,7 @@ Xfce edition
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/editions/kde.png
+	filename images/getting-manjaro/kde.png
 	lyxscale 33
 	width 50text%
 
@@ -1050,7 +1050,7 @@ Xfce edition
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/editions/gnome.png
+	filename images/getting-manjaro/gnome.png
 	lyxscale 33
 	width 50text%
 
@@ -1645,7 +1645,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/windows-checksum.png
+	filename images/getting-manjaro/windows-checksum.png
 	lyxscale 50
 	width 100text%
 
@@ -2268,7 +2268,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/windows-disc-image-burner.png
+	filename images/getting-manjaro/windows-disc-image-burner.png
 	lyxscale 50
 	width 100text%
 
@@ -2558,7 +2558,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/imagewriter-linux.png
+	filename images/getting-manjaro/imagewriter-linux.png
 	lyxscale 50
 	width 100col%
 
@@ -2771,7 +2771,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/imagewriter-windows-rufus.png
+	filename images/getting-manjaro/imagewriter-windows-rufus.png
 	width 100col%
 
 \end_inset
@@ -2950,7 +2950,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/media-boot-screen.png
+	filename images/boot/media-boot-screen.png
 	lyxscale 50
 	width 50text%
 
@@ -2966,7 +2966,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/UEFI_manjaro_menu.png
+	filename images/boot/UEFI_manjaro_menu.png
 	lyxscale 50
 	width 50col%
 
@@ -3047,7 +3047,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/media-choose-language.png
+	filename images/boot/media-choose-language.png
 	lyxscale 50
 	width 100col%
 
@@ -3101,7 +3101,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/media-choose-keyboard.png
+	filename images/boot/media-choose-keyboard.png
 	lyxscale 50
 	width 100col%
 
@@ -3249,7 +3249,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/media-boot-manjaro.png
+	filename images/boot/media-boot-manjaro.png
 	lyxscale 50
 	width 100text%
 
@@ -3296,7 +3296,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome_live.png
+	filename images/boot/welcome_live.png
 	lyxscale 50
 	width 100text%
 
@@ -3360,7 +3360,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/xfce_settings.png
+	filename images/keyboard/xfce_settings.png
 	lyxscale 50
 	width 100col%
 
@@ -3401,7 +3401,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/keyboard.png
+	filename images/keyboard/keyboard.png
 	lyxscale 50
 	width 100col%
 
@@ -3439,7 +3439,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/keyboard_edit.png
+	filename images/keyboard/keyboard_edit.png
 	lyxscale 50
 	width 100col%
 
@@ -3485,7 +3485,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/keyboard_choose.png
+	filename images/keyboard/keyboard_choose.png
 	lyxscale 50
 	width 100col%
 
@@ -3893,7 +3893,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-alongside/cal_welcome.png
+	filename images/alongside-windows/cal-welcome.png
 	lyxscale 50
 	width 100col%
 
@@ -3940,7 +3940,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-alongside/cal_location.png
+	filename images/alongside-windows/cal-location.png
 	lyxscale 50
 	width 100col%
 
@@ -3983,7 +3983,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-alongside/cal_locale.png
+	filename images/alongside-windows/cal-locale.png
 	lyxscale 50
 	width 100col%
 
@@ -4029,7 +4029,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-alongside/cal_keyboard.png
+	filename images/alongside-windows/cal-keyboard.png
 	lyxscale 50
 	width 100col%
 
@@ -4064,7 +4064,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-alongside/cal_keyboard_menu.png
+	filename images/alongside-windows/cal-keyboard-menu.png
 	lyxscale 50
 	width 100col%
 
@@ -4108,7 +4108,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-alongside/partition-windows.png
+	filename images/alongside-windows/partition-windows.png
 	lyxscale 50
 	width 100col%
 
@@ -4186,7 +4186,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-alongside/alongside_1.png
+	filename images/alongside-windows/alongside_1.png
 	lyxscale 50
 	width 100col%
 
@@ -4220,7 +4220,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/windows-keep-efi/windows_alongside.png
+	filename images/alongside-windows/alongside_2.png
 	lyxscale 50
 	width 100col%
 
@@ -4254,7 +4254,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-alongside/alongside_3.png
+	filename images/alongside-windows/alongside_3.png
 	lyxscale 50
 	width 100col%
 
@@ -4298,7 +4298,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-alongside/cal_users.png
+	filename images/alongside-windows/cal-users.png
 	lyxscale 50
 	width 100col%
 
@@ -4365,7 +4365,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-alongside/summary_alongside.png
+	filename images/alongside-windows/summary-windows.png
 	lyxscale 50
 	width 100col%
 
@@ -4427,7 +4427,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-alongside/cal_install_slideshow.png
+	filename images/alongside-windows/cal-install-slideshow.png
 	lyxscale 50
 	width 100col%
 
@@ -4468,7 +4468,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-alongside/cal_finish.png
+	filename images/alongside-windows/cal-finish.png
 	lyxscale 50
 	width 100col%
 
@@ -4669,7 +4669,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-alongside/partition.png
+	filename images/calamares-assisted/partition-BIOS.png
 	lyxscale 50
 	width 100col%
 
@@ -4698,7 +4698,7 @@ BIOS system
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/partitions.png
+	filename images/calamares-assisted/partition-UEFI.png
 	lyxscale 50
 	width 100col%
 
@@ -4800,7 +4800,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-alongside/alongside_2.png
+	filename images/calamares-assisted/alongside-BIOS.png
 	lyxscale 50
 	width 100col%
 
@@ -4853,7 +4853,7 @@ BIOS system
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/alongside/click_partition_alongside.png
+	filename images/calamares-assisted/alongside-UEFI.png
 	lyxscale 50
 	width 100col%
 
@@ -4945,7 +4945,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-replace/replace_1.png
+	filename images/calamares-assisted/replace_1-BIOS.png
 	lyxscale 50
 	width 100col%
 
@@ -4988,7 +4988,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-replace/replace_2.png
+	filename images/calamares-assisted/replace_2-BIOS.png
 	lyxscale 50
 	width 100col%
 
@@ -5029,7 +5029,7 @@ BIOS system
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/replace/click_partition_replace.png
+	filename images/calamares-assisted/replace-UEFI.png
 	lyxscale 50
 	width 100col%
 
@@ -5139,7 +5139,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-erase-disk/erase_disk.png
+	filename images/calamares-assisted/erase-disk-BIOS.png
 	lyxscale 50
 	width 100col%
 
@@ -5200,7 +5200,7 @@ BIOS system
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/erase/select_erase.png
+	filename images/calamares-assisted/erase-disk-UEFI.png
 	lyxscale 50
 	width 100col%
 
@@ -5323,7 +5323,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-manual/manual.png
+	filename images/calamares-manual-BIOS/manual.png
 	lyxscale 50
 	width 100col%
 
@@ -5374,7 +5374,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-manual/man_part_1.png
+	filename images/calamares-manual-BIOS/man-part_1.png
 	lyxscale 50
 	width 100col%
 
@@ -5430,7 +5430,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-manual/man_part_2.png
+	filename images/calamares-manual-BIOS/man-part_2.png
 	lyxscale 50
 	width 100col%
 
@@ -5517,7 +5517,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-manual/man_part_resize.png
+	filename images/calamares-manual-BIOS/edit.png
 	lyxscale 50
 	width 50col%
 
@@ -5569,7 +5569,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-manual/man_part_create_1.png
+	filename images/calamares-manual-BIOS/create_1.png
 	lyxscale 50
 	width 100col%
 
@@ -5605,7 +5605,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-manual/man_part_create_2.png
+	filename images/calamares-manual-BIOS/create_2.png
 	lyxscale 50
 	width 100col%
 
@@ -5665,7 +5665,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-manual/man_part_result.png
+	filename images/calamares-manual-BIOS/result.png
 	lyxscale 50
 	width 100col%
 
@@ -5745,7 +5745,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-manual/summary_manual.png
+	filename images/calamares-manual-BIOS/summary-manual.png
 	lyxscale 50
 	width 100col%
 
@@ -5864,7 +5864,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/gparted/gparted.png
+	filename images/calamares-manual-BIOS/gparted/gparted.png
 	lyxscale 50
 	width 100col%
 
@@ -5904,7 +5904,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/gparted/gparted_1.png
+	filename images/calamares-manual-BIOS/gparted/gparted_1.png
 	lyxscale 50
 	width 100col%
 
@@ -5947,7 +5947,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/gparted/gparted_2.png
+	filename images/calamares-manual-BIOS/gparted/gparted_2.png
 	lyxscale 50
 	width 100col%
 
@@ -5993,7 +5993,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/gparted/gparted_3.png
+	filename images/calamares-manual-BIOS/gparted/gparted_3.png
 	lyxscale 50
 	width 100col%
 
@@ -6031,7 +6031,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/gparted/gparted_resize.png
+	filename images/calamares-manual-BIOS/gparted/gparted-resize.png
 	lyxscale 50
 	width 100col%
 
@@ -6091,7 +6091,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/gparted/gparted_create.png
+	filename images/calamares-manual-BIOS/gparted/gparted-create.png
 	lyxscale 50
 	width 100col%
 
@@ -6126,7 +6126,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/gparted/gparted_create_2.png
+	filename images/calamares-manual-BIOS/gparted/gparted-create_2.png
 	lyxscale 50
 	width 100col%
 
@@ -6205,7 +6205,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/gparted/gparted_apply.png
+	filename images/calamares-manual-BIOS/gparted/gparted-apply.png
 	lyxscale 50
 	width 100col%
 
@@ -6247,7 +6247,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/gparted/gparted_working.png
+	filename images/calamares-manual-BIOS/gparted/gparted-working.png
 	lyxscale 50
 	width 100col%
 
@@ -6281,7 +6281,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/gparted/gparted_success.png
+	filename images/calamares-manual-BIOS/gparted/gparted-success.png
 	lyxscale 50
 	width 100col%
 
@@ -6316,7 +6316,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/gparted/gparted_result.png
+	filename images/calamares-manual-BIOS/gparted/gparted-result.png
 	lyxscale 50
 	width 100col%
 
@@ -6484,7 +6484,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/manual/partition_table.png
+	filename images/calamares-manual-UEFI/partition-table.png
 	lyxscale 50
 	width 100col%
 
@@ -6562,7 +6562,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/manual/click_create.png
+	filename images/calamares-manual-UEFI/click-create.png
 	lyxscale 50
 	width 100col%
 
@@ -6602,7 +6602,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/manual/efi_fat32.png
+	filename images/calamares-manual-UEFI/efi-fat32.png
 	lyxscale 50
 	width 100col%
 
@@ -6654,7 +6654,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/manual/boot_efi.png
+	filename images/calamares-manual-UEFI/boot-efi.png
 	lyxscale 50
 	width 100col%
 
@@ -6695,7 +6695,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/manual/efi_flags.png
+	filename images/calamares-manual-UEFI/efi-flags.png
 	lyxscale 50
 	width 100col%
 
@@ -6753,7 +6753,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/manual/swap_linuxswap.png
+	filename images/calamares-manual-UEFI/swap-linuxswap.png
 	lyxscale 50
 	width 100col%
 
@@ -6795,7 +6795,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/manual/swap_slide.png
+	filename images/calamares-manual-UEFI/swap-slide.png
 	lyxscale 50
 	width 100col%
 
@@ -6841,7 +6841,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/manual/partitions_manual.png
+	filename images/calamares-manual-UEFI/partitions-manual.png
 	lyxscale 50
 	width 100col%
 
@@ -6902,7 +6902,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/manual/summary_manual.png
+	filename images/calamares-manual-UEFI/summary-manual.png
 	lyxscale 50
 	width 100col%
 
@@ -6984,7 +6984,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/gparted/gparted_partition_table.png
+	filename images/calamares-manual-UEFI/gparted/gparted-partition-table.png
 	lyxscale 50
 	width 100col%
 
@@ -7023,7 +7023,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/gparted/gparted_gpt.png
+	filename images/calamares-manual-UEFI/gparted/gparted-gpt.png
 	lyxscale 50
 	width 100col%
 
@@ -7086,7 +7086,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/gparted/gparted_create.png
+	filename images/calamares-manual-UEFI/gparted/gparted-create.png
 	lyxscale 50
 	width 100col%
 
@@ -7122,7 +7122,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/gparted/gparted_efi.png
+	filename images/calamares-manual-UEFI/gparted/gparted-efi.png
 	lyxscale 50
 	width 100col%
 
@@ -7189,7 +7189,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/gparted/gparted_swap.png
+	filename images/calamares-manual-UEFI/gparted/gparted-swap.png
 	lyxscale 50
 	width 100col%
 
@@ -7237,7 +7237,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/gparted/gparted_root.png
+	filename images/calamares-manual-UEFI/gparted/gparted-root.png
 	lyxscale 50
 	width 100col%
 
@@ -7286,7 +7286,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/gparted/gparted_apply.png
+	filename images/calamares-manual-UEFI/gparted/gparted-apply.png
 	lyxscale 50
 	width 100col%
 
@@ -7332,7 +7332,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/gparted/gparted_manage_flags.png
+	filename images/calamares-manual-UEFI/gparted/gparted-manage-flags.png
 	lyxscale 50
 	width 100col%
 
@@ -7376,7 +7376,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/gparted/gparted_flags.png
+	filename images/calamares-manual-UEFI/gparted/gparted-flags.png
 	lyxscale 50
 	width 50col%
 
@@ -7423,7 +7423,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/gparted/gparted_result.png
+	filename images/calamares-manual-UEFI/gparted/gparted-result.png
 	lyxscale 50
 	width 100col%
 
@@ -7456,6 +7456,10 @@ That's it! Your partitions are all set up and ready to use in the installer.
 
 \end_layout
 
+\begin_layout Subsection
+Using the partitions
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -7464,7 +7468,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/gparted/cal_edit_efi.png
+	filename images/calamares-manual-UEFI/gparted/cal-edit-efi.png
 	lyxscale 50
 	width 100col%
 
@@ -7511,7 +7515,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/gparted/cal_boot_efi.png
+	filename images/calamares-manual-UEFI/gparted/cal-boot-efi.png
 	lyxscale 50
 	width 50col%
 
@@ -7563,7 +7567,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/gparted/cal_root.png
+	filename images/calamares-manual-UEFI/gparted/cal-root.png
 	lyxscale 50
 	width 50col%
 
@@ -7692,7 +7696,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/windows-keep-efi/windows_manual_edit_EFI.png
+	filename images/calamares-manual-UEFI/windows/windows-edit-EFI.png
 	lyxscale 50
 	width 100col%
 
@@ -7748,7 +7752,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/windows-keep-efi/windows_manual_mount_EFI.png
+	filename images/calamares-manual-UEFI/windows/windows-mount-EFI.png
 	lyxscale 50
 	width 50col%
 
@@ -7815,7 +7819,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/windows-keep-efi/windows_manual_edit_Cdrive.png
+	filename images/calamares-manual-UEFI/windows/windows-edit-Cdrive.png
 	lyxscale 50
 	width 100col%
 
@@ -7855,7 +7859,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/windows-keep-efi/windows_manual_reduce_Cdrive.png
+	filename images/calamares-manual-UEFI/windows/windows-reduce-Cdrive.png
 	lyxscale 50
 	width 50col%
 
@@ -7904,7 +7908,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/windows-keep-efi/windows_manual_create.png
+	filename images/calamares-manual-UEFI/windows/windows-create.png
 	lyxscale 50
 	width 100col%
 
@@ -7942,7 +7946,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/windows-keep-efi/windows_manual_swap.png
+	filename images/calamares-manual-UEFI/windows/windows-swap.png
 	lyxscale 50
 	width 100col%
 
@@ -7994,7 +7998,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/windows-keep-efi/windows_manual_root.png
+	filename images/calamares-manual-UEFI/windows/windows-root.png
 	lyxscale 50
 	width 50col%
 
@@ -8044,7 +8048,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/windows-keep-efi/windows_summary_manual.png
+	filename images/calamares-manual-UEFI/windows/summary-windows-manual.png
 	lyxscale 50
 	width 100col%
 
@@ -8158,7 +8162,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encryption/encryption_passphrase.png
+	filename images/encryption/encryption-passphrase.png
 	lyxscale 50
 	width 100col%
 
@@ -8208,7 +8212,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encryption/encryption_boot.png
+	filename images/encryption/encryption-boot.png
 	lyxscale 50
 	width 100col%
 
@@ -8254,7 +8258,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encryption/encryption_manual.png
+	filename images/encryption/encryption-manual.png
 	lyxscale 50
 	width 75col%
 
@@ -8294,7 +8298,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/encryption/encryption_passphrase_manual.png
+	filename images/encryption/encryption-passphrase-manual.png
 	lyxscale 50
 	width 75col%
 
