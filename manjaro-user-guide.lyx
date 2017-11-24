@@ -2933,60 +2933,72 @@ When you boot from your installation media (CD/DVD or USB flash drive) you
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float marginfigure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/media-boot-screen.png
-	lyxscale 50
-	width 100text%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Boot menu in BIOS mode
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-uefi/UEFI_manjaro_menu.png
+	filename images/media-boot-screen.png
 	lyxscale 50
-	width 100col%
+	width 50text%
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-In UEFI mode the Manjaro boot selection screen is almost identical to the
- one in BIOS mode.
+\begin_inset Graphics
+	filename images/calamares-uefi/UEFI_manjaro_menu.png
+	lyxscale 50
+	width 50col%
+
+\end_inset
+
+
 \end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Boot menu in BIOS mode
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Boot menu in UEFI mode
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -3003,6 +3015,10 @@ It is possible at this stage to set your preferred language and keyboard
  layout before using Manjaro.
  This means that you will be able to use and install Manjaro in your native
  language straight away.
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3021,7 +3037,10 @@ lang=en_US
  key.
  A list of available languages will appear.
  In this instance, English (US) has been highlighted for the user.
-\begin_inset Float marginfigure
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
 wide false
 sideways false
 status open
@@ -3075,7 +3094,7 @@ Enter
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float marginfigure
+\begin_inset Float figure
 wide false
 sideways false
 status open
@@ -3223,7 +3242,7 @@ Boot
 Enter
 \series default
 >.
-\begin_inset Float marginfigure
+\begin_inset Float figure
 wide false
 sideways false
 status open
@@ -3248,6 +3267,13 @@ Start Manjaro Linux
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -6391,7 +6417,8 @@ reference "efi-gparted"
 
 
 \series default
-) will show you how to create the partitions with GParted.
+) will show you how to create the partitions with GParted and then put them
+ to use in the installer.
  Finally, the third one (
 \series bold
 
@@ -6403,9 +6430,8 @@ reference "existing-efi"
 
 
 \series default
-) will show you how to use previously created partitions during the installation
-, including a EFI partition used by another operating system.
- These partitions can have been previously created with GParted.
+) will show you how to use a EFI partition previously created and used by
+ another operating system.
 \end_layout
 
 \begin_layout Section
@@ -7410,8 +7436,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-That's it! Your partitions are all set up! It is now time to put them to
- use in the installer.
+That's it! Your partitions are all set up and ready to use in the installer.
 \end_layout
 
 \end_inset
@@ -7429,44 +7454,6 @@ That's it! Your partitions are all set up! It is now time to put them to
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Using an already existing EFI partition 
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "existing-efi"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setcounter{figure}{0}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-You may want to consider this scenario is you prepared partitions beforehand
- with a tool like GParted or if you are dual-booting with another operating
- system.
- In the later case, you will probably want to use the same EFI partition
- for Manjaro and the other operating system.
 \end_layout
 
 \begin_layout Standard
@@ -7544,14 +7531,9 @@ In the window that appears, choose to mount the partition under
 .
  You also have the option to either keep the contents of the partition or
  format it.
- 
-\series bold
-Keeping them is especially important when dual-booting with another operating
+ Keeping them is especially important when dual-booting with another operating
  system.
-
-\series default
- That way, the Calamares installer will write the files necessary for booting
- Manjaro alongside those of the other operating system.
+ Otherwise, it does not really matter.
  Also, make sure the 
 \series bold
 boot
@@ -7622,57 +7604,57 @@ reference "advancedInstallBIOS"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/calamares-uefi/gparted/summary_gparted.png
-	lyxscale 50
-	width 100col%
-
+\begin_inset Newpage newpage
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Once everything is set up, you can proceed up to the summary.
- As always, this is the very last step where you can go back to make changes.
- Once you click 
-\series bold
-Next
-\series default
- and then 
-\series bold
-Install now
-\series default
- in the dialog, the modifications will be applied to your drive and the
- actual installation will begin.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Manual installation
 \end_layout
 
 \begin_layout Standard
-This can also be done in the manual partitioning option.
- The steps below are very similar to the ones presented in other sections
+Once everything is set up, you can proceed up to the summary.
+ As always, this is the very last step where you can go back to make changes.
+\end_layout
+
+\begin_layout Section
+Using an already existing EFI partition 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "existing-efi"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you are dual-booting with another operating system, a EFI partition will
+ probably already exist.
+ In that case, you will probably want to use the same EFI partition for
+ Manjaro and the other operating system.
+ The other operating system used in this example is Microsoft Windows 10.
+\end_layout
+
+\begin_layout Standard
+The steps below are very similar to the ones presented in other sections
  such as 
 \series bold
 
