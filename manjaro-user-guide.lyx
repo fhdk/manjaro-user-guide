@@ -2893,7 +2893,7 @@ Some newer hardware do not use the well-known BIOS to manage boot options.
  UEFI often goes hand in hand with the infamous Secure Boot option that
  makes it more difficult to boot operating systems outside of a select few.
  If your computer came with Microsoft Windows 8 or later installed, your
- computer uses UEFI and probably has Secure Boot enabled by default.
+ computer probably uses UEFI and has Secure Boot enabled by default.
  However, the Linux community reacted to this and developed means to install
  and boot Linux on those systems as well.
  Some installers, such as 
@@ -2916,9 +2916,9 @@ The most important step is to ensure that your machine does not have Secure
 \series default
 .
  Only a very limited number of operating systems will boot with this enabled.
- You must disable Secure Boot in your BIOS before proceeding; if you don't
- know how to do this please refer to your computer's user manual, as it
- differs for all computers.
+ You must disable Secure Boot in your UEFI/BIOS before proceeding; if you
+ don't know how to do this please refer to your computer's user manual,
+ as it differs for all computers.
 \end_layout
 
 \begin_layout Section
@@ -3036,7 +3036,6 @@ lang=en_US
 \series default
  key.
  A list of available languages will appear.
- In this instance, English (US) has been highlighted for the user.
 \end_layout
 
 \begin_layout Standard
@@ -3138,13 +3137,24 @@ Enter
 >.
  If you cannot find the one you are used to, do not worry, you will be able
  to select it once in the Live environment (see subsection 
+\series bold
+
 \begin_inset CommandInset ref
 LatexCommand nameref
 reference "keyboard_layout"
 
 \end_inset
 
+
+\series default
 ).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -4284,6 +4294,25 @@ Click and drag the separation between the two parts to change the amount
 You can also choose to encrypt your Manjaro partition.
  That way, anyone trying to access to the data it contains will have to
  enter a password of your choosing.
+ For more information, see chapter 
+\series bold
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "encryption"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -4338,6 +4367,13 @@ password
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -4620,12 +4656,16 @@ reference "advancedInstallBIOS"
 
 \series default
  for a BIOS system and 
+\series bold
+
 \begin_inset CommandInset ref
 LatexCommand nameref
 reference "advancedInstallUEFI"
 
 \end_inset
 
+
+\series default
  for a UEFI system.
 \end_layout
 
@@ -4642,7 +4682,7 @@ The key difference in the way the partitions are arranged compared to the
  of this partition if it does not already exist and writes the necessary
  files to it.
  If the partition already exists, it is detected and used to write the files.
- In this section, it is on partition 
+ In this section, for UEFI systems, it is on partition 
 \emph on
 sda1
 \emph default
@@ -4758,7 +4798,7 @@ setcounter{figure}{0}
 
 \begin_layout Standard
 Other than that, the process involved in each assisted installation option
- is the same wether you are on a UEFI or BIOS system.
+ is the same whether you are on a UEFI or BIOS system.
  Calamares takes care of the differences for you.
  For specific instructions about dual-booting with Windows, see chapter
  
@@ -4817,12 +4857,16 @@ When clicking on a partition in the bar representing the current state,
  the bottom bar will change to show this partition split in two.
  Drag the demarcation to adjust the size of the new partition, as shown
  in section 
+\series bold
+
 \begin_inset CommandInset ref
 LatexCommand nameref
 reference "windows10"
 
 \end_inset
 
+
+\series default
 .
  On a UEFI system, the suggested partition setup will mention if an existing
  EFI partition was detected.
@@ -5171,8 +5215,6 @@ reference "summary"
 
 \series default
 .
- On a UEFI system, Calamares suggests a EFI partition at the beginning,
- a root partition for Manjaro and a swap partition at the end.
 \end_layout
 
 \end_inset
@@ -5478,7 +5520,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-manual/man_part_edit.png
+	filename images/calamares-manual-BIOS/edit.png
 	lyxscale 50
 	width 100col%
 
@@ -5517,7 +5559,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/calamares-manual-BIOS/edit.png
+	filename images/calamares-manual-BIOS/resize.png
 	lyxscale 50
 	width 50col%
 
@@ -6332,12 +6374,16 @@ status open
 Congratulations, you have now successfully created new partitions which
  you will be able to use to install Manjaro! This is especially useful when
  partitioning manually or when replacing an existing partition (
+\series bold
+
 \begin_inset CommandInset ref
 LatexCommand nameref
 reference "replace"
 
 \end_inset
 
+
+\series default
 ).
 \end_layout
 
@@ -7457,7 +7503,7 @@ That's it! Your partitions are all set up and ready to use in the installer.
 \end_layout
 
 \begin_layout Subsection
-Using the partitions
+Use the partitions
 \end_layout
 
 \begin_layout Standard
@@ -7582,19 +7628,6 @@ status open
 \begin_layout Plain Layout
 Next, select the other partitions you want to use and choose their respective
  mount points.
- If you want to dual-boot, you may want to shrink an existing partition
- and create partitions for Manjaro as illustrated in chapter 
-\series bold
-
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "advancedInstallBIOS"
-
-\end_inset
-
-
-\series default
-.
 \end_layout
 
 \end_inset
@@ -7832,13 +7865,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Like in the previous section, but this time using the manual partitioning
- option, select the partition used as the C: drive by Windows and 
+Select the partition used as the C: drive by Windows and 
 \series bold
 Edit
 \series default
  it.
- As previously stated, it should be the biggest one.
+ It should be the biggest one.
 \end_layout
 
 \end_inset
@@ -8083,6 +8115,16 @@ Next
 
 \begin_layout Chapter
 Encrypting your partitions
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "encryption"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
