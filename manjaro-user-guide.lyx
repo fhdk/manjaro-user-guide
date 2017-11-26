@@ -3257,12 +3257,16 @@ Entrer
  Si vous ne voyez pas celui auquel vous êtes habitué-e, ne vous inquiétez
  pas, vous pourrez le choisir une fois dans l'environnement Live (voir sous-sect
 ion 
+\series bold
+
 \begin_inset CommandInset ref
 LatexCommand nameref
 reference "keyboard_layout"
 
 \end_inset
 
+
+\series default
 ).
 \end_layout
 
@@ -4029,7 +4033,7 @@ N'hésitez pas à revenir à cette courte liste si le besoin se fait sentir!
 \end_layout
 
 \begin_layout Chapter
-Installation aux côtés de Microsoft Windows 10
+Installation à côté de Microsoft Windows 10
 \end_layout
 
 \begin_layout Standard
@@ -4523,7 +4527,7 @@ Cliquez et maintenez tout en vous déplaçant à gauche ou à droite pour bouger
 
 \begin_layout Standard
 Vous pouvez aussi choisir de chiffrer votre partition Manjaro.
- De cette manière, quiconque tentant d'accéder aux données qu'il contient
+ De cette manière, quiconque tentant d'accéder aux données qu'elle contient
  devra fournir un mot de passe de votre choix.
  Pour plus d'informations, référez-vous au chapitre 
 \series bold
@@ -4885,16 +4889,20 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-Il offre un choix de trois options d'installation assistée différentes qui
- seront couvertes tour à tour dans ce chapitre.
+L'installateur Calamares offre un choix de trois options d'installation
+ assistée différentes qui seront couvertes tour à tour dans ce chapitre.
  Le processus d'installation manuelle est quant à lui présenté au chapitre
  
+\series bold
+
 \begin_inset CommandInset ref
 LatexCommand nameref
 reference "advancedInstallBIOS"
 
 \end_inset
 
+
+\series default
  pour un système avec BIOS et 
 \series bold
 
@@ -4907,13 +4915,6 @@ reference "advancedInstallUEFI"
 
 \series default
  pour un système avec UEFI.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -4931,7 +4932,7 @@ Avec UEFI, la principale différence dans la façon dont les partitions sont
  s'occupe de créer cette partition si elle n'existe pas déjà et y place
  les fichiers nécessaires.
  Si une telle partition existe déjà, elle sera détectée et utilisée pour
- placer les fichiers.
+ y placer les fichiers.
  Dans ce chapitre, pour les systèmes avec UEFI, la partition remplissant
  cette fonction est 
 \emph on
@@ -4939,7 +4940,7 @@ sda1
 \emph default
 .
  Aussi, avec UEFI, peu importe l'option d'installation choisie, vous n'aurez
- plus le choix d'installer ou non le chargeur de démarrage GRUB.
+ pas le choix d'installer ou non le chargeur de démarrage GRUB.
  Il sera installé automatiquement.
 \end_layout
 
@@ -5035,14 +5036,18 @@ Système avec UEFI
 En dehors de ces quelques points, le processus d'installation est le même
  peu importe que vous utilisiez BIOS ou UEFI.
  Calamares s'occupe des différences pour vous.
- Les instructions spécifiques pour l'installation aux côtés de Windows sont
+ Les instructions spécifiques pour l'installation à côté de Windows sont
  présentées au chapitre 
+\series bold
+
 \begin_inset CommandInset ref
 LatexCommand nameref
 reference "windows10"
 
 \end_inset
 
+
+\series default
 .
  De plus, veuillez noter que certaines options d'installation peuvent ne
  pas être disponibles si elles sont inutiles.
@@ -5389,6 +5394,13 @@ La façon la plus simple d'installer Manjaro est d'effacer l'entièreté du
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -5569,7 +5581,7 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-La dernière option disponible est celle vous offrant le plus de contrôle.
+Cette option est celle vous offrant le plus de contrôle.
  Vous aurez la chance d'ajuster vous-même l'ensemble des partitions sur
  votre disque dur en utilisant l'outil de partitionnement inclus dans l'installa
 teur Calamares.
@@ -6626,12 +6638,16 @@ Félicitations, vous avez réussi à créer de nouvelles partitions, que vous
  pourrez utiliser pour installer Manjaro! Ceci est particulièrement utile
  pour le partitionnement manuel ou en utilisant l'option de remplacer une
  partition existante (
+\series bold
+
 \begin_inset CommandInset ref
 LatexCommand nameref
 reference "replace"
 
 \end_inset
 
+
+\series default
 ).
 \end_layout
 
@@ -7920,8 +7936,8 @@ Par la suite, sélectionnez les autres partitions à utiliser et sélectionnez
 \begin_layout Standard
 Une fois que tout est configuré à votre goût, vous pouvez continuer comme
  dans les autres cas jusqu'au résumé.
- Comme à l'habitude, il s'agit de la toute dernière étape où il possible
- de revenir en arrière pour effectuer des changements.
+ Comme d'habitude, il s'agit de la toute dernière étape où il possible de
+ revenir en arrière pour effectuer des changements.
 \end_layout
 
 \begin_layout Section
@@ -7956,17 +7972,12 @@ setcounter{figure}{0}
 
 \begin_layout Standard
 Si vous avez déjà un autre système d'exploitation installé, une partition
- EFI existera alors sûrement déjà.
+ EFI existe alors sûrement déjà.
  Dans ce cas, vous voudrez probablement utiliser la même partition EFI pour
  Manjaro et l'autre système d'exploitation.
  Cette section vous montrera comment le faire.
  Le système d'exploitation utilisé dans cet exemple est Microsoft Windows
  10.
-\end_layout
-
-\begin_layout Standard
-L'installation peut aussi très bien se faire dans l'option de partitionnement
- manuel.
  Les étapes sont très similaires à celles présentées ailleurs comme au chapitre
  
 \series bold
@@ -8385,7 +8396,7 @@ status open
 
 \begin_layout Plain Layout
 Vous pouvez ensuite continuer la procédure d'installation jusqu'au résumé.
- Comme à l'habitude, il s'agit de votre dernière chance pour vérifier les
+ Comme d'habitude, il s'agit de votre dernière chance pour vérifier les
  changements que vous êtes sur le point d'appliquer.
  Si vous êtes satisfait-e de ceux-ci, vous pouvez cliquer sur 
 \series bold
