@@ -730,7 +730,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/boot/welcome_live.png
+	filename images/boot/welcome-live.png
 	lyxscale 50
 	width 100text%
 
@@ -987,7 +987,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/boot/welcome_live.png
+	filename images/boot/welcome-live.png
 	lyxscale 33
 	width 95text%
 
@@ -2966,7 +2966,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/boot/UEFI_manjaro_menu.png
+	filename images/boot/UEFI-manjaro-menu.png
 	lyxscale 50
 	width 50col%
 
@@ -3306,7 +3306,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/boot/welcome_live.png
+	filename images/boot/welcome-live.png
 	lyxscale 50
 	width 100text%
 
@@ -3370,7 +3370,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/keyboard/xfce_settings.png
+	filename images/keyboard/xfce-settings.png
 	lyxscale 50
 	width 100col%
 
@@ -3449,7 +3449,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/keyboard/keyboard_edit.png
+	filename images/keyboard/keyboard-edit.png
 	lyxscale 50
 	width 100col%
 
@@ -3495,7 +3495,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/keyboard/keyboard_choose.png
+	filename images/keyboard/keyboard-choose.png
 	lyxscale 50
 	width 100col%
 
@@ -4674,15 +4674,15 @@ Differences in the partition setup between BIOS and UEFI systems
 \end_layout
 
 \begin_layout Standard
-The key difference in the way the partitions are arranged compared to the
- case with BIOS is that a small partition of a few hundred MB must be created
- to house some of the files used when booting the system.
+The key difference in the way the partitions are arranged on a UEFI system
+ compared to the case with BIOS is that a small partition of a few hundred
+ MB must be created to house some of the files used when booting the system.
  This partition must use the fat32 file system.
  Luckily, in all assisted installation options, Calamares handles the creation
  of this partition if it does not already exist and writes the necessary
  files to it.
  If the partition already exists, it is detected and used to write the files.
- In this section, for UEFI systems, it is on partition 
+ In this chapter, for UEFI systems, it is on partition 
 \emph on
 sda1
 \emph default
@@ -4775,22 +4775,6 @@ UEFI system
 
 \begin_layout Standard
 \begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setcounter{figure}{0}
-\end_layout
-
 \end_inset
 
 
@@ -4944,22 +4928,6 @@ name "replace"
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setcounter{figure}{0}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Another option would be to select an existing partition and overwrite it
  to install Manjaro.
  This could be useful if you are already dual-booting two different operating
@@ -4999,10 +4967,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-When selecting the option to install Manjaro on an existing partition, the
- bottom of the window will display a bar representing the current state
- of the hard drive and another representing its state after modifications,
- which at first is identical.
+When selecting the option to 
+\series bold
+replace
+\series default
+ an existing partition with Manjaro, the bottom of the window will display
+ a bar representing the current state of the hard drive and another representing
+ its state after modifications, which at first is identical.
 \end_layout
 
 \end_inset
@@ -5138,22 +5109,6 @@ Boot loader location
 
 \begin_layout Section
 Erase the disk and let Calamares choose a partition scheme
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setcounter{figure}{0}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -5347,7 +5302,7 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
-The last option is the one that gives you the most control.
+This option is the one that gives you the most control.
  You will get the chance to adjust yourself the partition scheme of your
  hard drive using the built-in partition manager and make it exactly the
  way you want it.
@@ -6436,7 +6391,7 @@ name "advancedInstallUEFI"
 
 \begin_layout Standard
 The manual installation option is the one that changes the most if you are
- using a UEFI system.
+ using a UEFI system compared to one with BIOS.
  The following steps will walk you through the process of creating a partition
  scheme suitable for your system in three different scenarios.
  The first one (
@@ -7687,11 +7642,9 @@ If you are dual-booting with another operating system, a EFI partition will
  probably already exist.
  In that case, you will probably want to use the same EFI partition for
  Manjaro and the other operating system.
+ This section will show you how to do this.
  The other operating system used in this example is Microsoft Windows 10.
-\end_layout
-
-\begin_layout Standard
-The steps below are very similar to the ones presented in other sections
+ The steps below are very similar to the ones presented in other sections
  such as 
 \series bold
 
