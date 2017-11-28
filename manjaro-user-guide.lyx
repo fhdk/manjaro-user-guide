@@ -10784,7 +10784,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/pamac/pamac-detail-click.png
+	filename images/welcome-to-manjaro/pamac/pamac.png
 	lyxscale 50
 	width 95col%
 
@@ -10800,7 +10800,42 @@ status open
 Pamac permet d'accéder facilement aux logiciels disponibles.
  Toutes les applications dans les dépôts sont gratuites, alors vous n'avez
  pas à vous soucier des coûts ou des licences nécessaires.
- Pour obtenir plus d'information sur un paquet, cliquez avec le bouton de
+ Pour chercher un paquet, il vous suffit de taper son nom ou un mot-clé
+ lui faisant référence, ou encore d'utiliser le panneau latéral à gauche!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/pamac/pamac-detail-click.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pour obtenir plus d'information sur un paquet, cliquez avec le bouton de
  droite sur celui-ci et sélectionnez 
 \series bold
 Détails
