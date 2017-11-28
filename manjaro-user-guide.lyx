@@ -10358,6 +10358,47 @@ Pamac is a piece of software that allows you to install software on your
 Add/Remove Software
 \series default
  in the application menu.
+ Pamac allows easy access to the available software.
+ All software applications in the repositories are free; no need to worry
+ about purchase or licensing costs.
+ To search for a package, simply start typing!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/pamac/pamac.png
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pamac allows easy access to the available software.
+ All software applications in the repositories are free; no need to worry
+ about purchase or licensing costs.
+ To search for a package, simply start typing or use the tabs to the left!
 \end_layout
 
 \end_inset
@@ -10391,10 +10432,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Pamac allows easy access to the available software.
- All software applications in the repositories are free; no need to worry
- about purchase or licensing costs.
- To obtain more information on a package, right-click on it and select 
+To obtain more information on a package, right-click on it and select 
 \series bold
 Details
 \series default
