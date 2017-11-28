@@ -8376,7 +8376,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/welcome_installed.png
+	filename images/welcome-to-manjaro/welcome-installed.png
 	lyxscale 50
 	width 100col%
 
@@ -8454,7 +8454,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/app_menu.png
+	filename images/welcome-to-manjaro/app-menu.png
 	lyxscale 50
 	width 100col%
 
@@ -8515,7 +8515,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/add_favourites.png
+	filename images/welcome-to-manjaro/add-favourites.png
 	lyxscale 50
 	width 100col%
 
@@ -8546,7 +8546,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/remove_favourites.png
+	filename images/welcome-to-manjaro/remove-favourites.png
 	lyxscale 50
 	width 100col%
 
@@ -8678,7 +8678,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/file_manager.png
+	filename images/welcome-to-manjaro/file-manager.png
 	lyxscale 50
 	width 95col%
 
@@ -8739,7 +8739,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/web_browser.png
+	filename images/welcome-to-manjaro/web-browser.png
 	lyxscale 50
 	width 95col%
 
@@ -8805,7 +8805,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/mail_reader.png
+	filename images/welcome-to-manjaro/mail-reader.png
 	lyxscale 50
 	width 95col%
 
@@ -8870,7 +8870,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/pamac/pamac_install.png
+	filename images/welcome-to-manjaro/pamac/pamac-install.png
 	lyxscale 50
 	width 95col%
 
@@ -8991,7 +8991,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/welcome_installed.png
+	filename images/welcome-to-manjaro/welcome-installed.png
 	lyxscale 50
 	width 95col%
 
@@ -9064,7 +9064,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/discussion_forum.png
+	filename images/welcome-to-manjaro/discussion-forum.png
 	lyxscale 50
 	width 95col%
 
@@ -9139,7 +9139,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/irc_channels.png
+	filename images/welcome-to-manjaro/irc-channels.png
 	lyxscale 50
 	width 95col%
 
@@ -9218,7 +9218,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/mailing_list.png
+	filename images/welcome-to-manjaro/mailing-list.png
 	lyxscale 50
 	width 95col%
 
@@ -9378,7 +9378,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/xfce_settings_manager.png
+	filename images/welcome-to-manjaro/xfce-settings-manager.png
 	lyxscale 50
 	width 95col%
 
@@ -9427,7 +9427,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/manjaro_settings_manager.png
+	filename images/welcome-to-manjaro/manjaro-settings-manager.png
 	lyxscale 50
 	width 95col%
 
@@ -9546,7 +9546,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/printer_menu.png
+	filename images/welcome-to-manjaro/printer/printer-menu.png
 	lyxscale 50
 	width 95col%
 
@@ -9585,7 +9585,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/printer_unlock.png
+	filename images/welcome-to-manjaro/printer/printer-unlock.png
 	lyxscale 50
 	width 95col%
 
@@ -9621,7 +9621,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/printer_add.png
+	filename images/welcome-to-manjaro/printer/printer-add.png
 	lyxscale 50
 	width 95col%
 
@@ -9659,7 +9659,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/printer_choose.png
+	filename images/welcome-to-manjaro/printer/printer-choose.png
 	lyxscale 50
 	width 95col%
 
@@ -9705,7 +9705,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/printer_drivers.png
+	filename images/welcome-to-manjaro/printer/printer-drivers.png
 	lyxscale 50
 	width 95col%
 
@@ -9739,7 +9739,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/printer_select_drivers.png
+	filename images/welcome-to-manjaro/printer/printer-select-drivers.png
 	lyxscale 50
 	width 95col%
 
@@ -9787,7 +9787,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/printer_select_drivers_2.png
+	filename images/welcome-to-manjaro/printer/printer-select-drivers_2.png
 	lyxscale 50
 	width 95col%
 
@@ -9822,7 +9822,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/printer_description.png
+	filename images/welcome-to-manjaro/printer/printer-description.png
 	lyxscale 50
 	width 95col%
 
@@ -9858,7 +9858,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/printer_setup.png
+	filename images/welcome-to-manjaro/printer/printer-setup.png
 	lyxscale 50
 	width 95col%
 
@@ -9898,7 +9898,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/printer_installed.png
+	filename images/welcome-to-manjaro/printer/printer-installed.png
 	lyxscale 50
 	width 95col%
 
@@ -10000,7 +10000,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/pamac/pamac_update.png
+	filename images/welcome-to-manjaro/pamac/pamac-update.png
 	lyxscale 50
 	width 95col%
 
@@ -10071,7 +10071,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/octopi_update_notifier.png
+	filename images/welcome-to-manjaro/octopi/octopi-update-notifier.png
 	lyxscale 50
 	width 95col%
 
@@ -10112,7 +10112,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/octopi_full_updates.png
+	filename images/welcome-to-manjaro/octopi/octopi-full-updates.png
 	lyxscale 50
 	width 95col%
 
@@ -10184,7 +10184,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/update_lang_pack_1.png
+	filename images/welcome-to-manjaro/update-lang-pack_1.png
 	lyxscale 50
 	width 95col%
 
@@ -10226,7 +10226,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/update_lang_pack_2.png
+	filename images/welcome-to-manjaro/update-lang-pack_2.png
 	lyxscale 50
 	width 95col%
 
@@ -10338,7 +10338,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/pamac/pamac_whisker_menu.png
+	filename images/welcome-to-manjaro/pamac/pamac-whisker-menu.png
 	lyxscale 50
 	width 95col%
 
@@ -10378,7 +10378,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/pamac/pamac_detail_click.png
+	filename images/welcome-to-manjaro/pamac/pamac-detail-click.png
 	lyxscale 50
 	width 95col%
 
@@ -10422,7 +10422,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/pamac/pamac_install.png
+	filename images/welcome-to-manjaro/pamac/pamac-install.png
 	lyxscale 50
 	width 95col%
 
@@ -10464,7 +10464,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/pamac/pamac_summary.png
+	filename images/welcome-to-manjaro/pamac/pamac-summary.png
 	lyxscale 50
 	width 95col%
 
@@ -10507,7 +10507,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/pamac/pamac_authenticate.png
+	filename images/welcome-to-manjaro/pamac/pamac-authenticate.png
 	lyxscale 50
 	width 95col%
 
@@ -10552,7 +10552,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/pamac/pamac_processing.png
+	filename images/welcome-to-manjaro/pamac/pamac-processing.png
 	lyxscale 50
 	width 95col%
 
@@ -10587,7 +10587,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/pamac/pamac_software_installed.png
+	filename images/welcome-to-manjaro/pamac/pamac-software-installed.png
 	lyxscale 50
 	width 95col%
 
@@ -10639,7 +10639,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/octopi_install.png
+	filename images/welcome-to-manjaro/octopi/octopi-install.png
 	lyxscale 50
 	width 95col%
 
@@ -10680,7 +10680,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/octopi_optional_dep.png
+	filename images/welcome-to-manjaro/octopi/octopi-optional-dep.png
 	lyxscale 50
 	width 95col%
 
@@ -10725,7 +10725,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/octopi_commit.png
+	filename images/welcome-to-manjaro/octopi/octopi-commit.png
 	lyxscale 50
 	width 95col%
 
@@ -10765,7 +10765,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/octopi_confirmation.png
+	filename images/welcome-to-manjaro/octopi/octopi-confirmation.png
 	lyxscale 50
 	width 95col%
 
@@ -10806,7 +10806,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/octopi_installed.png
+	filename images/welcome-to-manjaro/octopi/octopi-installed.png
 	lyxscale 50
 	width 95col%
 
@@ -10953,7 +10953,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/pacman_syyu.png
+	filename images/welcome-to-manjaro/pacman/pacman-syyu.png
 	lyxscale 50
 	width 95col%
 
@@ -11177,7 +11177,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/pacman_mirrors_g.png
+	filename images/welcome-to-manjaro/pacman/pacman-mirrors-g.png
 	lyxscale 50
 	width 95col%
 
@@ -11244,7 +11244,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/pacman_mirrors_i.png
+	filename images/welcome-to-manjaro/pacman/pacman-mirrors-i.png
 	lyxscale 50
 	width 95col%
 
@@ -11316,7 +11316,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/pamac_preferences.png
+	filename images/welcome-to-manjaro/pamac/pamac-preferences.png
 	lyxscale 50
 	width 95col%
 
@@ -11356,7 +11356,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/welcome-to-manjaro/pamac_mirrors.png
+	filename images/welcome-to-manjaro/pamac/pamac-mirrors.png
 	lyxscale 50
 	width 95col%
 
