@@ -3155,7 +3155,7 @@ Entrer
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float marginfigure
+\begin_inset Float figure
 wide false
 sideways false
 status open
@@ -3211,7 +3211,7 @@ Entrer
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float marginfigure
+\begin_inset Float figure
 wide false
 sideways false
 status open
@@ -3268,6 +3268,13 @@ reference "keyboard_layout"
 
 \series default
 ).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3391,7 +3398,7 @@ Entrer
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float marginfigure
+\begin_inset Float figure
 wide false
 sideways false
 status open
