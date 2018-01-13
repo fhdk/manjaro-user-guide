@@ -11684,7 +11684,7 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
-sudo pacman-mirrors -g
+sudo pacman-mirrors -f 0
 \end_layout
 
 \end_inset
@@ -11710,7 +11710,7 @@ pacman-mirrors
 
 \end_inset
 
- -g
+ -f 0
 \end_layout
 
 \begin_layout Standard
@@ -11792,7 +11792,7 @@ Pour revenir au choix automatique, exécutez la commande :
 \begin_layout Quote
 
 \family typewriter
-sudo pacman-mirrors -g -c all
+sudo pacman-mirrors -f 0 -c all
 \end_layout
 
 \begin_layout Standard
@@ -11936,7 +11936,7 @@ Une fois Manjaro installée, à moins que vous n'ayez spécifiquement choisi
 \begin_layout Quote
 
 \family typewriter
-sudo pacman-mirrors -g -b testing
+sudo pacman-mirrors -f 0 -b testing
 \end_layout
 
 \begin_layout Standard
@@ -11959,7 +11959,7 @@ Si vous voulez utiliser la fine pointe des paquets disponibles, vous pouvez
 \begin_layout Quote
 
 \family typewriter
-sudo pacman-mirrors -g -b unstable
+sudo pacman-mirrors -f 0 -b unstable
 \end_layout
 
 \begin_layout Standard
@@ -11983,7 +11983,7 @@ Si vous avez quitté la branche stable et souhaitez y revenir, cela se fait
 \begin_layout Quote
 
 \family typewriter
-sudo pacman-mirrors -g -b stable
+sudo pacman-mirrors -f 0 -b stable
 \end_layout
 
 \begin_layout Standard
