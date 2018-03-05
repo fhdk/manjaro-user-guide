@@ -8087,7 +8087,7 @@ In order to prevent others from accessing the data stored on your drive,
 \emph on
 Linux Unified Key Setup
 \emph default
-) is a tool developped to that end.
+) is a tool developed to that end.
  Luckily, the Calamares installer has built-in support for LUKS, which makes
  encrypting your system a breeze! To access the data stored on the drive,
  a passphrase of your choosing will have to be given.
