@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -31,6 +31,8 @@ fixltx2e
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -72,6 +74,7 @@ fixltx2e
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -80,7 +83,10 @@ fixltx2e
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -417,8 +423,8 @@ Manuel
 \begin_inset space ~
 \end_inset
 
-Barrette Editor of the User Guide 16.08-17.1, French translation of the User
- Guide 17.0-17.1
+Barrette Editor of the User Guide 16.08-18.0, French translation of the User
+ Guide 17.0-18.0
 \end_layout
 
 \begin_layout Subsection*
@@ -770,6 +776,7 @@ Starting with Manjaro 17.1, 32-bit support has been dropped and only 64-bit
 LatexCommand href
 name "Manjaro-32"
 target "https://manjaro32.org/"
+literal "false"
 
 \end_inset
 
@@ -1116,15 +1123,15 @@ The edition names should give a clear indication of the desktop environment
 \end_layout
 
 \begin_layout Standard
-There are many community editions to choose from, including: Cinnamon, Lxqt,
- i3, Deepin, Budgie, MATE, Enlightenment, JWM and many others! The complete
- list is available at 
+There are many community editions to choose from, including Cinnamon, LXDE,
+ Deepin, Budgie, Mate and many others The complete list is available at
+ 
 \begin_inset Flex URL
 status open
 
 \begin_layout Plain Layout
 
-https://sourceforge.net/projects/manjarolinux-community/files/
+https://manjaro.org/community-editions/
 \end_layout
 
 \end_inset
@@ -1138,8 +1145,7 @@ Downloading a disc image
 
 \begin_layout Standard
 Every release of Manjaro is available for download, whether the current
- stable release, upcoming test builds, or previous versions for historical
- interest.
+ stable release or upcoming preview releases.
  When you visit the download page you will find a link to each of the four
  main editions , as well as a checksum file for each.
  A checksum can be used to check the integrity of the disc image file you
@@ -1159,6 +1165,7 @@ releases of Manjaro are intended to be used by the general public, so this
 LatexCommand href
 name "Get Manjaro"
 target "https://manjaro.org/get-manjaro/"
+literal "false"
 
 \end_inset
 
@@ -1173,38 +1180,6 @@ status open
 \begin_layout Plain Layout
 
 https://manjaro.org/get-manjaro/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Older stable releases can also be downloaded from the 
-\begin_inset CommandInset href
-LatexCommand href
-name "Stable Release section of the Sourceforge website"
-target "https://sourceforge.net/projects/manjarolinux/files/release/"
-
-\end_inset
-
-.
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://sourceforge.net/projects/manjarolinux/files/release/
 \end_layout
 
 \end_inset
@@ -1232,6 +1207,7 @@ releases of Manjaro give you a glimpse of what is to come soon in the stable
 LatexCommand href
 name "Manjaro Preview Releases"
 target "https://manjaro.org/manjaro-preview-releases/"
+literal "false"
 
 \end_inset
 
@@ -1246,51 +1222,6 @@ status open
 \begin_layout Plain Layout
 
 https://manjaro.org/manjaro-preview-releases/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Description
-Test
-\begin_inset space ~
-\end_inset
-
-builds of Manjaro are intended to be used by developers and testers to identify
- any bugs or issues during the development process.
-
-\series bold
- These are not suitable for use as a main operating system by the general
- public.
-
-\series default
- However, should you wish to try out a test build (preferably in a virtual
- machine), each current release can be downloaded from the from the 
-\begin_inset CommandInset href
-LatexCommand href
-name " Test Build section of the Sourceforge website"
-target "https://sourceforge.net/projects/manjarodev/files/testbuild/"
-
-\end_inset
-
-.
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://sourceforge.net/projects/manjarodev/files/testbuild/
 \end_layout
 
 \end_inset
@@ -1369,14 +1300,15 @@ To verify the integrity of the disc image you have to download the appropriate
  image file.
  For example, the file
 \series bold
- manjaro-xfce-17.1-pre2-stable-x86_64.iso.sha1
+ manjaro-xfce-18.0-beta-2-testing-x86_64.iso
 \series default
- contains the SHA-1 checksum hash for the Xfce disc image and will have
- content similar to this:
+ contains the SHA-1 checksum hash for a preview realease of the Xfce disc
+ image and will have content similar to this:
 \end_layout
 
 \begin_layout LyX-Code
-3b47288a10cba6b5ce1e41582604342babf558cb  manjaro-xfce-17.1-pre2-stable-x86_64.iso
+b3195a6804de83cfd7fd5abb2388823eed7b8402  manjaro-xfce-18.0-beta-2-testing-x86_64.
+iso
 \end_layout
 
 \begin_layout Section
@@ -1455,7 +1387,7 @@ If the code generated from the disc image matches that contained in the
 \begin_layout Standard
 From this point on we'll assume you are using the file
 \series bold
- manjaro-xfce-17.1-stable-x86_64.iso.sha1
+ manjaro-xfce-18.0-stable-x86_64.iso.sha1
 \series default
 .
 \end_layout
@@ -1497,7 +1429,7 @@ jonathon@box:~/download$ ls
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-xfce-17.1-stable-x86_64.iso.sha1  manjaro-xfce-17.1-stable-x86_64.iso
+manjaro-xfce-18.0-stable-x86_64.iso.sha1  manjaro-xfce-18.0-stable-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1510,7 +1442,7 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-jonathon@box:~/download$ sha1sum -c manjaro-xfce-17.1-stable-x86_64.iso.sha1
+jonathon@box:~/download$ sha1sum -c manjaro-xfce-18.0-stable-x86_64.iso.sha1
 \end_layout
 
 \begin_layout Standard
@@ -1524,7 +1456,7 @@ sha1sum
 \end_layout
 
 \begin_layout LyX-Code
-manjaro-xfce-17.1-stable-x86_64.iso: OK
+manjaro-xfce-18.0-stable-x86_64.iso: OK
 \end_layout
 
 \begin_layout Standard
@@ -1539,7 +1471,7 @@ Manual verification
 To manually check the integrity of your downloaded file, first open the
  downloaded
 \series bold
- manjaro-xfce-17.1-stable-x86_64.iso.sha1
+ manjaro-xfce-18.0-stable-x86_64.iso.sha1
 \series default
  checksum file using a text editor such as Gedit.
  Once the checksum file has been opened, and the code is visible, open up
@@ -1568,7 +1500,7 @@ jonathon@box:~/download$
 \family typewriter
  sha1sum 
 \family default
-manjaro-xfce-17.1-stable-x86_64.iso
+manjaro-xfce-18.0-stable-x86_64.iso
 \end_layout
 
 \begin_layout Standard
@@ -1599,7 +1531,7 @@ status open
 
 \begin_layout Plain Layout
 
-http://download.cnet.com/
+https://download.cnet.com/
 \end_layout
 
 \end_inset
@@ -1697,7 +1629,7 @@ To speed up the process it's probably a good idea to deselect the hashes
 
  To verify if the checksum is correct, open the
 \series bold
- manjaro-xfce-17.1-stable-x86_64.iso.sha1
+ manjaro-xfce-18.0-stable-x86_64.iso.sha1
 \series default
  file in a text editor such as Notepad, copy the checksum for the disc image
  file you have downloaded, and paste it into the 
@@ -1853,7 +1785,7 @@ Xfce
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-xfce-17.1-stable-x86_64.iso
+manjaro-xfce-18.0-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1891,7 +1823,7 @@ KDE
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-kde-17.1-stable-x86_64.iso
+manjaro-kde-18.0-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1929,7 +1861,7 @@ GNOME
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-gnome-17.1-stable-x86_64.iso
+manjaro-gnome-18.0-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -1967,7 +1899,7 @@ Architect
 \begin_inset Text
 
 \begin_layout Plain Layout
-manjaro-architect-17.0.4-stable-x86_64.iso
+manjaro-architect-18.0-stable-x86_64.iso
 \end_layout
 
 \end_inset
@@ -2680,7 +2612,7 @@ Write the image with:
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-17.1-stable-x86_64.iso of=/dev/(Device identifier
+sudo dd if=manjaro-xfce-18.0-stable-x86_64.iso of=/dev/(Device identifier
  from above) bs=4M
 \begin_inset Newline newline
 \end_inset
@@ -2697,7 +2629,7 @@ My USB drive is at /dev/sdc so I would use:
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-17.1-stable-x86_64.iso of=/dev/sdc bs=4M
+sudo dd if=manjaro-xfce-18.0-stable-x86_64.iso of=/dev/sdc bs=4M
 \begin_inset Newline newline
 \end_inset
 
@@ -2713,7 +2645,7 @@ status=progress:
 \begin_inset Newline newline
 \end_inset
 
-sudo dd if=manjaro-xfce-17.1-stable-x86_64.iso of=/dev/sdc bs=4M status=progress
+sudo dd if=manjaro-xfce-18.0-stable-x86_64.iso of=/dev/sdc bs=4M status=progress
 \end_layout
 
 \begin_layout Enumerate
@@ -11786,6 +11718,8 @@ https://forum.manjaro.org/
 \begin_inset CommandInset index_print
 LatexCommand printindex
 type "idx"
+name "Index"
+literal "true"
 
 \end_inset
 
