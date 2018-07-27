@@ -1794,7 +1794,7 @@ manjaro-xfce-18.0-stable-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.2 GB
+1.8GB
 \end_layout
 
 \end_inset
@@ -1870,7 +1870,7 @@ manjaro-gnome-18.0-stable-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.7 GB
+1.8 GB
 \end_layout
 
 \end_inset
@@ -1908,7 +1908,7 @@ manjaro-architect-18.0-stable-x86_64.iso
 \begin_inset Text
 
 \begin_layout Plain Layout
-473 MB
+527 MB
 \end_layout
 
 \end_inset
@@ -2657,6 +2657,10 @@ Once completed reboot your system and boot from the USB drive by selecting
 Writing to a USB flash drive in Microsoft Windows
 \end_layout
 
+\begin_layout Subsection
+Rufus
+\end_layout
+
 \begin_layout Standard
 For Windows users using USB media, Rufus
 \begin_inset Foot
@@ -2682,17 +2686,29 @@ https://rufus.akeo.ie/
 \end_layout
 
 \begin_layout Standard
-Select the USB key to be used in the Device menu.
+Select the USB key to be used in the 
+\emph on
+Device
+\emph default
+ menu.
  Then, on the line beginning with 
 \emph on
-Create a bootable disk using
+Boot selection
 \emph default
-, click on the DVD icon to select your downloaded disc image.
- After doing so, in the menu left of the DVD icon, select 
+, click on 
+\emph on
+Select
+\emph default
+ to select your downloaded disc image, and then 
+\emph on
+Start
+\emph default
+.
+ After doing so, select 
 \series bold
 DD Image
 \series default
-.
+ in the window that appears.
 \end_layout
 
 \begin_layout Standard
@@ -2702,9 +2718,107 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/getting-manjaro/imagewriter-windows-rufus.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-manjaro/rufus-dd.png
+	lyxscale 50
 	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rufus with recommended settings
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Etcher
+\end_layout
+
+\begin_layout Standard
+Another recommended piece of software is Etcher 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://etcher.io/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ It is incredibly simple to use.
+ All you have to do is select the disc image, the USB drive, and start flashing
+ the image!
+\begin_inset Float marginfigure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/getting-manjaro/etcher.png
+	width 100text%
 
 \end_inset
 
@@ -2715,7 +2829,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Rufus with recommended settings
+Etcher
 \end_layout
 
 \end_inset
@@ -2723,17 +2837,13 @@ Rufus with recommended settings
 
 \end_layout
 
-\end_inset
-
+\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Standard
-Finally, click 
-\series bold
-Start
-\series default
- to begin the writing process!
+\end_inset
+
+
 \end_layout
 
 \begin_layout Part
