@@ -5344,6 +5344,14 @@ setcounter{figure}{0}
 \end_layout
 
 \begin_layout Standard
+
+\emph on
+Note : The windows decorations displayed in the following chapter may differ
+ from the ones currently used.
+ It does not affect the methods shown.
+\end_layout
+
+\begin_layout Standard
 This option is the one that gives you the most control.
  You will get the chance to adjust yourself the partition scheme of your
  hard drive using the built-in partition manager and make it exactly the
@@ -6429,6 +6437,14 @@ name "advancedInstallUEFI"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Note : The windows decorations displayed in the following chapter may differ
+ from the ones currently used.
+ It does not affect the methods shown.
 \end_layout
 
 \begin_layout Standard
