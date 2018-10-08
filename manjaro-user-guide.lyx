@@ -9293,7 +9293,6 @@ If you prefer to use email there are several mailing lists that you can
  use to stay up-to-date with announcements and development, as well as ask
  questions.
  At the moment, though, most people use either the forums or IRC.
- Maybe it will be you who gets people using the mailing lists!
 \end_layout
 
 \end_inset
@@ -9568,6 +9567,14 @@ setcounter{figure}{0}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Note : The windows decorations displayed in the following section may differ
+ from the ones currently used.
+ It does not affect the methods shown.
 \end_layout
 
 \begin_layout Standard
@@ -10719,6 +10726,14 @@ Octopi
 \end_layout
 
 \begin_layout Standard
+
+\emph on
+Note : The windows decorations displayed in the following subsection may
+ differ from the ones currently used.
+ It does not affect the methods shown.
+\end_layout
+
+\begin_layout Standard
 The process of installing new software using Octopi is very similar to the
  one using Pamac.
 \end_layout
@@ -11421,7 +11436,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-From Pamac, click the pancake menu at the top right of the window and select
+From Pamac, click the dots menu at the top right of the window and select
  
 \series bold
 Preferences
