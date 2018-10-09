@@ -11398,7 +11398,7 @@ To reset back to an automatic choice, run this command:
 \begin_layout Quote
 
 \family typewriter
-sudo pacman-mirrors -f 0 -c all
+sudo pacman-mirrors -f
 \end_layout
 
 \begin_layout Standard
@@ -11538,7 +11538,7 @@ When you install Manjaro, unless you specifically installed a preview version,
 \begin_layout Quote
 
 \family typewriter
-sudo pacman-mirrors -f 0 -b testing
+sudo pacman-mirrors -f -a -B testing
 \end_layout
 
 \begin_layout Standard
@@ -11560,7 +11560,7 @@ If you want to live on the bleeding edge, you can switch to the unstable
 \begin_layout Quote
 
 \family typewriter
-sudo pacman-mirrors -f 0 -b unstable
+sudo pacman-mirrors -f -a -B unstable
 \end_layout
 
 \begin_layout Standard
@@ -11584,7 +11584,7 @@ If you switch away from the stable branch, but want to move back, it's actually
 \begin_layout Quote
 
 \family typewriter
-sudo pacman-mirrors -f 0 -b stable
+sudo pacman-mirrors -f -a -B stable
 \end_layout
 
 \begin_layout Standard
