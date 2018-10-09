@@ -3380,6 +3380,43 @@ The welcome screen gives some links to common tasks, documentation and the
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/boot/live-desktop.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Live desktop
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This user guide as well as the installer, Calamares, can be found on the
+ desktop.
+ Internet access can be configured from the bottom right of the screen.
+\end_layout
+
+\begin_layout Standard
 On the desktop, a shortcut to the Manjaro Architect installer is also available,
  although it is not aimed at beginners.
  It is the same that is available in the Architect edition.
@@ -8468,6 +8505,55 @@ If you don't want the welcome screen to load each time you log in, just
 \series default
  option off at the bottom right of the window.
  Don't worry: you can always find it again in the applications menu.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/welcome-to-manjaro/manjaro-desktop.png
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The Manjaro Xfce Desktop
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's now take a look at your new operating system! A notification area
+ can be found on the top right, where system messages are displayed.
+ At the top left are the icons currently displayed on the desktop.
+ At the bottom left is the applications menu, where installed applications
+ can be found and launched.
+ Next to it are buttons of opened windows.
+ A workspace switcher is then located to the right.
+ Workspaces are desktops placed next to each other.
+ Then, various system indicators such as battery power, updates, internet
+ connection and volume can be found.
+ Finally, at the bottom right are a clock with a calendar as well as a shutdown
+ button.
 \end_layout
 
 \begin_layout Standard
