@@ -6,7 +6,7 @@ The style in use is [tufte-book](http://wiki.lyx.org/Layouts/Tufte-book). This p
 
 ## Download
 
-Want a PDF instead of the source? Grab it from the associated [release](http://sourceforge.net/projects/manjarolinux/files/release/) directory on SourceForge.
+Want a PDF instead of the source? Grab it on [OSDN.net](https://osdn.net/projects/manjaro/storage/).
 
 ## Installation
 
